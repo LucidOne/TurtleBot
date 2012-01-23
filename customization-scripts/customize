@@ -1,0 +1,52 @@
+#!/bin/bash
+SCRIPT_DIR=`dirname "$0"`
+
+# Upgrade to the lastest packages
+#apt-get update || apt-get update || failure "apt-get update failed, error=$?"
+#apt-get -y dist-upgrade || apt-get -y dist-upgrade || failure "apt-get -y dist-upgrade failed, error=$?"
+
+# Enable Multiverse and Universe repositories
+cat /etc/apt/sources.list | sed "s/# deb/deb/g" > /tmp/new_sources.list
+cp /tmp/new_sources.list /etc/apt/sources.list
+
+# Add IHE PPA
+add-apt-repository ppa:iheartengineering/ros-support
+
+# Add the ROS package repository
+sh -c 'echo "deb http://packages.ros.org/ros/ubuntu lucid main" > /etc/apt/sources.list.d/ros-latest.list'
+
+# Fetch ROS Key
+wget http://packages.ros.org/ros.key -O - | apt-key add -
+
+# Update Ubuntu packages
+apt-get update || apt-get update || failure "apt-get update failed, error=$?"
+
+# install required packages
+apt-get -y install mercurial git-core subversion ros-electric-turtlebot-robot linux-image-generic-lts-backport-natty linux-headers-generic-lts-backport-natty daemontools dkms || failure "apt-get failed, error=$?"
+apt-get -y install ros-electric-turtlebot-robot || failure "apt-get failed, error=$?"
+
+# install broadcom drivers for our kernel
+pushd /tmp
+wget http://mirrors.us.kernel.org/ubuntu//pool/restricted/b/bcmwl/bcmwl-kernel-source_5.100.82.38+bdcom-0ubuntu3.2_amd64.deb
+dpkg -i bcmwl-kernel-source_5.100.82.38+bdcom-0ubuntu3.2_amd64.deb
+popd
+
+
+# Install Wallpapers
+# apt-get install turtlebot-wallpapers
+dpkg -i $SCRIPT_DIR/turtlebot-wallpapers_0.0.1_all.deb
+
+# Setup ROS for all users
+echo "source /opt/ros/electric/setup.bash" >> /etc/skel/.bashrc
+
+# set up a udev rule to rename broadcom interfaces to wlan0
+echo 'SUBSYSTEM=="net", ACTION=="add", DRIVERS=="wl", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="wlan0"' >> /etc/udev/rules.d/71-turtlebot-net.rules
+
+# Install TurtleBot Upstart Scripts
+pushd /opt/ros/electric/stacks/turtlebot/turtlebot_bringup/upstart
+./install.bash wlan0
+popd
+
+# Install NTP Client
+ntpdate ntp.ubuntu.com
+apt-get -y install chrony

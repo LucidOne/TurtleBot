@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>ubiquity-slideshow-ubuntu</title>
+	
+	<link href="link/general.css" rel="stylesheet" type="text/css" />
+	
+	<base target="_blank" />
+	
+	<script type="text/javascript" src="link-core/prototype.js"></script>
+	<script type="text/javascript" src="link-core/effects.js"></script>
+	<script type="text/javascript" src="link-core/fastinit.js"></script>
+	<script type="text/javascript" src="link-core/crossfade.js"></script>
+	<script type="text/javascript" src="directory.js"></script>
+	<script type="text/javascript" src="link-core/slideshow.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="slideshow">
+		
+		<!-- Slides go here. Simply place the following snippet
+		in the order you wish it to appear, replacing "MY SLIDE"
+		with the filename of your slide.
+		<div><a href="MY SLIDE" class="load"></a></div> -->
+		<div><a href="welcome.html" class="load"></a></div>
+		<div><a href="firefox.html" class="load"></a></div>
+		<div><a href="fspot.html" class="load"></a></div>
+		<div><a href="rhythmbox-totem.html" class="load"></a></div>
+		<div><a href="evolution.html" class="load"></a></div> 
+		<div><a href="empathy.html" class="load"></a></div>
+		<div><a href="accessibility.html" class="load"></a></div>
+		<div><a href="installing-software.html" class="load"></a></div>
+		<div><a href="ubuntuone.html" class="load"></a></div>
+		<div><a href="documentation.html" class="load"></a></div>
+		<div><a href="turtlebot.html" class="load"></a></div>
+	</div>
+</div>
+
+<div id="debug-controls">
+<input type="button" id="prev-slide" value="&lt;"/>
+<input type="text"   id="current-slide" />
+<input type="button" id="next-slide" value="&gt;"/>
+</div>
+
+</body>
+
+</html>
