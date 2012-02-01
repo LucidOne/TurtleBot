@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 30 Jan 2012 04:34:13 PM EST
+EESchema Schematic File Version 2  date Wed 01 Feb 2012 10:23:33 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,13 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:IHE - Power Splitter w LED V0-2-cache
 EELAYER 25  0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "I Heart Engineering Power Splitter"
-Date "30 jan 2012"
+Date "1 feb 2012"
 Rev "0.2"
 Comp "I Heart Engineering"
 Comment1 ""
@@ -102,7 +103,11 @@ L CONN_2 P4
 U 1 1 4F26BC64
 P 6850 4900
 F 0 "P4" V 6800 4900 40  0000 C CNN
-F 1 "2-pin Connector" V 6900 4900 40  0000 C CNN
+F 1 "CONN 2Pin " V 6900 4900 40  0000 C CNN
+F 3 "http://www.tycoelectronics.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Catalog+Section%7F1308389_EUROSTYLE_TERMINAL_BLOCKS%7F0607%7Fpdf%7FEnglish%7FENG_CS_1308389_EUROSTYLE_TERMINAL_BLOCKS_0607.pdf" H 6850 4900 60  0001 C CNN
+F 4 "A98333-ND" V 6850 4900 60  0001 C CNN "DigiKey P. No."
+F 5 "TE Connectivity" V 6850 4900 60  0001 C CNN "Manufacturer"
+F 6 "282834-2" V 6850 4900 60  0001 C CNN "Manufacturer P. No."
 	1    6850 4900
 	-1   0    0    1   
 $EndComp
