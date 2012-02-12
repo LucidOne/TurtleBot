@@ -1,13 +1,13 @@
 #!/bin/bash
 SCRIPT_DIR=`dirname "$0"`
 
-# Upgrade to the lastest packages
-#apt-get update || apt-get update || failure "apt-get update failed, error=$?"
-#apt-get -y dist-upgrade || apt-get -y dist-upgrade || failure "apt-get -y dist-upgrade failed, error=$?"
-
 # Enable Multiverse and Universe repositories
 cat /etc/apt/sources.list | sed "s/# deb/deb/g" > /tmp/new_sources.list
 cp /tmp/new_sources.list /etc/apt/sources.list
+
+# Upgrade to the lastest packages
+apt-get update || apt-get update || failure "apt-get update failed, error=$?"
+apt-get -y dist-upgrade || apt-get -y dist-upgrade || failure "apt-get -y dist-upgrade failed, error=$?"
 
 # Add IHE PPA
 add-apt-repository ppa:iheartengineering/ros-support
@@ -31,6 +31,8 @@ wget http://mirrors.us.kernel.org/ubuntu//pool/restricted/b/bcmwl/bcmwl-kernel-s
 dpkg -i bcmwl-kernel-source_5.100.82.38+bdcom-0ubuntu3.2_amd64.deb
 popd
 
+# Install udev rule
+cp $SCRIPT_DIR/52-turtlebot.rules /etc/udev/rules.d/.
 
 # Install Wallpapers
 # apt-get install turtlebot-wallpapers
@@ -42,10 +44,17 @@ echo "source /opt/ros/electric/setup.bash" >> /etc/skel/.bashrc
 # set up a udev rule to rename broadcom interfaces to wlan0
 echo 'SUBSYSTEM=="net", ACTION=="add", DRIVERS=="wl", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="wlan0"' >> /etc/udev/rules.d/71-turtlebot-net.rules
 
+# Prevent the latop from suspending when the lid closes
+sudo gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/gnome-power-manager/buttons/lid_battery "blank"
+sudo gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/gnome-power-manager/buttons/lid_ac "blank"
+
 # Install TurtleBot Upstart Scripts
 pushd /opt/ros/electric/stacks/turtlebot/turtlebot_bringup/upstart
 ./install.bash wlan0
 popd
+
+# Install SSH Server
+apt-get -y install openssh-server
 
 # Install NTP Client
 ntpdate ntp.ubuntu.com
