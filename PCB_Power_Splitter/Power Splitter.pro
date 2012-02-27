@@ -1,4 +1,4 @@
-update=Wed 01 Feb 2012 12:37:10 PM EST
+update=Mon 27 Feb 2012 11:59:27 AM EST
 last_client=pcbnew
 [pcbnew]
 version=1
@@ -30,4 +30,6 @@ LibName8=valves
 LibName9=led
 LibName10=dip_sockets
 LibName11=/media/sf_carlitos/Documents/GitHub/iheart-kicad-lib/IHE
-LibName12=/media/sf_carlitos/Documents/Dropbox/Programming/KiCad/IHeartEngineering/IHE - QR Code SM
+LibName12=/media/sf_carlitos/Documents/GitHub/IHeartEngineering Logos/Inversed Images/QA box INVERSED
+LibName13=/media/sf_carlitos/Documents/GitHub/IHeartEngineering Logos/Inversed Images/QR Code 0.65IN INVERSED
+LibName14=/media/sf_carlitos/Documents/GitHub/IHeartEngineering Logos/Inversed Images/Open Source Logo 0.65IN INVERSED
