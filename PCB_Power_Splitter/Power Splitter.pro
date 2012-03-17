@@ -1,7 +1,8 @@
-update=Mon 27 Feb 2012 11:59:27 AM EST
+update=Sat 17 Mar 2012 04:09:11 PM EDT
 last_client=pcbnew
 [pcbnew]
 version=1
+LastNetListRead=
 PadDrlX=320
 PadDimH=600
 PadDimV=600
@@ -16,7 +17,6 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
-LastNetListRead=
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets
@@ -29,7 +29,4 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
-LibName11=/media/sf_carlitos/Documents/GitHub/iheart-kicad-lib/IHE
-LibName12=/media/sf_carlitos/Documents/GitHub/IHeartEngineering Logos/Inversed Images/QA box INVERSED
-LibName13=/media/sf_carlitos/Documents/GitHub/IHeartEngineering Logos/Inversed Images/QR Code 0.65IN INVERSED
-LibName14=/media/sf_carlitos/Documents/GitHub/IHeartEngineering Logos/Inversed Images/Open Source Logo 0.65IN INVERSED
+LibName11=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
