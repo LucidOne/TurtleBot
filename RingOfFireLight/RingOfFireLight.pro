@@ -1,4 +1,4 @@
-update=Sun 18 Mar 2012 11:45:20 PM EDT
+update=Mon 26 Mar 2012 02:20:07 PM EDT
 version=1
 last_client=eeschema
 [cvpcb]
@@ -6,8 +6,11 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[general]
+version=1
 [pcbnew]
 version=1
+LastNetListRead=RingOfFireLight.net
 PadDrlX=320
 PadDimH=600
 PadDimV=600
@@ -22,7 +25,6 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
-LastNetListRead=
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets
@@ -36,8 +38,7 @@ LibName8=led
 LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
-[general]
-version=1
+LibName12=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
 [eeschema]
 version=1
 LibDir=
