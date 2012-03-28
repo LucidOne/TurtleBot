@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Mon 26 Mar 2012 02:52:03 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Wed 28 Mar 2012 01:52:28 PM EDT
 
 BeginCmp
 TimeStamp = /4F69FFDA;
@@ -186,7 +186,7 @@ BeginCmp
 TimeStamp = /4F650B03;
 Reference = IC1;
 ValeurCmp = ATMEGA328-P;
-IdModule  = QFN32;
+IdModule  = TQFP32;
 EndCmp
 
 BeginCmp
@@ -291,7 +291,7 @@ BeginCmp
 TimeStamp = /4F66ABEC;
 Reference = TLC1;
 ValeurCmp = TLC5940;
-IdModule  = QFN32;
+IdModule  = SSOP28;
 EndCmp
 
 BeginCmp
