@@ -1,4 +1,4 @@
-update=Mon 26 Mar 2012 02:20:07 PM EDT
+update=Wed 28 Mar 2012 02:38:13 PM EDT
 version=1
 last_client=eeschema
 [cvpcb]
@@ -82,3 +82,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/media/sf_Carlitos/Documents/GitHub/ledboard/tlc5940
+LibName32=resonator

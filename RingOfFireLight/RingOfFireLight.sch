@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 26 Mar 2012 01:38:16 PM EDT
+EESchema Schematic File Version 2  date Wed 28 Mar 2012 04:07:31 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:tlc5940
+LIBS:resonator
 LIBS:RingOfFireLight-cache
 EELAYER 25  0
 EELAYER END
@@ -37,7 +38,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LED circle with Arduino Mini 328"
-Date "26 mar 2012"
+Date "28 mar 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -191,39 +192,12 @@ F 1 "0.1uF" H 9700 3600 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CRYSTAL X1
-U 1 1 4F652C1E
-P 9450 6550
-F 0 "X1" V 9450 6700 60  0000 C CNN
-F 1 "16MHz" V 9450 6300 60  0000 C CNN
-	1    9450 6550
-	0    1    1    0   
-$EndComp
-$Comp
-L C C7
-U 1 1 4F652C30
-P 9700 6850
-F 0 "C7" V 9750 6950 50  0000 L CNN
-F 1 "22pF" V 9550 6650 50  0000 L CNN
-	1    9700 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C C6
-U 1 1 4F652C36
-P 9700 6250
-F 0 "C6" V 9750 6350 50  0000 L CNN
-F 1 "22pF" V 9750 6000 50  0000 L CNN
-	1    9700 6250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L GND #PWR09
 U 1 1 4F652CC7
-P 10200 6650
-F 0 "#PWR09" H 10200 6650 30  0001 C CNN
-F 1 "GND" H 10200 6580 30  0001 C CNN
-	1    10200 6650
+P 10000 6700
+F 0 "#PWR09" H 10000 6700 30  0001 C CNN
+F 1 "GND" H 10000 6630 30  0001 C CNN
+	1    10000 6700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -257,9 +231,9 @@ Text Label 8000 5100 0    60   ~ 0
 TOSC1
 Text Label 8000 5200 0    60   ~ 0
 TOSC2
-Text Label 9100 6850 0    60   ~ 0
+Text Label 8700 6800 0    60   ~ 0
 TOSC2
-Text Label 9100 6250 0    60   ~ 0
+Text Label 8700 6250 0    60   ~ 0
 TOSC1
 Text Label 9150 5000 0    60   ~ 0
 RESET
@@ -808,22 +782,16 @@ Text Label 2800 4050 0    60   ~ 0
 V_LED
 Text Label 3850 4050 0    60   ~ 0
 V_LED
+Text Notes 9100 6900 0    60   ~ 0
+Resonator\n490-1198-1-ND
 Wire Wire Line
-	9500 6250 9100 6250
+	9100 6250 8700 6250
 Wire Wire Line
 	8000 5200 7850 5200
 Wire Wire Line
 	7850 5100 8000 5100
-Connection ~ 9450 6250
-Connection ~ 9450 6850
-Connection ~ 9900 6500
-Connection ~ 9900 6500
 Wire Wire Line
-	9900 6850 9900 6250
-Wire Wire Line
-	9900 6500 10200 6500
-Wire Wire Line
-	9500 6850 9100 6850
+	9100 6800 8700 6800
 Wire Wire Line
 	9650 4000 9650 3900
 Wire Wire Line
@@ -1063,8 +1031,6 @@ Connection ~ 5500 1750
 Wire Wire Line
 	6200 1100 4950 1100
 Wire Wire Line
-	10200 6500 10200 6650
-Wire Wire Line
 	4950 1100 4950 1200
 Wire Wire Line
 	5950 6800 5800 6800
@@ -1074,4 +1040,15 @@ Wire Wire Line
 	3850 3950 3750 3950
 Wire Wire Line
 	6200 2300 6200 2150
+Wire Wire Line
+	10000 6550 10000 6700
+$Comp
+L RESONATOR X1
+U 1 1 4F7370F4
+P 9400 6550
+F 0 "X1" H 9400 6700 60  0000 C CNN
+F 1 "RESONATOR" H 9400 6400 60  0000 C CNN
+	1    9400 6550
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

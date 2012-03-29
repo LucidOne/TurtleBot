@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Wed 28 Mar 2012 01:52:28 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Thu 29 Mar 2012 02:52:23 AM EDT
 
 BeginCmp
 TimeStamp = /4F69FFDA;
@@ -18,7 +18,7 @@ BeginCmp
 TimeStamp = /4F69F269;
 Reference = C3;
 ValeurCmp = 10nF;
-IdModule  = SMDHD/VF;
+IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
@@ -235,7 +235,7 @@ BeginCmp
 TimeStamp = /4F65EF5E;
 Reference = P7;
 ValeurCmp = CONN_6;
-IdModule  = pin_array_6x2;
+IdModule  = pin_array_6x1;
 EndCmp
 
 BeginCmp
@@ -305,7 +305,7 @@ BeginCmp
 TimeStamp = /4F652C1E;
 Reference = X1;
 ValeurCmp = 16MHz;
-IdModule  = CR2032V;
+IdModule  = CSTCE____V__;
 EndCmp
 
 EndListe
