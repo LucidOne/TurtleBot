@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Thu 29 Mar 2012 02:52:23 AM EDT
+Cmp-Mod V01 Created by PcbNew date = Thu 29 Mar 2012 11:41:10 PM EDT
 
 BeginCmp
 TimeStamp = /4F69FFDA;
@@ -53,119 +53,119 @@ BeginCmp
 TimeStamp = /4F652745;
 Reference = C8;
 ValeurCmp = 0.1uF;
-IdModule  = LED-0805;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB04;
 Reference = D1;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB0A;
 Reference = D2;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB10;
 Reference = D3;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB16;
 Reference = D4;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB1C;
 Reference = D5;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB22;
 Reference = D6;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB28;
 Reference = D7;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB2E;
 Reference = D8;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BACD;
 Reference = D9;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BADA;
 Reference = D10;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAE0;
 Reference = D11;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAE6;
 Reference = D12;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAEC;
 Reference = D13;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAF2;
 Reference = D14;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAF8;
 Reference = D15;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAFE;
 Reference = D16;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = LED 5mm TH-SMD;
 EndCmp
 
 BeginCmp
@@ -179,7 +179,7 @@ BeginCmp
 TimeStamp = /4F69FFE2;
 Reference = D18;
 ValeurCmp = LED;
-IdModule  = LED-0805;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -207,7 +207,7 @@ BeginCmp
 TimeStamp = /4F709ADC;
 Reference = P3;
 ValeurCmp = CONN_2;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = CONN_2POS_RA_SMD;
 EndCmp
 
 BeginCmp
