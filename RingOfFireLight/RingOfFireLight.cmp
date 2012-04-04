@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Thu 29 Mar 2012 11:41:10 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Mon 02 Apr 2012 07:36:46 PM EDT
 
 BeginCmp
 TimeStamp = /4F69FFDA;
@@ -36,16 +36,16 @@ IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F652C36;
+TimeStamp = /4F7A1270;
 Reference = C6;
-ValeurCmp = 22pF;
+ValeurCmp = 0.1uF;
 IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F652C30;
+TimeStamp = /4F7A1289;
 Reference = C7;
-ValeurCmp = 22pF;
+ValeurCmp = 10uF_25V;
 IdModule  = LED-0805;
 EndCmp
 
@@ -57,115 +57,122 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /4F7A34CF;
+Reference = C9;
+ValeurCmp = 0.1uF;
+IdModule  = $noname;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F66BB04;
 Reference = D1;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB0A;
 Reference = D2;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB10;
 Reference = D3;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB16;
 Reference = D4;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB1C;
 Reference = D5;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB22;
 Reference = D6;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB28;
 Reference = D7;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BB2E;
 Reference = D8;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BACD;
 Reference = D9;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BADA;
 Reference = D10;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAE0;
 Reference = D11;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAE6;
 Reference = D12;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAEC;
 Reference = D13;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAF2;
 Reference = D14;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAF8;
 Reference = D15;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F66BAFE;
 Reference = D16;
 ValeurCmp = LED;
-IdModule  = LED 5mm TH-SMD;
+IdModule  = LED-5MM through hole SMD;
 EndCmp
 
 BeginCmp
@@ -183,10 +190,31 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /4F7A25F8;
+Reference = D19;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A25DF;
+Reference = D20;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F650B03;
 Reference = IC1;
 ValeurCmp = ATMEGA328-P;
 IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A0A63;
+Reference = J1;
+ValeurCmp = USB_2;
+IdModule  = con-usb-2-USB-MB-S;
 EndCmp
 
 BeginCmp
@@ -232,13 +260,6 @@ IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F65EF5E;
-Reference = P7;
-ValeurCmp = CONN_6;
-IdModule  = pin_array_6x1;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F67742F;
 Reference = P8;
 ValeurCmp = CONN_3X2;
@@ -281,6 +302,20 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /4F7A2604;
+Reference = R6;
+ValeurCmp = 1k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A25EB;
+Reference = R7;
+ValeurCmp = 1k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F6529EF;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
@@ -302,9 +337,16 @@ IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F652C1E;
+TimeStamp = /4F7A08F9;
+Reference = U2;
+ValeurCmp = FT232RL;
+IdModule  = SSOP28;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A0480;
 Reference = X1;
-ValeurCmp = 16MHz;
+ValeurCmp = XTAL_RESONATOR;
 IdModule  = CSTCE____V__;
 EndCmp
 
