@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Mon 02 Apr 2012 07:36:46 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Mon 09 Apr 2012 02:51:37 PM EDT
 
 BeginCmp
 TimeStamp = /4F69FFDA;
@@ -11,14 +11,14 @@ BeginCmp
 TimeStamp = /4F6524CF;
 Reference = C2;
 ValeurCmp = 0.1uF;
-IdModule  = LED-0805;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F69F269;
 Reference = C3;
 ValeurCmp = 10nF;
-IdModule  = LED-0805;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -32,21 +32,21 @@ BeginCmp
 TimeStamp = /4F652B08;
 Reference = C5;
 ValeurCmp = 0.1uF;
-IdModule  = LED-0805;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F7A1270;
 Reference = C6;
 ValeurCmp = 0.1uF;
-IdModule  = LED-0805;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F7A1289;
 Reference = C7;
 ValeurCmp = 10uF_25V;
-IdModule  = LED-0805;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -186,7 +186,7 @@ BeginCmp
 TimeStamp = /4F69FFE2;
 Reference = D18;
 ValeurCmp = LED;
-IdModule  = SM0805;
+IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
@@ -214,21 +214,21 @@ BeginCmp
 TimeStamp = /4F7A0A63;
 Reference = J1;
 ValeurCmp = USB_2;
-IdModule  = con-usb-2-USB-MB-S;
+IdModule  = con-usb-USB-MB-H;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F70C1E8;
 Reference = P1;
 ValeurCmp = CONN_6;
-IdModule  = PIN_ARRAY-6X1;
+IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F70C1F5;
 Reference = P2;
 ValeurCmp = CONN_6;
-IdModule  = PIN_ARRAY-6X1;
+IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
