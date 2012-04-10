@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Mon 09 Apr 2012 02:51:37 PM EDT
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Mon 09 Apr 2012 08:07:34 PM EDT
 
 BeginCmp
 TimeStamp = /4F69FFDA;
@@ -60,7 +60,7 @@ BeginCmp
 TimeStamp = /4F7A34CF;
 Reference = C9;
 ValeurCmp = 0.1uF;
-IdModule  = $noname;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -215,6 +215,13 @@ TimeStamp = /4F7A0A63;
 Reference = J1;
 ValeurCmp = USB_2;
 IdModule  = con-usb-USB-MB-H;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F837AD4;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp

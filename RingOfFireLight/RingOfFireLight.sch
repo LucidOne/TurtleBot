@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 02 Apr 2012 07:08:28 PM EDT
+EESchema Schematic File Version 2  date Mon 09 Apr 2012 08:06:20 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LED circle with Arduino Mini 328"
-Date "2 apr 2012"
+Date "10 apr 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -57,19 +57,19 @@ F 2 "DIL28" H 6250 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L GND #PWR10
 U 1 1 4F650B60
 P 5800 6900
-F 0 "#PWR01" H 5800 6900 30  0001 C CNN
+F 0 "#PWR10" H 5800 6900 30  0001 C CNN
 F 1 "GND" H 5800 6830 30  0001 C CNN
 	1    5800 6900
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR02
+L VCC #PWR9
 U 1 1 4F65226B
 P 5800 4250
-F 0 "#PWR02" H 5800 4350 30  0001 C CNN
+F 0 "#PWR9" H 5800 4350 30  0001 C CNN
 F 1 "VCC" H 5800 4350 30  0000 C CNN
 	1    5800 4250
 	1    0    0    -1  
@@ -84,19 +84,19 @@ F 1 "0.1uF" H 5750 5200 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L GND #PWR8
 U 1 1 4F652516
 P 5700 5650
-F 0 "#PWR03" H 5700 5650 30  0001 C CNN
+F 0 "#PWR8" H 5700 5650 30  0001 C CNN
 F 1 "GND" H 5700 5580 30  0001 C CNN
 	1    5700 5650
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L GND #PWR13
 U 1 1 4F652546
 P 8500 6000
-F 0 "#PWR04" H 8500 6000 30  0001 C CNN
+F 0 "#PWR13" H 8500 6000 30  0001 C CNN
 F 1 "GND" H 8500 5930 30  0001 C CNN
 	1    8500 6000
 	1    0    0    -1  
@@ -120,10 +120,10 @@ F 1 "LED" H 8500 5650 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L VCC #PWR05
+L VCC #PWR15
 U 1 1 4F652713
 P 9500 4450
-F 0 "#PWR05" H 9500 4550 30  0001 C CNN
+F 0 "#PWR15" H 9500 4550 30  0001 C CNN
 F 1 "VCC" H 9500 4550 30  0000 C CNN
 	1    9500 4450
 	1    0    0    -1  
@@ -147,10 +147,10 @@ F 1 "0.1uF" V 9600 4800 50  0000 L CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR06
+L GND #PWR16
 U 1 1 4F65277D
 P 9500 5800
-F 0 "#PWR06" H 9500 5800 30  0001 C CNN
+F 0 "#PWR16" H 9500 5800 30  0001 C CNN
 F 1 "GND" H 9500 5730 30  0001 C CNN
 	1    9500 5800
 	1    0    0    -1  
@@ -165,19 +165,19 @@ F 1 "SW_PUSH" H 9500 5320 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L VCC #PWR07
+L VCC #PWR19
 U 1 1 4F652AEC
 P 9650 3400
-F 0 "#PWR07" H 9650 3500 30  0001 C CNN
+F 0 "#PWR19" H 9650 3500 30  0001 C CNN
 F 1 "VCC" H 9650 3500 30  0000 C CNN
 	1    9650 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L GND #PWR20
 U 1 1 4F652AFB
 P 9650 4000
-F 0 "#PWR08" H 9650 4000 30  0001 C CNN
+F 0 "#PWR20" H 9650 4000 30  0001 C CNN
 F 1 "GND" H 9650 3930 30  0001 C CNN
 	1    9650 4000
 	1    0    0    -1  
@@ -192,10 +192,10 @@ F 1 "0.1uF" H 9700 3600 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR21
 U 1 1 4F652CC7
 P 9900 6650
-F 0 "#PWR09" H 9900 6650 30  0001 C CNN
+F 0 "#PWR21" H 9900 6650 30  0001 C CNN
 F 1 "GND" H 9900 6580 30  0001 C CNN
 	1    9900 6650
 	1    0    0    -1  
@@ -203,19 +203,19 @@ $EndComp
 $Comp
 L CONN_12 P5
 U 1 1 4F65EEDB
-P 7100 3450
-F 0 "P5" V 7050 3450 60  0000 C CNN
-F 1 "CONN_12" V 7150 3450 60  0000 C CNN
-	1    7100 3450
+P 7450 3450
+F 0 "P5" V 7400 3450 60  0000 C CNN
+F 1 "CONN_12" V 7500 3450 60  0000 C CNN
+	1    7450 3450
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_12 P4
 U 1 1 4F65EF1D
-P 6150 3450
-F 0 "P4" V 6100 3450 60  0000 C CNN
-F 1 "CONN_12" V 6200 3450 60  0000 C CNN
-	1    6150 3450
+P 6500 3450
+F 0 "P4" V 6450 3450 60  0000 C CNN
+F 1 "CONN_12" V 6550 3450 60  0000 C CNN
+	1    6500 3450
 	-1   0    0    1   
 $EndComp
 Text Label 8000 5100 0    60   ~ 0
@@ -231,10 +231,10 @@ RESET
 $Comp
 L CONN_2 P6
 U 1 1 4F65FCCB
-P 8000 3000
-F 0 "P6" V 7950 3000 40  0000 C CNN
-F 1 "CONN_2" V 8050 3000 40  0000 C CNN
-	1    8000 3000
+P 8350 3000
+F 0 "P6" V 8300 3000 40  0000 C CNN
+F 1 "CONN_2" V 8400 3000 40  0000 C CNN
+	1    8350 3000
 	-1   0    0    1   
 $EndComp
 Text Label 8000 5950 0    60   ~ 0
@@ -281,55 +281,55 @@ Text Label 8000 4600 0    60   ~ 0
 D9
 Text Label 8000 4700 0    60   ~ 0
 D10
-Text Label 6500 2900 0    60   ~ 0
+Text Label 6850 2900 0    60   ~ 0
 TX
-Text Label 6500 3000 0    60   ~ 0
+Text Label 6850 3000 0    60   ~ 0
 RX
-Text Label 6500 3100 0    60   ~ 0
+Text Label 6850 3100 0    60   ~ 0
 RESET
-Text Label 6500 3200 0    60   ~ 0
+Text Label 6850 3200 0    60   ~ 0
 GND
 Text Label 9650 3950 0    60   ~ 0
 GND
 Text Label 9650 3450 0    60   ~ 0
 VCC
-Text Label 6500 3300 0    60   ~ 0
+Text Label 6850 3300 0    60   ~ 0
 D2
-Text Label 6500 3400 0    60   ~ 0
+Text Label 6850 3400 0    60   ~ 0
 D3
-Text Label 6500 3500 0    60   ~ 0
+Text Label 6850 3500 0    60   ~ 0
 D4
-Text Label 6500 3600 0    60   ~ 0
+Text Label 6850 3600 0    60   ~ 0
 D5
-Text Label 6500 3700 0    60   ~ 0
+Text Label 6850 3700 0    60   ~ 0
 D6
-Text Label 6500 3800 0    60   ~ 0
+Text Label 6850 3800 0    60   ~ 0
 D7
-Text Label 6500 3900 0    60   ~ 0
+Text Label 6850 3900 0    60   ~ 0
 D8
-Text Label 6500 4000 0    60   ~ 0
+Text Label 6850 4000 0    60   ~ 0
 D9
-Text Label 7450 3000 0    60   ~ 0
+Text Label 7800 3000 0    60   ~ 0
 GND
-Text Label 7450 3100 0    60   ~ 0
+Text Label 7800 3100 0    60   ~ 0
 RESET
-Text Label 7450 3200 0    60   ~ 0
+Text Label 7800 3200 0    60   ~ 0
 VCC
-Text Label 7450 3300 0    60   ~ 0
+Text Label 7800 3300 0    60   ~ 0
 A3
-Text Label 7450 3400 0    60   ~ 0
+Text Label 7800 3400 0    60   ~ 0
 A2
-Text Label 7450 3500 0    60   ~ 0
+Text Label 7800 3500 0    60   ~ 0
 A1
-Text Label 7450 3600 0    60   ~ 0
+Text Label 7800 3600 0    60   ~ 0
 A0
-Text Label 7450 3700 0    60   ~ 0
+Text Label 7800 3700 0    60   ~ 0
 SCK
-Text Label 7450 3800 0    60   ~ 0
+Text Label 7800 3800 0    60   ~ 0
 MISO
-Text Label 7450 3900 0    60   ~ 0
+Text Label 7800 3900 0    60   ~ 0
 MOSI
-Text Label 7450 4000 0    60   ~ 0
+Text Label 7800 4000 0    60   ~ 0
 D10
 Text Label 5800 4400 0    60   ~ 0
 POWER
@@ -339,9 +339,9 @@ Text Label 3800 1500 0    60   ~ 0
 TX
 Text Label 3800 1800 0    60   ~ 0
 DTR
-Text Label 8350 2900 0    60   ~ 0
+Text Label 8700 2900 0    60   ~ 0
 A4
-Text Label 8350 3100 0    60   ~ 0
+Text Label 8700 3100 0    60   ~ 0
 A5
 $Comp
 L TLC5940 TLC1
@@ -362,10 +362,10 @@ F 1 "R" V 4250 6200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR010
+L GND #PWR7
 U 1 1 4F66B442
 P 4600 6250
-F 0 "#PWR010" H 4600 6250 30  0001 C CNN
+F 0 "#PWR7" H 4600 6250 30  0001 C CNN
 F 1 "GND" H 4600 6180 30  0001 C CNN
 	1    4600 6250
 	1    0    0    -1  
@@ -541,10 +541,10 @@ F 1 "2k" V 4250 5700 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR011
+L VCC #PWR6
 U 1 1 4F6745B5
 P 4550 5550
-F 0 "#PWR011" H 4550 5650 30  0001 C CNN
+F 0 "#PWR6" H 4550 5650 30  0001 C CNN
 F 1 "VCC" H 4550 5650 30  0000 C CNN
 	1    4550 5550
 	1    0    0    -1  
@@ -618,37 +618,37 @@ F 1 "LP2985AIM 5-5.0" H 8600 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L GND #PWR14
 U 1 1 4F69ECF8
 P 8600 2200
-F 0 "#PWR012" H 8600 2200 30  0001 C CNN
+F 0 "#PWR14" H 8600 2200 30  0001 C CNN
 F 1 "GND" H 8600 2130 30  0001 C CNN
 	1    8600 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR013
+L VCC #PWR17
 U 1 1 4F69ED07
 P 9550 950
-F 0 "#PWR013" H 9550 1050 30  0001 C CNN
+F 0 "#PWR17" H 9550 1050 30  0001 C CNN
 F 1 "VCC" H 9550 1050 30  0000 C CNN
 	1    9550 950 
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR12
 U 1 1 4F69F13E
 P 7800 2200
-F 0 "#PWR014" H 7800 2200 30  0001 C CNN
+F 0 "#PWR12" H 7800 2200 30  0001 C CNN
 F 1 "GND" H 7800 2130 30  0001 C CNN
 	1    7800 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR18
 U 1 1 4F69F14B
 P 9550 1550
-F 0 "#PWR015" H 9550 1550 30  0001 C CNN
+F 0 "#PWR18" H 9550 1550 30  0001 C CNN
 F 1 "GND" H 9550 1480 30  0001 C CNN
 	1    9550 1550
 	1    0    0    -1  
@@ -678,10 +678,10 @@ Text Notes 9450 800  0    60   ~ 0
 Text Label 7500 1000 0    60   ~ 0
 V_LED
 $Comp
-L GND #PWR016
+L GND #PWR11
 U 1 1 4F69FDB8
 P 7100 1750
-F 0 "#PWR016" H 7100 1750 30  0001 C CNN
+F 0 "#PWR11" H 7100 1750 30  0001 C CNN
 F 1 "GND" H 7100 1680 30  0001 C CNN
 	1    7100 1750
 	1    0    0    -1  
@@ -705,10 +705,10 @@ F 1 "LED" H 10200 1650 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR017
+L GND #PWR22
 U 1 1 4F6A0000
 P 10200 2000
-F 0 "#PWR017" H 10200 2000 30  0001 C CNN
+F 0 "#PWR22" H 10200 2000 30  0001 C CNN
 F 1 "GND" H 10200 1930 30  0001 C CNN
 	1    10200 2000
 	1    0    0    -1  
@@ -743,7 +743,7 @@ Text Notes 8950 4200 0    60   ~ 0
 Power Connector
 Text Notes 6500 7000 0    60   ~ 0
 ATMega328 \n32 TQFP
-Text Label 7450 2900 0    60   ~ 0
+Text Label 7800 2900 0    60   ~ 0
 12V
 Text Label 7100 1000 0    60   ~ 0
 12V
@@ -803,10 +803,10 @@ F 7 "GND" H 1075 1500 50  0001 C CNN "Ground"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L GND #PWR1
 U 1 1 4F7A113A
 P 1050 2150
-F 0 "#PWR018" H 1050 2150 30  0001 C CNN
+F 0 "#PWR1" H 1050 2150 30  0001 C CNN
 F 1 "GND" H 1050 2080 30  0001 C CNN
 	1    1050 2150
 	1    0    0    -1  
@@ -821,19 +821,19 @@ F 1 "0.1uF" H 1250 2000 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR2
 U 1 1 4F7A127D
 P 1250 2350
-F 0 "#PWR019" H 1250 2350 30  0001 C CNN
+F 0 "#PWR2" H 1250 2350 30  0001 C CNN
 F 1 "GND" H 1250 2280 30  0001 C CNN
 	1    1250 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L GND #PWR3
 U 1 1 4F7A1283
 P 1500 2350
-F 0 "#PWR020" H 1500 2350 30  0001 C CNN
+F 0 "#PWR3" H 1500 2350 30  0001 C CNN
 F 1 "GND" H 1500 2280 30  0001 C CNN
 	1    1500 2350
 	1    0    0    -1  
@@ -854,10 +854,10 @@ POWER
 Text Label 3800 1700 0    60   ~ 0
 GND
 $Comp
-L GND #PWR021
+L GND #PWR5
 U 1 1 4F7A1B10
 P 2900 3500
-F 0 "#PWR021" H 2900 3500 30  0001 C CNN
+F 0 "#PWR5" H 2900 3500 30  0001 C CNN
 F 1 "GND" H 2900 3430 30  0001 C CNN
 	1    2900 3500
 	1    0    0    -1  
@@ -916,10 +916,10 @@ F 1 "0.1uF" H 1950 2800 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L GND #PWR4
 U 1 1 4F7A34D5
 P 1900 3250
-F 0 "#PWR022" H 1900 3250 30  0001 C CNN
+F 0 "#PWR4" H 1900 3250 30  0001 C CNN
 F 1 "GND" H 1900 3180 30  0001 C CNN
 	1    1900 3250
 	1    0    0    -1  
@@ -1240,4 +1240,23 @@ NoConn ~ 3800 1900
 NoConn ~ 3800 2400
 NoConn ~ 3800 2500
 NoConn ~ 2000 3350
+$Comp
+L CONN_3 K1
+U 1 1 4F837AD4
+P 5850 2200
+F 0 "K1" V 5800 2200 50  0000 C CNN
+F 1 "CONN_3" V 5900 2200 40  0000 C CNN
+	1    5850 2200
+	-1   0    0    1   
+$EndComp
+Text Notes 6750 4200 0    60   ~ 0
+Arduino Pro Mini Connectors
+Text Notes 5750 2550 0    60   ~ 0
+Sensor Connectors
+Text Label 6200 2300 0    60   ~ 0
+GND
+Text Label 6200 2200 0    60   ~ 0
+VCC
+Text Label 6200 2100 0    60   ~ 0
+D7
 $EndSCHEMATC
