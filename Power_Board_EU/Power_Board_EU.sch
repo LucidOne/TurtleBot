@@ -1,0 +1,380 @@
+EESchema Schematic File Version 2  date Mon 16 Apr 2012 02:08:39 PM EDT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:IHE
+LIBS:Power_Board_EU-cache
+EELAYER 25  0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Power Board EU version"
+Date "16 apr 2012"
+Rev "0"
+Comp "I Heart Engineering"
+Comment1 "Made by: Carlos Chinchilla"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MIC29151-5.0WU VR?
+U 1 1 4F8C5AE2
+P 2550 3050
+F 0 "VR?" H 2800 2700 60  0000 C CNN
+F 1 "MIC29151-5.0WU" H 2550 3400 60  0000 C CNN
+	1    2550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MIC29151-12WU VR?
+U 1 1 4F8C5AF1
+P 2600 1800
+F 0 "VR?" H 2850 1450 60  0000 C CNN
+F 1 "MIC29151-12WU" H 2600 2150 60  0000 C CNN
+	1    2600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5B26
+P 2550 3800
+F 0 "#PWR?" H 2550 3800 30  0001 C CNN
+F 1 "GND" H 2550 3730 30  0001 C CNN
+	1    2550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5B35
+P 2600 2500
+F 0 "#PWR?" H 2600 2500 30  0001 C CNN
+F 1 "GND" H 2600 2430 30  0001 C CNN
+	1    2600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4F8C5B65
+P 3650 1850
+F 0 "C?" H 3700 1950 50  0000 L CNN
+F 1 "10uF" H 3700 1750 50  0000 L CNN
+	1    3650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4F8C5B72
+P 4000 1850
+F 0 "C?" H 4050 1950 50  0000 L CNN
+F 1 "100nF" H 4050 1750 50  0000 L CNN
+	1    4000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4F8C5B82
+P 3650 3100
+F 0 "C?" H 3700 3200 50  0000 L CNN
+F 1 "10uF" H 3700 3000 50  0000 L CNN
+	1    3650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4F8C5B88
+P 4000 3100
+F 0 "C?" H 4050 3200 50  0000 L CNN
+F 1 "100nF" H 4050 3000 50  0000 L CNN
+	1    4000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5BC4
+P 4000 2500
+F 0 "#PWR?" H 4000 2500 30  0001 C CNN
+F 1 "GND" H 4000 2430 30  0001 C CNN
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5BD1
+P 3650 2500
+F 0 "#PWR?" H 3650 2500 30  0001 C CNN
+F 1 "GND" H 3650 2430 30  0001 C CNN
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5BD7
+P 4000 3800
+F 0 "#PWR?" H 4000 3800 30  0001 C CNN
+F 1 "GND" H 4000 3730 30  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5BDD
+P 3650 3800
+F 0 "#PWR?" H 3650 3800 30  0001 C CNN
+F 1 "GND" H 3650 3730 30  0001 C CNN
+	1    3650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4F8C5C50
+P 1650 1850
+F 0 "C?" H 1700 1950 50  0000 L CNN
+F 1 "10uF" H 1700 1750 50  0000 L CNN
+	1    1650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5C56
+P 1650 2500
+F 0 "#PWR?" H 1650 2500 30  0001 C CNN
+F 1 "GND" H 1650 2430 30  0001 C CNN
+	1    1650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4F8C5C5D
+P 1650 3100
+F 0 "C?" H 1700 3200 50  0000 L CNN
+F 1 "10uF" H 1700 3000 50  0000 L CNN
+	1    1650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5C63
+P 1650 3750
+F 0 "#PWR?" H 1650 3750 30  0001 C CNN
+F 1 "GND" H 1650 3680 30  0001 C CNN
+	1    1650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 4F8C5CCA
+P 1300 3150
+F 0 "D?" H 1300 3250 40  0000 C CNN
+F 1 "DIODE" H 1300 3050 40  0000 C CNN
+	1    1300 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5CD7
+P 1300 3750
+F 0 "#PWR?" H 1300 3750 30  0001 C CNN
+F 1 "GND" H 1300 3680 30  0001 C CNN
+	1    1300 3750
+	1    0    0    -1  
+$EndComp
+Text Label 1650 2900 0    60   ~ 0
+V_BAT
+Text Label 1650 1650 0    60   ~ 0
+V_BAT
+Text Label 3650 2900 0    60   ~ 0
+5V
+Text Label 3650 1650 0    60   ~ 0
+12V
+NoConn ~ 3200 1900
+NoConn ~ 3150 3150
+$Comp
+L FT232RL U?
+U 1 1 4F8C5F0B
+P 6000 2400
+F 0 "U?" H 6000 3300 60  0000 C CNN
+F 1 "FT232RL" H 6400 1400 60  0000 L CNN
+	1    6000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C5F75
+P 6000 3900
+F 0 "#PWR?" H 6000 3900 30  0001 C CNN
+F 1 "GND" H 6000 3830 30  0001 C CNN
+	1    6000 3900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6900 1900
+NoConn ~ 6900 2400
+NoConn ~ 6900 2300
+NoConn ~ 6900 2200
+NoConn ~ 6900 2000
+NoConn ~ 6900 2100
+NoConn ~ 5050 2400
+NoConn ~ 5050 2600
+NoConn ~ 5050 2700
+Text Label 5050 1750 0    60   ~ 0
+5V
+Text Label 5050 1650 0    60   ~ 0
+5V
+NoConn ~ 5050 2900
+$Comp
+L CONN_2 P?
+U 1 1 4F8C62BB
+P 8450 2350
+F 0 "P?" V 8400 2350 40  0000 C CNN
+F 1 "CONN_2" V 8500 2350 40  0000 C CNN
+	1    8450 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C62D4
+P 8800 2600
+F 0 "#PWR?" H 8800 2600 30  0001 C CNN
+F 1 "GND" H 8800 2530 30  0001 C CNN
+	1    8800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3800 2550 3600
+Wire Wire Line
+	2600 2500 2600 2350
+Wire Wire Line
+	3150 2900 4000 2900
+Connection ~ 3650 2900
+Wire Wire Line
+	3200 1650 4000 1650
+Connection ~ 3650 1650
+Wire Wire Line
+	3650 3800 3650 3300
+Wire Wire Line
+	4000 3300 4000 3800
+Wire Wire Line
+	4000 2500 4000 2050
+Wire Wire Line
+	3650 2050 3650 2500
+Wire Wire Line
+	1650 2050 1650 2500
+Wire Wire Line
+	1650 3300 1650 3750
+Wire Wire Line
+	1950 2900 1300 2900
+Wire Wire Line
+	2000 1650 1650 1650
+Wire Wire Line
+	1300 3750 1300 3350
+Wire Wire Line
+	1300 2900 1300 2950
+Connection ~ 1650 2900
+Wire Wire Line
+	1950 3150 1900 3150
+Wire Wire Line
+	1900 3150 1900 2900
+Connection ~ 1900 2900
+Wire Wire Line
+	2000 1900 1950 1900
+Wire Wire Line
+	1950 1900 1950 1650
+Connection ~ 1950 1650
+Wire Wire Line
+	6000 3600 6000 3900
+Wire Wire Line
+	6150 3600 6150 3800
+Wire Wire Line
+	5700 3800 6300 3800
+Connection ~ 6000 3800
+Wire Wire Line
+	5850 3800 5850 3600
+Wire Wire Line
+	5700 3800 5700 3600
+Connection ~ 5850 3800
+Wire Wire Line
+	6300 3800 6300 3600
+Connection ~ 6150 3800
+Wire Wire Line
+	8800 2450 8800 2600
+$Comp
+L CONN_2 P?
+U 1 1 4F8C6322
+P 8450 1800
+F 0 "P?" V 8400 1800 40  0000 C CNN
+F 1 "CONN_2" V 8500 1800 40  0000 C CNN
+	1    8450 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C6328
+P 8800 2050
+F 0 "#PWR?" H 8800 2050 30  0001 C CNN
+F 1 "GND" H 8800 1980 30  0001 C CNN
+	1    8800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1900 8800 2050
+$Comp
+L CONN_2 P?
+U 1 1 4F8C632F
+P 9300 2350
+F 0 "P?" V 9250 2350 40  0000 C CNN
+F 1 "CONN_2" V 9350 2350 40  0000 C CNN
+	1    9300 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C6335
+P 9650 2600
+F 0 "#PWR?" H 9650 2600 30  0001 C CNN
+F 1 "GND" H 9650 2530 30  0001 C CNN
+	1    9650 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2450 9650 2600
+Text Label 9650 2250 0    60   ~ 0
+5V
+Text Label 8800 2250 0    60   ~ 0
+12V
+Text Label 8800 1700 0    60   ~ 0
+12V
+Text Notes 8850 2850 0    60   ~ 0
+OUTPUT
+Text Notes 2900 5000 0    60   ~ 0
+TO ROOMBA
+Text Notes 4500 5000 0    60   ~ 0
+TO USB
+$EndSCHEMATC

@@ -1,0 +1,10 @@
+Power Board for Turtlebot European Version
+
+
+Bill of Materials -- coming soon
+
+
+Item					DigiKey P. No. 			Manufacturer		Manufacturer P. No.		Datasheet url
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+IC REG LDO 1.5A 5.0V TO-263-5		MIC29151-5.0WU TR-ND		Micrel Inc		MIC29151-5.0WU TR		http://www.micrel.com/_PDF/mic29150.pdf
+ Micrel 1.5A High-Current Low-Dropout Regulators	MIC29151-12WU				
