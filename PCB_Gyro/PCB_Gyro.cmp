@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by PcbNew date = Mon 23 Apr 2012 02:00:48 PM EDT
+
+BeginCmp
+TimeStamp = /4F957A80;
+Reference = C1;
+ValeurCmp = 2.2nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F957A06;
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F957A23;
+Reference = C3;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F957A4C;
+Reference = C4;
+ValeurCmp = 22nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F957A5E;
+Reference = C5;
+ValeurCmp = 22nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F957A64;
+Reference = C6;
+ValeurCmp = 1uF/25V;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F958E76;
+Reference = JP1;
+ValeurCmp = JUMPER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F958E85;
+Reference = JP2;
+ValeurCmp = JUMPER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F957937;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F95911E;
+Reference = P2;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_8x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F95912D;
+Reference = P3;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_8x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F958C01;
+Reference = U1;
+ValeurCmp = ADXRS6XX;
+IdModule  = PLCC32MS;
+EndCmp
+
+EndListe

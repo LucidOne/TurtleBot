@@ -1,0 +1,215 @@
+# EESchema Netlist Version 1.1 created  Mon 23 Apr 2012 01:36:30 PM EDT
+(
+ ( /4F957937 $noname  P1 CONN_6 {Lib=CONN_6}
+  (    1 VCC )
+  (    2 GND )
+  (    3 /RATEOUT )
+  (    4 /TEMP )
+  (    5 /ST2 )
+  (    6 /ST1 )
+ )
+ ( /4F957A06 $noname  C2 0.1uF {Lib=C}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /4F957A23 $noname  C3 0.1uF {Lib=C}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /4F957A4C $noname  C4 22nF {Lib=C}
+  (    1 /CP1 )
+  (    2 /CP2 )
+ )
+ ( /4F957A5E $noname  C5 22nF {Lib=C}
+  (    1 /CP3 )
+  (    2 /CP4 )
+ )
+ ( /4F957A64 $noname  C6 1uF/25V {Lib=C}
+  (    1 /CP5 )
+  (    2 GND )
+ )
+ ( /4F957A80 $noname  C1 2.2nF {Lib=C}
+  (    1 /SUMJ )
+  (    2 /RATEOUT )
+ )
+ ( /4F958C01 MODULE  U1 ADXRS6XX {Lib=ADXRS6XX}
+  (   A2 /RATEOUT )
+  (   A3 /AVCC )
+  (   A4 /CP2 )
+  (   A5 /CP1 )
+  (   A6 /CP4 )
+  (   B1 /RATEOUT )
+  (   B3 /AVCC )
+  (   B4 /CP2 )
+  (   B5 /CP1 )
+  (   B7 /CP4 )
+  (   C1 /SUMJ )
+  (   C2 /SUMJ )
+  (   C6 /CP3 )
+  (   C7 /CP3 )
+  (   D1 ? )
+  (   D2 ? )
+  (   D6 /CP5 )
+  (   D7 /CP5 )
+  (   E1 VCC )
+  (   E2 VCC )
+  (   E6 VCC )
+  (   E7 VCC )
+  (   F1 /AGND )
+  (   F3 /TEMP )
+  (   F4 /ST2 )
+  (   F5 /ST1 )
+  (   F7 GND )
+  (   G2 /AGND )
+  (   G3 /TEMP )
+  (   G4 /ST2 )
+  (   G5 /ST1 )
+  (   G6 GND )
+ )
+ ( /4F958E76 $noname  JP1 JUMPER {Lib=JUMPER}
+  (    1 VCC )
+  (    2 /AVCC )
+ )
+ ( /4F958E85 $noname  JP2 JUMPER {Lib=JUMPER}
+  (    1 GND )
+  (    2 /AGND )
+ )
+ ( /4F95911E $noname  P2 CONN_8 {Lib=CONN_8}
+  (    1 GND )
+  (    2 VCC )
+  (    3 /CP3 )
+  (    4 /CP4 )
+  (    5 /CP2 )
+  (    6 /CP1 )
+  (    7 /CP5 )
+  (    8 /ST2 )
+ )
+ ( /4F95912D $noname  P3 CONN_8 {Lib=CONN_8}
+  (    1 /AGND )
+  (    2 ? )
+  (    3 /AVCC )
+  (    4 VCC )
+  (    5 /TEMP )
+  (    6 /RATEOUT )
+  (    7 /SUMJ )
+  (    8 /ST1 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 2 "VCC" "VCC"
+ U1 E1
+ C3 1
+ C2 1
+ U1 E6
+ P1 1
+ P2 2
+ U1 E2
+ U1 E7
+ JP1 1
+ P3 4
+Net 5 "GND" "GND"
+ P1 2
+ C6 2
+ U1 G6
+ P2 1
+ JP2 1
+ C3 2
+ U1 F7
+ C2 2
+Net 6 "/CP5" "CP5"
+ C6 1
+ U1 D6
+ P2 7
+ U1 D7
+Net 7 "/SUMJ" "SUMJ"
+ U1 C1
+ C1 1
+ U1 C2
+ P3 7
+Net 8 "/RATEOUT" "RATEOUT"
+ U1 B1
+ C1 2
+ P1 3
+ U1 A2
+ P3 6
+Net 9 "/AGND" "AGND"
+ U1 G2
+ U1 F1
+ P3 1
+ JP2 2
+Net 10 "/AVCC" "AVCC"
+ JP1 2
+ P3 3
+ U1 B3
+ U1 A3
+Net 11 "/ST1" "ST1"
+ U1 G5
+ P1 6
+ U1 F5
+ P3 8
+Net 12 "/TEMP" "TEMP"
+ P3 5
+ P1 4
+ U1 G3
+ U1 F3
+Net 13 "/CP2" "CP2"
+ P2 5
+ C4 2
+ U1 B4
+ U1 A4
+Net 14 "/ST2" "ST2"
+ U1 G4
+ U1 F4
+ P2 8
+ P1 5
+Net 15 "/CP1" "CP1"
+ U1 B5
+ U1 A5
+ C4 1
+ P2 6
+Net 16 "/CP4" "CP4"
+ U1 A6
+ P2 4
+ U1 B7
+ C5 2
+Net 17 "/CP3" "CP3"
+ U1 C6
+ P2 3
+ U1 C7
+ C5 1
+}
+#End
