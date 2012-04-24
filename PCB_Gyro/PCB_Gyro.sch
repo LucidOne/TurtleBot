@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 23 Apr 2012 01:41:30 PM EDT
+EESchema Schematic File Version 2  date Tue 24 Apr 2012 06:21:27 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,13 +31,14 @@ LIBS:contrib
 LIBS:valves
 LIBS:IHE
 LIBS:ADXRS6xx
-EELAYER 43  0
+LIBS:PCB_Gyro-cache
+EELAYER 25  0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "23 apr 2012"
+Date "24 apr 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -184,48 +185,30 @@ GND
 Text Label 6550 4100 1    60   ~ 0
 GND
 $Comp
-L JUMPER JP1
-U 1 1 4F958E76
-P 4300 4850
-F 0 "JP1" H 4300 5000 60  0000 C CNN
-F 1 "JUMPER" H 4300 4770 40  0000 C CNN
-	1    4300 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER JP2
-U 1 1 4F958E85
-P 4300 5250
-F 0 "JP2" H 4300 5400 60  0000 C CNN
-F 1 "JUMPER" H 4300 5170 40  0000 C CNN
-	1    4300 5250
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR05
 U 1 1 4F958E9E
-P 4000 5400
-F 0 "#PWR05" H 4000 5400 30  0001 C CNN
-F 1 "GND" H 4000 5330 30  0001 C CNN
-	1    4000 5400
+P 4150 5400
+F 0 "#PWR05" H 4150 5400 30  0001 C CNN
+F 1 "GND" H 4150 5330 30  0001 C CNN
+	1    4150 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR06
 U 1 1 4F958EAD
-P 4000 4700
-F 0 "#PWR06" H 4000 4800 30  0001 C CNN
-F 1 "VCC" H 4000 4800 30  0000 C CNN
-	1    4000 4700
+P 4150 4700
+F 0 "#PWR06" H 4150 4800 30  0001 C CNN
+F 1 "VCC" H 4150 4800 30  0000 C CNN
+	1    4150 4700
 	1    0    0    -1  
 $EndComp
-Text Label 4600 5250 0    60   ~ 0
+Text Label 4550 5250 0    60   ~ 0
 AGND
-Text Label 4600 4850 0    60   ~ 0
+Text Label 4550 4850 0    60   ~ 0
 AVCC
-Text Label 4000 5250 2    60   ~ 0
+Text Label 4150 5250 2    60   ~ 0
 GND
-Text Label 4000 4850 2    60   ~ 0
+Text Label 4150 4850 2    60   ~ 0
 VCC
 Text Label 5250 4700 2    60   ~ 0
 AVCC
@@ -351,9 +334,9 @@ Wire Wire Line
 Wire Wire Line
 	6700 3700 6700 3600
 Wire Wire Line
-	4000 4850 4000 4700
+	4150 4850 4150 4700
 Wire Wire Line
-	4000 5400 4000 5250
+	4150 5400 4150 5250
 Wire Wire Line
 	6150 5900 6150 6050
 Wire Wire Line
@@ -382,4 +365,22 @@ AVCC
 Text Label 10350 5200 0    60   ~ 0
 AGND
 NoConn ~ 10350 5100
+$Comp
+L SJMP JMP1
+U 1 1 4F9726BE
+P 4350 4850
+F 0 "JMP1" V 4450 4850 50  0000 C CNN
+F 1 "SJMP" V 4250 4850 40  0000 C CNN
+	1    4350 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SJMP JMP2
+U 1 1 4F9726F2
+P 4350 5250
+F 0 "JMP2" V 4450 5250 50  0000 C CNN
+F 1 "SJMP" V 4250 5250 40  0000 C CNN
+	1    4350 5250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
