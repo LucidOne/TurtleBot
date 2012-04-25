@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 24 Apr 2012 06:19:55 PM EDT
+# EESchema Netlist Version 1.1 created  Tue 24 Apr 2012 11:08:45 PM EDT
 (
  ( /4F957937 $noname  P1 CONN_6 {Lib=CONN_6}
   (    1 VCC )
@@ -66,33 +66,25 @@
   (   G5 /ST1 )
   (   G6 GND )
  )
- ( /4F95911E $noname  P2 CONN_8 {Lib=CONN_8}
-  (    1 GND )
-  (    2 VCC )
-  (    3 /CP3 )
-  (    4 /CP4 )
-  (    5 /CP2 )
-  (    6 /CP1 )
-  (    7 /CP5 )
-  (    8 /ST2 )
- )
- ( /4F95912D $noname  P3 CONN_8 {Lib=CONN_8}
-  (    1 /AGND )
-  (    2 ? )
-  (    3 /AVCC )
-  (    4 VCC )
-  (    5 /TEMP )
-  (    6 /RATEOUT )
-  (    7 /SUMJ )
-  (    8 /ST1 )
- )
- ( /4F9726BE $noname  JMP1 SJMP {Lib=SJMP}
+ ( /4F972AAD $noname  JMP1 SJMP {Lib=SJMP}
   (    1 VCC )
   (    2 /AVCC )
  )
- ( /4F9726F2 $noname  JMP2 SJMP {Lib=SJMP}
+ ( /4F972AC4 $noname  JMP2 SJMP {Lib=SJMP}
   (    1 GND )
   (    2 /AGND )
+ )
+ ( /4F976A88 $noname  P2 CONN_7 {Lib=CONN_7}
+  (    1 /SUMJ )
+  (    2 /CP2 )
+  (    3 /CP1 )
+  (    4 /CP4 )
+  (    5 /CP3 )
+  (    6 /CP5 )
+  (    7 /AVCC )
+ )
+ ( /4F976AA7 $noname  P3 CONN_1 {Lib=CONN_1}
+  (    1 /AGND )
  )
 )
 *
@@ -131,85 +123,78 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "GND" "GND"
+ U1 G6
  C3 2
+ C2 2
  C6 2
+ JMP2 1
  U1 F7
  P1 2
- P2 1
- JMP2 1
- U1 G6
- C2 2
-Net 2 "/CP5" "CP5"
- C6 1
- P2 7
- U1 D6
- U1 D7
-Net 4 "/AVCC" "AVCC"
- JMP1 2
- U1 B3
- P3 3
- U1 A3
-Net 5 "VCC" "VCC"
- U1 E2
- U1 E1
- C3 1
- C2 1
- U1 E6
- P2 2
- P1 1
- P3 4
- U1 E7
- JMP1 1
-Net 7 "/CP1" "CP1"
- U1 B5
- U1 A5
- C4 1
- P2 6
-Net 8 "/SUMJ" "SUMJ"
- U1 C1
- P3 7
- U1 C2
- C1 1
-Net 9 "/RATEOUT" "RATEOUT"
- P1 3
- U1 B1
- U1 A2
- P3 6
- C1 2
-Net 11 "/AGND" "AGND"
+Net 4 "/AGND" "AGND"
  JMP2 2
- U1 G2
  P3 1
  U1 F1
-Net 12 "/ST1" "ST1"
- P3 8
- U1 F5
- U1 G5
- P1 6
+ U1 G2
+Net 5 "VCC" "VCC"
+ P1 1
+ U1 E2
+ U1 E7
+ U1 E1
+ JMP1 1
+ C3 1
+ U1 E6
+ C2 1
+Net 6 "/AVCC" "AVCC"
+ JMP1 2
+ U1 B3
+ U1 A3
+ P2 7
+Net 7 "/SUMJ" "SUMJ"
+ U1 C2
+ U1 C1
+ C1 1
+ P2 1
+Net 8 "/CP5" "CP5"
+ C6 1
+ P2 6
+ U1 D7
+ U1 D6
+Net 9 "/CP1" "CP1"
+ P2 3
+ C4 1
+ U1 A5
+ U1 B5
+Net 10 "/CP3" "CP3"
+ U1 C7
+ U1 C6
+ P2 5
+ C5 1
+Net 11 "/CP4" "CP4"
+ U1 A6
+ C5 2
+ U1 B7
+ P2 4
+Net 12 "/RATEOUT" "RATEOUT"
+ C1 2
+ U1 B1
+ U1 A2
+ P1 3
 Net 13 "/TEMP" "TEMP"
- U1 F3
- P3 5
  U1 G3
+ U1 F3
  P1 4
 Net 14 "/CP2" "CP2"
- C4 2
- P2 5
  U1 A4
  U1 B4
+ P2 2
+ C4 2
 Net 15 "/ST2" "ST2"
+ U1 F4
  U1 G4
  P1 5
- U1 F4
- P2 8
-Net 16 "/CP3" "CP3"
- U1 C6
- P2 3
- C5 1
- U1 C7
-Net 17 "/CP4" "CP4"
- U1 B7
- U1 A6
- P2 4
- C5 2
+Net 16 "/ST1" "ST1"
+ P1 6
+ U1 F5
+ U1 G5
 }
 #End

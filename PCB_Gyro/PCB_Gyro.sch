@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 24 Apr 2012 06:21:27 PM EDT
+EESchema Schematic File Version 2  date Tue 24 Apr 2012 11:19:58 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "24 apr 2012"
+Date "25 apr 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -49,23 +49,23 @@ $EndDescr
 $Comp
 L CONN_6 P1
 U 1 1 4F957937
-P 4550 3300
-F 0 "P1" V 4500 3300 60  0000 C CNN
-F 1 "CONN_6" V 4600 3300 60  0000 C CNN
-	1    4550 3300
+P 10100 4750
+F 0 "P1" V 10050 4750 60  0000 C CNN
+F 1 "CONN_6" V 10150 4750 60  0000 C CNN
+	1    10100 4750
 	-1   0    0    1   
 $EndComp
-Text Label 4900 3050 0    60   ~ 0
+Text Label 10450 4500 0    60   ~ 0
 ST1
-Text Label 4900 3150 0    60   ~ 0
+Text Label 10450 4600 0    60   ~ 0
 ST2
-Text Label 4900 3250 0    60   ~ 0
+Text Label 10450 4700 0    60   ~ 0
 TEMP
-Text Label 4900 3350 0    60   ~ 0
+Text Label 10450 4800 0    60   ~ 0
 RATEOUT
-Text Label 4900 3450 0    60   ~ 0
+Text Label 10450 4900 0    60   ~ 0
 GND
-Text Label 4900 3550 0    60   ~ 0
+Text Label 10450 5000 0    60   ~ 0
 VCC
 $Comp
 L GND #PWR01
@@ -187,28 +187,28 @@ GND
 $Comp
 L GND #PWR05
 U 1 1 4F958E9E
-P 4150 5400
-F 0 "#PWR05" H 4150 5400 30  0001 C CNN
-F 1 "GND" H 4150 5330 30  0001 C CNN
-	1    4150 5400
+P 4200 5400
+F 0 "#PWR05" H 4200 5400 30  0001 C CNN
+F 1 "GND" H 4200 5330 30  0001 C CNN
+	1    4200 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR06
 U 1 1 4F958EAD
-P 4150 4700
-F 0 "#PWR06" H 4150 4800 30  0001 C CNN
-F 1 "VCC" H 4150 4800 30  0000 C CNN
-	1    4150 4700
+P 4200 4700
+F 0 "#PWR06" H 4200 4800 30  0001 C CNN
+F 1 "VCC" H 4200 4800 30  0000 C CNN
+	1    4200 4700
 	1    0    0    -1  
 $EndComp
-Text Label 4550 5250 0    60   ~ 0
+Text Label 4525 5250 0    60   ~ 0
 AGND
-Text Label 4550 4850 0    60   ~ 0
+Text Label 4525 4850 0    60   ~ 0
 AVCC
-Text Label 4150 5250 2    60   ~ 0
+Text Label 4200 5250 2    60   ~ 0
 GND
-Text Label 4150 4850 2    60   ~ 0
+Text Label 4200 4850 2    60   ~ 0
 VCC
 Text Label 5250 4700 2    60   ~ 0
 AVCC
@@ -269,60 +269,28 @@ Text Label 6350 5900 3    60   ~ 0
 CP3
 Text Label 6450 5900 3    60   ~ 0
 CP3
-$Comp
-L CONN_8 P2
-U 1 1 4F95911E
-P 9200 4850
-F 0 "P2" V 9150 4850 60  0000 C CNN
-F 1 "CONN_8" V 9250 4850 60  0000 C CNN
-	1    9200 4850
-	-1   0    0    1   
-$EndComp
-$Comp
-L CONN_8 P3
-U 1 1 4F95912D
-P 10000 4850
-F 0 "P3" V 9950 4850 60  0000 C CNN
-F 1 "CONN_8" V 10050 4850 60  0000 C CNN
-	1    10000 4850
-	-1   0    0    1   
-$EndComp
 Text Notes 4000 5600 0    60   ~ 0
 Solder Jumpers
-Text Notes 4500 3750 0    60   ~ 0
+Text Notes 10050 5200 0    60   ~ 0
 To board
-Text Notes 9350 5550 0    60   ~ 0
-All pins breakout
-Text Label 9550 5200 0    60   ~ 0
-GND
-Text Label 9550 5100 0    60   ~ 0
-VCC
-Text Label 9550 5000 0    60   ~ 0
-CP3
-Text Label 9550 4900 0    60   ~ 0
-CP4
-Text Label 9550 4800 0    60   ~ 0
-CP2
+Text Notes 8900 5400 0    60   ~ 0
+Other pins breakout
 Text Label 9550 4700 0    60   ~ 0
+CP3
+Text Label 9550 4800 0    60   ~ 0
+CP4
+Text Label 9550 5000 0    60   ~ 0
+CP2
+Text Label 9550 4900 0    60   ~ 0
 CP1
 Text Label 9550 4600 0    60   ~ 0
 CP5
 Text Label 7850 5300 0    60   ~ 0
 CP5
-Text Label 9550 4500 0    60   ~ 0
-ST2
-Text Label 10350 4500 0    60   ~ 0
-ST1
-Text Label 10350 4600 0    60   ~ 0
+Text Label 9550 5100 0    60   ~ 0
 SUMJ
 Text Label 6150 6050 3    60   ~ 0
 SUMJ
-Text Label 10350 4700 0    60   ~ 0
-RATEOUT
-Text Label 10350 4800 0    60   ~ 0
-TEMP
-Text Label 10350 4900 0    60   ~ 0
-VRATIO
 Text Label 7650 5100 0    60   ~ 0
 VRATIO
 Wire Wire Line
@@ -334,9 +302,9 @@ Wire Wire Line
 Wire Wire Line
 	6700 3700 6700 3600
 Wire Wire Line
-	4150 4850 4150 4700
+	4200 4850 4200 4700
 Wire Wire Line
-	4150 5400 4150 5250
+	4200 5400 4200 5250
 Wire Wire Line
 	6150 5900 6150 6050
 Wire Wire Line
@@ -360,27 +328,44 @@ Wire Wire Line
 Wire Wire Line
 	7650 5400 7850 5400
 Connection ~ 7850 5400
-Text Label 10350 5000 0    60   ~ 0
+Text Label 9550 4500 0    60   ~ 0
 AVCC
-Text Label 10350 5200 0    60   ~ 0
+Text Label 10000 4300 0    60   ~ 0
 AGND
-NoConn ~ 10350 5100
 $Comp
 L SJMP JMP1
-U 1 1 4F9726BE
-P 4350 4850
-F 0 "JMP1" V 4450 4850 50  0000 C CNN
-F 1 "SJMP" V 4250 4850 40  0000 C CNN
-	1    4350 4850
+U 1 1 4F972AAD
+P 4375 4850
+F 0 "JMP1" V 4525 4850 50  0000 C CNN
+F 1 "SJMP" V 4225 4850 40  0000 C CNN
+	1    4375 4850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L SJMP JMP2
-U 1 1 4F9726F2
-P 4350 5250
-F 0 "JMP2" V 4450 5250 50  0000 C CNN
-F 1 "SJMP" V 4250 5250 40  0000 C CNN
-	1    4350 5250
+U 1 1 4F972AC4
+P 4375 5250
+F 0 "JMP2" V 4525 5250 50  0000 C CNN
+F 1 "SJMP" V 4225 5250 40  0000 C CNN
+	1    4375 5250
 	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_7 P2
+U 1 1 4F976A88
+P 9200 4800
+F 0 "P2" V 9170 4800 60  0000 C CNN
+F 1 "CONN_7" V 9270 4800 60  0000 C CNN
+	1    9200 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P3
+U 1 1 4F976AA7
+P 9850 4300
+F 0 "P3" H 9930 4300 40  0000 L CNN
+F 1 "CONN_1" H 9850 4355 30  0001 C CNN
+	1    9850 4300
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

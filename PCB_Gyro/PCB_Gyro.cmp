@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Tue 24 Apr 2012 06:21:15 PM EDT
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Tue 24 Apr 2012 11:09:43 PM EDT
 
 BeginCmp
 TimeStamp = /4F957A80;
@@ -43,14 +43,14 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F9726BE;
+TimeStamp = /4F972AAD;
 Reference = JMP1;
 ValeurCmp = SJMP;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F9726F2;
+TimeStamp = /4F972AC4;
 Reference = JMP2;
 ValeurCmp = SJMP;
 IdModule  = SM0805;
@@ -64,24 +64,24 @@ IdModule  = PIN_ARRAY-6X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F95911E;
+TimeStamp = /4F976A88;
 Reference = P2;
-ValeurCmp = CONN_8;
-IdModule  = pin_array_8x2;
+ValeurCmp = CONN_7;
+IdModule  = pin_array_8x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F95912D;
+TimeStamp = /4F976AA7;
 Reference = P3;
-ValeurCmp = CONN_8;
-IdModule  = pin_array_8x2;
+ValeurCmp = CONN_1;
+IdModule  = PIN_ARRAY_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F958C01;
 Reference = U1;
 ValeurCmp = ADXRS6XX;
-IdModule  = PLCC32MS;
+IdModule  = CBGA48 - ADXRS652;
 EndCmp
 
 EndListe
