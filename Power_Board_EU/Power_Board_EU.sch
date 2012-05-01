@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 16 Apr 2012 02:08:39 PM EDT
+EESchema Schematic File Version 2  date Mon 30 Apr 2012 01:35:04 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power Board EU version"
-Date "16 apr 2012"
+Date "30 apr 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by: Carlos Chinchilla"
@@ -248,7 +248,6 @@ Text Label 5050 1750 0    60   ~ 0
 5V
 Text Label 5050 1650 0    60   ~ 0
 5V
-NoConn ~ 5050 2900
 $Comp
 L CONN_2 P?
 U 1 1 4F8C62BB
@@ -265,6 +264,202 @@ P 8800 2600
 F 0 "#PWR?" H 8800 2600 30  0001 C CNN
 F 1 "GND" H 8800 2530 30  0001 C CNN
 	1    8800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 4F8C6322
+P 8450 1800
+F 0 "P?" V 8400 1800 40  0000 C CNN
+F 1 "CONN_2" V 8500 1800 40  0000 C CNN
+	1    8450 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C6328
+P 8800 2050
+F 0 "#PWR?" H 8800 2050 30  0001 C CNN
+F 1 "GND" H 8800 1980 30  0001 C CNN
+	1    8800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 4F8C632F
+P 9300 2350
+F 0 "P?" V 9250 2350 40  0000 C CNN
+F 1 "CONN_2" V 9350 2350 40  0000 C CNN
+	1    9300 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8C6335
+P 9650 2600
+F 0 "#PWR?" H 9650 2600 30  0001 C CNN
+F 1 "GND" H 9650 2530 30  0001 C CNN
+	1    9650 2600
+	1    0    0    -1  
+$EndComp
+Text Label 9650 2250 0    60   ~ 0
+5V
+Text Label 8800 2250 0    60   ~ 0
+12V
+Text Label 8800 1700 0    60   ~ 0
+12V
+Text Notes 8850 2850 0    60   ~ 0
+OUTPUT
+Text Notes 3150 4950 0    60   ~ 0
+TO ROOMBA
+Text Notes 4900 4500 0    60   ~ 0
+TO USB
+$Comp
+L CONN_6 P?
+U 1 1 4F9EC434
+P 7550 2750
+F 0 "P?" V 7500 2750 60  0000 C CNN
+F 1 "CONN_6" V 7600 2750 60  0000 C CNN
+	1    7550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F9EC44E
+P 7200 3150
+F 0 "#PWR?" H 7200 3150 30  0001 C CNN
+F 1 "GND" H 7200 3080 30  0001 C CNN
+	1    7200 3150
+	1    0    0    -1  
+$EndComp
+Text Label 7200 3000 2    60   ~ 0
+GND
+Text Notes 7650 2400 2    60   ~ 0
+CBUS
+$Comp
+L C C?
+U 1 1 4F9EC711
+P 5050 3200
+F 0 "C?" H 5100 3300 50  0000 L CNN
+F 1 "100nF" H 5100 3100 50  0000 L CNN
+	1    5050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F9EC717
+P 5050 3900
+F 0 "#PWR?" H 5050 3900 30  0001 C CNN
+F 1 "GND" H 5050 3830 30  0001 C CNN
+	1    5050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4F9EC731
+P 4700 1850
+F 0 "C?" H 4750 1950 50  0000 L CNN
+F 1 "100nF" H 4750 1750 50  0000 L CNN
+	1    4700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F9EC737
+P 4700 2550
+F 0 "#PWR?" H 4700 2550 30  0001 C CNN
+F 1 "GND" H 4700 2480 30  0001 C CNN
+	1    4700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 4F9EC865
+P 9300 1800
+F 0 "P?" V 9250 1800 40  0000 C CNN
+F 1 "CONN_2" V 9350 1800 40  0000 C CNN
+	1    9300 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F9EC86B
+P 9650 2050
+F 0 "#PWR?" H 9650 2050 30  0001 C CNN
+F 1 "GND" H 9650 1980 30  0001 C CNN
+	1    9650 2050
+	1    0    0    -1  
+$EndComp
+Text Label 9650 1700 0    60   ~ 0
+5V
+$Comp
+L CONN_2 P?
+U 1 1 4F9EC873
+P 8250 3450
+F 0 "P?" V 8200 3450 40  0000 C CNN
+F 1 "CONN_2" V 8300 3450 40  0000 C CNN
+	1    8250 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F9EC879
+P 8600 3700
+F 0 "#PWR?" H 8600 3700 30  0001 C CNN
+F 1 "GND" H 8600 3630 30  0001 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
+Text Label 8600 3350 0    60   ~ 0
+V_BAT
+Text Notes 8850 3200 2    60   ~ 0
+External Supply
+$Comp
+L CONN_8 P?
+U 1 1 4F9EC8FC
+P 3400 4450
+F 0 "P?" V 3350 4450 60  0000 C CNN
+F 1 "CONN_8" V 3450 4450 60  0000 C CNN
+	1    3400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F9EC90D
+P 2950 4950
+F 0 "#PWR?" H 2950 4950 30  0001 C CNN
+F 1 "GND" H 2950 4880 30  0001 C CNN
+	1    2950 4950
+	1    0    0    -1  
+$EndComp
+Text Label 2950 4100 2    60   ~ 0
+V_BAT
+Text Label 3050 4300 2    60   ~ 0
+TXD
+Text Label 3050 4400 2    60   ~ 0
+RXD
+NoConn ~ 3050 4500
+NoConn ~ 3050 4600
+Text Label 6900 1700 0    60   ~ 0
+TXD
+Text Label 6900 1800 0    60   ~ 0
+RXD
+$Comp
+L USB J?
+U 1 1 4F9ECAD6
+P 5650 4500
+F 0 "J?" H 5600 4900 60  0000 C CNN
+F 1 "USB" V 5400 4650 60  0000 C CNN
+	1    5650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F9ECAE7
+P 5650 5200
+F 0 "#PWR?" H 5650 5200 30  0001 C CNN
+F 1 "GND" H 5650 5130 30  0001 C CNN
+	1    5650 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -325,56 +520,66 @@ Wire Wire Line
 Connection ~ 6150 3800
 Wire Wire Line
 	8800 2450 8800 2600
-$Comp
-L CONN_2 P?
-U 1 1 4F8C6322
-P 8450 1800
-F 0 "P?" V 8400 1800 40  0000 C CNN
-F 1 "CONN_2" V 8500 1800 40  0000 C CNN
-	1    8450 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 4F8C6328
-P 8800 2050
-F 0 "#PWR?" H 8800 2050 30  0001 C CNN
-F 1 "GND" H 8800 1980 30  0001 C CNN
-	1    8800 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8800 1900 8800 2050
-$Comp
-L CONN_2 P?
-U 1 1 4F8C632F
-P 9300 2350
-F 0 "P?" V 9250 2350 40  0000 C CNN
-F 1 "CONN_2" V 9350 2350 40  0000 C CNN
-	1    9300 2350
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 4F8C6335
-P 9650 2600
-F 0 "#PWR?" H 9650 2600 30  0001 C CNN
-F 1 "GND" H 9650 2530 30  0001 C CNN
-	1    9650 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9650 2450 9650 2600
-Text Label 9650 2250 0    60   ~ 0
+Wire Wire Line
+	7200 2900 6900 2900
+Wire Wire Line
+	6900 2800 7200 2800
+Wire Wire Line
+	7200 2700 6900 2700
+Wire Wire Line
+	6900 2600 7200 2600
+Wire Wire Line
+	7200 2500 6900 2500
+Wire Wire Line
+	7200 3150 7200 3000
+Wire Wire Line
+	5050 3400 5050 3900
+Wire Wire Line
+	4700 2050 4700 2550
+Wire Wire Line
+	5050 1650 4700 1650
+Wire Wire Line
+	5050 2900 5050 3000
+Wire Wire Line
+	9650 1900 9650 2050
+Wire Wire Line
+	8600 3550 8600 3700
+Wire Wire Line
+	3050 4700 2950 4700
+Wire Wire Line
+	2950 4700 2950 4950
+Wire Wire Line
+	3050 4800 2950 4800
+Connection ~ 2950 4800
+Wire Wire Line
+	3050 4200 2950 4200
+Wire Wire Line
+	2950 4200 2950 4100
+Wire Wire Line
+	2950 4100 3050 4100
+Wire Wire Line
+	5650 5200 5650 5100
+Wire Wire Line
+	6000 4950 6000 5100
+Wire Wire Line
+	5250 5100 6000 5100
+Wire Wire Line
+	5250 4850 5250 5100
+Connection ~ 5650 5100
+Connection ~ 5250 4950
+Connection ~ 5250 4950
+Text Label 5250 4700 2    60   ~ 0
 5V
-Text Label 8800 2250 0    60   ~ 0
-12V
-Text Label 8800 1700 0    60   ~ 0
-12V
-Text Notes 8850 2850 0    60   ~ 0
-OUTPUT
-Text Notes 2900 5000 0    60   ~ 0
-TO ROOMBA
-Text Notes 4500 5000 0    60   ~ 0
-TO USB
+Text Label 5050 2000 2    60   ~ 0
+D-
+Text Label 5050 2100 2    60   ~ 0
+D+
+Text Label 6000 4700 0    60   ~ 0
+D+
+Text Label 6000 4850 0    60   ~ 0
+D-
 $EndSCHEMATC
