@@ -1,0 +1,150 @@
+Cmp-Mod V01 Created by PcbNew date = Wed 02 May 2012 02:14:37 PM EDT
+
+BeginCmp
+TimeStamp = /4F8C5C50;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5C5D;
+Reference = C2;
+ValeurCmp = 10uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B65;
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B82;
+Reference = C4;
+ValeurCmp = 10uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B72;
+Reference = C5;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B88;
+Reference = C6;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC731;
+Reference = C7;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC711;
+Reference = C8;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5CCA;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = D4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9ECAD6;
+Reference = J1;
+ValeurCmp = USB;
+IdModule  = USB_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FA165FF;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC8FC;
+Reference = P1;
+ValeurCmp = CONN_8;
+IdModule  = Mini_din7;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC434;
+Reference = P2;
+ValeurCmp = CONN_6;
+IdModule  = pin_array_6x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC873;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C6322;
+Reference = P4;
+ValeurCmp = CONN_2;
+IdModule  = SMD Microfit 2pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C62BB;
+Reference = P5;
+ValeurCmp = CONN_2;
+IdModule  = SMD Microfit 2pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC865;
+Reference = P6;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C632F;
+Reference = P7;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5F0B;
+Reference = U1;
+ValeurCmp = FT232RL;
+IdModule  = SSOP28;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5AE2;
+Reference = VR1;
+ValeurCmp = MIC29151-5.0WU;
+IdModule  = TO-263-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5AF1;
+Reference = VR2;
+ValeurCmp = MIC29151-12WU;
+IdModule  = TO-263-5;
+EndCmp
+
+EndListe

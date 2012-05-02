@@ -1,11 +1,6 @@
-update=Mon 16 Apr 2012 01:50:15 PM EDT
+update=Wed 02 May 2012 01:49:50 PM EDT
 version=1
-last_client=eeschema
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+last_client=cvpcb
 [general]
 version=1
 [pcbnew]
@@ -26,7 +21,6 @@ EdgeLar=150
 TxtLar=120
 MSegLar=150
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -42,6 +36,8 @@ LibName12=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
 LibName13=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb
 LibName14=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-2
 LibName15=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-3
+LibName16=/media/sf_Carlitos/Documents/GitHub/r_mini_din
+LibDir=
 [eeschema]
 version=1
 LibDir=
@@ -85,3 +81,8 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

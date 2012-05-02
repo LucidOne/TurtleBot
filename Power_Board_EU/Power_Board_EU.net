@@ -1,0 +1,287 @@
+# EESchema Netlist Version 1.1 created  Wed 02 May 2012 01:18:43 PM EDT
+(
+ ( /4F8C5AE2 $noname  VR1 MIC29151-5.0WU {Lib=MIC29151-5.0WU}
+  (    1 /V_IN )
+  (    2 /V_IN )
+  (    3 GND )
+  (    4 /5V )
+  (    5 ? )
+  (    6 GND )
+ )
+ ( /4F8C5AF1 $noname  VR2 MIC29151-12WU {Lib=MIC29151-12WU}
+  (    1 /V_IN )
+  (    2 /V_IN )
+  (    3 GND )
+  (    4 /12V )
+  (    5 ? )
+  (    6 GND )
+ )
+ ( /4F8C5B65 $noname  C3 10uF {Lib=C}
+  (    1 /12V )
+  (    2 GND )
+ )
+ ( /4F8C5B72 $noname  C5 100nF {Lib=C}
+  (    1 /12V )
+  (    2 GND )
+ )
+ ( /4F8C5B82 $noname  C4 10uF {Lib=C}
+  (    1 /5V )
+  (    2 GND )
+ )
+ ( /4F8C5B88 $noname  C6 100nF {Lib=C}
+  (    1 /5V )
+  (    2 GND )
+ )
+ ( /4F8C5C50 $noname  C1 10uF {Lib=C}
+  (    1 /V_IN )
+  (    2 GND )
+ )
+ ( /4F8C5C5D $noname  C2 10uF {Lib=C}
+  (    1 /V_IN )
+  (    2 GND )
+ )
+ ( /4F8C5CCA $noname  D1 DIODE {Lib=DIODE}
+  (    1 GND )
+  (    2 /V_IN )
+ )
+ ( /4F8C5F0B $noname  U1 FT232RL {Lib=FT232RL}
+  (    1 /TXD )
+  (    2 ? )
+  (    3 ? )
+  (    4 /5V )
+  (    5 /RXD )
+  (    6 ? )
+  (    7 GND )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 N-000010 )
+  (   13 N-000012 )
+  (   14 N-000011 )
+  (   15 /D+ )
+  (   16 /D- )
+  (   17 N-000008 )
+  (   18 GND )
+  (   19 ? )
+  (   20 /5V )
+  (   21 GND )
+  (   22 N-000013 )
+  (   23 N-000014 )
+  (   25 GND )
+  (   26 GND )
+  (   27 ? )
+  (   28 ? )
+ )
+ ( /4F8C62BB $noname  P5 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 /12V )
+ )
+ ( /4F8C6322 $noname  P4 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 /12V )
+ )
+ ( /4F8C632F $noname  P7 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 /5V )
+ )
+ ( /4F9EC434 $noname  P2 CONN_6 {Lib=CONN_6}
+  (    1 N-000014 )
+  (    2 N-000013 )
+  (    3 N-000012 )
+  (    4 N-000011 )
+  (    5 N-000010 )
+  (    6 GND )
+ )
+ ( /4F9EC711 $noname  C8 100nF {Lib=C}
+  (    1 N-000008 )
+  (    2 GND )
+ )
+ ( /4F9EC731 $noname  C7 100nF {Lib=C}
+  (    1 /5V )
+  (    2 GND )
+ )
+ ( /4F9EC865 $noname  P6 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 /5V )
+ )
+ ( /4F9EC873 $noname  P3 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 /V_EXT )
+ )
+ ( /4F9EC8FC $noname  P1 CONN_8 {Lib=CONN_8}
+  (    1 /V_BAT )
+  (    2 /V_BAT )
+  (    3 /TXD )
+  (    4 /RXD )
+  (    5 ? )
+  (    6 ? )
+  (    7 GND )
+  (    8 GND )
+ )
+ ( /4F9ECAD6 $noname  J1 USB {Lib=USB}
+  (    1 /5V )
+  (    2 /D- )
+  (    3 /D+ )
+  (    4 GND )
+  (    5 GND )
+  (    6 GND )
+ )
+ ( /4FA165FF $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 /V_EXT )
+  (    2 /V_IN )
+  (    3 /V_BAT )
+ )
+)
+*
+{ Allowed footprints by component:
+$component VR1
+ TO-263-5
+ TO263-5
+ TO263-5-D2PAK
+$endlist
+$component VR2
+ TO-263-5
+ TO263-5
+ TO263-5-D2PAK
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 3 "GND" "GND"
+ C2 2
+ C1 2
+ D1 1
+ VR2 6
+ P4 1
+ P7 1
+ P2 6
+ U1 26
+ U1 21
+ U1 25
+ VR1 6
+ U1 18
+ C5 2
+ VR2 3
+ U1 7
+ C3 2
+ VR1 3
+ C4 2
+ C6 2
+ P5 1
+ C8 2
+ P6 1
+ C7 2
+ P1 8
+ P1 7
+ P3 1
+ J1 4
+ J1 5
+ J1 6
+Net 4 "/5V" "5V"
+ U1 4
+ VR1 4
+ P6 2
+ C4 1
+ C7 1
+ C6 1
+ P7 2
+ U1 20
+ J1 1
+Net 5 "/V_EXT" "V_EXT"
+ P3 2
+ K1 1
+Net 6 "/V_BAT" "V_BAT"
+ P1 2
+ K1 3
+ P1 1
+Net 7 "/RXD" "RXD"
+ P1 4
+ U1 5
+Net 8 "" ""
+ C8 1
+ U1 17
+Net 9 "/V_IN" "V_IN"
+ D1 2
+ K1 2
+ VR1 1
+ C2 1
+ VR2 2
+ VR2 1
+ VR1 2
+ C1 1
+Net 10 "" ""
+ P2 5
+ U1 12
+Net 11 "" ""
+ U1 14
+ P2 4
+Net 12 "" ""
+ U1 13
+ P2 3
+Net 13 "" ""
+ U1 22
+ P2 2
+Net 14 "" ""
+ U1 23
+ P2 1
+Net 17 "/TXD" "TXD"
+ P1 3
+ U1 1
+Net 21 "/12V" "12V"
+ P5 2
+ C3 1
+ C5 1
+ VR2 4
+ P4 2
+Net 28 "/D+" "D+"
+ J1 3
+ U1 15
+Net 29 "/D-" "D-"
+ U1 16
+ J1 2
+}
+#End
