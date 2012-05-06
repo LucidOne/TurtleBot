@@ -1,31 +1,31 @@
-Cmp-Mod V01 Created by PcbNew date = Wed 02 May 2012 02:14:37 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Sat 05 May 2012 08:07:27 PM EDT
 
 BeginCmp
 TimeStamp = /4F8C5C50;
 Reference = C1;
 ValeurCmp = 10uF;
-IdModule  = SM0805;
+IdModule  = SMDHD/VF;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F8C5C5D;
 Reference = C2;
 ValeurCmp = 10uF;
-IdModule  = SM0805;
+IdModule  = SMDHD/VF;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F8C5B65;
 Reference = C3;
 ValeurCmp = 10uF;
-IdModule  = SM0805;
+IdModule  = SMDHD/VF;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F8C5B82;
 Reference = C4;
 ValeurCmp = 10uF;
-IdModule  = SM0805;
+IdModule  = SMDHD/VF;
 EndCmp
 
 BeginCmp
