@@ -1,6 +1,6 @@
-update=Mon 02 Apr 2012 07:38:54 PM EDT
+update=Mon 07 May 2012 12:55:40 PM EDT
 version=1
-last_client=eeschema
+last_client=EESchema
 [cvpcb]
 version=1
 NetIExt=net
@@ -45,7 +45,7 @@ LibName15=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-3
 [eeschema]
 version=1
 LibDir=
-NetFmt=1
+NetFmtName=
 HPGLSpd=20
 HPGLDm=15
 HPGLNum=1
@@ -84,5 +84,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=/media/sf_Carlitos/Documents/GitHub/ledboard/tlc5940
-LibName32=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
+LibName31=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE

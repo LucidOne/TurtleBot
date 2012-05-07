@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Mon 07 May 2012 03:31:32 PM EDT
+PCBNEW-BOARD Version 1 date Mon 07 May 2012 03:41:50 PM EDT
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -9,8 +9,8 @@ LayerCount 2
 EnabledLayers 1FFF8001
 Links 56
 NoConn 1
-Di 24864 29195 57026 53193
-Ndraw 5
+Di 24864 29195 64129 53193
+Ndraw 6
 Ntrack 114
 Nzone 0
 BoardThickness 630
@@ -60,7 +60,7 @@ PadDrill 669
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 25197 51181
 VisibleElements FFFFFFBF
-PcbPlotParams (pcbplotparams (layerselection 284983297) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin true) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory output/))
+PcbPlotParams (pcbplotparams (layerselection 284983297) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin true) (hpglpennumber 1) (hpglpenspeed 1000) (hpglpendiameter 100) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory output/))
 $EndSETUP
 
 $EQUIPOT
@@ -1277,6 +1277,12 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SMDHD/VF
+$TEXTPCB
+Te "add switch to en"
+nl "and break it out"
+Po 60197 39684 600 800 120 0
+De 0 0 0 Normal C
+$EndTEXTPCB
 $DRAWSEGMENT
 Po 0 25197 30709 25984 30709 150
 De 28 0 900 0 0
@@ -2784,6 +2790,10 @@ $POLYSCORNERS
 32295 31249 0 0
 32285 31234 0 0
 56168 31234 0 0
+56168 38494 0 0
+55815 38494 0 0
+55815 41994 0 0
+56168 41994 0 0
 56168 50656 1 0
 $endPOLYSCORNERS
 $endCZONE_OUTLINE
