@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 25 May 2012 12:49:14 AM EDT
+EESchema Schematic File Version 2  date Fri 25 May 2012 05:35:18 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -153,7 +153,7 @@ GND
 Text Label 1250 900  0    60   ~ 0
 GND
 Text Label 1050 700  0    60   ~ 0
-RESEST
+RESET
 Text Notes 1000 1150 0    60   ~ 0
 RESET
 Text Notes 3950 700  0    60   ~ 0
@@ -343,8 +343,17 @@ F 1 "CONN_6" V 2050 2400 60  0000 C CNN
 	1    2000 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2300 5050 3000
+$Comp
+L CONN_4 P13
+U 1 1 4FBFF6B2
+P 4250 1700
+F 0 "P13" V 4200 1700 50  0000 C CNN
+F 1 "CONN_4" V 4300 1700 50  0000 C CNN
+	1    4250 1700
+	1    0    0    -1  
+$EndComp
+Text Label 3900 1550 2    60   ~ 0
+3.3V
 Wire Wire Line
 	700  1750 1050 1750
 Wire Wire Line
@@ -355,9 +364,67 @@ Connection ~ 700  1750
 Wire Wire Line
 	1750 1950 1750 1850
 Wire Wire Line
-	5050 1250 5050 1950
-Wire Wire Line
 	2350 1350 2250 1350
 Wire Wire Line
 	1750 1450 1750 1350
+Wire Wire Line
+	5050 2300 4950 2300
+Wire Wire Line
+	4950 2300 4950 3000
+Wire Wire Line
+	4950 3000 5050 3000
+Wire Wire Line
+	5050 2900 4950 2900
+Connection ~ 4950 2900
+Wire Wire Line
+	5050 2800 4950 2800
+Connection ~ 4950 2800
+Wire Wire Line
+	5050 2700 4950 2700
+Connection ~ 4950 2700
+Wire Wire Line
+	5050 2600 4950 2600
+Connection ~ 4950 2600
+Wire Wire Line
+	5050 2500 4950 2500
+Connection ~ 4950 2500
+Wire Wire Line
+	5050 2400 4950 2400
+Connection ~ 4950 2400
+Wire Wire Line
+	5050 1250 4950 1250
+Wire Wire Line
+	4950 1250 4950 1950
+Wire Wire Line
+	4950 1950 5050 1950
+Wire Wire Line
+	5050 1850 4950 1850
+Connection ~ 4950 1850
+Wire Wire Line
+	5050 1750 4950 1750
+Connection ~ 4950 1750
+Wire Wire Line
+	5050 1650 4950 1650
+Connection ~ 4950 1650
+Wire Wire Line
+	5050 1550 4950 1550
+Connection ~ 4950 1550
+Wire Wire Line
+	5050 1450 4950 1450
+Connection ~ 4950 1450
+Wire Wire Line
+	5050 1350 4950 1350
+Connection ~ 4950 1350
+Wire Wire Line
+	3900 1850 3800 1850
+Wire Wire Line
+	3800 1850 3800 1550
+Wire Wire Line
+	3800 1550 3900 1550
+Wire Wire Line
+	3900 1650 3800 1650
+Connection ~ 3800 1650
+Wire Wire Line
+	3900 1750 3800 1750
+Connection ~ 3800 1750
 $EndSCHEMATC

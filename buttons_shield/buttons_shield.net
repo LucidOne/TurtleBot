@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Fri 25 May 2012 12:49:23 AM EDT
+# EESchema Netlist Version 1.1 created  Fri 25 May 2012 05:13:26 PM EDT
 (
  ( /4FBE9D25 $noname  P11 CONN_4 {Lib=CONN_4}
   (    1 /7 )
@@ -45,35 +45,35 @@
   (    6 GND )
  )
  ( /4FBE9797 $noname  SW1 SW_PUSH_SMALL {Lib=SW_PUSH_SMALL}
-  (    1 ? )
+  (    1 /RESET )
   (    2 GND )
  )
  ( /4FBE9768 $noname  R1 R {Lib=R}
-  (    1 N-000023 )
+  (    1 N-000011 )
   (    2 /13 )
  )
  ( /4FBE975E $noname  D1 LED {Lib=LED}
-  (    1 N-000023 )
+  (    1 N-000011 )
   (    2 GND )
  )
  ( /4FBE9470 $noname  P9 CONN_8 {Lib=CONN_8}
   (    1 /5V )
-  (    2 ? )
-  (    3 ? )
-  (    4 ? )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
+  (    2 /5V )
+  (    3 /5V )
+  (    4 /5V )
+  (    5 /5V )
+  (    6 /5V )
+  (    7 /5V )
   (    8 /5V )
  )
  ( /4FBE944D $noname  P10 CONN_8 {Lib=CONN_8}
   (    1 GND )
-  (    2 ? )
-  (    3 ? )
-  (    4 ? )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
+  (    2 GND )
+  (    3 GND )
+  (    4 GND )
+  (    5 GND )
+  (    6 GND )
+  (    7 GND )
   (    8 GND )
  )
  ( /4FBE93D7 $noname  P4 CONN_8 {Lib=CONN_8}
@@ -97,8 +97,8 @@
   (    8 /RX )
  )
  ( /4FBE9062 $noname  P1 CONN_6 {Lib=CONN_6}
-  (    1 ? )
-  (    2 ? )
+  (    1 /RESET )
+  (    2 /3.3V )
   (    3 /5V )
   (    4 GND )
   (    5 GND )
@@ -119,6 +119,12 @@
   (    4 /A3 )
   (    5 /A4 )
   (    6 /A5 )
+ )
+ ( /4FBFF6B2 $noname  P13 CONN_4 {Lib=CONN_4}
+  (    1 /3.3V )
+  (    2 /3.3V )
+  (    3 /3.3V )
+  (    4 /3.3V )
  )
 )
 *
@@ -142,101 +148,122 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 2 "GND" "GND"
- P7 2
- P4 2
- P1 4
- P1 5
- P8 6
- SW1 2
- D1 2
- P10 1
- P10 8
-Net 14 "/AREF" "AREF"
- P4 1
- P7 1
-Net 15 "/13" "13"
- R1 2
- P4 3
- P8 3
- P7 3
-Net 16 "/A0" "A0"
- P3 1
- P12 6
- P2 1
-Net 17 "/A1" "A1"
- P2 2
- P3 2
- P12 7
-Net 18 "/A2" "A2"
- P2 3
- P12 8
- P3 3
-Net 19 "/A3" "A3"
- P2 4
- P3 4
-Net 20 "/A4" "A4"
- P3 5
- P2 5
-Net 21 "/A5" "A5"
- P2 6
- P3 6
-Net 23 "" ""
- R1 1
- D1 1
-Net 24 "/4" "4"
- P6 4
- P5 4
-Net 25 "/12" "12"
- P12 5
- P7 4
- P8 1
- P4 4
-Net 26 "/11" "11"
- P12 4
- P4 5
- P8 4
- P7 5
-Net 27 "/10" "10"
- P8 5
- P12 3
- P7 6
- P4 6
-Net 28 "/9" "9"
- P4 7
- P12 2
- P7 7
-Net 29 "/8" "8"
- P12 1
- P7 8
- P4 8
-Net 30 "/7" "7"
- P6 1
- P11 1
- P5 1
-Net 31 "/6" "6"
- P6 2
- P5 2
-Net 32 "/5" "5"
- P6 3
- P5 3
-Net 33 "/3" "3"
- P6 5
- P5 5
-Net 34 "/2" "2"
- P6 6
- P5 6
-Net 35 "/TX" "TX"
- P6 7
- P5 7
-Net 36 "/RX" "RX"
- P5 8
- P6 8
-Net 39 "/5V" "5V"
+Net 1 "/3.3V" "3.3V"
+ P1 2
+ P13 1
+ P13 2
+ P13 3
+ P13 4
+Net 2 "/RESET" "RESET"
+ P1 1
+ SW1 1
+Net 3 "/5V" "5V"
  P9 8
- P1 3
+ P9 6
+ P9 5
+ P9 4
+ P9 3
+ P9 2
+ P9 1
  P11 3
  P8 2
- P9 1
+ P1 3
+ P9 7
+Net 4 "GND" "GND"
+ D1 2
+ SW1 2
+ P8 6
+ P7 2
+ P10 8
+ P10 1
+ P1 5
+ P10 2
+ P10 3
+ P10 4
+ P10 5
+ P10 6
+ P10 7
+ P4 2
+ P1 4
+Net 6 "/A0" "A0"
+ P3 1
+ P2 1
+ P12 6
+Net 7 "/A1" "A1"
+ P12 7
+ P2 2
+ P3 2
+Net 8 "/A3" "A3"
+ P3 4
+ P2 4
+Net 9 "/A4" "A4"
+ P2 5
+ P3 5
+Net 10 "/A5" "A5"
+ P2 6
+ P3 6
+Net 11 "" ""
+ D1 1
+ R1 1
+Net 12 "/AREF" "AREF"
+ P4 1
+ P7 1
+Net 13 "/13" "13"
+ P4 3
+ P8 3
+ R1 2
+ P7 3
+Net 14 "/12" "12"
+ P12 5
+ P4 4
+ P7 4
+ P8 1
+Net 15 "/7" "7"
+ P6 1
+ P5 1
+ P11 1
+Net 16 "/6" "6"
+ P5 2
+ P6 2
+Net 17 "/5" "5"
+ P5 3
+ P6 3
+Net 18 "/4" "4"
+ P5 4
+ P6 4
+Net 19 "/3" "3"
+ P5 5
+ P6 5
+Net 20 "/2" "2"
+ P6 6
+ P5 6
+Net 21 "/TX" "TX"
+ P5 7
+ P6 7
+Net 24 "/RX" "RX"
+ P6 8
+ P5 8
+Net 25 "/8" "8"
+ P12 1
+ P4 8
+ P7 8
+Net 26 "/9" "9"
+ P12 2
+ P7 7
+ P4 7
+Net 27 "/10" "10"
+ P8 5
+ P4 6
+ P7 6
+ P12 3
+Net 28 "/11" "11"
+ P7 5
+ P8 4
+ P4 5
+ P12 4
+Net 29 "/A2" "A2"
+ P2 3
+ P3 3
+ P12 8
 }
 #End
