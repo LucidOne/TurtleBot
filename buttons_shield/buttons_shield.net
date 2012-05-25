@@ -1,0 +1,145 @@
+# EESchema Netlist Version 1.1 created  Thu 24 May 2012 05:14:40 PM EDT
+(
+ ( /4FBE975E LED-0805 D1 LED
+  ( 1 N-000005 )
+  ( 2 /GND )
+ )
+ ( /4FBE9062 PIN_ARRAY-6X1 P1 CONN_6
+  ( 1 ? )
+  ( 2 ? )
+  ( 3 /5V )
+  ( 4 /GND )
+  ( 5 /GND )
+  ( 6 ? )
+ )
+ ( /4FBE93C0 pin_array_8x2 P2 CONN_8
+  ( 1 /A0 )
+  ( 2 /A1 )
+  ( 3 /A2 )
+  ( 4 /A3 )
+  ( 5 /A4 )
+  ( 6 /A5 )
+  ( 7 /A6 )
+  ( 8 /A7 )
+ )
+ ( /4FBE9BF6 pin_array_8x2 P3 CONN_8
+  ( 1 /A0 )
+  ( 2 /A1 )
+  ( 3 /A2 )
+  ( 4 /A3 )
+  ( 5 /A4 )
+  ( 6 /A5 )
+  ( 7 /A6 )
+  ( 8 /A7 )
+ )
+ ( /4FBE93D7 pin_array_8x2 P4 CONN_8
+  ( 1 /AREF )
+  ( 2 /GND )
+  ( 3 /13 )
+  ( 4 /12 )
+  ( 5 /11 )
+  ( 6 /10 )
+  ( 7 /9 )
+  ( 8 /8 )
+ )
+ ( /4FBE93CE pin_array_8x2 P5 CONN_8
+  ( 1 /7 )
+  ( 2 /6 )
+  ( 3 /5 )
+  ( 4 /4 )
+  ( 5 /3 )
+  ( 6 /2 )
+  ( 7 /TX )
+  ( 8 /RX )
+ )
+ ( /4FBE9C04 pin_array_8x2 P6 CONN_8
+  ( 1 /7 )
+  ( 2 /6 )
+  ( 3 /5 )
+  ( 4 /4 )
+  ( 5 /3 )
+  ( 6 /2 )
+  ( 7 /TX )
+  ( 8 /RX )
+ )
+ ( /4FBE9C27 pin_array_8x2 P7 CONN_8
+  ( 1 /AREF )
+  ( 2 /GND )
+  ( 3 /13 )
+  ( 4 /12 )
+  ( 5 /11 )
+  ( 6 /10 )
+  ( 7 /9 )
+  ( 8 /8 )
+ )
+ ( /4FBE97E9 pin_array_3x2 P8 CONN_3X2
+  ( 1 /12 )
+  ( 2 /5V )
+  ( 3 /13 )
+  ( 4 /11 )
+  ( 5 /10 )
+  ( 6 /GND )
+ )
+ ( /4FBE9470 pin_array_8x2 P9 CONN_8
+  ( 1 /5V )
+  ( 2 ? )
+  ( 3 ? )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 ? )
+  ( 8 /5V )
+ )
+ ( /4FBE944D pin_array_8x2 P10 CONN_8
+  ( 1 /GND )
+  ( 2 ? )
+  ( 3 ? )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 ? )
+  ( 8 /GND )
+ )
+ ( /4FBE9D25 PIN_ARRAY_2X2 P11 CONN_4
+  ( 1 /7 )
+  ( 2 ? )
+  ( 3 /5V )
+  ( 4 ? )
+ )
+ ( /4FBE9C86 pin_array_8x2 P12 CONN_8
+  ( 1 /8 )
+  ( 2 /9 )
+  ( 3 /10 )
+  ( 4 /11 )
+  ( 5 /12 )
+  ( 6 /A0 )
+  ( 7 /A1 )
+  ( 8 /A2 )
+ )
+ ( /4FBE9768 SM0805 R1 R
+  ( 1 /13 )
+  ( 2 N-000005 )
+ )
+ ( /4FBE9797 SW_PUSH_SMALL SW1 SW_PUSH_SMALL
+  ( 1 ? )
+  ( 2 /GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$endfootprintlist
+}
