@@ -1,11 +1,42 @@
-EESchema Schematic File Version 2  date Thu 24 May 2012 05:18:49 PM EDT
-LIBS:power,device,transistors,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,opto,atmel,contrib,valves
-EELAYER 43  0
+EESchema Schematic File Version 2  date Fri 25 May 2012 12:49:14 AM EDT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:buttons_shield-cache
+EELAYER 25  0
 EELAYER END
 $Descr User 11000 8000
+encoding utf-8
 Sheet 1 1
 Title "Buttons Shield for Turtlebot"
-Date "24 may 2012"
+Date "25 may 2012"
 Rev ""
 Comp "I Heart Engineering"
 Comment1 "Designed by Carlos Chinchilla"
@@ -26,21 +57,6 @@ F 1 "CONN_4" V 6300 2550 50  0000 C CNN
 	1    6250 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2300 5050 3000
-Wire Wire Line
-	4200 2350 4200 2300
-Wire Wire Line
-	700  1750 1050 1750
-Wire Wire Line
-	1050 1650 700  1650
-Wire Wire Line
-	700  1650 700  1800
-Connection ~ 700  1750
-Wire Wire Line
-	4200 2850 4200 2750
-Wire Wire Line
-	5050 1250 5050 1950
 Text Label 5900 2400 2    60   ~ 0
 7
 Text Label 6050 1950 2    60   ~ 0
@@ -118,10 +134,6 @@ F 1 "CONN_8" V 3450 2500 60  0000 C CNN
 	1    3400 2500
 	1    0    0    -1  
 $EndComp
-Text Label 1650 2850 2    60   ~ 0
-A7
-Text Label 1650 2750 2    60   ~ 0
-A6
 Text Label 1650 2650 2    60   ~ 0
 A5
 Text Label 1650 2550 2    60   ~ 0
@@ -134,15 +146,6 @@ Text Label 1650 2250 2    60   ~ 0
 A1
 Text Label 1650 2150 2    60   ~ 0
 A0
-$Comp
-L CONN_8 P3
-U 1 1 4FBE9BF6
-P 2000 2500
-F 0 "P3" V 1950 2500 60  0000 C CNN
-F 1 "CONN_8" V 2050 2500 60  0000 C CNN
-	1    2000 2500
-	1    0    0    -1  
-$EndComp
 Text Label 5050 1250 2    60   ~ 0
 5V
 Text Label 5050 2300 2    60   ~ 0
@@ -185,24 +188,22 @@ F 1 "SW_PUSH_SMALL" H 1150 721 30  0000 C CNN
 	1    1150 800 
 	1    0    0    -1  
 $EndComp
-Text Label 4200 1800 0    60   ~ 0
-13
 $Comp
 L R R1
 U 1 1 4FBE9768
-P 4200 2050
-F 0 "R1" V 4280 2050 50  0000 C CNN
-F 1 "R" V 4200 2050 50  0000 C CNN
-	1    4200 2050
-	1    0    0    -1  
+P 2000 1350
+F 0 "R1" V 2080 1350 50  0000 C CNN
+F 1 "R" V 2000 1350 50  0000 C CNN
+	1    2000 1350
+	0    -1   -1   0   
 $EndComp
 $Comp
 L LED D1
 U 1 1 4FBE975E
-P 4200 2550
-F 0 "D1" H 4200 2650 50  0000 C CNN
-F 1 "LED" H 4200 2450 50  0000 C CNN
-	1    4200 2550
+P 1750 1650
+F 0 "D1" H 1750 1750 50  0000 C CNN
+F 1 "LED" H 1750 1550 50  0000 C CNN
+	1    1750 1650
 	0    1    1    0   
 $EndComp
 $Comp
@@ -217,10 +218,10 @@ $EndComp
 $Comp
 L GND #PWR02
 U 1 1 4FBE9735
-P 4200 2850
-F 0 "#PWR02" H 4200 2850 30  0001 C CNN
-F 1 "GND" H 4200 2780 30  0001 C CNN
-	1    4200 2850
+P 1750 1950
+F 0 "#PWR02" H 1750 1950 30  0001 C CNN
+F 1 "GND" H 1750 1880 30  0001 C CNN
+	1    1750 1950
 	1    0    0    -1  
 $EndComp
 Text Label 2350 2850 2    60   ~ 0
@@ -255,10 +256,6 @@ Text Label 2350 1250 2    60   ~ 0
 GND
 Text Label 2350 1150 2    60   ~ 0
 AREF
-Text Label 1050 2850 2    60   ~ 0
-A7
-Text Label 1050 2750 2    60   ~ 0
-A6
 Text Label 1050 2650 2    60   ~ 0
 A5
 Text Label 1050 2550 2    60   ~ 0
@@ -320,15 +317,6 @@ F 1 "CONN_8" V 2750 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_8 P2
-U 1 1 4FBE93C0
-P 1400 2500
-F 0 "P2" V 1350 2500 60  0000 C CNN
-F 1 "CONN_8" V 1450 2500 60  0000 C CNN
-	1    1400 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L CONN_6 P1
 U 1 1 4FBE9062
 P 1400 1600
@@ -337,4 +325,39 @@ F 1 "CONN_6" V 1450 1600 60  0000 C CNN
 	1    1400 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L CONN_6 P2
+U 1 1 4FBF0ED2
+P 1400 2400
+F 0 "P2" V 1350 2400 60  0000 C CNN
+F 1 "CONN_6" V 1450 2400 60  0000 C CNN
+	1    1400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_6 P3
+U 1 1 4FBF0ED8
+P 2000 2400
+F 0 "P3" V 1950 2400 60  0000 C CNN
+F 1 "CONN_6" V 2050 2400 60  0000 C CNN
+	1    2000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2300 5050 3000
+Wire Wire Line
+	700  1750 1050 1750
+Wire Wire Line
+	1050 1650 700  1650
+Wire Wire Line
+	700  1650 700  1800
+Connection ~ 700  1750
+Wire Wire Line
+	1750 1950 1750 1850
+Wire Wire Line
+	5050 1250 5050 1950
+Wire Wire Line
+	2350 1350 2250 1350
+Wire Wire Line
+	1750 1450 1750 1350
 $EndSCHEMATC

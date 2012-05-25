@@ -1,132 +1,135 @@
-# EESchema Netlist Version 1.1 created  Thu 24 May 2012 05:14:40 PM EDT
+# EESchema Netlist Version 1.1 created  Fri 25 May 2012 12:49:23 AM EDT
 (
- ( /4FBE975E LED-0805 D1 LED
-  ( 1 N-000005 )
-  ( 2 /GND )
+ ( /4FBE9D25 $noname  P11 CONN_4 {Lib=CONN_4}
+  (    1 /7 )
+  (    2 ? )
+  (    3 /5V )
+  (    4 ? )
  )
- ( /4FBE9062 PIN_ARRAY-6X1 P1 CONN_6
-  ( 1 ? )
-  ( 2 ? )
-  ( 3 /5V )
-  ( 4 /GND )
-  ( 5 /GND )
-  ( 6 ? )
+ ( /4FBE9C86 $noname  P12 CONN_8 {Lib=CONN_8}
+  (    1 /8 )
+  (    2 /9 )
+  (    3 /10 )
+  (    4 /11 )
+  (    5 /12 )
+  (    6 /A0 )
+  (    7 /A1 )
+  (    8 /A2 )
  )
- ( /4FBE93C0 pin_array_8x2 P2 CONN_8
-  ( 1 /A0 )
-  ( 2 /A1 )
-  ( 3 /A2 )
-  ( 4 /A3 )
-  ( 5 /A4 )
-  ( 6 /A5 )
-  ( 7 /A6 )
-  ( 8 /A7 )
+ ( /4FBE9C27 $noname  P7 CONN_8 {Lib=CONN_8}
+  (    1 /AREF )
+  (    2 GND )
+  (    3 /13 )
+  (    4 /12 )
+  (    5 /11 )
+  (    6 /10 )
+  (    7 /9 )
+  (    8 /8 )
  )
- ( /4FBE9BF6 pin_array_8x2 P3 CONN_8
-  ( 1 /A0 )
-  ( 2 /A1 )
-  ( 3 /A2 )
-  ( 4 /A3 )
-  ( 5 /A4 )
-  ( 6 /A5 )
-  ( 7 /A6 )
-  ( 8 /A7 )
+ ( /4FBE9C04 $noname  P6 CONN_8 {Lib=CONN_8}
+  (    1 /7 )
+  (    2 /6 )
+  (    3 /5 )
+  (    4 /4 )
+  (    5 /3 )
+  (    6 /2 )
+  (    7 /TX )
+  (    8 /RX )
  )
- ( /4FBE93D7 pin_array_8x2 P4 CONN_8
-  ( 1 /AREF )
-  ( 2 /GND )
-  ( 3 /13 )
-  ( 4 /12 )
-  ( 5 /11 )
-  ( 6 /10 )
-  ( 7 /9 )
-  ( 8 /8 )
+ ( /4FBE97E9 $noname  P8 CONN_3X2 {Lib=CONN_3X2}
+  (    1 /12 )
+  (    2 /5V )
+  (    3 /13 )
+  (    4 /11 )
+  (    5 /10 )
+  (    6 GND )
  )
- ( /4FBE93CE pin_array_8x2 P5 CONN_8
-  ( 1 /7 )
-  ( 2 /6 )
-  ( 3 /5 )
-  ( 4 /4 )
-  ( 5 /3 )
-  ( 6 /2 )
-  ( 7 /TX )
-  ( 8 /RX )
+ ( /4FBE9797 $noname  SW1 SW_PUSH_SMALL {Lib=SW_PUSH_SMALL}
+  (    1 ? )
+  (    2 GND )
  )
- ( /4FBE9C04 pin_array_8x2 P6 CONN_8
-  ( 1 /7 )
-  ( 2 /6 )
-  ( 3 /5 )
-  ( 4 /4 )
-  ( 5 /3 )
-  ( 6 /2 )
-  ( 7 /TX )
-  ( 8 /RX )
+ ( /4FBE9768 $noname  R1 R {Lib=R}
+  (    1 N-000023 )
+  (    2 /13 )
  )
- ( /4FBE9C27 pin_array_8x2 P7 CONN_8
-  ( 1 /AREF )
-  ( 2 /GND )
-  ( 3 /13 )
-  ( 4 /12 )
-  ( 5 /11 )
-  ( 6 /10 )
-  ( 7 /9 )
-  ( 8 /8 )
+ ( /4FBE975E $noname  D1 LED {Lib=LED}
+  (    1 N-000023 )
+  (    2 GND )
  )
- ( /4FBE97E9 pin_array_3x2 P8 CONN_3X2
-  ( 1 /12 )
-  ( 2 /5V )
-  ( 3 /13 )
-  ( 4 /11 )
-  ( 5 /10 )
-  ( 6 /GND )
+ ( /4FBE9470 $noname  P9 CONN_8 {Lib=CONN_8}
+  (    1 /5V )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 /5V )
  )
- ( /4FBE9470 pin_array_8x2 P9 CONN_8
-  ( 1 /5V )
-  ( 2 ? )
-  ( 3 ? )
-  ( 4 ? )
-  ( 5 ? )
-  ( 6 ? )
-  ( 7 ? )
-  ( 8 /5V )
+ ( /4FBE944D $noname  P10 CONN_8 {Lib=CONN_8}
+  (    1 GND )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 GND )
  )
- ( /4FBE944D pin_array_8x2 P10 CONN_8
-  ( 1 /GND )
-  ( 2 ? )
-  ( 3 ? )
-  ( 4 ? )
-  ( 5 ? )
-  ( 6 ? )
-  ( 7 ? )
-  ( 8 /GND )
+ ( /4FBE93D7 $noname  P4 CONN_8 {Lib=CONN_8}
+  (    1 /AREF )
+  (    2 GND )
+  (    3 /13 )
+  (    4 /12 )
+  (    5 /11 )
+  (    6 /10 )
+  (    7 /9 )
+  (    8 /8 )
  )
- ( /4FBE9D25 PIN_ARRAY_2X2 P11 CONN_4
-  ( 1 /7 )
-  ( 2 ? )
-  ( 3 /5V )
-  ( 4 ? )
+ ( /4FBE93CE $noname  P5 CONN_8 {Lib=CONN_8}
+  (    1 /7 )
+  (    2 /6 )
+  (    3 /5 )
+  (    4 /4 )
+  (    5 /3 )
+  (    6 /2 )
+  (    7 /TX )
+  (    8 /RX )
  )
- ( /4FBE9C86 pin_array_8x2 P12 CONN_8
-  ( 1 /8 )
-  ( 2 /9 )
-  ( 3 /10 )
-  ( 4 /11 )
-  ( 5 /12 )
-  ( 6 /A0 )
-  ( 7 /A1 )
-  ( 8 /A2 )
+ ( /4FBE9062 $noname  P1 CONN_6 {Lib=CONN_6}
+  (    1 ? )
+  (    2 ? )
+  (    3 /5V )
+  (    4 GND )
+  (    5 GND )
+  (    6 ? )
  )
- ( /4FBE9768 SM0805 R1 R
-  ( 1 /13 )
-  ( 2 N-000005 )
+ ( /4FBF0ED2 $noname  P2 CONN_6 {Lib=CONN_6}
+  (    1 /A0 )
+  (    2 /A1 )
+  (    3 /A2 )
+  (    4 /A3 )
+  (    5 /A4 )
+  (    6 /A5 )
  )
- ( /4FBE9797 SW_PUSH_SMALL SW1 SW_PUSH_SMALL
-  ( 1 ? )
-  ( 2 /GND )
+ ( /4FBF0ED8 $noname  P3 CONN_6 {Lib=CONN_6}
+  (    1 /A0 )
+  (    2 /A1 )
+  (    3 /A2 )
+  (    4 /A3 )
+  (    5 /A4 )
+  (    6 /A5 )
  )
 )
 *
 { Allowed footprints by component:
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
 $component D1
  LED-3MM
  LED-5MM
@@ -136,10 +139,104 @@ $component D1
  LED-1206
  LEDV
 $endlist
-$component R1
- R?
- SM0603
- SM0805
-$endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 2 "GND" "GND"
+ P7 2
+ P4 2
+ P1 4
+ P1 5
+ P8 6
+ SW1 2
+ D1 2
+ P10 1
+ P10 8
+Net 14 "/AREF" "AREF"
+ P4 1
+ P7 1
+Net 15 "/13" "13"
+ R1 2
+ P4 3
+ P8 3
+ P7 3
+Net 16 "/A0" "A0"
+ P3 1
+ P12 6
+ P2 1
+Net 17 "/A1" "A1"
+ P2 2
+ P3 2
+ P12 7
+Net 18 "/A2" "A2"
+ P2 3
+ P12 8
+ P3 3
+Net 19 "/A3" "A3"
+ P2 4
+ P3 4
+Net 20 "/A4" "A4"
+ P3 5
+ P2 5
+Net 21 "/A5" "A5"
+ P2 6
+ P3 6
+Net 23 "" ""
+ R1 1
+ D1 1
+Net 24 "/4" "4"
+ P6 4
+ P5 4
+Net 25 "/12" "12"
+ P12 5
+ P7 4
+ P8 1
+ P4 4
+Net 26 "/11" "11"
+ P12 4
+ P4 5
+ P8 4
+ P7 5
+Net 27 "/10" "10"
+ P8 5
+ P12 3
+ P7 6
+ P4 6
+Net 28 "/9" "9"
+ P4 7
+ P12 2
+ P7 7
+Net 29 "/8" "8"
+ P12 1
+ P7 8
+ P4 8
+Net 30 "/7" "7"
+ P6 1
+ P11 1
+ P5 1
+Net 31 "/6" "6"
+ P6 2
+ P5 2
+Net 32 "/5" "5"
+ P6 3
+ P5 3
+Net 33 "/3" "3"
+ P6 5
+ P5 5
+Net 34 "/2" "2"
+ P6 6
+ P5 6
+Net 35 "/TX" "TX"
+ P6 7
+ P5 7
+Net 36 "/RX" "RX"
+ P5 8
+ P6 8
+Net 39 "/5V" "5V"
+ P9 8
+ P1 3
+ P11 3
+ P8 2
+ P9 1
+}
+#End
