@@ -1,7 +1,7 @@
-# EESchema Netlist Version 1.1 created  Wed 02 May 2012 01:18:43 PM EDT
+# EESchema Netlist Version 1.1 created  Tue 29 May 2012 05:09:02 PM EDT
 (
  ( /4F8C5AE2 $noname  VR1 MIC29151-5.0WU {Lib=MIC29151-5.0WU}
-  (    1 /V_IN )
+  (    1 /EN5 )
   (    2 /V_IN )
   (    3 GND )
   (    4 /5V )
@@ -9,7 +9,7 @@
   (    6 GND )
  )
  ( /4F8C5AF1 $noname  VR2 MIC29151-12WU {Lib=MIC29151-12WU}
-  (    1 /V_IN )
+  (    1 /EN12 )
   (    2 /V_IN )
   (    3 GND )
   (    4 /12V )
@@ -55,18 +55,18 @@
   (    9 ? )
   (   10 ? )
   (   11 ? )
-  (   12 N-000010 )
-  (   13 N-000012 )
-  (   14 N-000011 )
+  (   12 N-000037 )
+  (   13 N-000035 )
+  (   14 N-000036 )
   (   15 /D+ )
   (   16 /D- )
-  (   17 N-000008 )
+  (   17 N-000032 )
   (   18 GND )
   (   19 ? )
   (   20 /5V )
   (   21 GND )
-  (   22 N-000013 )
-  (   23 N-000014 )
+  (   22 N-000034 )
+  (   23 N-000033 )
   (   25 GND )
   (   26 GND )
   (   27 ? )
@@ -85,15 +85,15 @@
   (    2 /5V )
  )
  ( /4F9EC434 $noname  P2 CONN_6 {Lib=CONN_6}
-  (    1 N-000014 )
-  (    2 N-000013 )
-  (    3 N-000012 )
-  (    4 N-000011 )
-  (    5 N-000010 )
+  (    1 N-000033 )
+  (    2 N-000034 )
+  (    3 N-000035 )
+  (    4 N-000036 )
+  (    5 N-000037 )
   (    6 GND )
  )
  ( /4F9EC711 $noname  C8 100nF {Lib=C}
-  (    1 N-000008 )
+  (    1 N-000032 )
   (    2 GND )
  )
  ( /4F9EC731 $noname  C7 100nF {Lib=C}
@@ -130,6 +130,82 @@
   (    1 /V_EXT )
   (    2 /V_IN )
   (    3 /V_BAT )
+ )
+ ( /4FC5309F $noname  SHIELD1 ARDUINO_SHIELD {Lib=ARDUINO_SHIELD}
+  (    0 /TXD )
+  (    1 /RXD )
+  (    2 N-000031 )
+  (    3 N-000030 )
+  (    4 N-000016 )
+  (    5 N-000015 )
+  (   5V ? )
+  (    6 N-000014 )
+  (    7 N-000006 )
+  (    8 N-000012 )
+  (    9 N-000011 )
+  (   10 N-000019 )
+  (   11 N-000020 )
+  (   12 N-000021 )
+  (   13 N-000022 )
+  (  3V3 ? )
+  (  AD0 N-000009 )
+  (  AD1 N-000008 )
+  (  AD2 N-000007 )
+  (  AD3 N-000013 )
+  (  AD4 N-000028 )
+  (  AD5 N-000027 )
+  ( AREF N-000024 )
+  ( GND1 GND )
+  ( GND2 GND )
+  ( GND3 N-000025 )
+  (  RST N-000026 )
+  ( V_IN /12V )
+ )
+ ( /4FC5340C $noname  P9 CONN_8 {Lib=CONN_8}
+  (    1 N-000024 )
+  (    2 N-000025 )
+  (    3 N-000022 )
+  (    4 N-000021 )
+  (    5 N-000020 )
+  (    6 N-000019 )
+  (    7 N-000011 )
+  (    8 N-000012 )
+ )
+ ( /4FC5341B $noname  P10 CONN_8 {Lib=CONN_8}
+  (    1 N-000006 )
+  (    2 N-000014 )
+  (    3 N-000015 )
+  (    4 N-000016 )
+  (    5 N-000030 )
+  (    6 N-000031 )
+  (    7 /RXD )
+  (    8 /TXD )
+ )
+ ( /4FC5342A $noname  P8 CONN_6 {Lib=CONN_6}
+  (    1 N-000027 )
+  (    2 N-000028 )
+  (    3 N-000013 )
+  (    4 N-000007 )
+  (    5 N-000008 )
+  (    6 N-000009 )
+ )
+ ( /4FC54115 $noname  JMP2 SJMP {Lib=SJMP}
+  (    1 ? )
+  (    2 /EN12 )
+ )
+ ( /4FC54124 $noname  JMP1 SJMP {Lib=SJMP}
+  (    1 ? )
+  (    2 /EN5 )
+ )
+ ( /4FC54147 $noname  P11 CONN_1 {Lib=CONN_1}
+  (    1 /EN5 )
+ )
+ ( /4FC54156 $noname  P12 CONN_1 {Lib=CONN_1}
+  (    1 /EN12 )
+ )
+ ( /4FC549F4 $noname  SW1 SW_PUSH_SMALL {Lib=SW_PUSH_SMALL}
+  (    1 GND )
+  (    2 N-000026 )
  )
 )
 *
@@ -192,96 +268,173 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 3 "GND" "GND"
- C2 2
- C1 2
- D1 1
- VR2 6
- P4 1
  P7 1
- P2 6
- U1 26
- U1 21
- U1 25
- VR1 6
- U1 18
- C5 2
- VR2 3
- U1 7
- C3 2
- VR1 3
- C4 2
- C6 2
- P5 1
- C8 2
- P6 1
- C7 2
- P1 8
- P1 7
- P3 1
  J1 4
  J1 5
  J1 6
-Net 4 "/5V" "5V"
- U1 4
- VR1 4
- P6 2
- C4 1
- C7 1
- C6 1
- P7 2
- U1 20
- J1 1
-Net 5 "/V_EXT" "V_EXT"
- P3 2
- K1 1
-Net 6 "/V_BAT" "V_BAT"
- P1 2
- K1 3
- P1 1
-Net 7 "/RXD" "RXD"
- P1 4
- U1 5
-Net 8 "" ""
- C8 1
- U1 17
-Net 9 "/V_IN" "V_IN"
- D1 2
- K1 2
- VR1 1
- C2 1
- VR2 2
+ VR1 3
+ C1 2
+ U1 18
+ C2 2
+ U1 25
+ VR2 6
+ U1 21
+ C3 2
+ C5 2
+ VR2 3
+ P4 1
+ P3 1
+ P1 7
+ U1 7
+ P1 8
+ C4 2
+ C6 2
+ D1 1
+ U1 26
+ SHIELD1 GND1
+ SHIELD1 GND2
+ VR1 6
+ C8 2
+ SW1 1
+ C7 2
+ P5 1
+ P2 6
+ P6 1
+Net 4 "/EN12" "EN12"
  VR2 1
- VR1 2
- C1 1
-Net 10 "" ""
- P2 5
- U1 12
+ JMP2 2
+ P12 1
+Net 5 "/EN5" "EN5"
+ VR1 1
+ JMP1 2
+ P11 1
+Net 6 "" ""
+ P10 1
+ SHIELD1 7
+Net 7 "" ""
+ P8 4
+ SHIELD1 AD2
+Net 8 "" ""
+ P8 5
+ SHIELD1 AD1
+Net 9 "" ""
+ P8 6
+ SHIELD1 AD0
 Net 11 "" ""
- U1 14
- P2 4
+ SHIELD1 9
+ P9 7
 Net 12 "" ""
- U1 13
- P2 3
+ P9 8
+ SHIELD1 8
 Net 13 "" ""
- U1 22
- P2 2
+ SHIELD1 AD3
+ P8 3
 Net 14 "" ""
- U1 23
- P2 1
-Net 17 "/TXD" "TXD"
- P1 3
+ SHIELD1 6
+ P10 2
+Net 15 "" ""
+ SHIELD1 5
+ P10 3
+Net 16 "" ""
+ SHIELD1 4
+ P10 4
+Net 17 "/RXD" "RXD"
+ P10 7
+ U1 5
+ P1 4
+ SHIELD1 1
+Net 18 "/TXD" "TXD"
+ P10 8
  U1 1
-Net 21 "/12V" "12V"
- P5 2
+ SHIELD1 0
+ P1 3
+Net 19 "" ""
+ P9 6
+ SHIELD1 10
+Net 20 "" ""
+ SHIELD1 11
+ P9 5
+Net 21 "" ""
+ SHIELD1 12
+ P9 4
+Net 22 "" ""
+ SHIELD1 13
+ P9 3
+Net 23 "/12V" "12V"
  C3 1
  C5 1
- VR2 4
+ P5 2
  P4 2
-Net 28 "/D+" "D+"
- J1 3
+ VR2 4
+ SHIELD1 V_IN
+Net 24 "" ""
+ P9 1
+ SHIELD1 AREF
+Net 25 "" ""
+ SHIELD1 GND3
+ P9 2
+Net 26 "" ""
+ SW1 2
+ SHIELD1 RST
+Net 27 "" ""
+ P8 1
+ SHIELD1 AD5
+Net 28 "" ""
+ P8 2
+ SHIELD1 AD4
+Net 30 "" ""
+ SHIELD1 3
+ P10 5
+Net 31 "" ""
+ SHIELD1 2
+ P10 6
+Net 32 "" ""
+ U1 17
+ C8 1
+Net 33 "" ""
+ U1 23
+ P2 1
+Net 34 "" ""
+ U1 22
+ P2 2
+Net 35 "" ""
+ U1 13
+ P2 3
+Net 36 "" ""
+ P2 4
+ U1 14
+Net 37 "" ""
+ U1 12
+ P2 5
+Net 49 "/5V" "5V"
+ C4 1
+ P7 2
+ U1 20
+ U1 4
+ J1 1
+ P6 2
+ C6 1
+ C7 1
+ VR1 4
+Net 52 "/V_BAT" "V_BAT"
+ P1 1
+ K1 3
+ P1 2
+Net 53 "/V_IN" "V_IN"
+ K1 2
+ D1 2
+ C1 1
+ C2 1
+ VR1 2
+ VR2 2
+Net 54 "/V_EXT" "V_EXT"
+ K1 1
+ P3 2
+Net 55 "/D+" "D+"
  U1 15
-Net 29 "/D-" "D-"
- U1 16
+ J1 3
+Net 56 "/D-" "D-"
  J1 2
+ U1 16
 }
 #End

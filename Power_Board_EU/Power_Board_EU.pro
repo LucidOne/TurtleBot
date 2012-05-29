@@ -1,4 +1,4 @@
-update=Wed 02 May 2012 01:49:50 PM EDT
+update=Tue 29 May 2012 05:28:30 PM EDT
 version=1
 last_client=cvpcb
 [general]
@@ -36,12 +36,12 @@ LibName12=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
 LibName13=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb
 LibName14=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-2
 LibName15=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-3
-LibName16=/media/sf_Carlitos/Documents/GitHub/r_mini_din
+LibName16=/media/sf_Carlitos/Documents/GitHub/TurtleBot/buttons_shield/arduino_shields
 LibDir=
 [eeschema]
 version=1
 LibDir=
-NetFmt=1
+NetFmtName=
 HPGLSpd=20
 HPGLDm=15
 HPGLNum=1
@@ -81,6 +81,7 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
+LibName32=/media/sf_Carlitos/Documents/GitHub/TurtleBot/buttons_shield/arduino_shieldsNCL
 [cvpcb]
 version=1
 NetIExt=net
