@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Tue 29 May 2012 05:42:39 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Wed 30 May 2012 08:30:45 PM EDT
 
 BeginCmp
 TimeStamp = /4F8C5C50;
@@ -11,7 +11,7 @@ BeginCmp
 TimeStamp = /4F8C5C5D;
 Reference = C2;
 ValeurCmp = 10uF;
-IdModule  = SMDHD/VF;
+IdModule  = SMD_CAP_5m;
 EndCmp
 
 BeginCmp
@@ -71,17 +71,17 @@ IdModule  = USB_B;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FC54124;
+TimeStamp = /4FC682BB;
 Reference = JMP1;
 ValeurCmp = SJMP;
-IdModule  = SM0805;
+IdModule  = Solder_Jumper;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FC54115;
+TimeStamp = /4FC682DC;
 Reference = JMP2;
 ValeurCmp = SJMP;
-IdModule  = SM0805;
+IdModule  = Solder_Jumper;
 EndCmp
 
 BeginCmp
@@ -141,13 +141,6 @@ IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FC5342A;
-Reference = P8;
-ValeurCmp = CONN_6;
-IdModule  = pin_array_6x1;
-EndCmp
-
-BeginCmp
 TimeStamp = /4FC5340C;
 Reference = P9;
 ValeurCmp = CONN_8;
@@ -176,10 +169,31 @@ IdModule  = PIN_ARRAY_1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FC5309F;
+TimeStamp = /4FC64B83;
+Reference = P15;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_8x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC64B92;
+Reference = P16;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_8x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC645AA;
+Reference = P17;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_8x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC54690;
 Reference = SHIELD1;
-ValeurCmp = ARDUINO_SHIELD;
-IdModule  = ARDUINO_SHIELD;
+ValeurCmp = ARDUINO_MEGA_SHIELD;
+IdModule  = ARDUINO_MEGA_SHIELD;
 EndCmp
 
 BeginCmp
