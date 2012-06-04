@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 09 Apr 2012 08:06:20 PM EDT
+EESchema Schematic File Version 2  date Fri 25 May 2012 08:41:02 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:tlc5940
 LIBS:IHE
 LIBS:RingOfFireLight-cache
 EELAYER 25  0
@@ -38,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LED circle with Arduino Mini 328"
-Date "10 apr 2012"
+Date "26 may 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -551,25 +550,25 @@ F 1 "VCC" H 4550 5650 30  0000 C CNN
 $EndComp
 Text Label 3750 5700 0    60   ~ 0
 D10
+Text Label 2800 3750 0    60   ~ 0
+GND
 Text Label 2800 3950 0    60   ~ 0
-GND
+VCC
+Text Label 2800 4050 0    60   ~ 0
+SCLK
 Text Label 2800 4150 0    60   ~ 0
-VCC
+GSCLK
 Text Label 2800 4250 0    60   ~ 0
-SCLK
-Text Label 2800 4350 0    60   ~ 0
-GSCLK
-Text Label 2800 4450 0    60   ~ 0
 SOUT
-Text Label 3850 3950 0    60   ~ 0
+Text Label 3850 3750 0    60   ~ 0
 GND
-Text Label 3850 4150 0    60   ~ 0
+Text Label 3850 3950 0    60   ~ 0
 VCC
-Text Label 3850 4250 0    60   ~ 0
+Text Label 3850 4050 0    60   ~ 0
 SCLK
-Text Label 3850 4350 0    60   ~ 0
+Text Label 3850 4150 0    60   ~ 0
 GSCLK
-Text Label 3850 4450 0    60   ~ 0
+Text Label 3850 4250 0    60   ~ 0
 SIN
 Text Label 3750 5400 0    60   ~ 0
 SIN
@@ -594,11 +593,11 @@ Text Label 9850 2650 0    60   ~ 0
 MOSI
 Text Label 9850 2750 0    60   ~ 0
 GND
-Text Label 9050 2550 0    60   ~ 0
+Text Label 9050 2550 2    60   ~ 0
 MISO
-Text Label 9050 2650 0    60   ~ 0
+Text Label 9050 2650 2    60   ~ 0
 SCK
-Text Label 9050 2750 0    60   ~ 0
+Text Label 9050 2750 2    60   ~ 0
 RESET
 Text Notes 2650 1050 0    60   ~ 0
 FTDI Basic
@@ -747,27 +746,9 @@ Text Label 7800 2900 0    60   ~ 0
 12V
 Text Label 7100 1000 0    60   ~ 0
 12V
-$Comp
-L CONN_6 P1
-U 1 1 4F70C1E8
-P 2350 4200
-F 0 "P1" V 2300 4200 60  0000 C CNN
-F 1 "CONN_6" V 2400 4200 60  0000 C CNN
-	1    2350 4200
-	-1   0    0    1   
-$EndComp
-$Comp
-L CONN_6 P2
-U 1 1 4F70C1F5
-P 3400 4200
-F 0 "P2" V 3350 4200 60  0000 C CNN
-F 1 "CONN_6" V 3450 4200 60  0000 C CNN
-	1    3400 4200
-	-1   0    0    1   
-$EndComp
-Text Label 2800 4050 0    60   ~ 0
+Text Label 2800 3850 0    60   ~ 0
 V_LED
-Text Label 3850 4050 0    60   ~ 0
+Text Label 3850 3850 0    60   ~ 0
 V_LED
 Text Notes 8800 7000 0    60   ~ 0
 Resonator\n490-1198-1-ND
@@ -923,6 +904,49 @@ F 0 "#PWR4" H 1900 3250 30  0001 C CNN
 F 1 "GND" H 1900 3180 30  0001 C CNN
 	1    1900 3250
 	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 2100
+NoConn ~ 3800 2000
+NoConn ~ 3800 1900
+NoConn ~ 3800 2400
+NoConn ~ 3800 2500
+NoConn ~ 2000 3350
+$Comp
+L CONN_3 K1
+U 1 1 4F837AD4
+P 5850 2200
+F 0 "K1" V 5800 2200 50  0000 C CNN
+F 1 "CONN_3" V 5900 2200 40  0000 C CNN
+	1    5850 2200
+	-1   0    0    1   
+$EndComp
+Text Notes 6750 4200 0    60   ~ 0
+Arduino Pro Mini Connectors
+Text Notes 5750 2550 0    60   ~ 0
+Sensor Connectors
+Text Label 6200 2300 0    60   ~ 0
+GND
+Text Label 6200 2200 0    60   ~ 0
+VCC
+Text Label 6200 2100 0    60   ~ 0
+D7
+$Comp
+L CONN_8 P?
+U 1 1 4FC026C4
+P 2350 4100
+F 0 "P?" V 2300 4100 60  0000 C CNN
+F 1 "CONN_8" V 2400 4100 60  0000 C CNN
+	1    2350 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_8 P?
+U 1 1 4FC026D1
+P 3400 4100
+F 0 "P?" V 3350 4100 60  0000 C CNN
+F 1 "CONN_8" V 3450 4100 60  0000 C CNN
+	1    3400 4100
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	9450 6100 9050 6100
@@ -1103,25 +1127,25 @@ Wire Wire Line
 Wire Wire Line
 	4550 5700 4550 5550
 Wire Wire Line
+	2700 3850 2800 3850
+Wire Wire Line
+	2700 3950 2800 3950
+Wire Wire Line
 	2700 4050 2800 4050
 Wire Wire Line
 	2700 4150 2800 4150
 Wire Wire Line
 	2700 4250 2800 4250
 Wire Wire Line
-	2700 4350 2800 4350
+	3750 3850 3850 3850
 Wire Wire Line
-	2700 4450 2800 4450
+	3750 3950 3850 3950
 Wire Wire Line
 	3750 4050 3850 4050
 Wire Wire Line
 	3750 4150 3850 4150
 Wire Wire Line
 	3750 4250 3850 4250
-Wire Wire Line
-	3750 4350 3850 4350
-Wire Wire Line
-	3750 4450 3850 4450
 Wire Wire Line
 	3750 5500 4000 5500
 Wire Wire Line
@@ -1158,9 +1182,9 @@ Connection ~ 7100 1650
 Wire Wire Line
 	5950 6800 5800 6800
 Wire Wire Line
-	2800 3950 2700 3950
+	2800 3750 2700 3750
 Wire Wire Line
-	3850 3950 3750 3950
+	3850 3750 3750 3750
 Wire Wire Line
 	7800 2200 7800 2050
 Wire Wire Line
@@ -1234,29 +1258,20 @@ Wire Wire Line
 	1900 2600 1950 2600
 Wire Wire Line
 	1900 3250 1900 3100
-NoConn ~ 3800 2100
-NoConn ~ 3800 2000
-NoConn ~ 3800 1900
-NoConn ~ 3800 2400
-NoConn ~ 3800 2500
-NoConn ~ 2000 3350
-$Comp
-L CONN_3 K1
-U 1 1 4F837AD4
-P 5850 2200
-F 0 "K1" V 5800 2200 50  0000 C CNN
-F 1 "CONN_3" V 5900 2200 40  0000 C CNN
-	1    5850 2200
-	-1   0    0    1   
-$EndComp
-Text Notes 6750 4200 0    60   ~ 0
-Arduino Pro Mini Connectors
-Text Notes 5750 2550 0    60   ~ 0
-Sensor Connectors
-Text Label 6200 2300 0    60   ~ 0
-GND
-Text Label 6200 2200 0    60   ~ 0
-VCC
-Text Label 6200 2100 0    60   ~ 0
-D7
+Wire Wire Line
+	3750 4350 3850 4350
+Wire Wire Line
+	3750 4450 3850 4450
+Wire Wire Line
+	2700 4350 2800 4350
+Wire Wire Line
+	2700 4450 2800 4450
+Text Label 3850 4350 0    60   ~ 0
+D9
+Text Label 2800 4350 0    60   ~ 0
+D9
+Text Label 2800 4450 0    60   ~ 0
+D10
+Text Label 3850 4450 0    60   ~ 0
+D10
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 30 May 2012 12:32:51 PM EDT
+EESchema Schematic File Version 2  date Mon 04 Jun 2012 06:28:09 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power Board EU version"
-Date "30 may 2012"
+Date "4 jun 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by: Carlos Chinchilla"
@@ -190,24 +190,6 @@ F 1 "GND" H 8100 5880 30  0001 C CNN
 	1    8100 5950
 	1    0    0    -1  
 $EndComp
-$Comp
-L DIODE D1
-U 1 1 4F8C5CCA
-P 7750 5350
-F 0 "D1" H 7750 5450 40  0000 C CNN
-F 1 "DIODE" H 7750 5250 40  0000 C CNN
-	1    7750 5350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR10
-U 1 1 4F8C5CD7
-P 7750 5950
-F 0 "#PWR10" H 7750 5950 30  0001 C CNN
-F 1 "GND" H 7750 5880 30  0001 C CNN
-	1    7750 5950
-	1    0    0    -1  
-$EndComp
 Text Label 8100 5100 0    60   ~ 0
 V_IN
 Text Label 8100 3850 0    60   ~ 0
@@ -315,28 +297,6 @@ Text Notes 6750 5050 0    60   ~ 0
 TO ROOMBA
 Text Notes 4900 4500 0    60   ~ 0
 TO USB
-$Comp
-L CONN_6 P2
-U 1 1 4F9EC434
-P 7550 2750
-F 0 "P2" V 7500 2750 60  0000 C CNN
-F 1 "CONN_6" V 7600 2750 60  0000 C CNN
-	1    7550 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR9
-U 1 1 4F9EC44E
-P 7200 3150
-F 0 "#PWR9" H 7200 3150 30  0001 C CNN
-F 1 "GND" H 7200 3080 30  0001 C CNN
-	1    7200 3150
-	1    0    0    -1  
-$EndComp
-Text Label 7200 3000 2    60   ~ 0
-GND
-Text Notes 7650 2400 2    60   ~ 0
-CBUS
 $Comp
 L C C8
 U 1 1 4F9EC711
@@ -666,6 +626,10 @@ F 1 "SJMP" H 4450 3401 40  0000 C CNN
 	1    4350 3550
 	0    -1   -1   0   
 $EndComp
+Text Label 4150 3150 2    60   ~ 0
+5V
+Text Label 4150 3550 2    60   ~ 0
+5V
 Wire Wire Line
 	9000 6000 9000 5800
 Wire Wire Line
@@ -689,17 +653,10 @@ Wire Wire Line
 Wire Wire Line
 	8100 5500 8100 5950
 Wire Wire Line
-	7750 5100 8400 5100
-Wire Wire Line
 	8100 3850 8450 3850
-Wire Wire Line
-	7750 5950 7750 5550
-Wire Wire Line
-	7750 5100 7750 5150
 Connection ~ 8100 5100
 Wire Wire Line
 	8400 5350 8400 5650
-Connection ~ 8350 5100
 Wire Wire Line
 	8450 4100 8450 4350
 Connection ~ 8400 3850
@@ -724,18 +681,6 @@ Wire Wire Line
 	8800 1900 8800 2050
 Wire Wire Line
 	9650 2450 9650 2600
-Wire Wire Line
-	7200 2900 6900 2900
-Wire Wire Line
-	6900 2800 7200 2800
-Wire Wire Line
-	7200 2700 6900 2700
-Wire Wire Line
-	6900 2600 7200 2600
-Wire Wire Line
-	7200 2500 6900 2500
-Wire Wire Line
-	7200 3150 7200 3000
 Wire Wire Line
 	5050 3400 5050 3900
 Wire Wire Line
@@ -877,11 +822,10 @@ Wire Wire Line
 	1350 5250 1200 5250
 Connection ~ 1200 5350
 Wire Wire Line
-	3350 3600 4150 3150
-Connection ~ 3350 3600
-Connection ~ 3350 3600
-Wire Wire Line
-	3350 3700 4150 3550
-Connection ~ 3350 3700
-Connection ~ 3350 3700
+	8100 5100 8400 5100
+NoConn ~ 6900 2500
+NoConn ~ 6900 2600
+NoConn ~ 6900 2700
+NoConn ~ 6900 2800
+NoConn ~ 6900 2900
 $EndSCHEMATC
