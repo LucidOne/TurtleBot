@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Fri 25 May 2012 05:13:50 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Wed 06 Jun 2012 07:40:24 PM EDT
 
 BeginCmp
 TimeStamp = /4FBE975E;
@@ -67,14 +67,14 @@ BeginCmp
 TimeStamp = /4FBE9470;
 Reference = P9;
 ValeurCmp = CONN_8;
-IdModule  = pin_array_8x1;
+IdModule  = Term Block 8pin Snap Conn;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FBE944D;
 Reference = P10;
 ValeurCmp = CONN_8;
-IdModule  = pin_array_8x1;
+IdModule  = Term Block 8pin Snap Conn;
 EndCmp
 
 BeginCmp
@@ -88,7 +88,7 @@ BeginCmp
 TimeStamp = /4FBE9C86;
 Reference = P12;
 ValeurCmp = CONN_8;
-IdModule  = pin_array_8x1;
+IdModule  = Term Block 8pin Snap Conn;
 EndCmp
 
 BeginCmp
