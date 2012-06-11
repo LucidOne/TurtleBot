@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Tue 24 Jan 2012 02:15:25 PM EST
+Cmp-Mod V01 Created by PcbNew date = Mon 11 Jun 2012 01:47:21 PM EDT
 
 BeginCmp
 TimeStamp = /4F1C7DC1;
@@ -102,7 +102,7 @@ BeginCmp
 TimeStamp = /4F1CCA89;
 Reference = P2;
 ValeurCmp = CONN_2;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
 EndCmp
 
 BeginCmp
