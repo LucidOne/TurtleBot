@@ -1,7 +1,7 @@
 Power Board for Turtlebot European Version
 
 
-Bill of Materials -- coming soon
+Bill of Materials
 
 
 Item					DigiKey P. No. 			Manufacturer		Manufacturer P. No.		Datasheet url
@@ -28,3 +28,13 @@ CONN HEADER 2POS R/A W/NAIL SMD		WM1890CT-ND			Molex Inc.			0436500212	http://ww
 CONN TERM BLOCK SPRNG 8POS 2.5MM	277-1800-ND			Phoenix Contact			1990067		http://www.phoenixcontact.com/online/portal/us/pxc/product_detail_page/!ut/p/b1/04_SjzQ0tTQ2MTMzM7TQj9CPykssy0xPLMnMz0vMAfGjzOJDnEJcXQOMzAz9A02dDDxdTJ1dfUyCDD38jIAKIvEocDQkTr8BDuBoQEh_uH4UXiUgF4AV4LHCzyM_N1U_NyrHzdJT1xEAasn7vg!!/dl4/d5/L0lDU0lKSmdrS0NsRUp
 
 CONN HEADER 2POS VERT SMD TIN		WM1801-ND			Molex Connector Corporation	43045-0218	http://www.molex.com/pdm_docs/sd/430450218_sd.pdf
+
+CAP ALUM 10UF 25V 20% SMD		PCE4751TR-ND		PANASONIC - ECG		EEE-HB1E100AR
+
+CAP CER 0.1UF 50V 20% X7R 0805		399-1169-2-ND		Kemet			C0805C104M5RACTU 	http://www.kemet.com/datasheets&C0805C104M5RACTU
+
+FT232RL-IC USB FS SERIAL UART 28-SSOP	768-1007-2-ND	Future Technology Devices Int.	FT232RL-REEL	http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
+	
+CONN USB RCPT 4PS R/A TYPE B T/H	A98573-ND		TE Connectivity		292304-2	http://documents.tycoelectronics.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=292304&DocType=CD&DocLang=EN
+
+SWITCH TACTILE SPST-NO 0.05A 12V	450-1650-ND		TE Connectivity		FSM4JH	

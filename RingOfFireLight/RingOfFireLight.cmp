@@ -1,17 +1,10 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Mon 09 Apr 2012 08:07:34 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Wed 13 Jun 2012 12:30:56 PM EDT
 
 BeginCmp
 TimeStamp = /4F69FFDA;
 Reference = C1;
 ValeurCmp = 10uF_25V;
-IdModule  = SMDHD/VF;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F6524CF;
-Reference = C2;
-ValeurCmp = 0.1uF;
-IdModule  = SM0805;
+IdModule  = SMD_CAP_5m;
 EndCmp
 
 BeginCmp
@@ -25,7 +18,7 @@ BeginCmp
 TimeStamp = /4F69F59A;
 Reference = C4;
 ValeurCmp = 10uF_25V;
-IdModule  = SMDHD/VF;
+IdModule  = SMD_CAP_5m;
 EndCmp
 
 BeginCmp
@@ -46,7 +39,7 @@ BeginCmp
 TimeStamp = /4F7A1289;
 Reference = C7;
 ValeurCmp = 10uF_25V;
-IdModule  = SM0805;
+IdModule  = SMD_CAP_5m;
 EndCmp
 
 BeginCmp
@@ -225,45 +218,24 @@ IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F70C1E8;
+TimeStamp = /4FC026C4;
 Reference = P1;
-ValeurCmp = CONN_6;
-IdModule  = pin_array_3x2;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_4x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F70C1F5;
+TimeStamp = /4FC026D1;
 Reference = P2;
-ValeurCmp = CONN_6;
-IdModule  = pin_array_3x2;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_4x2;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F709ADC;
 Reference = P3;
 ValeurCmp = CONN_2;
-IdModule  = CONN_2POS_RA_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F65EF1D;
-Reference = P4;
-ValeurCmp = CONN_12;
-IdModule  = pin_array_12x1;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F65EEDB;
-Reference = P5;
-ValeurCmp = CONN_12;
-IdModule  = pin_array_12x2;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F65FCCB;
-Reference = P6;
-ValeurCmp = CONN_2;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = CONN_2POS_RA_TH;
 EndCmp
 
 BeginCmp
@@ -330,9 +302,9 @@ IdModule  = SW_PUSH_SMALL;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F66ABEC;
+TimeStamp = /4FD8C1EE;
 Reference = TLC1;
-ValeurCmp = TLC5940;
+ValeurCmp = TLC5940-PWP;
 IdModule  = SSOP28;
 EndCmp
 
