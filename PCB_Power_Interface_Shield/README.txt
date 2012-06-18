@@ -1,5 +1,4 @@
-Power Board for Turtlebot European Version
-
+TurtleBot Power Interface Shield
 
 Bill of Materials
 
