@@ -1,0 +1,185 @@
+Cmp-Mod V01 Created by PcbNew date = Wed 06 Jun 2012 04:25:24 PM EDT
+
+BeginCmp
+TimeStamp = /4F9EC731;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC711;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5C50;
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = SMD_CAP_5m;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5C5D;
+Reference = C4;
+ValeurCmp = 10uF;
+IdModule  = SMD_CAP_5m;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B65;
+Reference = C5;
+ValeurCmp = 10uF;
+IdModule  = SMD_CAP_5m;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B82;
+Reference = C6;
+ValeurCmp = 10uF;
+IdModule  = SMD_CAP_5m;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B72;
+Reference = C7;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5B88;
+Reference = C8;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9ECAD6;
+Reference = J1;
+ValeurCmp = USB;
+IdModule  = USB_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FCF76E4;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FA165FF;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FCF7A45;
+Reference = P1;
+ValeurCmp = CONN_7;
+IdModule  = pin_array_7x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC873;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C6322;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = SMD Microfit 2pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C62BB;
+Reference = P4;
+ValeurCmp = CONN_2;
+IdModule  = Header Mini-Fit RA 2x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F9EC865;
+Reference = P5;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C632F;
+Reference = P6;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FCF9629;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FCF952F;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC54690;
+Reference = SHIELD1;
+ValeurCmp = ARDUINO_MEGA_SHIELD;
+IdModule  = ARDUINO_MEGA_SHIELD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC549F4;
+Reference = SW1;
+ValeurCmp = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FCFA469;
+Reference = SW2;
+ValeurCmp = DPDT;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FCF9DB9;
+Reference = SW3;
+ValeurCmp = SWITCH_INV;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5F0B;
+Reference = U1;
+ValeurCmp = FT232RL;
+IdModule  = SSOP28;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5AE2;
+Reference = VR1;
+ValeurCmp = MIC29151-5.0WU;
+IdModule  = TO-263-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F8C5AF1;
+Reference = VR2;
+ValeurCmp = MIC29151-12WU;
+IdModule  = TO-263-5;
+EndCmp
+
+EndListe
