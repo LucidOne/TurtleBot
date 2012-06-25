@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Wed 06 Jun 2012 04:25:24 PM EDT
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Mon 25 Jun 2012 03:24:35 PM EDT
 
 BeginCmp
 TimeStamp = /4F9EC731;
@@ -120,10 +120,17 @@ IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FCF9629;
-Reference = R1;
-ValeurCmp = 10k;
-IdModule  = SM0805;
+TimeStamp = /4FE23660;
+Reference = P7;
+ValeurCmp = CONN_23X2;
+IdModule  = PIN_ARRAY_30X2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE23651;
+Reference = P8;
+ValeurCmp = CONN_23X2;
+IdModule  = PIN_ARRAY_30X2;
 EndCmp
 
 BeginCmp
@@ -134,23 +141,16 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FC54690;
-Reference = SHIELD1;
-ValeurCmp = ARDUINO_MEGA_SHIELD;
-IdModule  = ARDUINO_MEGA_SHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4FC549F4;
+TimeStamp = /4FE8A8A8;
 Reference = SW1;
-ValeurCmp = SW_PUSH_SMALL;
+ValeurCmp = SWITCH_INV;
 IdModule  = SW_PUSH_SMALL;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FCFA469;
+TimeStamp = /4FE8A72F;
 Reference = SW2;
-ValeurCmp = DPDT;
+ValeurCmp = SWITCH_INV;
 IdModule  = pin_array_3x2;
 EndCmp
 
@@ -158,7 +158,7 @@ BeginCmp
 TimeStamp = /4FCF9DB9;
 Reference = SW3;
 ValeurCmp = SWITCH_INV;
-IdModule  = ;
+IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
@@ -166,6 +166,13 @@ TimeStamp = /4F8C5F0B;
 Reference = U1;
 ValeurCmp = FT232RL;
 IdModule  = SSOP28;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE22897;
+Reference = U2;
+ValeurCmp = TXB0102;
+IdModule  = SO8N;
 EndCmp
 
 BeginCmp

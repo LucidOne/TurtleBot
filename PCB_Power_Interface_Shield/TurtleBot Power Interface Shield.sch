@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 06 Jun 2012 08:03:03 PM EDT
+EESchema Schematic File Version 2  date Mon 25 Jun 2012 04:52:07 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,14 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:IHE
 LIBS:arduino_shieldsNCL
-LIBS:Power_Board_EU-cache
 EELAYER 25  0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power Board EU version"
-Date "6 jun 2012"
+Date "25 jun 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by: Carlos Chinchilla"

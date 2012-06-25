@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 20 Jun 2012 04:35:49 PM EDT
+EESchema Schematic File Version 2  date Mon 25 Jun 2012 02:51:35 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
+LIBS:TurtleBot Power Interface Cape-cache
 EELAYER 25  0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power Interface Cape for BeagleBone"
-Date "20 jun 2012"
+Date "25 jun 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by: Carlos Chinchilla"
@@ -63,19 +64,19 @@ F 1 "MIC29151-12WU" H 9050 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR16
+L GND #PWR01
 U 1 1 4F8C5B26
 P 9000 6000
-F 0 "#PWR16" H 9000 6000 30  0001 C CNN
+F 0 "#PWR01" H 9000 6000 30  0001 C CNN
 F 1 "GND" H 9000 5930 30  0001 C CNN
 	1    9000 6000
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR17
+L GND #PWR02
 U 1 1 4F8C5B35
 P 9050 4700
-F 0 "#PWR17" H 9050 4700 30  0001 C CNN
+F 0 "#PWR02" H 9050 4700 30  0001 C CNN
 F 1 "GND" H 9050 4630 30  0001 C CNN
 	1    9050 4700
 	1    0    0    -1  
@@ -117,37 +118,37 @@ F 1 "100nF" H 10500 5200 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR22
+L GND #PWR03
 U 1 1 4F8C5BC4
 P 10450 4700
-F 0 "#PWR22" H 10450 4700 30  0001 C CNN
+F 0 "#PWR03" H 10450 4700 30  0001 C CNN
 F 1 "GND" H 10450 4630 30  0001 C CNN
 	1    10450 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR20
+L GND #PWR04
 U 1 1 4F8C5BD1
 P 10100 4700
-F 0 "#PWR20" H 10100 4700 30  0001 C CNN
+F 0 "#PWR04" H 10100 4700 30  0001 C CNN
 F 1 "GND" H 10100 4630 30  0001 C CNN
 	1    10100 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR23
+L GND #PWR05
 U 1 1 4F8C5BD7
 P 10450 6000
-F 0 "#PWR23" H 10450 6000 30  0001 C CNN
+F 0 "#PWR05" H 10450 6000 30  0001 C CNN
 F 1 "GND" H 10450 5930 30  0001 C CNN
 	1    10450 6000
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR21
+L GND #PWR06
 U 1 1 4F8C5BDD
 P 10100 6000
-F 0 "#PWR21" H 10100 6000 30  0001 C CNN
+F 0 "#PWR06" H 10100 6000 30  0001 C CNN
 F 1 "GND" H 10100 5930 30  0001 C CNN
 	1    10100 6000
 	1    0    0    -1  
@@ -162,10 +163,10 @@ F 1 "10uF" H 8150 3950 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR11
+L GND #PWR07
 U 1 1 4F8C5C56
 P 8100 4700
-F 0 "#PWR11" H 8100 4700 30  0001 C CNN
+F 0 "#PWR07" H 8100 4700 30  0001 C CNN
 F 1 "GND" H 8100 4630 30  0001 C CNN
 	1    8100 4700
 	1    0    0    -1  
@@ -180,10 +181,10 @@ F 1 "10uF" H 8150 5200 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR12
+L GND #PWR08
 U 1 1 4F8C5C63
 P 8100 5950
-F 0 "#PWR12" H 8100 5950 30  0001 C CNN
+F 0 "#PWR08" H 8100 5950 30  0001 C CNN
 F 1 "GND" H 8100 5880 30  0001 C CNN
 	1    8100 5950
 	1    0    0    -1  
@@ -201,33 +202,33 @@ NoConn ~ 9600 5350
 $Comp
 L FT232RL U1
 U 1 1 4F8C5F0B
-P 6000 2400
-F 0 "U1" H 6000 3300 60  0000 C CNN
-F 1 "FT232RL" H 6400 1400 60  0000 L CNN
-	1    6000 2400
+P 6400 2400
+F 0 "U1" H 6400 3300 60  0000 C CNN
+F 1 "FT232RL" H 6800 1400 60  0000 L CNN
+	1    6400 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR9
+L GND #PWR09
 U 1 1 4F8C5F75
-P 6000 3900
-F 0 "#PWR9" H 6000 3900 30  0001 C CNN
-F 1 "GND" H 6000 3830 30  0001 C CNN
-	1    6000 3900
+P 6400 3900
+F 0 "#PWR09" H 6400 3900 30  0001 C CNN
+F 1 "GND" H 6400 3830 30  0001 C CNN
+	1    6400 3900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6900 1900
-NoConn ~ 6900 2400
-NoConn ~ 6900 2300
-NoConn ~ 6900 2200
-NoConn ~ 6900 2000
-NoConn ~ 6900 2100
-NoConn ~ 5050 2400
-NoConn ~ 5050 2600
-NoConn ~ 5050 2700
+NoConn ~ 7300 1900
+NoConn ~ 7300 2400
+NoConn ~ 7300 2300
+NoConn ~ 7300 2200
+NoConn ~ 7300 2000
+NoConn ~ 7300 2100
+NoConn ~ 5450 2400
+NoConn ~ 5450 2600
+NoConn ~ 5450 2700
 Text Label 9650 6500 0    60   ~ 0
 5V_FTDI
-Text Label 5050 1650 2    60   ~ 0
+Text Label 5450 1650 2    60   ~ 0
 5V_FTDI
 $Comp
 L CONN_2 P4
@@ -239,10 +240,10 @@ F 1 "CONN_2" V 8500 2350 40  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR15
+L GND #PWR010
 U 1 1 4F8C62D4
 P 8800 2600
-F 0 "#PWR15" H 8800 2600 30  0001 C CNN
+F 0 "#PWR010" H 8800 2600 30  0001 C CNN
 F 1 "GND" H 8800 2530 30  0001 C CNN
 	1    8800 2600
 	1    0    0    -1  
@@ -257,10 +258,10 @@ F 1 "CONN_2" V 8500 1800 40  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR14
+L GND #PWR011
 U 1 1 4F8C6328
 P 8800 2050
-F 0 "#PWR14" H 8800 2050 30  0001 C CNN
+F 0 "#PWR011" H 8800 2050 30  0001 C CNN
 F 1 "GND" H 8800 1980 30  0001 C CNN
 	1    8800 2050
 	1    0    0    -1  
@@ -275,10 +276,10 @@ F 1 "CONN_2" V 9350 2350 40  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR19
+L GND #PWR012
 U 1 1 4F8C6335
 P 9650 2600
-F 0 "#PWR19" H 9650 2600 30  0001 C CNN
+F 0 "#PWR012" H 9650 2600 30  0001 C CNN
 F 1 "GND" H 9650 2530 30  0001 C CNN
 	1    9650 2600
 	1    0    0    -1  
@@ -298,37 +299,37 @@ TO USB
 $Comp
 L C C2
 U 1 1 4F9EC711
-P 5050 3200
-F 0 "C2" H 5100 3300 50  0000 L CNN
-F 1 "100nF" H 5100 3100 50  0000 L CNN
-	1    5050 3200
+P 5450 3200
+F 0 "C2" H 5500 3300 50  0000 L CNN
+F 1 "100nF" H 5500 3100 50  0000 L CNN
+	1    5450 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR6
+L GND #PWR013
 U 1 1 4F9EC717
-P 5050 3900
-F 0 "#PWR6" H 5050 3900 30  0001 C CNN
-F 1 "GND" H 5050 3830 30  0001 C CNN
-	1    5050 3900
+P 5450 3900
+F 0 "#PWR013" H 5450 3900 30  0001 C CNN
+F 1 "GND" H 5450 3830 30  0001 C CNN
+	1    5450 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C1
 U 1 1 4F9EC731
-P 4700 1850
-F 0 "C1" H 4750 1950 50  0000 L CNN
-F 1 "100nF" H 4750 1750 50  0000 L CNN
-	1    4700 1850
+P 5100 1850
+F 0 "C1" H 5150 1950 50  0000 L CNN
+F 1 "100nF" H 5150 1750 50  0000 L CNN
+	1    5100 1850
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR4
+L GND #PWR014
 U 1 1 4F9EC737
-P 4700 2550
-F 0 "#PWR4" H 4700 2550 30  0001 C CNN
-F 1 "GND" H 4700 2480 30  0001 C CNN
-	1    4700 2550
+P 5100 2550
+F 0 "#PWR014" H 5100 2550 30  0001 C CNN
+F 1 "GND" H 5100 2480 30  0001 C CNN
+	1    5100 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -341,10 +342,10 @@ F 1 "CONN_2" V 9350 1800 40  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR18
+L GND #PWR015
 U 1 1 4F9EC86B
 P 9650 2050
-F 0 "#PWR18" H 9650 2050 30  0001 C CNN
+F 0 "#PWR015" H 9650 2050 30  0001 C CNN
 F 1 "GND" H 9650 1980 30  0001 C CNN
 	1    9650 2050
 	1    0    0    -1  
@@ -361,10 +362,10 @@ F 1 "CONN_2" V 8300 3450 40  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR13
+L GND #PWR016
 U 1 1 4F9EC879
 P 8600 3700
-F 0 "#PWR13" H 8600 3700 30  0001 C CNN
+F 0 "#PWR016" H 8600 3700 30  0001 C CNN
 F 1 "GND" H 8600 3630 30  0001 C CNN
 	1    8600 3700
 	1    0    0    -1  
@@ -374,10 +375,10 @@ V_EXT
 Text Notes 8850 3200 2    60   ~ 0
 External Supply
 $Comp
-L GND #PWR10
+L GND #PWR017
 U 1 1 4F9EC90D
 P 6650 4950
-F 0 "#PWR10" H 6650 4950 30  0001 C CNN
+F 0 "#PWR017" H 6650 4950 30  0001 C CNN
 F 1 "GND" H 6650 4880 30  0001 C CNN
 	1    6650 4950
 	1    0    0    -1  
@@ -388,9 +389,9 @@ Text Label 6750 4500 2    60   ~ 0
 TXD
 Text Label 6750 4400 2    60   ~ 0
 RXD
-Text Label 6900 1700 0    60   ~ 0
+Text Label 7300 1700 0    60   ~ 0
 TXD
-Text Label 6900 1800 0    60   ~ 0
+Text Label 7300 1800 0    60   ~ 0
 RXD
 $Comp
 L USB J1
@@ -402,58 +403,52 @@ F 1 "USB" V 5400 4650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR8
+L GND #PWR018
 U 1 1 4F9ECAE7
 P 5650 5200
-F 0 "#PWR8" H 5650 5200 30  0001 C CNN
+F 0 "#PWR018" H 5650 5200 30  0001 C CNN
 F 1 "GND" H 5650 5130 30  0001 C CNN
 	1    5650 5200
 	1    0    0    -1  
 $EndComp
 Text Label 5250 4700 2    60   ~ 0
 5V_USB
-Text Label 5050 2000 2    60   ~ 0
+Text Label 5450 2000 2    60   ~ 0
 D-
-Text Label 5050 2100 2    60   ~ 0
+Text Label 5450 2100 2    60   ~ 0
 D+
 Text Label 6000 4700 0    60   ~ 0
 D+
 Text Label 6000 4850 0    60   ~ 0
 D-
-Text Notes 7650 900  0    60   ~ 0
+Text Notes 7250 900  0    60   ~ 0
 Power Selector
 $Comp
 L CONN_3 K2
 U 1 1 4FA165FF
-P 7650 1150
-F 0 "K2" V 7600 1150 50  0000 C CNN
-F 1 "CONN_3" V 7700 1150 40  0000 C CNN
-	1    7650 1150
+P 7250 1150
+F 0 "K2" V 7200 1150 50  0000 C CNN
+F 1 "CONN_3" V 7300 1150 40  0000 C CNN
+	1    7250 1150
 	-1   0    0    1   
 $EndComp
-Text Label 9100 1050 0    60   ~ 0
+Text Label 8700 1050 0    60   ~ 0
 V_IN
-Text Label 8000 1050 0    60   ~ 0
+Text Label 7600 1050 0    60   ~ 0
 V_BAT
-Text Label 8000 1250 0    60   ~ 0
+Text Label 7600 1250 0    60   ~ 0
 V_EXT
-Text Label 8450 4350 0    60   ~ 0
+Text Label 8450 4100 0    60   ~ 0
 EN12
-Text Label 8400 5650 0    60   ~ 0
-EN5
-Text Label 5700 5600 2    60   ~ 0
+Text Label 6100 5750 2    60   ~ 0
 EN12
-Text Label 5700 6050 2    60   ~ 0
-EN5
-Text Label 6700 5500 0    60   ~ 0
+Text Label 7100 5650 0    60   ~ 0
 V_IN
-Text Label 6700 5950 0    60   ~ 0
-V_IN
-NoConn ~ 6900 2500
-NoConn ~ 6900 2600
-NoConn ~ 6900 2700
-NoConn ~ 6900 2800
-NoConn ~ 6900 2900
+NoConn ~ 7300 2500
+NoConn ~ 7300 2600
+NoConn ~ 7300 2700
+NoConn ~ 7300 2800
+NoConn ~ 7300 2900
 $Comp
 L CONN_3 K1
 U 1 1 4FCF76E4
@@ -472,21 +467,12 @@ Text Label 5500 1250 0    60   ~ 0
 Text Notes 4950 900  0    60   ~ 0
 FTDI Chip Power Selector
 $Comp
-L GND #PWR5
-U 1 1 4FCF76FF
-P 6750 6900
-F 0 "#PWR5" H 6750 6900 30  0001 C CNN
-F 1 "GND" H 6750 6830 30  0001 C CNN
-	1    6750 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR7
+L GND #PWR019
 U 1 1 4FCF770E
-P 7150 6450
-F 0 "#PWR7" H 7150 6450 30  0001 C CNN
-F 1 "GND" H 7150 6380 30  0001 C CNN
-	1    7150 6450
+P 7250 6750
+F 0 "#PWR019" H 7250 6750 30  0001 C CNN
+F 1 "GND" H 7250 6680 30  0001 C CNN
+	1    7250 6750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -504,53 +490,278 @@ NoConn ~ 6750 4600
 $Comp
 L R R2
 U 1 1 4FCF952F
-P 7150 6050
-F 0 "R2" V 7230 6050 50  0000 C CNN
-F 1 "10k" V 7150 6050 50  0000 C CNN
-	1    7150 6050
+P 7250 6350
+F 0 "R2" V 7330 6350 50  0000 C CNN
+F 1 "10k" V 7250 6350 50  0000 C CNN
+	1    7250 6350
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R1
-U 1 1 4FCF9629
-P 6750 6500
-F 0 "R1" V 6830 6500 50  0000 C CNN
-F 1 "10k" V 6750 6500 50  0000 C CNN
-	1    6750 6500
-	1    0    0    -1  
-$EndComp
-Text Label 6700 6150 0    60   ~ 0
-D6
-Text Label 7150 5700 0    60   ~ 0
-D7
 $Comp
 L SWITCH_INV SW3
 U 1 1 4FCF9DB9
-P 8600 1150
-F 0 "SW3" H 8400 1300 50  0000 C CNN
-F 1 "SWITCH_INV" H 8450 1000 50  0000 C CNN
-	1    8600 1150
+P 8200 1150
+F 0 "SW3" H 8000 1300 50  0000 C CNN
+F 1 "SWITCH_INV" H 8050 1000 50  0000 C CNN
+	1    8200 1150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9100 1250
-$Comp
-L DPDT SW2
-U 1 1 4FCFA469
-P 6200 5800
-F 0 "SW2" H 6000 5700 50  0000 C CNN
-F 1 "DPDT" H 6050 5400 50  0000 C CNN
-	1    6200 5800
-	1    0    0    -1  
-$EndComp
-Text Notes 5450 6350 0    60   ~ 0
+NoConn ~ 8700 1250
+Text Notes 5900 6150 0    60   ~ 0
 Voltage Regulator Enabler
 $Comp
-L TXB0102 U?
+L TXB0102 U2
 U 1 1 4FE22897
 P 9100 6650
-F 0 "U?" H 9100 6500 60  0000 C CNN
+F 0 "U2" H 9100 6500 60  0000 C CNN
 F 1 "TXB0102" H 9100 7000 60  0000 C CNN
 	1    9100 6650
+	1    0    0    -1  
+$EndComp
+Text Label 9650 6700 0    60   ~ 0
+TXD
+Text Label 9650 6400 0    60   ~ 0
+RXD
+Text Label 8550 6600 2    60   ~ 0
+3.3V
+Text Label 8550 6500 2    60   ~ 0
+GND
+Text Label 8550 6400 2    60   ~ 0
+UART5_TXD
+Text Label 8550 6700 2    60   ~ 0
+UART5_RXD
+Text Notes 8800 7000 0    60   ~ 0
+Logic Shifter
+$Comp
+L CONN_23X2 P8
+U 1 1 4FE23651
+P 3650 3100
+F 0 "P8" H 3650 4300 60  0000 C CNN
+F 1 "CONN_23X2" V 3650 3000 50  0000 C CNN
+	1    3650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_23X2 P7
+U 1 1 4FE23660
+P 1550 3100
+F 0 "P7" H 1550 4300 60  0000 C CNN
+F 1 "CONN_23X2" V 1550 3000 50  0000 C CNN
+	1    1550 3100
+	1    0    0    -1  
+$EndComp
+Text Label 1150 2100 2    60   ~ 0
+GPIO1_6
+Text Label 1150 2200 2    60   ~ 0
+GPIO1_2
+Text Label 1150 2300 2    60   ~ 0
+TIMER4
+Text Label 1150 2400 2    60   ~ 0
+TIMER5
+Text Label 1150 2500 2    60   ~ 0
+GPIO1_13
+Text Label 1150 2600 2    60   ~ 0
+EHRPWM2B
+Text Label 1150 2000 2    60   ~ 0
+GND
+Text Label 1150 2700 2    60   ~ 0
+GPIO1_15
+Text Label 1150 2800 2    60   ~ 0
+GPIO1_27
+Text Label 1150 2900 2    60   ~ 0
+EHRPWM2A
+Text Label 1150 3000 2    60   ~ 0
+GPIO1_30
+Text Label 1150 3100 2    60   ~ 0
+GPIO1_4
+Text Label 1150 3200 2    60   ~ 0
+GPIO1_0
+Text Label 1150 3300 2    60   ~ 0
+GPIO2_22
+Text Label 1150 3400 2    60   ~ 0
+GPIO2_23
+Text Label 1150 3500 2    60   ~ 0
+UART5_CTSN
+Text Label 1150 3600 2    60   ~ 0
+UART4_RTSN
+Text Label 1150 3700 2    60   ~ 0
+UART4_CTSN
+Text Label 1150 3800 2    60   ~ 0
+UART5_TXD
+Text Label 1150 3900 2    60   ~ 0
+GPIO2_12
+Text Label 1150 4000 2    60   ~ 0
+GPIO2_10
+Text Label 1150 4100 2    60   ~ 0
+GPIO2_8
+Text Label 1150 4200 2    60   ~ 0
+GPIO2_6
+Text Label 3250 2000 2    60   ~ 0
+GND
+Text Label 3250 4100 2    60   ~ 0
+GND
+Text Label 3250 4200 2    60   ~ 0
+GND
+Text Label 3250 2100 2    60   ~ 0
+3.3V
+Text Label 3250 2200 2    60   ~ 0
+5V_BB
+Text Label 3250 2300 2    60   ~ 0
+5V_SYS
+Text Label 3250 2400 2    60   ~ 0
+PWR_BUT
+Text Label 3250 2500 2    60   ~ 0
+UART4_RXD
+Text Label 3250 2600 2    60   ~ 0
+UART4_TXD
+Text Label 3250 2700 2    60   ~ 0
+GPIO1_16
+Text Label 3250 2800 2    60   ~ 0
+I2C1_SCL
+Text Label 3250 2900 2    60   ~ 0
+I2C2_SCL
+Text Label 3250 3000 2    60   ~ 0
+UART2_TXD
+Text Label 3250 3100 2    60   ~ 0
+GPIO1_17
+Text Label 3250 3200 2    60   ~ 0
+GPIO3_21
+Text Label 3250 3300 2    60   ~ 0
+GPIO2_19
+Text Label 3250 3400 2    60   ~ 0
+SPI1_D0
+Text Label 3250 3500 2    60   ~ 0
+SPI1_SCLK
+Text Label 3250 3600 2    60   ~ 0
+AIN4
+Text Label 3250 3700 2    60   ~ 0
+AIN6
+Text Label 3250 3800 2    60   ~ 0
+AIN2
+Text Label 3250 3900 2    60   ~ 0
+AIN0
+Text Label 3250 4000 2    60   ~ 0
+CLKOUT2
+Text Label 1950 2100 0    60   ~ 0
+GPIO1_7
+Text Label 1950 2200 0    60   ~ 0
+GPIO1_3
+Text Label 1950 2300 0    60   ~ 0
+TIMER7
+Text Label 1950 2400 0    60   ~ 0
+TIMER6
+Text Label 1950 2500 0    60   ~ 0
+GPIO1_12
+Text Label 1950 2600 0    60   ~ 0
+GPIO1_26
+Text Label 1950 2700 0    60   ~ 0
+GPIO1_14
+Text Label 1950 2800 0    60   ~ 0
+GPIO2_1
+Text Label 1950 2900 0    60   ~ 0
+GPIO1_31
+Text Label 1950 3000 0    60   ~ 0
+GPIO1_5
+Text Label 1950 3100 0    60   ~ 0
+GPIO1_1
+Text Label 1950 3200 0    60   ~ 0
+GPIO1_29
+Text Label 1950 3300 0    60   ~ 0
+GPIO2_24
+Text Label 1950 3400 0    60   ~ 0
+GPIO2_25
+Text Label 1950 3500 0    60   ~ 0
+UART5_RTSN
+Text Label 1950 3600 0    60   ~ 0
+UART3_RTSN
+Text Label 1950 3700 0    60   ~ 0
+UART3_CTSN
+Text Label 1950 3800 0    60   ~ 0
+UART5_RXD
+Text Label 1950 3900 0    60   ~ 0
+GPIO2_13
+Text Label 1950 4000 0    60   ~ 0
+GPIO2_11
+Text Label 1950 4100 0    60   ~ 0
+GPIO2_9
+Text Label 1950 4200 0    60   ~ 0
+GPIO2_7
+Text Label 1950 2000 0    60   ~ 0
+GND
+Text Label 4050 2000 0    60   ~ 0
+GND
+Text Label 4050 2100 0    60   ~ 0
+3.3V
+Text Label 4050 2200 0    60   ~ 0
+5V_BB
+Text Label 4050 2300 0    60   ~ 0
+5V_SYS
+Text Label 4050 2400 0    60   ~ 0
+SYS_RESETN
+Text Label 4050 2500 0    60   ~ 0
+GPIO1_28
+Text Label 4050 2600 0    60   ~ 0
+EHRPWM1A
+Text Label 4050 2700 0    60   ~ 0
+EHRPWM1B
+Text Label 4050 2800 0    60   ~ 0
+I2C1_SDA
+Text Label 4050 2900 0    60   ~ 0
+I2C2_SDA
+Text Label 4050 3000 0    60   ~ 0
+UART2_RXD
+Text Label 4050 3100 0    60   ~ 0
+UART1_TXD
+Text Label 4050 3200 0    60   ~ 0
+UART1_RXD
+Text Label 4050 3300 0    60   ~ 0
+SPI1_CS0
+Text Label 4050 3400 0    60   ~ 0
+SP1_D1
+Text Label 4050 3500 0    60   ~ 0
+VDD_ADC
+Text Label 4050 3600 0    60   ~ 0
+AGND
+Text Label 4050 3700 0    60   ~ 0
+AIN5
+Text Label 4050 3800 0    60   ~ 0
+AIN3
+Text Label 4050 3900 0    60   ~ 0
+AIN1
+Text Label 4050 4000 0    60   ~ 0
+GPIO0_7
+Text Label 4050 4100 0    60   ~ 0
+GND
+Text Label 4050 4200 0    60   ~ 0
+GND
+Text Notes 2050 4500 0    60   ~ 0
+BeagleBone Expansion Headers\n
+Text Label 7250 5850 0    60   ~ 0
+GPIO1_7
+Text Notes 8300 900  0    60   ~ 0
+Power Switch
+$Comp
+L SWITCH_INV SW2
+U 1 1 4FE8A72F
+P 9650 1150
+F 0 "SW2" H 9450 1300 50  0000 C CNN
+F 1 "SWITCH_INV" H 9500 1000 50  0000 C CNN
+	1    9650 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10150 1250
+Text Label 9150 1150 2    60   ~ 0
+5V
+Text Label 10150 1050 0    60   ~ 0
+5V_BB
+Text Notes 9250 900  0    60   ~ 0
+BeagleBone Power Switch
+$Comp
+L SWITCH_INV SW1
+U 1 1 4FE8A8A8
+P 6600 5750
+F 0 "SW1" H 6400 5900 50  0000 C CNN
+F 1 "SWITCH_INV" H 6450 5600 50  0000 C CNN
+	1    6600 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -579,25 +790,23 @@ Wire Wire Line
 	8100 3850 8450 3850
 Connection ~ 8100 5100
 Wire Wire Line
-	8400 5350 8400 5650
-Wire Wire Line
 	8450 4100 8450 4350
 Connection ~ 8400 3850
 Wire Wire Line
-	6000 3600 6000 3900
+	6400 3600 6400 3900
 Wire Wire Line
-	6150 3800 6150 3600
+	6550 3800 6550 3600
 Wire Wire Line
-	5700 3800 6300 3800
-Connection ~ 6000 3800
+	6100 3800 6700 3800
+Connection ~ 6400 3800
 Wire Wire Line
-	5850 3800 5850 3600
+	6250 3800 6250 3600
 Wire Wire Line
-	5700 3800 5700 3600
-Connection ~ 5850 3800
+	6100 3800 6100 3600
+Connection ~ 6250 3800
 Wire Wire Line
-	6300 3800 6300 3600
-Connection ~ 6150 3800
+	6700 3800 6700 3600
+Connection ~ 6550 3800
 Wire Wire Line
 	8800 2450 8800 2600
 Wire Wire Line
@@ -605,13 +814,13 @@ Wire Wire Line
 Wire Wire Line
 	9650 2450 9650 2600
 Wire Wire Line
-	5050 3400 5050 3900
+	5450 3400 5450 3900
 Wire Wire Line
-	4700 2050 4700 2550
+	5100 2050 5100 2550
 Wire Wire Line
-	5050 1650 4700 1650
+	5450 1650 5100 1650
 Wire Wire Line
-	5050 2900 5050 3000
+	5450 2900 5450 3000
 Wire Wire Line
 	9650 1900 9650 2050
 Wire Wire Line
@@ -637,60 +846,27 @@ Connection ~ 5250 4950
 Wire Wire Line
 	8100 5100 8400 5100
 Wire Wire Line
-	7150 5800 7150 5700
+	7250 5850 7250 6100
 Wire Wire Line
-	7150 6450 7150 6300
+	7250 6750 7250 6600
 Wire Wire Line
-	6750 6900 6750 6750
+	7700 1150 7600 1150
 Wire Wire Line
-	8100 1150 8000 1150
+	5450 1750 5350 1750
 Wire Wire Line
-	6700 6150 6750 6150
-Wire Wire Line
-	6750 6150 6750 6250
-Wire Wire Line
-	7150 5700 6700 5700
-Wire Wire Line
-	5050 1750 4950 1750
-Wire Wire Line
-	4950 1750 4950 1650
-Connection ~ 4950 1650
+	5350 1750 5350 1650
+Connection ~ 5350 1650
 Wire Wire Line
 	9650 6600 9750 6600
 Wire Wire Line
 	9750 6600 9750 6500
 Wire Wire Line
 	9750 6500 9650 6500
-Text Label 9650 6400 0    60   ~ 0
-TXD
-Text Label 9650 6700 0    60   ~ 0
-RXD
-Text Label 8550 6600 2    60   ~ 0
-1.8V
-Text Label 8550 6500 2    60   ~ 0
-GND
-Text Label 8550 6400 2    60   ~ 0
-UART5_TX
-Text Label 8550 6700 2    60   ~ 0
-UART5_RX
-Text Notes 8800 7000 0    60   ~ 0
-Logic Shifter
-$Comp
-L CONN_23X2 P?
-U 1 1 4FE23651
-P 2950 3100
-F 0 "P?" H 2950 4300 60  0000 C CNN
-F 1 "CONN_23X2" V 2950 3000 50  0000 C CNN
-	1    2950 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_23X2 P?
-U 1 1 4FE23660
-P 1600 3100
-F 0 "P?" H 1600 4300 60  0000 C CNN
-F 1 "CONN_23X2" V 1600 3000 50  0000 C CNN
-	1    1600 3100
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	8400 5350 8350 5350
+Wire Wire Line
+	8350 5350 8350 5100
+Connection ~ 8350 5100
+Wire Wire Line
+	7100 5850 7250 5850
 $EndSCHEMATC
