@@ -1,0 +1,411 @@
+EESchema Schematic File Version 2  date Fri 29 Jun 2012 03:46:47 PM EDT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MyLibrary
+LIBS:RGB_LED_Board-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title "HEXAlight"
+Date "29 jun 2012"
+Rev "0"
+Comp "iHeartEngineering"
+Comment1 "Miron Veryanskiy "
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7800 3900 7800 1200
+Connection ~ 7800 2650
+Connection ~ 7800 2250
+Connection ~ 7800 3300
+Connection ~ 5000 1600
+Wire Wire Line
+	5000 1850 5000 1400
+Wire Wire Line
+	5000 1850 6550 1850
+Wire Wire Line
+	6550 1850 6550 1400
+Wire Wire Line
+	6550 1400 6300 1400
+Wire Wire Line
+	5000 1400 5200 1400
+Wire Wire Line
+	6300 1200 6450 1200
+Wire Wire Line
+	4900 6350 4900 6250
+Wire Wire Line
+	4600 6450 4600 6250
+Connection ~ 4300 6550
+Wire Wire Line
+	3300 6550 3300 6250
+Connection ~ 6300 6550
+Wire Wire Line
+	5300 6550 5300 6250
+Connection ~ 8300 6550
+Wire Wire Line
+	7300 6550 7300 6250
+Connection ~ 3600 6450
+Wire Wire Line
+	9100 6450 2600 6450
+Wire Wire Line
+	2600 6450 2600 6250
+Connection ~ 5600 6450
+Connection ~ 7600 6450
+Wire Wire Line
+	6600 6450 6600 6250
+Wire Wire Line
+	8600 6450 8600 6250
+Connection ~ 4900 6350
+Wire Wire Line
+	3900 6350 3900 6250
+Connection ~ 6900 6350
+Wire Wire Line
+	5900 6350 5900 6250
+Connection ~ 8900 6350
+Wire Wire Line
+	7900 6350 7900 6250
+Connection ~ 2600 4550
+Wire Wire Line
+	9150 4550 2300 4550
+Wire Wire Line
+	2300 4550 2300 4650
+Connection ~ 3300 4550
+Wire Wire Line
+	2900 4550 2900 4650
+Connection ~ 3900 4550
+Wire Wire Line
+	3600 4550 3600 4650
+Connection ~ 4600 4550
+Wire Wire Line
+	4300 4550 4300 4650
+Connection ~ 5300 4550
+Wire Wire Line
+	4900 4550 4900 4650
+Connection ~ 5900 4550
+Wire Wire Line
+	5600 4550 5600 4650
+Connection ~ 6600 4550
+Wire Wire Line
+	6300 4550 6300 4650
+Connection ~ 7300 4550
+Wire Wire Line
+	6900 4550 6900 4650
+Connection ~ 7900 4550
+Wire Wire Line
+	7600 4550 7600 4650
+Connection ~ 8600 4550
+Wire Wire Line
+	8300 4550 8300 4650
+Wire Wire Line
+	8900 4550 8900 4650
+Wire Wire Line
+	8600 4550 8600 4650
+Connection ~ 8900 4550
+Wire Wire Line
+	7900 4550 7900 4650
+Connection ~ 8300 4550
+Wire Wire Line
+	7300 4550 7300 4650
+Connection ~ 7600 4550
+Wire Wire Line
+	6600 4550 6600 4650
+Connection ~ 6900 4550
+Wire Wire Line
+	5900 4550 5900 4650
+Connection ~ 6300 4550
+Wire Wire Line
+	5300 4550 5300 4650
+Connection ~ 5600 4550
+Wire Wire Line
+	4600 4550 4600 4650
+Connection ~ 4900 4550
+Wire Wire Line
+	3900 4550 3900 4650
+Connection ~ 4300 4550
+Wire Wire Line
+	3300 4550 3300 4650
+Connection ~ 3600 4550
+Wire Wire Line
+	2600 4550 2600 4650
+Connection ~ 2900 4550
+Wire Wire Line
+	6900 6350 6900 6250
+Connection ~ 7900 6350
+Connection ~ 5900 6350
+Wire Wire Line
+	2900 6250 2900 6350
+Wire Wire Line
+	2900 6350 9100 6350
+Connection ~ 3900 6350
+Wire Wire Line
+	7600 6450 7600 6250
+Connection ~ 8600 6450
+Wire Wire Line
+	5600 6450 5600 6250
+Connection ~ 6600 6450
+Wire Wire Line
+	3600 6450 3600 6250
+Connection ~ 4600 6450
+Wire Wire Line
+	6300 6550 6300 6250
+Connection ~ 7300 6550
+Wire Wire Line
+	4300 6550 4300 6250
+Connection ~ 5300 6550
+Wire Wire Line
+	2300 6250 2300 6550
+Wire Wire Line
+	2300 6550 9100 6550
+Connection ~ 3300 6550
+Wire Wire Line
+	10150 2600 9700 2600
+Wire Wire Line
+	8300 6250 8300 6550
+Wire Wire Line
+	8900 6250 8900 6350
+Wire Wire Line
+	7800 1200 6950 1200
+Wire Wire Line
+	5000 1600 5200 1600
+Wire Wire Line
+	5000 2650 5200 2650
+Wire Wire Line
+	7800 2250 6950 2250
+Wire Wire Line
+	6300 2250 6450 2250
+Wire Wire Line
+	5200 2450 5000 2450
+Wire Wire Line
+	6300 2450 6550 2450
+Wire Wire Line
+	6550 2450 6550 2900
+Wire Wire Line
+	6550 2900 5000 2900
+Wire Wire Line
+	5000 2900 5000 2450
+Connection ~ 5000 2650
+Connection ~ 5000 3700
+Wire Wire Line
+	5000 3950 5000 3500
+Wire Wire Line
+	5000 3950 6550 3950
+Wire Wire Line
+	6550 3950 6550 3500
+Wire Wire Line
+	6550 3500 6300 3500
+Wire Wire Line
+	5000 3500 5200 3500
+Wire Wire Line
+	6300 3300 6450 3300
+Wire Wire Line
+	7800 3300 6950 3300
+Wire Wire Line
+	5000 3700 5200 3700
+Connection ~ 7800 3700
+Connection ~ 7800 1600
+Wire Wire Line
+	7800 1600 6300 1600
+Wire Wire Line
+	7800 2650 6300 2650
+Wire Wire Line
+	7800 3700 6300 3700
+$Comp
+L GND #PWR01
+U 1 1 4FEE0554
+P 7800 3900
+F 0 "#PWR01" H 7800 3900 30  0001 C CNN
+F 1 "GND" H 7800 3830 30  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+Text Label 5000 3700 2    60   ~ 0
+BLUE_CA
+Text Label 5200 3300 2    60   ~ 0
+BLUE_ENABLE
+$Comp
+L R R3
+U 1 1 4FEDECD1
+P 6700 3300
+F 0 "R3" V 6800 3300 50  0000 C CNN
+F 1 "R" V 6700 3300 50  0000 C CNN
+	1    6700 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_DRIVER_SC74 U3
+U 1 1 4FEDECD0
+P 5700 3500
+F 0 "U3" V 5300 3750 60  0000 C CNN
+F 1 "BLUEDRIVER" V 5200 3600 60  0000 C CNN
+	1    5700 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_DRIVER_SC74 U2
+U 1 1 4FEDEC67
+P 5700 2450
+F 0 "U2" V 5300 2700 60  0000 C CNN
+F 1 "GREEN DRIVER" V 5200 2550 60  0000 C CNN
+	1    5700 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 4FEDEC66
+P 6700 2250
+F 0 "R2" V 6800 2250 50  0000 C CNN
+F 1 "R" V 6700 2250 50  0000 C CNN
+	1    6700 2250
+	0    1    1    0   
+$EndComp
+Text Label 5200 2250 2    60   ~ 0
+GREEN_ENABLE
+Text Label 5000 2650 2    60   ~ 0
+GREEN_CA
+Text Label 9100 6550 0    60   ~ 0
+BLUE_CA
+Text Label 9100 6350 0    60   ~ 0
+RED_CA
+Text Label 9100 6450 0    60   ~ 0
+GREEN_CA
+Text Label 5000 1600 2    60   ~ 0
+RED_CA
+Text Label 9700 2600 2    60   ~ 0
+12V
+Text Label 9150 4550 0    60   ~ 0
+12V
+Text Label 10150 2700 2    60   ~ 0
+GND
+$Comp
+L CONN_5 P1
+U 1 1 4FE8E765
+P 10550 2800
+F 0 "P1" V 10500 2800 50  0000 C CNN
+F 1 "CONN_5" V 10600 2800 50  0000 C CNN
+	1    10550 2800
+	1    0    0    -1  
+$EndComp
+Text Label 7800 1200 0    60   ~ 0
+GND
+Text Label 10150 3000 2    60   ~ 0
+BLUE_ENABLE
+Text Label 10150 2900 2    60   ~ 0
+GREEN_ENABLE
+Text Label 10150 2800 2    60   ~ 0
+RED_ENABLE
+Text Label 5200 1200 2    60   ~ 0
+RED_ENABLE
+$Comp
+L R R1
+U 1 1 4FE8DE66
+P 6700 1200
+F 0 "R1" V 6800 1200 50  0000 C CNN
+F 1 "R" V 6700 1200 50  0000 C CNN
+	1    6700 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_DRIVER_SC74 U1
+U 1 1 4FE4DA2D
+P 5700 1400
+F 0 "U1" V 5300 1650 60  0000 C CNN
+F 1 "RED DRIVER" V 5200 1500 60  0000 C CNN
+	1    5700 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L PLCC6_RGB_LED LED7
+U 1 1 4FE4DA27
+P 8600 5450
+F 0 "LED7" H 8800 5350 60  0000 C CNN
+F 1 "PLCC6_RGB_LED" H 8550 5500 60  0000 C CNN
+	1    8600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PLCC6_RGB_LED LED6
+U 1 1 4FE4DA0B
+P 7600 5450
+F 0 "LED6" H 7800 5350 60  0000 C CNN
+F 1 "PLCC6_RGB_LED" H 7550 5500 60  0000 C CNN
+	1    7600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PLCC6_RGB_LED LED5
+U 1 1 4FE4D9FF
+P 6600 5450
+F 0 "LED5" H 6800 5350 60  0000 C CNN
+F 1 "PLCC6_RGB_LED" H 6550 5500 60  0000 C CNN
+	1    6600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PLCC6_RGB_LED LED4
+U 1 1 4FE4D9F7
+P 5600 5450
+F 0 "LED4" H 5800 5350 60  0000 C CNN
+F 1 "PLCC6_RGB_LED" H 5550 5500 60  0000 C CNN
+	1    5600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PLCC6_RGB_LED LED3
+U 1 1 4FE4D9EF
+P 4600 5450
+F 0 "LED3" H 4800 5350 60  0000 C CNN
+F 1 "PLCC6_RGB_LED" H 4550 5500 60  0000 C CNN
+	1    4600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PLCC6_RGB_LED LED2
+U 1 1 4FE4D9E8
+P 3600 5450
+F 0 "LED2" H 3800 5350 60  0000 C CNN
+F 1 "PLCC6_RGB_LED" H 3550 5500 60  0000 C CNN
+	1    3600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PLCC6_RGB_LED LED1
+U 1 1 4FE4D9DF
+P 2600 5450
+F 0 "LED1" H 2800 5350 60  0000 C CNN
+F 1 "PLCC6_RGB_LED" H 2550 5500 60  0000 C CNN
+	1    2600 5450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

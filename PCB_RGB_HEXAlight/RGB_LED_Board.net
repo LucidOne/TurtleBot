@@ -1,0 +1,209 @@
+# EESchema Netlist Version 1.1 created  Fri 29 Jun 2012 03:46:57 PM EDT
+(
+ ( /4FEDECD1 $noname  R3 R {Lib=R}
+  (    1 GND )
+  (    2 N-000001 )
+ )
+ ( /4FEDECD0 $noname  U3 BLUEDRIVER {Lib=LED_DRIVER_SC74}
+  (    1 /BLUE_ENABLE )
+  (    2 /BLUE_CA )
+  (    3 /BLUE_CA )
+  (    4 GND )
+  (    5 /BLUE_CA )
+  (    6 N-000001 )
+ )
+ ( /4FEDEC67 $noname  U2 GREEN_DRIVER {Lib=LED_DRIVER_SC74}
+  (    1 /GREEN_ENABLE )
+  (    2 /GREEN_CA )
+  (    3 /GREEN_CA )
+  (    4 GND )
+  (    5 /GREEN_CA )
+  (    6 N-000003 )
+ )
+ ( /4FEDEC66 $noname  R2 R {Lib=R}
+  (    1 GND )
+  (    2 N-000003 )
+ )
+ ( /4FE8E765 $noname  P1 CONN_5 {Lib=CONN_5}
+  (    1 /12V )
+  (    2 GND )
+  (    3 /RED_ENABLE )
+  (    4 /GREEN_ENABLE )
+  (    5 /BLUE_ENABLE )
+ )
+ ( /4FE8DE66 $noname  R1 R {Lib=R}
+  (    1 GND )
+  (    2 N-000011 )
+ )
+ ( /4FE4DA2D $noname  U1 RED_DRIVER {Lib=LED_DRIVER_SC74}
+  (    1 /RED_ENABLE )
+  (    2 /RED_CA )
+  (    3 /RED_CA )
+  (    4 GND )
+  (    5 /RED_CA )
+  (    6 N-000011 )
+ )
+ ( /4FE4DA27 $noname  LED7 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+  (    4 /BLUE_CA )
+  (    5 /GREEN_CA )
+  (    6 /RED_CA )
+ )
+ ( /4FE4DA0B $noname  LED6 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+  (    4 /BLUE_CA )
+  (    5 /GREEN_CA )
+  (    6 /RED_CA )
+ )
+ ( /4FE4D9FF $noname  LED5 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+  (    4 /BLUE_CA )
+  (    5 /GREEN_CA )
+  (    6 /RED_CA )
+ )
+ ( /4FE4D9F7 $noname  LED4 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+  (    4 /BLUE_CA )
+  (    5 /GREEN_CA )
+  (    6 /RED_CA )
+ )
+ ( /4FE4D9EF $noname  LED3 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+  (    4 /BLUE_CA )
+  (    5 /GREEN_CA )
+  (    6 /RED_CA )
+ )
+ ( /4FE4D9E8 $noname  LED2 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+  (    4 /BLUE_CA )
+  (    5 /GREEN_CA )
+  (    6 /RED_CA )
+ )
+ ( /4FE4D9DF $noname  LED1 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+  (    4 /BLUE_CA )
+  (    5 /GREEN_CA )
+  (    6 /RED_CA )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ U3 6
+ R3 2
+Net 2 "/GREEN_ENABLE" "GREEN_ENABLE"
+ U2 1
+ P1 4
+Net 3 "" ""
+ U2 6
+ R2 2
+Net 4 "/12V" "12V"
+ LED2 3
+ LED3 3
+ LED1 1
+ LED1 2
+ LED1 3
+ LED2 2
+ LED2 1
+ LED3 2
+ LED3 1
+ LED4 3
+ LED4 2
+ LED4 1
+ LED5 3
+ LED5 2
+ LED5 1
+ LED6 3
+ LED6 2
+ LED6 1
+ LED7 3
+ LED7 2
+ LED7 1
+ P1 1
+Net 5 "GND" "GND"
+ R2 1
+ R3 1
+ P1 2
+ U2 4
+ U3 4
+ U1 4
+ R1 1
+Net 6 "/RED_ENABLE" "RED_ENABLE"
+ P1 3
+ U1 1
+Net 7 "/BLUE_ENABLE" "BLUE_ENABLE"
+ U3 1
+ P1 5
+Net 8 "/GREEN_CA" "GREEN_CA"
+ U2 2
+ LED6 5
+ LED7 5
+ LED1 5
+ U2 5
+ U2 3
+ LED2 5
+ LED5 5
+ LED3 5
+ LED4 5
+Net 9 "/BLUE_CA" "BLUE_CA"
+ LED1 4
+ LED7 4
+ U3 2
+ U3 3
+ LED2 4
+ LED3 4
+ LED4 4
+ LED5 4
+ U3 5
+ LED6 4
+Net 10 "/RED_CA" "RED_CA"
+ LED5 6
+ LED3 6
+ LED4 6
+ LED6 6
+ LED7 6
+ U1 5
+ U1 3
+ U1 2
+ LED1 6
+ LED2 6
+Net 11 "" ""
+ U1 6
+ R1 2
+}
+#End
