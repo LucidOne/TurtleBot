@@ -1,4 +1,4 @@
-update=Fri 29 Jun 2012 12:21:14 PM EDT
+update=Mon 02 Jul 2012 03:33:54 PM EDT
 version=1
 last_client=eeschema
 [cvpcb]
@@ -81,7 +81,7 @@ LibName10=dip_sockets
 version=1
 [eeschema]
 version=1
-LibDir=../MyLibrary
+LibDir=/home/anon/Dropbox/KiCad Projects/MyLibrary
 NetFmt=1
 HPGLSpd=20
 HPGLDm=15
@@ -142,3 +142,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=MyLibrary
+LibName32=/home/anon/iHeartEngineering-gitHub/iheart-kicad-lib/IHE
