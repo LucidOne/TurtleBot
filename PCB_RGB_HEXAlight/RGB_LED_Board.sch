@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Jun 2012 03:46:47 PM EDT
+EESchema Schematic File Version 2  date Fri 06 Jul 2012 05:33:47 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:MyLibrary
+LIBS:IHE
 LIBS:RGB_LED_Board-cache
 EELAYER 25  0
 EELAYER END
@@ -37,7 +38,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "HEXAlight"
-Date "29 jun 2012"
+Date "6 jul 2012"
 Rev "0"
 Comp "iHeartEngineering"
 Comment1 "Miron Veryanskiy "
@@ -45,6 +46,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 7800 2700
+Wire Wire Line
+	10150 2700 7800 2700
+Wire Wire Line
+	9300 6450 2600 6450
 Wire Wire Line
 	7800 3900 7800 1200
 Connection ~ 7800 2650
@@ -77,8 +83,6 @@ Connection ~ 8300 6550
 Wire Wire Line
 	7300 6550 7300 6250
 Connection ~ 3600 6450
-Wire Wire Line
-	9100 6450 2600 6450
 Wire Wire Line
 	2600 6450 2600 6250
 Connection ~ 5600 6450
@@ -166,8 +170,6 @@ Connection ~ 7900 6350
 Connection ~ 5900 6350
 Wire Wire Line
 	2900 6250 2900 6350
-Wire Wire Line
-	2900 6350 9100 6350
 Connection ~ 3900 6350
 Wire Wire Line
 	7600 6450 7600 6250
@@ -186,8 +188,6 @@ Wire Wire Line
 Connection ~ 5300 6550
 Wire Wire Line
 	2300 6250 2300 6550
-Wire Wire Line
-	2300 6550 9100 6550
 Connection ~ 3300 6550
 Wire Wire Line
 	10150 2600 9700 2600
@@ -241,6 +241,14 @@ Wire Wire Line
 	7800 2650 6300 2650
 Wire Wire Line
 	7800 3700 6300 3700
+Wire Wire Line
+	2900 6350 9300 6350
+Wire Wire Line
+	2300 6550 9300 6550
+Text Label 7800 3700 0    60   ~ 0
+GND
+Text Label 7800 1600 0    60   ~ 0
+GND
 $Comp
 L GND #PWR01
 U 1 1 4FEE0554
@@ -294,11 +302,11 @@ Text Label 5200 2250 2    60   ~ 0
 GREEN_ENABLE
 Text Label 5000 2650 2    60   ~ 0
 GREEN_CA
-Text Label 9100 6550 0    60   ~ 0
+Text Label 9300 6550 0    60   ~ 0
 BLUE_CA
-Text Label 9100 6350 0    60   ~ 0
+Text Label 9300 6350 0    60   ~ 0
 RED_CA
-Text Label 9100 6450 0    60   ~ 0
+Text Label 9300 6450 0    60   ~ 0
 GREEN_CA
 Text Label 5000 1600 2    60   ~ 0
 RED_CA
@@ -317,8 +325,6 @@ F 1 "CONN_5" V 10600 2800 50  0000 C CNN
 	1    10550 2800
 	1    0    0    -1  
 $EndComp
-Text Label 7800 1200 0    60   ~ 0
-GND
 Text Label 10150 3000 2    60   ~ 0
 BLUE_ENABLE
 Text Label 10150 2900 2    60   ~ 0
