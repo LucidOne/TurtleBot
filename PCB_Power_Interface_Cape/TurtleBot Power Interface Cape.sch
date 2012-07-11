@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 25 Jun 2012 02:51:35 PM EDT
+EESchema Schematic File Version 2  date Wed 27 Jun 2012 04:36:23 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power Interface Cape for BeagleBone"
-Date "25 jun 2012"
+Date "27 jun 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by: Carlos Chinchilla"
@@ -440,7 +440,7 @@ Text Label 7600 1250 0    60   ~ 0
 V_EXT
 Text Label 8450 4100 0    60   ~ 0
 EN12
-Text Label 6100 5750 2    60   ~ 0
+Text Label 7100 5750 0    60   ~ 0
 EN12
 Text Label 7100 5650 0    60   ~ 0
 V_IN
@@ -749,21 +749,12 @@ F 1 "SWITCH_INV" H 9500 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10150 1250
-Text Label 9150 1150 2    60   ~ 0
-5V
 Text Label 10150 1050 0    60   ~ 0
+5V
+Text Label 9150 1150 2    60   ~ 0
 5V_BB
 Text Notes 9250 900  0    60   ~ 0
 BeagleBone Power Switch
-$Comp
-L SWITCH_INV SW1
-U 1 1 4FE8A8A8
-P 6600 5750
-F 0 "SW1" H 6400 5900 50  0000 C CNN
-F 1 "SWITCH_INV" H 6450 5600 50  0000 C CNN
-	1    6600 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9000 6000 9000 5800
 Wire Wire Line
@@ -842,7 +833,6 @@ Wire Wire Line
 	5250 4850 5250 5100
 Connection ~ 5650 5100
 Connection ~ 5250 4950
-Connection ~ 5250 4950
 Wire Wire Line
 	8100 5100 8400 5100
 Wire Wire Line
@@ -869,4 +859,13 @@ Wire Wire Line
 Connection ~ 8350 5100
 Wire Wire Line
 	7100 5850 7250 5850
+$Comp
+L CONN_3 K3
+U 1 1 4FEB6D70
+P 6750 5750
+F 0 "K3" V 6700 5750 50  0000 C CNN
+F 1 "CONN_3" V 6800 5750 40  0000 C CNN
+	1    6750 5750
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Wed 06 Jun 2012 03:28:00 PM EDT
+# EESchema Netlist Version 1.1 created  Wed 27 Jun 2012 04:37:27 PM EDT
 (
  ( /4F8C5AE2 $noname  VR1 MIC29151-5.0WU {Lib=MIC29151-5.0WU}
   (    1 /EN5 )
@@ -56,7 +56,7 @@
   (   14 ? )
   (   15 /D+ )
   (   16 /D- )
-  (   17 N-000090 )
+  (   17 N-000092 )
   (   18 GND )
   (   19 ? )
   (   20 /5V_FTDI )
@@ -81,7 +81,7 @@
   (    2 /5V )
  )
  ( /4F9EC711 $noname  C2 100nF {Lib=C}
-  (    1 N-000090 )
+  (    1 N-000092 )
   (    2 GND )
  )
  ( /4F9EC731 $noname  C1 100nF {Lib=C}
@@ -106,12 +106,12 @@
  )
  ( /4FA165FF $noname  K2 CONN_3 {Lib=CONN_3}
   (    1 /V_EXT )
-  (    2 N-000015 )
+  (    2 N-000025 )
   (    3 /V_BAT )
  )
  ( /4FC549F4 $noname  SW1 SW_PUSH_SMALL {Lib=SW_PUSH_SMALL}
   (    1 GND )
-  (    2 N-000067 )
+  (    2 N-000041 )
  )
  ( /4FC54690 $noname  SHIELD1 ARDUINO_MEGA_SHIELD {Lib=ARDUINO_MEGA_SHIELD}
   (    0 ? )
@@ -194,7 +194,7 @@
   ( GND3 ? )
   ( GND4 GND )
   ( GND5 GND )
-  (  RST N-000067 )
+  (  RST N-000041 )
   ( V_IN /V_IN )
  )
  ( /4FCF76E4 $noname  K1 CONN_3 {Lib=CONN_3}
@@ -221,16 +221,18 @@
  )
  ( /4FCF9DB9 $noname  SW3 SWITCH_INV {Lib=SWITCH_INV}
   (    1 /V_IN )
-  (    2 N-000015 )
+  (    2 N-000025 )
   (    3 ? )
  )
- ( /4FCFA469 $noname  SW2 DPDT {Lib=DPDT}
-  (    1 /V_IN )
+ ( /4FEB7126 $noname  K3 CONN_3 {Lib=CONN_3}
+  (    1 /D7 )
+  (    2 /EN12 )
+  (    3 /V_IN )
+ )
+ ( /4FEB7135 $noname  K4 CONN_3 {Lib=CONN_3}
+  (    1 /D6 )
   (    2 /EN5 )
-  (    3 /D6 )
-  (    4 /EN12 )
-  (    5 /V_IN )
-  (    6 /D7 )
+  (    3 /V_IN )
  )
 )
 *
@@ -302,140 +304,114 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "GND" "GND"
- U1 18
- SHIELD1 GND4
- C1 2
- SHIELD1 GND5
- P5 1
+Net 2 "/5V_USB" "5V_USB"
+ K1 3
+ J1 1
+Net 3 "/5V_FTDI" "5V_FTDI"
+ K1 2
+ U1 4
+ U1 20
+ C1 1
+Net 4 "/5V" "5V"
+ C8 1
+ P5 2
+ C6 1
+ P6 2
+ VR1 4
+ K1 1
+Net 25 "" ""
+ K2 2
+ SW3 2
+Net 26 "/D6" "D6"
+ R1 1
+ SHIELD1 6
+ K4 1
+Net 27 "/D7" "D7"
+ SHIELD1 7
+ R2 1
+ K3 1
+Net 30 "/V_BAT" "V_BAT"
+ K2 3
+ P1 2
+ P1 1
+Net 31 "GND" "GND"
+ U1 7
  U1 21
- SHIELD1 GND2
- U1 25
- SHIELD1 GND1
- U1 26
+ P3 1
  C2 2
- J1 6
- J1 5
- J1 4
- C3 2
+ P6 1
+ U1 25
+ U1 18
+ U1 26
  P2 1
+ J1 6
+ J1 4
+ J1 5
+ P5 1
+ C1 2
  SW1 1
  VR1 6
+ P4 1
+ C8 2
+ C6 2
+ C7 2
+ C5 2
+ VR2 3
+ VR2 6
+ VR1 3
+ C4 2
+ C3 2
+ SHIELD1 GND1
+ SHIELD1 GND5
+ SHIELD1 GND2
+ SHIELD1 GND4
  P1 6
  P1 7
  R2 2
  R1 2
- C5 2
- C6 2
- C8 2
- P4 1
- C7 2
- P3 1
- P6 1
- C4 2
- U1 7
- VR1 3
- VR2 6
- VR2 3
-Net 3 "/V_BAT" "V_BAT"
- K2 3
- P1 1
- P1 2
-Net 4 "/5V_USB" "5V_USB"
- K1 3
- J1 1
-Net 5 "/5V_FTDI" "5V_FTDI"
- U1 4
- C1 1
- U1 20
- K1 2
-Net 6 "/5V" "5V"
- K1 1
- C6 1
- P5 2
- P6 2
- C8 1
- VR1 4
-Net 11 "/V_IN" "V_IN"
- C3 1
- VR1 2
- SW2 1
- SW2 1
- VR2 2
- SW2 5
- SW2 1
- SW2 1
- SW2 1
- SW2 1
- SW2 1
- SW3 1
- SHIELD1 V_IN
- C4 1
-Net 12 "/EN5" "EN5"
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- VR1 1
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- SW2 2
- SW2 2
-Net 15 "" ""
- K2 2
- SW3 2
-Net 67 "" ""
- SW1 2
+Net 41 "" ""
  SHIELD1 RST
-Net 89 "/EN12" "EN12"
- SW2 4
+ SW1 2
+Net 86 "/V_IN" "V_IN"
+ K3 3
+ K4 3
+ C3 1
+ C4 1
+ VR2 2
+ VR1 2
+ SHIELD1 V_IN
+ SW3 1
+Net 87 "/EN5" "EN5"
+ VR1 1
+ K4 2
+Net 88 "/EN12" "EN12"
+ K3 2
  VR2 1
-Net 90 "" ""
+Net 92 "" ""
  C2 1
  U1 17
-Net 100 "/12V" "12V"
- VR2 4
- C5 1
- C7 1
+Net 101 "/12V" "12V"
  P4 2
+ VR2 4
+ C7 1
+ C5 1
  P3 2
-Net 103 "/RXD" "RXD"
+Net 102 "/RXD" "RXD"
+ U1 5
  P1 3
  SHIELD1 18
- U1 5
-Net 104 "/TXD" "TXD"
+Net 106 "/TXD" "TXD"
  U1 1
- SHIELD1 19
  P1 4
-Net 105 "/D+" "D+"
- U1 15
+ SHIELD1 19
+Net 107 "/D+" "D+"
  J1 3
-Net 106 "/D-" "D-"
+ U1 15
+Net 108 "/D-" "D-"
  U1 16
  J1 2
-Net 107 "/V_EXT" "V_EXT"
- K2 1
+Net 109 "/V_EXT" "V_EXT"
  P2 2
-Net 108 "/D7" "D7"
- R2 1
- SHIELD1 7
- SW2 6
-Net 109 "/D6" "D6"
- SW2 3
- SW2 3
- SW2 3
- SW2 3
- SW2 3
- SHIELD1 6
- SW2 3
- SW2 3
- R1 1
+ K2 1
 }
 #End
