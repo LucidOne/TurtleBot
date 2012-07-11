@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by PcbNew date = Mon 09 Jul 2012 05:12:17 PM EDT
+
+BeginCmp
+TimeStamp = /4FE4D9DF;
+Reference = LED1;
+ValeurCmp = PLCC6_RGB_LED;
+IdModule  = PLCC6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE4D9E8;
+Reference = LED2;
+ValeurCmp = PLCC6_RGB_LED;
+IdModule  = PLCC6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE4D9EF;
+Reference = LED3;
+ValeurCmp = PLCC6_RGB_LED;
+IdModule  = PLCC6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE4D9F7;
+Reference = LED4;
+ValeurCmp = PLCC6_RGB_LED;
+IdModule  = PLCC6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE4D9FF;
+Reference = LED5;
+ValeurCmp = PLCC6_RGB_LED;
+IdModule  = PLCC6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE4DA0B;
+Reference = LED6;
+ValeurCmp = PLCC6_RGB_LED;
+IdModule  = PLCC6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE4DA27;
+Reference = LED7;
+ValeurCmp = PLCC6_RGB_LED;
+IdModule  = PLCC6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE8E765;
+Reference = P1;
+ValeurCmp = CONN_5;
+IdModule  = SIL-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE8DE66;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEDEC66;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEDECD1;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE4DA2D;
+Reference = U1;
+ValeurCmp = RED_DRIVER;
+IdModule  = SC74;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEDEC67;
+Reference = U2;
+ValeurCmp = GREEN_DRIVER;
+IdModule  = SC74;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEDECD0;
+Reference = U3;
+ValeurCmp = BLUEDRIVER;
+IdModule  = SC74;
+EndCmp
+
+EndListe
