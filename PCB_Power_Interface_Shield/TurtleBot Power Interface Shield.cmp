@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Wed 06 Jun 2012 04:25:24 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Wed 27 Jun 2012 04:57:14 PM EDT
 
 BeginCmp
 TimeStamp = /4F9EC731;
@@ -60,7 +60,7 @@ BeginCmp
 TimeStamp = /4F9ECAD6;
 Reference = J1;
 ValeurCmp = USB;
-IdModule  = USB_B;
+IdModule  = con-usb-2-USB-MB-S;
 EndCmp
 
 BeginCmp
@@ -73,6 +73,20 @@ EndCmp
 BeginCmp
 TimeStamp = /4FA165FF;
 Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEB7126;
+Reference = K3;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEB7135;
+Reference = K4;
 ValeurCmp = CONN_3;
 IdModule  = PIN_ARRAY_3X1;
 EndCmp
@@ -144,21 +158,14 @@ BeginCmp
 TimeStamp = /4FC549F4;
 Reference = SW1;
 ValeurCmp = SW_PUSH_SMALL;
-IdModule  = SW_PUSH_SMALL;
-EndCmp
-
-BeginCmp
-TimeStamp = /4FCFA469;
-Reference = SW2;
-ValeurCmp = DPDT;
-IdModule  = pin_array_3x2;
+IdModule  = SW_M6_COMBO;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FCF9DB9;
 Reference = SW3;
 ValeurCmp = SWITCH_INV;
-IdModule  = ;
+IdModule  = SW_Slide_6x2mm;
 EndCmp
 
 BeginCmp

@@ -34,7 +34,7 @@ Q.P.B.	Item					DigiKey P. No. 			Manufacturer		Manufacturer P. No.		Datasheet u
 
 1	CBL ASSY MINI DIN MALE R/A 7POS		839-1094-ND	Tensility International Corp	10-00543	http://www.tensility.com/pdffiles/10-00543.pdf
 
-Samtec Inc
+NOT INCLUDED:
 2	CONN STACKER 6POS .100" T/H	NA		Samtec Inc	ZW-06-12-T-S-430-570
 2	CONN STACKER 8POS .100" T/H	NA		Samtec Inc	ZW-08-12-T-S-430-570
 

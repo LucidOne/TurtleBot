@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Mon 25 Jun 2012 02:51:31 PM EDT
+# EESchema Netlist Version 1.1 created  Wed 27 Jun 2012 04:28:40 PM EDT
 (
  ( /4F8C5AE2 $noname  VR1 MIC29151-5.0WU {Lib=MIC29151-5.0WU}
   (    1 /V_IN )
@@ -56,7 +56,7 @@
   (   14 ? )
   (   15 /D+ )
   (   16 /D- )
-  (   17 N-000058 )
+  (   17 N-000059 )
   (   18 GND )
   (   19 ? )
   (   20 /5V_FTDI )
@@ -81,7 +81,7 @@
   (    2 /5V )
  )
  ( /4F9EC711 $noname  C2 100nF {Lib=C}
-  (    1 N-000058 )
+  (    1 N-000059 )
   (    2 GND )
  )
  ( /4F9EC731 $noname  C1 100nF {Lib=C}
@@ -239,14 +239,14 @@
   (   46 ? )
  )
  ( /4FE8A72F $noname  SW2 SWITCH_INV {Lib=SWITCH_INV}
-  (    1 /5V_BB )
-  (    2 /5V )
+  (    1 /5V )
+  (    2 /5V_BB )
   (    3 ? )
  )
- ( /4FE8A8A8 $noname  SW1 SWITCH_INV {Lib=SWITCH_INV}
-  (    1 /V_IN )
+ ( /4FEB6D70 $noname  K3 CONN_3 {Lib=CONN_3}
+  (    1 /GPIO1_7 )
   (    2 /EN12 )
-  (    3 /GPIO1_7 )
+  (    3 /V_IN )
  )
 )
 *
@@ -314,120 +314,120 @@ $endfootprintlist
 Net 4 "/UART5_RXD" "UART5_RXD"
  U2 4
  P7 38
+Net 7 "/UART5_TXD" "UART5_TXD"
+ U2 1
+ P7 37
 Net 17 "/GPIO1_7" "GPIO1_7"
- R2 1
+ K3 1
  P7 4
- SW1 3
+ R2 1
 Net 19 "GND" "GND"
- C3 2
- C4 2
- U1 7
- P1 7
- R2 2
- U2 2
- P8 1
- P8 2
- P1 6
- U1 18
- P4 1
- P3 1
- P6 1
- C2 2
- U1 26
- C1 2
- U1 25
- P5 1
- U1 21
- VR1 3
+ C8 2
  VR2 6
+ U1 7
+ VR1 3
  VR2 3
+ U2 2
  C5 2
  C7 2
  C6 2
- C8 2
- J1 6
- P2 1
  J1 4
- J1 5
- P7 2
- P7 1
- P8 45
+ P1 7
+ C2 2
+ C1 2
+ P5 1
+ U1 21
+ P1 6
  P8 44
- P8 46
  P8 43
  VR1 6
-Net 33 "/UART5_TXD" "UART5_TXD"
- U2 1
- P7 37
-Net 58 "" ""
+ U1 18
+ U1 25
+ U1 26
+ J1 5
+ J1 6
+ P4 1
+ P3 1
+ R2 2
+ P6 1
+ C3 2
+ P8 46
+ P2 1
+ P7 1
+ C4 2
+ P7 2
+ P8 45
+ P8 1
+ P8 2
+Net 59 "" ""
  C2 1
  U1 17
-Net 59 "/V_IN" "V_IN"
+Net 60 "/V_IN" "V_IN"
  VR2 2
- SW1 1
- VR1 2
  VR1 1
+ VR1 2
+ K3 3
  SW3 1
- C4 1
  C3 1
-Net 60 "/5V_FTDI" "5V_FTDI"
+ C4 1
+Net 61 "" ""
+ SW3 2
+ K2 2
+Net 62 "/EN12" "EN12"
+ VR2 1
+ K3 2
+Net 63 "/5V_FTDI" "5V_FTDI"
  U2 6
- K1 2
- U1 20
  U2 7
  U1 4
+ U1 20
  C1 1
-Net 61 "" ""
- K2 2
- SW3 2
-Net 62 "/EN12" "EN12"
- SW1 2
- VR2 1
-Net 64 "/5V" "5V"
- SW2 2
- P5 2
- K1 1
- C8 1
+ K1 2
+Net 65 "/5V" "5V"
  VR1 4
- C6 1
+ C8 1
+ K1 1
+ P5 2
  P6 2
-Net 75 "/D-" "D-"
+ C6 1
+ SW2 1
+Net 76 "/D-" "D-"
  J1 2
  U1 16
-Net 81 "/12V" "12V"
+Net 82 "/12V" "12V"
  P4 2
- C7 1
- VR2 4
  P3 2
+ C7 1
  C5 1
-Net 84 "/3.3V" "3.3V"
+ VR2 4
+Net 85 "/3.3V" "3.3V"
  P8 4
- U2 3
  P8 3
-Net 85 "/RXD" "RXD"
+ U2 3
+Net 86 "/RXD" "RXD"
  U1 5
- P1 3
  U2 8
-Net 86 "/TXD" "TXD"
- U1 1
+ P1 3
+Net 87 "/TXD" "TXD"
  U2 5
  P1 4
+ U1 1
 Net 110 "/5V_SYS" "5V_SYS"
- P8 7
  P8 8
+ P8 7
 Net 111 "/5V_BB" "5V_BB"
- SW2 1
- P8 5
  P8 6
+ SW2 2
+ P8 5
 Net 112 "/D+" "D+"
- U1 15
  J1 3
+ U1 15
 Net 113 "/5V_USB" "5V_USB"
- K1 3
  J1 1
+ K1 3
 Net 114 "/V_EXT" "V_EXT"
- P2 2
  K2 1
+ P2 2
 Net 115 "/V_BAT" "V_BAT"
  P1 1
  P1 2

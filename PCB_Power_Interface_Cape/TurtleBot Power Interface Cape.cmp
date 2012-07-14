@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Mon 25 Jun 2012 03:24:35 PM EDT
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Wed 27 Jun 2012 04:28:51 PM EDT
 
 BeginCmp
 TimeStamp = /4F9EC731;
@@ -60,7 +60,7 @@ BeginCmp
 TimeStamp = /4F9ECAD6;
 Reference = J1;
 ValeurCmp = USB;
-IdModule  = USB_B;
+IdModule  = con-usb-2-USB-M-S1;
 EndCmp
 
 BeginCmp
@@ -73,6 +73,13 @@ EndCmp
 BeginCmp
 TimeStamp = /4FA165FF;
 Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEB6D70;
+Reference = K3;
 ValeurCmp = CONN_3;
 IdModule  = PIN_ARRAY_3X1;
 EndCmp
@@ -102,7 +109,7 @@ BeginCmp
 TimeStamp = /4F8C62BB;
 Reference = P4;
 ValeurCmp = CONN_2;
-IdModule  = Header Mini-Fit RA 2x1;
+IdModule  = SMD Microfit 2pin;
 EndCmp
 
 BeginCmp
@@ -123,14 +130,14 @@ BeginCmp
 TimeStamp = /4FE23660;
 Reference = P7;
 ValeurCmp = CONN_23X2;
-IdModule  = PIN_ARRAY_30X2;
+IdModule  = PIN_ARRAY_23X2;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FE23651;
 Reference = P8;
 ValeurCmp = CONN_23X2;
-IdModule  = PIN_ARRAY_30X2;
+IdModule  = PIN_ARRAY_23X2;
 EndCmp
 
 BeginCmp
@@ -141,24 +148,17 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FE8A8A8;
-Reference = SW1;
-ValeurCmp = SWITCH_INV;
-IdModule  = SW_PUSH_SMALL;
-EndCmp
-
-BeginCmp
 TimeStamp = /4FE8A72F;
 Reference = SW2;
 ValeurCmp = SWITCH_INV;
-IdModule  = pin_array_3x2;
+IdModule  = SW_Slide_6x2mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FCF9DB9;
 Reference = SW3;
 ValeurCmp = SWITCH_INV;
-IdModule  = pin_array_3x2;
+IdModule  = SW_Slide_6x2mm;
 EndCmp
 
 BeginCmp
