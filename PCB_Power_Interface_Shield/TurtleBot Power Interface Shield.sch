@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 27 Jun 2012 04:40:42 PM EDT
+EESchema Schematic File Version 2  date Mon 23 Jul 2012 12:34:25 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power Board EU version"
-Date "27 jun 2012"
+Date "23 jul 2012"
 Rev "0"
 Comp "I Heart Engineering"
 Comment1 "Made by: Carlos Chinchilla"
@@ -589,7 +589,6 @@ F 1 "CONN_7" V 7170 4500 60  0000 C CNN
 $EndComp
 Text Label 6750 4300 2    60   ~ 0
 V_BAT
-NoConn ~ 6750 4600
 $Comp
 L R R2
 U 1 1 4FCF952F
@@ -750,7 +749,6 @@ NoConn ~ 3250 2700
 NoConn ~ 3250 2800
 NoConn ~ 3250 2900
 NoConn ~ 3250 3000
-NoConn ~ 3250 3400
 NoConn ~ 3250 3500
 NoConn ~ 3250 3600
 NoConn ~ 3250 3700
@@ -796,4 +794,16 @@ F 1 "CONN_3" V 4500 6050 40  0000 C CNN
 	1    4450 6050
 	-1   0    0    1   
 $EndComp
+NoConn ~ 3250 3400
+$Comp
+L CONN_1 P7
+U 1 1 500D7E1B
+P 6450 4600
+F 0 "P7" H 6530 4600 40  0000 L CNN
+F 1 "CONN_1" H 6450 4655 30  0001 C CNN
+	1    6450 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 4600 6750 4600
 $EndSCHEMATC
