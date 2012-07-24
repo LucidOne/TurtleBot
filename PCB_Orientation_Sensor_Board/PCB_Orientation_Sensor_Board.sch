@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 18 Jul 2012 06:20:30 PM EDT
+EESchema Schematic File Version 2  date Mon 23 Jul 2012 03:33:04 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
+LIBS:PCB_Orientation_Sensor_Board-cache
 EELAYER 25  0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LED circle with Arduino Mini 328"
-Date "18 jul 2012"
+Date "23 jul 2012"
 Rev "1"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -879,7 +880,43 @@ SPC
 Wire Wire Line
 	8550 4700 8700 4700
 Wire Wire Line
-	8550 4800 8700 4800
+	8550 4800 8900 4800
 Wire Wire Line
-	8550 4900 8700 4900
+	8550 4900 8900 4900
+$Comp
+L CONN_3X2 P1
+U 1 1 500DA63F
+P 5400 3800
+F 0 "P1" H 5400 4050 50  0000 C CNN
+F 1 "CONN_3X2" V 5400 3850 40  0000 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+Text Label 5800 3650 0    60   ~ 0
+VCC
+Text Label 5800 3750 0    60   ~ 0
+MOSI
+Text Label 8900 4900 0    60   ~ 0
+MISO
+Text Label 8900 4800 0    60   ~ 0
+MOSI
+Text Label 9050 5000 0    60   ~ 0
+SCK
+Text Label 5000 3650 2    60   ~ 0
+MISO
+Text Label 5000 3750 2    60   ~ 0
+SCK
+Text Label 5000 3850 2    60   ~ 0
+RESET
+$Comp
+L GND #PWR026
+U 1 1 500DA749
+P 5800 4000
+F 0 "#PWR026" H 5800 4000 30  0001 C CNN
+F 1 "GND" H 5800 3930 30  0001 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4000 5800 3850
 $EndSCHEMATC
