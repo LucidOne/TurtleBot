@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 06 Jul 2012 05:33:47 PM EDT
+EESchema Schematic File Version 2  date Fri 27 Jul 2012 02:20:46 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -34,12 +34,12 @@ LIBS:IHE
 LIBS:RGB_LED_Board-cache
 EELAYER 25  0
 EELAYER END
-$Descr A4 11700 8267
+$Descr USLegal 14000 8500
 encoding utf-8
 Sheet 1 1
 Title "HEXAlight"
 Date "6 jul 2012"
-Rev "0"
+Rev "0x01"
 Comp "iHeartEngineering"
 Comment1 "Miron Veryanskiy "
 Comment2 ""
