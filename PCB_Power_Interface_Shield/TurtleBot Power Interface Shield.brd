@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Wed 11 Jul 2012 12:37:22 PM EDT
+PCBNEW-BOARD Version 1 date Mon 23 Jul 2012 12:38:40 PM EDT
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -7,21 +7,21 @@ encoding utf-8
 Units deci-mils
 LayerCount 2
 EnabledLayers 1FFF8001
-Links 76
-NoConn 76
+Links 79
+NoConn 79
 Di 24590 29060 65088 60127
 Ndraw 18
 Ntrack 0
 Nzone 0
 BoardThickness 630
-Nmodule 34
-Nnets 20
+Nmodule 35
+Nnets 21
 $EndGENERAL
 
 $SHEETDESCR
 Sheet USLetter 11000 8500
 Title "TurtleBot Power Interface Shield"
-Date "11 jul 2012"
+Date "23 jul 2012"
 Rev "2"
 Comp "I Heart Engineering"
 Comment1 "Designed by Carlos Chinchilla - May 2012"
@@ -32,8 +32,8 @@ $EndSHEETDESCR
 
 $SETUP
 Layers 2
-Layer[0] Back signal
-Layer[15] Front signal
+Layer[0] Back power
+Layer[15] Front power
 TrackWidth 120
 TrackClearence 100
 ZoneClearence 392
@@ -55,7 +55,7 @@ TextPcbSize 600 800
 EdgeModWidth 109
 TextModSize 600 600
 TextModWidth 120
-PadSize 984 787
+PadSize 7084 6692
 PadDrill 0
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 25039 60000
@@ -136,11 +136,15 @@ Na 17 "N-000020"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 18 "N-000041"
+Na 18 "N-000028"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 19 "N-000092"
+Na 19 "N-000040"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 20 "N-000092"
 St ~
 $EndEQUIPOT
 $NCLASS
@@ -166,7 +170,8 @@ AddNet "/RXD"
 AddNet "/TXD"
 AddNet "GND"
 AddNet "N-000020"
-AddNet "N-000041"
+AddNet "N-000028"
+AddNet "N-000040"
 AddNet "N-000092"
 $EndNCLASS
 $NCLASS
@@ -232,28 +237,28 @@ $PAD
 Sh "GND" R 984 787 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 16 "GND"
+Ne 0 ""
 Po -1181 -1770
 $EndPAD
 $PAD
 Sh "GND" R 984 787 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 16 "GND"
+Ne 0 ""
 Po 984 -1770
 $EndPAD
 $PAD
 Sh "GND" R 984 787 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 16 "GND"
+Ne 0 ""
 Po -1181 1772
 $EndPAD
 $PAD
 Sh "GND" R 984 787 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 16 "GND"
+Ne 0 ""
 Po 984 1732
 $EndPAD
 $PAD
@@ -516,7 +521,7 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SMD Microfit 2pin RA
 $MODULE TO-263-5
-Po 47244 37401 900 15 4FDF458C 4FD24EED ~~
+Po 47244 37401 900 15 500D7E01 4FD24EED ~~
 Li TO-263-5
 Sc 4FD24EED
 AR /4F8C5AF1
@@ -572,6 +577,7 @@ At SMD N 00888000
 Ne 16 "GND"
 Po 985 0
 .LocalClearance 787
+.ZoneConnection 2
 $EndPAD
 $PAD
 Sh "3" R 787 1179 0 0 900
@@ -643,7 +649,7 @@ Po 0 0
 $EndPAD
 $EndMODULE 1pin
 $MODULE pin_array_8x1
-Po 59055 38976 900 15 4FCFB2DE 4FD167F5 ~~
+Po 59055 38976 900 15 500D7CAA 4FD167F5 ~~
 Li pin_array_8x1
 Cd Single rangee de contacts 1 x 8 pins
 Kw CONN
@@ -688,7 +694,7 @@ $PAD
 Sh "5" C 600 600 0 0 900
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 0 ""
+Ne 18 "N-000028"
 Po 992 8
 $EndPAD
 $PAD
@@ -767,7 +773,7 @@ Po -4 0
 $EndPAD
 $EndMODULE 1pin
 $MODULE ARDUINO_MEGA_SHIELD
-Po 64000 30291 1800 15 4FCFE0EF 4FCF41AC ~~
+Po 64000 30291 1800 15 500D7C75 4FCF41AC ~~
 Li ARDUINO_MEGA_SHIELD
 Sc 4FCF41AC
 AR /4FC54690
@@ -990,7 +996,7 @@ $PAD
 Sh "RST" C 600 600 0 0 1800
 Dr 320 0 0
 At STD N 00E0FFFF
-Ne 18 "N-000041"
+Ne 19 "N-000040"
 Po 13000 -1000
 $EndPAD
 $PAD
@@ -1581,7 +1587,7 @@ $PAD
 Sh "17" R 160 500 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 19 "N-000092"
+Ne 20 "N-000092"
 Po 1180 -1400
 $EndPAD
 $PAD
@@ -1846,7 +1852,7 @@ $PAD
 Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 19 "N-000092"
+Ne 20 "N-000092"
 Po -375 0
 $EndPAD
 $PAD
@@ -1938,7 +1944,7 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SM0805
 $MODULE TO-263-5
-Po 35432 37401 900 15 4FDF4583 4FD24F3B ~~
+Po 35432 37401 900 15 500D7DF5 4FD24F3B ~~
 Li TO-263-5
 Sc 4FD24F3B
 AR /4F8C5AE2
@@ -1994,6 +2000,7 @@ At SMD N 00888000
 Ne 16 "GND"
 Po 985 0
 .LocalClearance 787
+.ZoneConnection 2
 $EndPAD
 $PAD
 Sh "3" R 787 1179 0 0 900
@@ -2024,7 +2031,7 @@ $PAD
 Sh "2" R 1220 512 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "N-000041"
+Ne 19 "N-000040"
 Po 1565 -886
 $EndPAD
 $PAD
@@ -2059,7 +2066,7 @@ $PAD
 Sh "2" C 709 709 0 0 1800
 Dr 394 0 0
 At STD N 00E0FFFF
-Ne 18 "N-000041"
+Ne 19 "N-000040"
 Po 1280 0
 $EndPAD
 $PAD
@@ -2388,6 +2395,34 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SMD_CAP_5m
+$MODULE PIN_ARRAY_1
+Po 60827 37992 0 15 500D7D84 500D7D63 ~~
+Li PIN_ARRAY_1
+Cd 1 pin
+Kw CONN DEV
+Sc 500D7D63
+AR /500D7E1B
+Op 0 0 0
+T0 0 -750 300 300 0 60 N V 21 N "P7"
+T1 197 984 300 300 0 60 N V 21 N "DD/Baud"
+DS 500 500 -500 500 60 21
+DS -500 -500 500 -500 60 21
+DS -500 500 -500 -500 60 21
+DS 500 -500 500 500 60 21
+$PAD
+Sh "1" R 600 600 0 0 0
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 18 "N-000028"
+Po 0 0
+$EndPAD
+$SHAPE3D
+Na "pin_array\\pin_1.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE PIN_ARRAY_1
 $TEXTPCB
 Te "TurtleBot Power"
 nl "Interface Shield"
