@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 23 Jul 2012 03:33:04 PM EDT
+EESchema Schematic File Version 2  date Mon 30 Jul 2012 12:38:15 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LED circle with Arduino Mini 328"
-Date "23 jul 2012"
+Date "30 jul 2012"
 Rev "1"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -416,7 +416,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 4800 6600 4500
 Wire Wire Line
-	6350 4500 6650 4500
+	5900 4500 6650 4500
 Wire Wire Line
 	6350 4550 6350 4500
 Connection ~ 6600 4500
@@ -919,4 +919,98 @@ F 1 "GND" H 5800 3930 30  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 4000 5800 3850
+$Comp
+L GND #PWR027
+U 1 1 5016B419
+P 5900 5500
+F 0 "#PWR027" H 5900 5500 30  0001 C CNN
+F 1 "GND" H 5900 5430 30  0001 C CNN
+	1    5900 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5016B41F
+P 5900 4750
+F 0 "R6" V 5980 4750 50  0000 C CNN
+F 1 "1k" V 5900 4750 50  0000 C CNN
+	1    5900 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5016B425
+P 5900 5250
+F 0 "D2" H 5900 5350 50  0000 C CNN
+F 1 "LED" H 5900 5150 50  0000 C CNN
+	1    5900 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 5500 5900 5450
+Wire Wire Line
+	5900 5050 5900 5000
+Connection ~ 6350 4500
+$Comp
+L CONN_3 K1
+U 1 1 5016B6C0
+P 9100 6400
+F 0 "K1" V 9050 6400 50  0000 C CNN
+F 1 "CONN_3" V 9150 6400 40  0000 C CNN
+	1    9100 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 6300 8750 6300
+Wire Wire Line
+	8550 6400 8750 6400
+Wire Wire Line
+	8550 6500 8750 6500
+Text Label 8650 6300 0    60   ~ 0
+D2
+Text Label 8650 6400 0    60   ~ 0
+D3
+Text Label 8650 6500 0    60   ~ 0
+D4
+$Comp
+L CONN_5 P2
+U 1 1 5016B981
+P 9100 6850
+F 0 "P2" V 9050 6850 50  0000 C CNN
+F 1 "CONN_5" V 9150 6850 50  0000 C CNN
+	1    9100 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 6600 8650 6600
+Wire Wire Line
+	8650 6600 8650 6650
+Wire Wire Line
+	8650 6650 8700 6650
+Wire Wire Line
+	8700 6750 8650 6750
+Wire Wire Line
+	8650 6750 8650 6700
+Wire Wire Line
+	8650 6700 8550 6700
+Wire Wire Line
+	8550 6800 8650 6800
+Wire Wire Line
+	8650 6800 8650 6850
+Wire Wire Line
+	8650 6850 8700 6850
+Text Label 8550 6600 0    60   ~ 0
+D5
+Text Label 8550 6700 0    60   ~ 0
+D6
+Text Label 8550 6800 0    60   ~ 0
+D7
+Text Label 8700 6950 2    60   ~ 0
+D8
+Text Label 8700 7050 2    60   ~ 0
+D9
+Text Label 8550 4500 0    60   ~ 0
+D8
+Text Label 8550 4600 0    60   ~ 0
+D9
 $EndSCHEMATC

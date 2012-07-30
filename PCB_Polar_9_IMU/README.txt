@@ -1,18 +1,23 @@
-Orientation Sensors Board
+Polar 9 IMU
+0200-0005-0001
 
 Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	URL
 --------------------------------------------------------------------------------------------------------------------------------------------
 Connectors:
 SWITCH TACTILE SPST-NO 0.05A 12V	450-1650-ND		TE Connectivity		FSM4JH		http://documents.tycoelectronics.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=CD&DocLang=EN
 
-CONN MINI USB RCPT RA TYPE B SMD	A31727CT-ND		TE Connectivity		1734035-2	http://documents.tycoelectronics.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1734035&DocType=CD&DocLang=EN
+CONN RCPT REV MICRO USB TYPE B		609-4048-1-ND		FCI			10103592-0001LF	http://portal.fciconnect.com/Comergent//fci/drawing/10103592.pdf
 
 ICs:
 FT232RL-IC USB FS SERIAL UART 28-SSOP	768-1007-2-ND	Future Technology Devices Int.	FT232RL-REEL	http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
 
-IC 6BIT NON-INV TRANSLTR 16TSSOP	296-23759-1-ND		Texas Instruments	TXB0106PWR	http://www.ti.com/lit/ds/symlink/txb0106.pdf
+IC 6BIT NON-INV TRANSLTR 16TSSOP	q		Texas Instruments	TXB0106PWR	http://www.ti.com/lit/ds/symlink/txb0106.pdf
 
 ATMega 328				ATMEGA328-AU-ND		Atmel			ATMEGA328-AU	www.atmel.com/Images/doc8271.pdf
+
+ACCELEROMETER/MAGNETOMETER LGA14	497-11918-1-ND		STMicroelectronics	LSM303DLHCTR	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/DM00027543.pdf
+
+IC GYROSCOPE MEMS 3AXIS LP 16LGA	497-11071-1-ND		STMicroelectronics	L3G4200DTR	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00265057.pdf
 
 CER RESONATOR 16.0MHZ SMD		490-1198-2-ND	Murata Electronics North America	CSTCE16M0V53-R0		http://www.murata.com/products/catalog/pdf/p17e.pdf#page=8
 

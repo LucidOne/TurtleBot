@@ -1,21 +1,21 @@
-# EESchema Netlist Version 1.1 created  Mon 23 Jul 2012 03:31:58 PM EDT
+# EESchema Netlist Version 1.1 created  Mon 30 Jul 2012 12:37:32 PM EDT
 (
  ( /4F650B03 DIL28  IC1 ATMEGA328-P {Lib=ATMEGA328-P}
   (    1 /RESET )
   (    2 /RX )
   (    3 /TX )
-  (    4 ? )
-  (    5 ? )
-  (    6 ? )
+  (    4 /D2 )
+  (    5 /D3 )
+  (    6 /D4 )
   (    7 VCC )
   (    8 GND )
   (    9 /TOSC1 )
   (   10 /TOSC2 )
-  (   11 ? )
-  (   12 ? )
-  (   13 ? )
-  (   14 ? )
-  (   15 ? )
+  (   11 /D5 )
+  (   12 /D6 )
+  (   13 /D7 )
+  (   14 /D8 )
+  (   15 /D9 )
   (   16 /10 )
   (   17 /11 )
   (   18 /12 )
@@ -31,11 +31,11 @@
   (   28 /SCL )
  )
  ( /4F652571 $noname  R4 330 {Lib=R}
-  (    1 N-000058 )
+  (    1 N-000057 )
   (    2 /13 )
  )
  ( /4F6525DB $noname  D1 LED {Lib=LED}
-  (    1 N-000058 )
+  (    1 N-000057 )
   (    2 GND )
  )
  ( /4F652722 $noname  R5 10k {Lib=R}
@@ -69,8 +69,8 @@
   (   12 ? )
   (   13 ? )
   (   14 ? )
-  (   15 N-000039 )
-  (   16 N-000038 )
+  (   15 N-000041 )
+  (   16 N-000045 )
   (   17 /3.3V )
   (   18 GND )
   (   19 ? )
@@ -86,8 +86,8 @@
  ( /4F7A0A63 $noname  J1 USB_2 {Lib=USB_2}
   (    1 GND )
   (    2 VCC )
-  (    3 N-000038 )
-  (    4 N-000039 )
+  (    3 N-000045 )
+  (    4 N-000041 )
  )
  ( /4F7A1270 $noname  C12 0.1uF {Lib=C}
   (    1 VCC )
@@ -111,14 +111,14 @@
   (    3 /SDA3 )
   (    4 ? )
   (    5 ? )
-  (    6 N-000007 )
+  (    6 N-000006 )
   (    7 GND )
   (    8 ? )
   (    9 ? )
   (   10 GND )
   (   11 GND )
-  (   12 N-000004 )
-  (   13 N-000006 )
+  (   12 N-000001 )
+  (   13 N-000005 )
   (   14 /3.3V )
  )
  ( /5007169B $noname  U3 L3G4200D {Lib=L3G4200D}
@@ -135,20 +135,20 @@
   (   11 GND )
   (   12 GND )
   (   13 GND )
-  (   14 N-000011 )
+  (   14 N-000013 )
   (   15 /3.3V )
   (   16 /3.3V )
  )
  ( /500719C0 $noname  C5 10nF {Lib=C}
-  (    1 N-000011 )
+  (    1 N-000013 )
   (    2 GND )
  )
  ( /500719CF $noname  C6 470nF {Lib=C}
-  (    1 N-000011 )
-  (    2 N-000010 )
+  (    1 N-000013 )
+  (    2 N-000014 )
  )
  ( /500719DE $noname  R1 10k {Lib=R}
-  (    1 N-000010 )
+  (    1 N-000014 )
   (    2 GND )
  )
  ( /50071D47 $noname  C3 10uF {Lib=C}
@@ -160,12 +160,12 @@
   (    2 GND )
  )
  ( /500721DC $noname  C7 4.7uF {Lib=C}
-  (    1 N-000007 )
+  (    1 N-000006 )
   (    2 GND )
  )
  ( /500723CE $noname  C2 0.22uF {Lib=C}
-  (    1 N-000006 )
-  (    2 N-000004 )
+  (    1 N-000005 )
+  (    2 N-000001 )
  )
  ( /50072563 $noname  C10 10uF {Lib=C}
   (    1 /3.3V )
@@ -216,6 +216,26 @@
   (    4 /11 )
   (    5 /RESET )
   (    6 GND )
+ )
+ ( /5016B41F $noname  R6 1k {Lib=R}
+  (    1 N-000017 )
+  (    2 VCC )
+ )
+ ( /5016B425 $noname  D2 LED {Lib=LED}
+  (    1 N-000017 )
+  (    2 GND )
+ )
+ ( /5016B6C0 $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 /D2 )
+  (    2 /D3 )
+  (    3 /D4 )
+ )
+ ( /5016B981 $noname  P2 CONN_5 {Lib=CONN_5}
+  (    1 /D5 )
+  (    2 /D6 )
+  (    3 /D7 )
+  (    4 /D8 )
+  (    5 /D9 )
  )
 )
 *
@@ -344,162 +364,207 @@ $component C8
  C?
  C1-1
 $endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "GND" "GND"
- C13 2
- P1 6
- U2 16
- C14 2
- U4 7
- R1 2
- C5 2
- U1 7
- C8 2
- C4 2
- IC1 22
- C11 2
- IC1 8
- D1 2
- SW1 2
- X1 3
- U4 11
- U1 10
- U1 11
- C12 2
- J1 1
- U4 18
- U4 26
- U4 25
- U4 21
- U3 13
- U3 12
- C7 2
- C1 2
- C3 2
- C9 2
- C10 2
- U3 11
- U3 8
- U3 9
- U3 10
-Net 4 "" ""
+Net 1 "" ""
  U1 12
  C2 2
-Net 6 "" ""
- C2 1
- U1 13
-Net 7 "" ""
- U1 6
- C7 1
-Net 8 "/CS3" "CS3"
- U2 7
- U3 5
-Net 9 "/3.3V" "3.3V"
- C14 1
- C1 1
- U2 8
- U2 2
- U1 1
- C9 1
- U4 17
- C10 1
- C3 1
- U1 14
- U3 1
- C4 1
+Net 2 "/3.3V" "3.3V"
  R2 1
  R3 1
+ U2 2
  U3 16
  U3 15
-Net 10 "" ""
- C6 2
- R1 1
-Net 11 "" ""
- U3 14
- C6 1
- C5 1
-Net 12 "VCC" "VCC"
- J1 2
- C12 1
- P1 2
- U2 10
- IC1 20
- IC1 7
- U4 4
- C8 1
- U4 20
- C13 1
- R5 1
- C11 1
-Net 13 "/RESET" "RESET"
- C15 1
- R5 2
- P1 5
- SW1 1
- IC1 1
-Net 14 "/13" "13"
- P1 3
- R4 2
- IC1 19
- U2 12
-Net 15 "/12" "12"
- P1 1
- IC1 18
- U2 13
-Net 19 "/SDA" "SDA"
- IC1 27
- U2 9
-Net 20 "/10" "10"
- U2 15
+ U2 8
+ U1 1
+ C4 1
+ C3 1
+ U3 1
+ U1 14
+ C10 1
+ U4 17
+ C9 1
+ C1 1
+ C14 1
+Net 3 "GND" "GND"
+ U1 11
+ P1 6
+ C4 2
+ U3 12
+ U3 11
+ U1 10
+ U3 9
+ U3 8
+ U3 10
+ U3 13
+ U4 21
+ U4 11
+ IC1 22
+ U4 25
+ U4 26
+ U4 7
+ U4 18
+ J1 1
+ C12 2
+ IC1 8
+ X1 3
+ C13 2
+ D1 2
+ U2 16
+ C8 2
+ C11 2
+ U1 7
+ SW1 2
+ R1 2
+ C5 2
+ C9 2
+ C10 2
+ C14 2
+ C1 2
+ D2 2
+ C3 2
+ C7 2
+Net 5 "" ""
+ U1 13
+ C2 1
+Net 6 "" ""
+ U1 6
+ C7 1
+Net 7 "/10" "10"
  IC1 16
-Net 21 "/11" "11"
- U2 14
- IC1 17
- P1 4
-Net 22 "/SCL" "SCL"
- U2 11
- IC1 28
-Net 23 "/SDO3" "SDO3"
- U3 4
- U2 6
-Net 24 "/SCL3" "SCL3"
- U1 2
- U2 3
- R2 2
-Net 25 "/SDA3" "SDA3"
+ U2 15
+Net 11 "/SDA3" "SDA3"
  R3 2
  U1 3
  U2 1
-Net 29 "/TX" "TX"
- U4 5
+Net 12 "/SCL3" "SCL3"
+ R2 2
+ U1 2
+ U2 3
+Net 13 "" ""
+ C5 1
+ U3 14
+ C6 1
+Net 14 "" ""
+ R1 1
+ C6 2
+Net 17 "" ""
+ D2 1
+ R6 1
+Net 18 "/RESET" "RESET"
+ IC1 1
+ R5 2
+ SW1 1
+ C15 1
+ P1 5
+Net 19 "/13" "13"
+ IC1 19
+ P1 3
+ U2 12
+ R4 2
+Net 20 "VCC" "VCC"
+ U4 20
+ U2 10
+ R5 1
+ P1 2
+ IC1 20
+ IC1 7
+ U4 4
+ C13 1
+ C12 1
+ C8 1
+ C11 1
+ J1 2
+ R6 2
+Net 21 "/D5" "D5"
+ P2 1
+ IC1 11
+Net 22 "/D6" "D6"
+ P2 2
+ IC1 12
+Net 23 "/D7" "D7"
+ IC1 13
+ P2 3
+Net 24 "/12" "12"
+ P1 1
+ IC1 18
+ U2 13
+Net 25 "/D4" "D4"
+ K1 3
+ IC1 6
+Net 26 "/D3" "D3"
+ K1 2
+ IC1 5
+Net 27 "/D2" "D2"
+ K1 1
+ IC1 4
+Net 28 "/11" "11"
+ P1 4
+ IC1 17
+ U2 14
+Net 37 "/TX" "TX"
  IC1 3
-Net 31 "/DTR" "DTR"
- U4 2
+ U4 5
+Net 39 "/DTR" "DTR"
  C15 2
-Net 32 "/RX" "RX"
- U4 1
+ U4 2
+Net 40 "/RX" "RX"
  IC1 2
-Net 33 "/TOSC1" "TOSC1"
- X1 2
- IC1 9
-Net 34 "/TOSC2" "TOSC2"
- IC1 10
- X1 1
-Net 38 "" ""
+ U4 1
+Net 41 "" ""
+ J1 4
+ U4 15
+Net 45 "" ""
  J1 3
  U4 16
-Net 39 "" ""
- U4 15
- J1 4
-Net 58 "" ""
+Net 46 "/SCL" "SCL"
+ U2 11
+ IC1 28
+Net 47 "/SDA" "SDA"
+ U2 9
+ IC1 27
+Net 50 "/D9" "D9"
+ P2 5
+ IC1 15
+Net 52 "/D8" "D8"
+ P2 4
+ IC1 14
+Net 55 "/TOSC1" "TOSC1"
+ IC1 9
+ X1 2
+Net 56 "/TOSC2" "TOSC2"
+ X1 1
+ IC1 10
+Net 57 "" ""
  R4 1
  D1 1
-Net 59 "/SDI3" "SDI3"
- U2 5
+Net 58 "/CS3" "CS3"
+ U3 5
+ U2 7
+Net 59 "/SDO3" "SDO3"
+ U3 4
+ U2 6
+Net 60 "/SDI3" "SDI3"
  U3 3
-Net 60 "/SPC3" "SPC3"
+ U2 5
+Net 61 "/SPC3" "SPC3"
  U2 4
  U3 2
 }
