@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 20 Jun 2012 05:14:41 PM EDT
+EESchema Schematic File Version 2  date Mon 30 Jul 2012 06:30:31 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,14 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:IHE
-EELAYER 43  0
+LIBS:PCB_Makerbot_Hotplate-cache
+EELAYER 25  0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Thingomatic Heater Board v1.1"
-Date "20 jun 2012"
+Date "30 jul 2012"
 Rev "1"
 Comp "Improved by I Heart Engineering"
 Comment1 "Original Design by MakerBot Industries"
@@ -179,4 +179,6 @@ Wire Wire Line
 Connection ~ 5100 3400
 Text Label 5100 2800 2    60   ~ 0
 5V
+Wire Wire Line
+	3550 3250 3550 3300
 $EndSCHEMATC

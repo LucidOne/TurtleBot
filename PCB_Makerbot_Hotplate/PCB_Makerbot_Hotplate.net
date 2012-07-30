@@ -1,11 +1,11 @@
-# EESchema Netlist Version 1.1 created  Wed 20 Jun 2012 05:12:16 PM EDT
+# EESchema Netlist Version 1.1 created  Mon 30 Jul 2012 06:30:44 PM EDT
 (
  ( /4FE238D9 $noname  R1 R {Lib=R}
   (    1 /+12V )
   (    2 /HEATER- )
  )
  ( /4FE238E8 $noname  R2 R {Lib=R}
-  (    1 ? )
+  (    1 N-000004 )
   (    2 /HEATER- )
  )
  ( /4FE23929 $noname  R3 R {Lib=R}
@@ -14,11 +14,11 @@
  )
  ( /4FE23938 $noname  D1 LED {Lib=LED}
   (    1 /+12V )
-  (    2 ? )
+  (    2 N-000004 )
  )
  ( /4FE23947 $noname  R4 R {Lib=R}
   (    1 N-000003 )
-  (    2 N-000007 )
+  (    2 N-000006 )
  )
  ( /4FE23965 $noname  P2 CONN_6 {Lib=CONN_6}
   (    1 ? )
@@ -33,12 +33,12 @@
   (    2 /+12V )
  )
  ( /4FE23BC7 $noname  P1 CONN_2 {Lib=CONN_2}
-  (    1 N-000007 )
+  (    1 N-000006 )
   (    2 N-000003 )
  )
  ( /4FE23C4D $noname  C1 C {Lib=C}
   (    1 N-000003 )
-  (    2 N-000007 )
+  (    2 N-000006 )
  )
 )
 *
@@ -98,19 +98,22 @@ Net 2 "/HEATER-" "HEATER-"
  R2 2
  R1 2
 Net 3 "" ""
- R4 1
- P1 2
  R3 2
+ P1 2
+ R4 1
  C1 1
+Net 4 "" ""
+ R2 1
+ D1 2
 Net 5 "/5V" "5V"
  R3 1
  P2 2
-Net 7 "" ""
- C1 2
- P1 1
+Net 6 "" ""
  R4 2
-Net 10 "/MOTOR-" "MOTOR-"
- P2 6
+ P1 1
+ C1 2
+Net 9 "/MOTOR-" "MOTOR-"
  P3 1
+ P2 6
 }
 #End
