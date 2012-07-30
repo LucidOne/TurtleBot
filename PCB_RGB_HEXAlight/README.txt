@@ -1,6 +1,5 @@
-Arduino Buttons Shield for TurtleBot
-
 RGB HEXAlight - Hexagonal array of RGB LED lights.
+0200-0006-0001
 
 Included:
 - Bill of Materials

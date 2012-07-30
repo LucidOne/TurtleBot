@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Mon 23 Jul 2012 04:36:40 PM EDT
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Mon 30 Jul 2012 12:38:10 PM EDT
 
 BeginCmp
 TimeStamp = /50071D56;
@@ -113,6 +113,13 @@ IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /5016B425;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F650B03;
 Reference = IC1;
 ValeurCmp = ATMEGA328-P;
@@ -127,10 +134,24 @@ IdModule  = con-usb-mini-female;
 EndCmp
 
 BeginCmp
+TimeStamp = /5016B6C0;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
 TimeStamp = /500DA63F;
 Reference = P1;
 ValeurCmp = CONN_3X2;
 IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5016B981;
+Reference = P2;
+ValeurCmp = CONN_5;
+IdModule  = PIN_ARRAY_5x1;
 EndCmp
 
 BeginCmp
@@ -165,6 +186,13 @@ BeginCmp
 TimeStamp = /4F652722;
 Reference = R5;
 ValeurCmp = 10k;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /5016B41F;
+Reference = R6;
+ValeurCmp = 1k;
 IdModule  = SM0805_NonPol;
 EndCmp
 
