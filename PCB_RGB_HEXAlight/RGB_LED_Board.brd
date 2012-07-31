@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Fri 27 Jul 2012 07:08:43 PM EDT
+PCBNEW-BOARD Version 1 date Mon 30 Jul 2012 06:26:17 PM EDT
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -22,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet USLetter 11000 8500
 Title "HEXAlight"
-Date "27 jul 2012"
+Date "30 jul 2012"
 Rev "0x01"
 Comp "iHeartEngineering"
 Comment1 "Miron Veryanskiy "
@@ -902,7 +902,7 @@ Po 63189 42126 600 800 120 0
 De 0 0 0 Normal C
 $EndTEXTPCB
 $TEXTPCB
-Te "0200-0004-0001"
+Te "0200-0006-0001"
 Po 66745 47598 394 394 79 0
 De 21 1 0 Normal C
 $EndTEXTPCB

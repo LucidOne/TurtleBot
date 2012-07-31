@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Mon 30 Jul 2012 04:18:08 PM EDT
+PCBNEW-BOARD Version 1 date Mon 30 Jul 2012 06:40:59 PM EDT
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -7,15 +7,15 @@ encoding utf-8
 Units deci-mils
 LayerCount 2
 EnabledLayers 1FFF8001
-Links 12
-NoConn 12
+Links 13
+NoConn 13
 Di 90475 27483 137871 74879
 Ndraw 4
 Ntrack 0
 Nzone 0
 BoardThickness 630
 Nmodule 9
-Nnets 7
+Nnets 8
 $EndGENERAL
 
 $SHEETDESCR
@@ -88,7 +88,11 @@ Na 5 "N-000003"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 6 "N-000007"
+Na 6 "N-000004"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 7 "N-000006"
 St ~
 $EndEQUIPOT
 $NCLASS
@@ -106,7 +110,8 @@ AddNet "/5V"
 AddNet "/HEATER-"
 AddNet "/MOTOR-"
 AddNet "N-000003"
-AddNet "N-000007"
+AddNet "N-000004"
+AddNet "N-000006"
 $EndNCLASS
 $MODULE SM0805
 Po 105315 67913 0 15 42806E04 4FE23D5D ~~
@@ -165,7 +170,7 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 6 "N-000004"
 Po -375 0
 $EndPAD
 $PAD
@@ -246,7 +251,7 @@ $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 6 "N-000004"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -283,7 +288,7 @@ $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 6 "N-000007"
+Ne 7 "N-000006"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -320,7 +325,7 @@ $PAD
 Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 6 "N-000007"
+Ne 7 "N-000006"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -383,7 +388,7 @@ $PAD
 Sh "1" R 600 600 0 0 0
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 6 "N-000007"
+Ne 7 "N-000006"
 Po -500 0
 $EndPAD
 $PAD
