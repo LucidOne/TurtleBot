@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 31 Jul 2012 03:26:56 PM EDT
+EESchema Schematic File Version 2  date Tue 31 Jul 2012 05:26:56 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
-LIBS:PCB_Polar_9_IMU-cache
 EELAYER 25  0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -881,15 +880,15 @@ Wire Wire Line
 $Comp
 L CONN_3X2 P1
 U 1 1 500DA63F
-P 5400 3800
-F 0 "P1" H 5400 4050 50  0000 C CNN
-F 1 "CONN_3X2" V 5400 3850 40  0000 C CNN
-	1    5400 3800
+P 7500 3900
+F 0 "P1" H 7500 4150 50  0000 C CNN
+F 1 "CONN_3X2" V 7500 3950 40  0000 C CNN
+	1    7500 3900
 	1    0    0    -1  
 $EndComp
-Text Label 5800 3650 0    60   ~ 0
+Text Label 7900 3750 0    60   ~ 0
 VCC
-Text Label 5800 3750 0    60   ~ 0
+Text Label 7900 3850 0    60   ~ 0
 MOSI
 Text Label 8900 4900 0    60   ~ 0
 MISO
@@ -897,23 +896,23 @@ Text Label 8900 4800 0    60   ~ 0
 MOSI
 Text Label 9050 5000 0    60   ~ 0
 SCK
-Text Label 5000 3650 2    60   ~ 0
+Text Label 7100 3750 2    60   ~ 0
 MISO
-Text Label 5000 3750 2    60   ~ 0
+Text Label 7100 3850 2    60   ~ 0
 SCK
-Text Label 5000 3850 2    60   ~ 0
+Text Label 7100 3950 2    60   ~ 0
 RESET
 $Comp
 L GND #PWR026
 U 1 1 500DA749
-P 5800 4000
-F 0 "#PWR026" H 5800 4000 30  0001 C CNN
-F 1 "GND" H 5800 3930 30  0001 C CNN
-	1    5800 4000
+P 7900 4100
+F 0 "#PWR026" H 7900 4100 30  0001 C CNN
+F 1 "GND" H 7900 4030 30  0001 C CNN
+	1    7900 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 4000 5800 3850
+	7900 4100 7900 3950
 $Comp
 L GND #PWR027
 U 1 1 5016B419
