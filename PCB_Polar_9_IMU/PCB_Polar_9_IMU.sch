@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 30 Jul 2012 12:38:15 PM EDT
+EESchema Schematic File Version 2  date Tue 31 Jul 2012 03:26:56 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,14 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
-LIBS:PCB_Orientation_Sensor_Board-cache
+LIBS:PCB_Polar_9_IMU-cache
 EELAYER 25  0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LED circle with Arduino Mini 328"
-Date "30 jul 2012"
+Date "31 jul 2012"
 Rev "1"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -414,7 +414,7 @@ Text Label 7900 2600 2    60   ~ 0
 Wire Wire Line
 	6650 4800 6600 4800
 Wire Wire Line
-	6600 4800 6600 4500
+	6600 4500 6600 4800
 Wire Wire Line
 	5900 4500 6650 4500
 Wire Wire Line
@@ -602,8 +602,6 @@ Text Label 3650 1050 0    60   ~ 0
 SDI3
 Text Label 3650 900  0    60   ~ 0
 SPC3
-NoConn ~ 3650 1500
-NoConn ~ 3650 1650
 $Comp
 L C C7
 U 1 1 500721DC
@@ -642,19 +640,19 @@ Wire Wire Line
 $Comp
 L GND #PWR020
 U 1 1 5007230B
-P 1100 3450
-F 0 "#PWR020" H 1100 3450 30  0001 C CNN
-F 1 "GND" H 1100 3380 30  0001 C CNN
-	1    1100 3450
+P 800 3450
+F 0 "#PWR020" H 800 3450 30  0001 C CNN
+F 1 "GND" H 800 3380 30  0001 C CNN
+	1    800  3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 3350 1100 3350
+	1350 3350 800  3350
 Wire Wire Line
-	1100 3200 1100 3450
+	800  3200 800  3450
 Wire Wire Line
-	1350 3200 1100 3200
-Connection ~ 1100 3350
+	1350 3200 800  3200
+Connection ~ 800  3350
 $Comp
 L C C2
 U 1 1 500723CE
@@ -757,9 +755,6 @@ Text Label 2600 3200 0    60   ~ 0
 SDA3
 Text Label 2550 3050 0    60   ~ 0
 SCL3
-NoConn ~ 2500 3350
-NoConn ~ 2500 3500
-NoConn ~ 1350 3500
 Text Label 8550 5750 0    60   ~ 0
 SDA
 Text Label 8550 5850 0    60   ~ 0
@@ -972,45 +967,24 @@ Text Label 8650 6400 0    60   ~ 0
 D3
 Text Label 8650 6500 0    60   ~ 0
 D4
-$Comp
-L CONN_5 P2
-U 1 1 5016B981
-P 9100 6850
-F 0 "P2" V 9050 6850 50  0000 C CNN
-F 1 "CONN_5" V 9150 6850 50  0000 C CNN
-	1    9100 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 6600 8650 6600
-Wire Wire Line
-	8650 6600 8650 6650
-Wire Wire Line
-	8650 6650 8700 6650
-Wire Wire Line
-	8700 6750 8650 6750
-Wire Wire Line
-	8650 6750 8650 6700
-Wire Wire Line
-	8650 6700 8550 6700
-Wire Wire Line
-	8550 6800 8650 6800
-Wire Wire Line
-	8650 6800 8650 6850
-Wire Wire Line
-	8650 6850 8700 6850
-Text Label 8550 6600 0    60   ~ 0
-D5
 Text Label 8550 6700 0    60   ~ 0
-D6
-Text Label 8550 6800 0    60   ~ 0
-D7
-Text Label 8700 6950 2    60   ~ 0
-D8
-Text Label 8700 7050 2    60   ~ 0
-D9
-Text Label 8550 4500 0    60   ~ 0
-D8
+INT_Gyro
 Text Label 8550 4600 0    60   ~ 0
-D9
+DRD_Mag
+Text Label 8550 6800 0    60   ~ 0
+INT1_Mag
+Text Label 8550 4500 0    60   ~ 0
+INT2_Mag
+Text Label 3650 1500 0    60   ~ 0
+DRD_Gyro
+Text Label 3650 1650 0    60   ~ 0
+INT_Gyro
+Text Label 1350 3500 2    60   ~ 0
+DRD_Mag
+Text Label 2500 3350 0    60   ~ 0
+INT2_Mag
+Text Label 2500 3500 0    60   ~ 0
+INT1_Mag
+Text Label 8550 6600 0    60   ~ 0
+DRD_Gyro
 $EndSCHEMATC
