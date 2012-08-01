@@ -1,0 +1,10 @@
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Wed 01 Aug 2012 07:33:32 PM EDT
+
+BeginCmp
+TimeStamp = /5019BFBE;
+Reference = U1;
+ValeurCmp = ATMEGA16U4;
+IdModule  = TQFP44;
+EndCmp
+
+EndListe

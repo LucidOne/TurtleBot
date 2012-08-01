@@ -1,0 +1,410 @@
+PCBNEW-BOARD Version 1 date Wed 01 Aug 2012 07:35:41 PM EDT
+
+# Created by Pcbnew(2011-nov-30)-testing
+
+$GENERAL
+encoding utf-8
+Units deci-mils
+LayerCount 2
+EnabledLayers 1FFF8001
+VisibleLayers 1FFFFFFF
+Links 0
+NoConn 0
+Di 79561 54955 85793 61187
+Ndraw 0
+Ntrack 0
+Nzone 0
+BoardThickness 630
+Nmodule 1
+Nnets 1
+$EndGENERAL
+
+$SHEETDESCR
+Sheet A3 16535 11693
+Title ""
+Date "1 aug 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndSHEETDESCR
+
+$SETUP
+Layers 2
+Layer[0] Back signal
+Layer[15] Front signal
+TrackWidth 100
+TrackClearence 100
+ZoneClearence 200
+Zone_45_Only 0
+TrackMinWidth 100
+DrawSegmWidth 150
+EdgeSegmWidth 150
+ViaSize 350
+ViaDrill 250
+ViaMinSize 350
+ViaMinDrill 200
+MicroViaSize 200
+MicroViaDrill 50
+MicroViasAllowed 0
+MicroViaMinSize 200
+MicroViaMinDrill 50
+TextPcbWidth 120
+TextPcbSize 600 800
+EdgeModWidth 150
+TextModSize 600 600
+TextModWidth 120
+PadSize 600 600
+PadDrill 320
+Pad2MaskClearance 100
+AuxiliaryAxisOrg 0 0
+VisibleElements FFFFFFBF
+PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+$EndSETUP
+
+$EQUIPOT
+Na 0 ""
+St ~
+$EndEQUIPOT
+$NCLASS
+Name "Default"
+Desc "This is the default net class."
+Clearance 100
+TrackWidth 100
+ViaDia 350
+ViaDrill 250
+uViaDia 200
+uViaDrill 50
+AddNet ""
+$EndNCLASS
+$MODULE TQFP44
+Po 82677 58071 450 15 5019BD38 5019BD0A ~~
+Li TQFP44
+Sc 5019BD0A
+AR /5019BFBE
+Op 0 0 0
+At SMD
+T0 0 -750 600 400 450 80 N V 21 N "U1"
+T1 0 750 600 400 450 80 N V 21 N "ATMEGA16U4"
+DS 1970 -1970 1970 1970 120 21
+DS 1970 1970 -1970 1970 120 21
+DS -1970 -1780 -1970 1970 120 21
+DS -1780 -1970 1970 -1970 120 21
+DS -1970 -1780 -1780 -1970 120 21
+DC -1500 -1500 -1500 -1250 80 21
+$PAD
+Sh "39" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -2250
+$EndPAD
+$PAD
+Sh "40" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -315 -2250
+$EndPAD
+$PAD
+Sh "41" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -630 -2250
+$EndPAD
+$PAD
+Sh "42" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -945 -2250
+$EndPAD
+$PAD
+Sh "43" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1260 -2250
+$EndPAD
+$PAD
+Sh "44" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1575 -2250
+$EndPAD
+$PAD
+Sh "38" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 315 -2250
+$EndPAD
+$PAD
+Sh "37" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 630 -2250
+$EndPAD
+$PAD
+Sh "36" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 945 -2250
+$EndPAD
+$PAD
+Sh "35" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1260 -2250
+$EndPAD
+$PAD
+Sh "34" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1575 -2250
+$EndPAD
+$PAD
+Sh "17" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 2250
+$EndPAD
+$PAD
+Sh "16" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -315 2250
+$EndPAD
+$PAD
+Sh "15" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -630 2250
+$EndPAD
+$PAD
+Sh "14" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -945 2250
+$EndPAD
+$PAD
+Sh "13" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1260 2250
+$EndPAD
+$PAD
+Sh "12" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1575 2250
+$EndPAD
+$PAD
+Sh "18" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 315 2250
+$EndPAD
+$PAD
+Sh "19" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 630 2250
+$EndPAD
+$PAD
+Sh "20" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 945 2250
+$EndPAD
+$PAD
+Sh "21" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1260 2250
+$EndPAD
+$PAD
+Sh "22" R 160 600 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1575 2250
+$EndPAD
+$PAD
+Sh "6" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 0
+$EndPAD
+$PAD
+Sh "28" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 0
+$EndPAD
+$PAD
+Sh "7" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 315
+$EndPAD
+$PAD
+Sh "27" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 315
+$EndPAD
+$PAD
+Sh "26" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 630
+$EndPAD
+$PAD
+Sh "8" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 630
+$EndPAD
+$PAD
+Sh "9" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 945
+$EndPAD
+$PAD
+Sh "25" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 945
+$EndPAD
+$PAD
+Sh "24" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 1260
+$EndPAD
+$PAD
+Sh "10" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 1260
+$EndPAD
+$PAD
+Sh "11" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 1575
+$EndPAD
+$PAD
+Sh "23" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 1575
+$EndPAD
+$PAD
+Sh "29" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 -315
+$EndPAD
+$PAD
+Sh "5" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 -315
+$EndPAD
+$PAD
+Sh "4" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 -630
+$EndPAD
+$PAD
+Sh "30" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 -630
+$EndPAD
+$PAD
+Sh "31" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 -945
+$EndPAD
+$PAD
+Sh "3" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 -945
+$EndPAD
+$PAD
+Sh "2" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 -1260
+$EndPAD
+$PAD
+Sh "32" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 -1260
+$EndPAD
+$PAD
+Sh "33" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2250 -1575
+$EndPAD
+$PAD
+Sh "1" R 600 160 0 0 450
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2250 -1575
+$EndPAD
+$EndMODULE TQFP44
+$TRACK
+$EndTRACK
+$ZONE
+$EndZONE
+$EndBOARD
