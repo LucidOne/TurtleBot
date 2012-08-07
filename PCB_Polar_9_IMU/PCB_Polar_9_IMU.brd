@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Mon 06 Aug 2012 11:26:09 AM EDT
+PCBNEW-BOARD Version 1 date Tue 07 Aug 2012 01:27:37 PM EDT
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -10,7 +10,7 @@ EnabledLayers 1FFF8001
 Links 114
 NoConn 0
 Di 88252 59833 112215 75076
-Ndraw 11
+Ndraw 12
 Ntrack 682
 Nzone 0
 BoardThickness 630
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A3 16535 11693
 Title ""
-Date "6 aug 2012"
+Date "7 aug 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -2469,6 +2469,11 @@ Ne 0 ""
 Po 1565 886
 $EndPAD
 $EndMODULE SW_M6_SMD
+$TEXTPCB
+Te "Power"
+Po 90900 61200 300 300 50 900
+De 21 1 0 Normal C
+$EndTEXTPCB
 $TEXTPCB
 Te "Polar 9 IMU"
 Po 109400 72000 600 600 120 900
