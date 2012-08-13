@@ -28,11 +28,12 @@ Q.P.B.	Item					DigiKey P. No. 			Manufacturer		Manufacturer P. No.		Datasheet u
 
 1	FT232RL-IC USB FS SERIAL UART 28-SSOP	768-1007-2-ND	Future Technology Devices Int.	FT232RL-REEL	http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
 	
-1	CONN USB RCPT 4PS R/A TYPE B T/H	A98573-ND		TE Connectivity		292304-2	http://documents.tycoelectronics.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=292304&DocType=CD&DocLang=EN
+1	CONN RCPT REV MICRO USB TYPE B		609-4048-1-ND		FCI			10103592-0001LF	http://portal.fciconnect.com/Comergent//fci/drawing/10103592.pdf
 
 1	SWITCH TACTILE SPST-NO 0.05A 12V	450-1650-ND		TE Connectivity		FSM4JH	
 
 1	CBL ASSY MINI DIN MALE R/A 7POS		839-1094-ND	Tensility International Corp	10-00543	http://www.tensility.com/pdffiles/10-00543.pdf
+1	CONN RECEPT 7POS 26AWG MTA100 		A30991-ND		TE CONNECTIVITY		3-640442-7
 
 NOT INCLUDED:
 2	CONN STACKER 6POS .100" T/H	NA		Samtec Inc	ZW-06-12-T-S-430-570

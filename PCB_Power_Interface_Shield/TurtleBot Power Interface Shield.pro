@@ -1,13 +1,8 @@
-update=Wed 11 Jul 2012 12:22:48 PM EDT
+update=Mon 13 Aug 2012 01:05:06 PM EDT
 version=1
-last_client=pcbnew
+last_client=cvpcb
 [general]
 version=1
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -70,7 +65,6 @@ EdgeLar=149
 TxtLar=120
 MSegLar=109
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -86,4 +80,9 @@ LibName12=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
 LibName13=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb
 LibName14=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-2
 LibName15=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-3
-LibName16=/media/sf_Carlitos/Documents/GitHub/TurtleBot/buttons_shield/arduino_shields
+LibDir=
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Mon 23 Jul 2012 12:34:19 PM EDT
+Cmp-Mod V01 Created by PcbNew date = Mon 13 Aug 2012 01:43:59 PM EDT
 
 BeginCmp
 TimeStamp = /4F9EC731;
@@ -57,10 +57,45 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /50292947;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50292956;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5029331E;
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50293308;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50293146;
+Reference = D5;
+ValeurCmp = LED;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F9ECAD6;
 Reference = J1;
 ValeurCmp = USB;
-IdModule  = con-usb-2-USB-MB-S;
+IdModule  = USB micro B female;
 EndCmp
 
 BeginCmp
@@ -116,7 +151,7 @@ BeginCmp
 TimeStamp = /4F8C62BB;
 Reference = P4;
 ValeurCmp = CONN_2;
-IdModule  = Header Mini-Fit RA 2x1;
+IdModule  = SMD Microfit 2pin;
 EndCmp
 
 BeginCmp
@@ -144,14 +179,49 @@ BeginCmp
 TimeStamp = /4FCF9629;
 Reference = R1;
 ValeurCmp = 10k;
-IdModule  = SM0805;
+IdModule  = SM0805_NonPol;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FCF952F;
 Reference = R2;
 ValeurCmp = 10k;
-IdModule  = SM0805;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /5029291D;
+Reference = R3;
+ValeurCmp = 330;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /5029292C;
+Reference = R4;
+ValeurCmp = 330;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /50293318;
+Reference = R5;
+ValeurCmp = 1K;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /50293302;
+Reference = R6;
+ValeurCmp = 1K;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /50293140;
+Reference = R7;
+ValeurCmp = 1K;
+IdModule  = SM0805_NonPol;
 EndCmp
 
 BeginCmp
