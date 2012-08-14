@@ -1,3 +1,6 @@
 .DS_store
-.000
+*.000
 BOM.cvs
+*.bak
+*.lib
+*.cache.dcm
