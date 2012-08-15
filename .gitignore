@@ -3,4 +3,5 @@
 BOM.cvs
 *.bak
 *.lib
-*.cache.dcm
+*cache.dcm
+*#

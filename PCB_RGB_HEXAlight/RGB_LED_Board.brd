@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Mon 30 Jul 2012 06:26:17 PM EDT
+PCBNEW-BOARD Version 1 date Wed 15 Aug 2012 04:31:59 PM EDT
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -11,7 +11,7 @@ VisibleLayers 1FF08001
 Links 60
 NoConn 0
 Di 43111 23229 73427 53938
-Ndraw 29
+Ndraw 31
 Ntrack 167
 Nzone 0
 BoardThickness 630
@@ -22,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet USLetter 11000 8500
 Title "HEXAlight"
-Date "30 jul 2012"
+Date "15 aug 2012"
 Rev "0x01"
 Comp "iHeartEngineering"
 Comment1 "Miron Veryanskiy "
@@ -60,8 +60,8 @@ PadSize 1260 1260
 PadDrill 1260
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 58465 38583
-VisibleElements FFFFFFBF
-PcbPlotParams (pcbplotparams (layerselection 284983297) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory Plot/))
+VisibleElements 7FFFFFFF
+PcbPlotParams (pcbplotparams (layerselection 283672577) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory gerbers/))
 $EndSETUP
 
 $EQUIPOT
@@ -896,6 +896,15 @@ Ne 1 "/12V"
 Po -827 866
 $EndPAD
 $EndMODULE PLCC6
+$DRAWSEGMENT
+Po 0 68770 47300 69340 47300 150
+De 21 0 900 0 0
+$EndDRAWSEGMENT
+$TEXTPCB
+Te "Rev."
+Po 69050 47760 300 300 75 0
+De 21 1 0 Normal C
+$EndTEXTPCB
 $TEXTPCB
 Te "<3"
 Po 63189 42126 600 800 120 0
@@ -903,7 +912,7 @@ De 0 0 0 Normal C
 $EndTEXTPCB
 $TEXTPCB
 Te "0200-0006-0001"
-Po 66745 47598 394 394 79 0
+Po 66690 46960 394 394 79 0
 De 21 1 0 Normal C
 $EndTEXTPCB
 $TEXTPCB

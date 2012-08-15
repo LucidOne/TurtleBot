@@ -1,8 +1,6 @@
-update=Fri 27 Jul 2012 02:14:56 PM EDT
+update=Wed 15 Aug 2012 01:44:08 PM EDT
 version=1
-last_client=eeschema
-[general]
-version=1
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -82,3 +80,5 @@ LibName29=contrib
 LibName30=valves
 LibName31=MyLibrary
 LibName32=/home/anon/iHeartEngineering-gitHub/iheart-kicad-lib/IHE
+[general]
+version=1
