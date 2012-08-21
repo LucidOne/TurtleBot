@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 13 Aug 2012 05:38:27 PM EDT
+EESchema Schematic File Version 2  date Tue 21 Aug 2012 06:19:22 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power Board EU version"
-Date "13 aug 2012"
+Date "21 aug 2012"
 Rev "2"
 Comp "I Heart Engineering"
 Comment1 "Made by: Carlos Chinchilla"

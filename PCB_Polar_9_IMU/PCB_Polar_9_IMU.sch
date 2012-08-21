@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 31 Jul 2012 05:26:56 PM EDT
+EESchema Schematic File Version 2  date Tue 21 Aug 2012 05:45:08 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
+LIBS:PCB_Polar_9_IMU-cache
 EELAYER 25  0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "LED circle with Arduino Mini 328"
-Date "31 jul 2012"
+Date "21 aug 2012"
 Rev "1"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -206,25 +207,12 @@ F 1 "FT232RL" H 9300 1100 60  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_2 J1
-U 1 1 4F7A0A63
-P 6750 1650
-F 0 "J1" H 6675 1900 60  0000 C CNN
-F 1 "USB_2" H 6800 1350 60  0001 C CNN
-F 4 "VCC" H 7075 1800 50  0001 C CNN "VCC"
-F 5 "D+" H 7050 1700 50  0001 C CNN "Data+"
-F 6 "D-" H 7050 1600 50  0001 C CNN "Data-"
-F 7 "GND" H 7075 1500 50  0001 C CNN "Ground"
-	1    6750 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR07
 U 1 1 4F7A113A
-P 7050 2150
-F 0 "#PWR07" H 7050 2150 30  0001 C CNN
-F 1 "GND" H 7050 2080 30  0001 C CNN
-	1    7050 2150
+P 5850 2500
+F 0 "#PWR07" H 5850 2500 30  0001 C CNN
+F 1 "GND" H 5850 2430 30  0001 C CNN
+	1    5850 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -263,7 +251,7 @@ F 1 "10uF 25V" H 7500 1950 50  0000 L CNN
 	1    7500 2100
 	1    0    0    -1  
 $EndComp
-Text Label 7050 1500 0    60   ~ 0
+Text Label 5950 2350 2    60   ~ 0
 GND
 Text Label 7700 1350 0    60   ~ 0
 VCC
@@ -350,14 +338,6 @@ Wire Wire Line
 Wire Wire Line
 	10400 6500 10400 6650
 Wire Wire Line
-	7950 1700 6950 1700
-Wire Wire Line
-	7950 1800 6950 1800
-Wire Wire Line
-	7050 2150 7050 1500
-Wire Wire Line
-	6950 1600 7950 1600
-Wire Wire Line
 	7950 1600 7950 1450
 Wire Wire Line
 	7500 2350 7500 2300
@@ -369,8 +349,6 @@ Connection ~ 7250 1600
 Wire Wire Line
 	7500 1900 7500 1600
 Connection ~ 7500 1600
-Wire Wire Line
-	7050 1500 6950 1500
 Wire Wire Line
 	7950 1350 7700 1350
 Wire Wire Line
@@ -413,7 +391,7 @@ Text Label 7900 2600 2    60   ~ 0
 Wire Wire Line
 	6650 4800 6600 4800
 Wire Wire Line
-	6600 4500 6600 4800
+	6600 4800 6600 4500
 Wire Wire Line
 	5900 4500 6650 4500
 Wire Wire Line
@@ -986,4 +964,45 @@ Text Label 2500 3500 0    60   ~ 0
 INT1_Mag
 Text Label 8550 6600 0    60   ~ 0
 DRD_Gyro
+$Comp
+L USB_1 J1
+U 1 1 503401BE
+P 6350 2000
+F 0 "J1" H 6200 2400 60  0000 C CNN
+F 1 "USB_1" H 6325 1400 60  0001 C CNN
+	1    6350 2000
+	1    0    0    -1  
+$EndComp
+Text Label 5950 2200 2    60   ~ 0
+VCC
+Wire Wire Line
+	7250 1600 7950 1600
+Wire Wire Line
+	5850 2350 5850 2500
+Wire Wire Line
+	5850 2350 5950 2350
+Wire Wire Line
+	5950 2450 5850 2450
+Connection ~ 5850 2450
+$Comp
+L GND #PWR028
+U 1 1 5034048E
+P 6800 2500
+F 0 "#PWR028" H 6800 2500 30  0001 C CNN
+F 1 "GND" H 6800 2430 30  0001 C CNN
+	1    6800 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2450 6800 2450
+Wire Wire Line
+	6800 2450 6800 2500
+Text Label 6700 2350 0    60   ~ 0
+D-
+Text Label 7950 1800 2    60   ~ 0
+D+
+Text Label 7950 1700 2    60   ~ 0
+D-
+Text Label 6700 2200 0    60   ~ 0
+D+
 $EndSCHEMATC

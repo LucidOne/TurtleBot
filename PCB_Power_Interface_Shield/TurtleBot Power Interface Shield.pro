@@ -1,6 +1,6 @@
-update=Mon 13 Aug 2012 01:05:06 PM EDT
+update=Tue 21 Aug 2012 06:19:55 PM EDT
 version=1
-last_client=cvpcb
+last_client=pcbnew
 [general]
 version=1
 [eeschema]
@@ -47,12 +47,17 @@ LibName29=contrib
 LibName30=valves
 LibName31=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
 LibName32=/media/sf_Carlitos/Documents/GitHub/arduino_shieldsNCL
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [pcbnew]
 version=1
 LastNetListRead=
-PadDrlX=0
-PadDimH=984
-PadDimV=195
+PadDrlX=400
+PadDimH=709
+PadDimV=709
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -65,6 +70,7 @@ EdgeLar=149
 TxtLar=120
 MSegLar=109
 [pcbnew/libraries]
+LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -80,9 +86,3 @@ LibName12=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
 LibName13=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb
 LibName14=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-2
 LibName15=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-3
-LibDir=
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms

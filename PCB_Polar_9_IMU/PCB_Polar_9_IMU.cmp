@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Tue 31 Jul 2012 03:08:18 PM EDT
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Tue 21 Aug 2012 05:44:54 PM EDT
 
 BeginCmp
 TimeStamp = /50071D56;
@@ -127,9 +127,9 @@ IdModule  = TQFP32;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F7A0A63;
+TimeStamp = /503401BE;
 Reference = J1;
-ValeurCmp = USB_2;
+ValeurCmp = USB_1;
 IdModule  = con-usb-mini-female;
 EndCmp
 
@@ -145,13 +145,6 @@ TimeStamp = /500DA63F;
 Reference = P1;
 ValeurCmp = CONN_3X2;
 IdModule  = pin_array_3x2;
-EndCmp
-
-BeginCmp
-TimeStamp = /5016B981;
-Reference = P2;
-ValeurCmp = CONN_5;
-IdModule  = PIN_ARRAY_5x1;
 EndCmp
 
 BeginCmp
