@@ -24,6 +24,10 @@ CER RESONATOR 16.0MHZ SMD		490-1198-2-ND	Murata Electronics North America	CSTCE1
 Capacitors:
 CAP CER 10000PF 50V 20% X7R 0805	399-1160-2-ND		Kemet			C0805C103M5RACTU	http://www.kemet.com/datasheets&C0805C103M5RACTU
 CAP CER 0.1UF 50V 20% X7R 0805		399-1169-2-ND		Kemet			C0805C104M5RACTU 	http://www.kemet.com/datasheets&C0805C104M5RACTU
+CAP CER 0.22UF 50V 20% X7R 0805		445-7540-1-ND		TDK Corporation		C2012X7R1H224M		http://www.tdk.com/pdf/general_B11.pdf
+CAP CER 4.7UF 10V 20% X7R 0805		445-1605-2-ND		TDK Corporation		C2012X7R1A475M		http://www.tdk.com/pdf/general_B11.pdf
+CAP CER 0.47UF 16V 10% X7R 0805		445-1357-1-ND		TDK Corporation		C2012X7R1C474K		http://www.tdk.com/pdf/general_B11.pdf
+
 CAP ALUM 10UF 25V 20% SMD		PCE4751TR-ND		PANASONIC - ECG		EEE-HB1E100AR		
 
 Resistors:
