@@ -5,3 +5,5 @@ BOM.cvs
 *.lib
 *cache.dcm
 *#
+*.jpg
+*.png

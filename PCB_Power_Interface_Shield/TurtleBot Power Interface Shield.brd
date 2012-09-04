@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Tue 21 Aug 2012 06:29:11 PM EDT
+PCBNEW-BOARD Version 1 date Tue 28 Aug 2012 04:26:27 PM EDT
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet USLetter 11000 8500
 Title "TurtleBot Power Interface Shield"
-Date "21 aug 2012"
+Date "28 aug 2012"
 Rev "2"
 Comp "I Heart Engineering"
 Comment1 "Designed by Carlos Chinchilla - May 2012"
@@ -674,14 +674,14 @@ Po 0 2500
 $EndPAD
 $EndMODULE SW_M6_COMBO
 $MODULE SW_Slide_6x2mm
-Po 62200 31200 0 15 50297414 5029390D ~~
+Po 62200 31200 0 15 503D2953 5029390D ~~
 Li SW_Slide_6x2mm
 Cd Connecteur 3 pins
 Kw CONN DEV
 Sc 5029390D
 AR /4FCF9DB9
 Op 0 0 0
-T0 1800 -1300 400 400 0 60 N V 21 N "SW3"
+T0 -1790 2160 400 400 0 60 N V 21 N "SW3"
 T1 -1797 -1349 400 400 0 60 N I 21 N "SWITCH_INV"
 T2 2172 2372 300 300 900 75 N V 21 N "Arduino PWR"
 T2 -1414 1250 600 600 0 120 N V 21 N "on"
