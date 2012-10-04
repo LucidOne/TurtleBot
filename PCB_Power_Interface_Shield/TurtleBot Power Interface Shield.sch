@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 21 Aug 2012 06:19:22 PM EDT
+EESchema Schematic File Version 2  date Thu 04 Oct 2012 12:48:10 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
-LIBS:arduino_shieldsNCL
 LIBS:TurtleBot Power Interface Shield-cache
 EELAYER 25  0
 EELAYER END

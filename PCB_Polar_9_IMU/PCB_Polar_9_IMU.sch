@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 31 Aug 2012 04:28:14 PM EDT
+EESchema Schematic File Version 2  date Tue 25 Sep 2012 03:30:36 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,9 +36,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "LED circle with Arduino Mini 328"
-Date "31 aug 2012"
-Rev "1"
+Title "Polar 9 IMU"
+Date "25 sep 2012"
+Rev "02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
 Comment2 ""
@@ -86,7 +86,7 @@ L R R5
 U 1 1 4F652722
 P 2450 6700
 F 0 "R5" V 2530 6700 50  0000 C CNN
-F 1 "10k" V 2450 6700 50  0000 C CNN
+F 1 "1k" V 2450 6700 50  0000 C CNN
 	1    2450 6700
 	1    0    0    -1  
 $EndComp
