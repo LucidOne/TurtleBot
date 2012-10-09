@@ -1,6 +1,6 @@
-update=Mon 07 May 2012 12:55:40 PM EDT
+update=Tue 09 Oct 2012 03:44:46 PM EDT
 version=1
-last_client=EESchema
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
@@ -45,7 +45,7 @@ LibName15=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-3
 [eeschema]
 version=1
 LibDir=
-NetFmtName=
+NetFmtName=Pcbnew
 HPGLSpd=20
 HPGLDm=15
 HPGLNum=1

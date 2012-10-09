@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Fri 31 Aug 2012 04:28:10 PM EDT
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Tue 09 Oct 2012 03:58:53 PM EDT
 
 BeginCmp
 TimeStamp = /50071D56;
@@ -106,6 +106,13 @@ IdModule  = SM0805_NonPol;
 EndCmp
 
 BeginCmp
+TimeStamp = /5074615A;
+Reference = C16;
+ValeurCmp = 100nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F6525DB;
 Reference = D1;
 ValeurCmp = LED;
@@ -116,6 +123,13 @@ BeginCmp
 TimeStamp = /5016B425;
 Reference = D2;
 ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5074661B;
+Reference = D3;
+ValeurCmp = DIODE;
 IdModule  = LED-0805;
 EndCmp
 
@@ -201,6 +215,20 @@ TimeStamp = /5016B41F;
 Reference = R6;
 ValeurCmp = 1k;
 IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /507462C8;
+Reference = R7;
+ValeurCmp = 1M;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50747BA5;
+Reference = R8;
+ValeurCmp = 1k;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp

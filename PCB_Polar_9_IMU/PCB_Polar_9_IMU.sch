@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 25 Sep 2012 03:30:36 PM EDT
+EESchema Schematic File Version 2  date Tue 09 Oct 2012 03:58:59 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Polar 9 IMU"
-Date "25 sep 2012"
+Date "9 oct 2012"
 Rev "02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -86,7 +86,7 @@ L R R5
 U 1 1 4F652722
 P 2450 6700
 F 0 "R5" V 2530 6700 50  0000 C CNN
-F 1 "1k" V 2450 6700 50  0000 C CNN
+F 1 "10k" V 2450 6700 50  0000 C CNN
 	1    2450 6700
 	1    0    0    -1  
 $EndComp
@@ -143,7 +143,7 @@ Text Label 3750 7400 0    60   ~ 0
 TOSC2
 Text Label 3750 6600 0    60   ~ 0
 TOSC1
-Text Label 2100 6950 0    60   ~ 0
+Text Label 2100 6950 2    60   ~ 0
 RESET
 Text Label 7350 3450 1    60   ~ 0
 RESET
@@ -151,7 +151,7 @@ Text Label 7150 3450 1    60   ~ 0
 RX
 Text Label 6950 3450 1    60   ~ 0
 TX
-Text Label 3000 6950 0    60   ~ 0
+Text Label 3100 6950 0    60   ~ 0
 DTR
 Text Label 1300 7200 0    60   ~ 0
 GND
@@ -758,7 +758,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 7650 2450 7750
 Wire Wire Line
-	2450 7050 2450 6950
+	2450 6950 2450 7050
 Connection ~ 2450 6950
 Wire Wire Line
 	2450 6450 2450 6400
@@ -768,8 +768,6 @@ Wire Wire Line
 	9950 6100 9950 6050
 Wire Wire Line
 	2100 6950 2550 6950
-Wire Wire Line
-	3000 6950 2950 6950
 Wire Wire Line
 	9300 5550 9950 5550
 Wire Wire Line
@@ -968,7 +966,6 @@ Wire Wire Line
 	7950 6300 7950 6800
 Wire Wire Line
 	8150 6300 8150 6800
-NoConn ~ 9300 4950
 Text Label 4900 3300 2    60   ~ 0
 D2
 Text Label 4900 3400 2    60   ~ 0
@@ -1026,4 +1023,92 @@ Text Label 9800 4900 2    60   ~ 0
 ADC6
 Text Label 9800 4700 2    60   ~ 0
 ADC7
+Text Label 9300 4950 0    60   ~ 0
+AREF
+Text Label 10100 3700 0    60   ~ 0
+AREF
+$Comp
+L C C16
+U 1 1 5074615A
+P 10100 3900
+F 0 "C16" H 10150 4000 50  0000 L CNN
+F 1 "100nF" H 10150 3800 50  0000 L CNN
+	1    10100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 50746160
+P 10100 4200
+F 0 "#PWR028" H 10100 4200 30  0001 C CNN
+F 1 "GND" H 10100 4130 30  0001 C CNN
+	1    10100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4200 10100 4100
+$Comp
+L R R7
+U 1 1 507462C8
+P 4500 5450
+F 0 "R7" V 4580 5450 50  0000 C CNN
+F 1 "1M" V 4500 5450 50  0000 C CNN
+	1    4500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5200 4700 5200
+Wire Wire Line
+	4700 5200 4700 5350
+Wire Wire Line
+	4700 5350 5300 5350
+Wire Wire Line
+	4500 5700 4700 5700
+Wire Wire Line
+	4700 5550 5300 5550
+Wire Wire Line
+	4700 5700 4700 5550
+$Comp
+L DIODE D3
+U 1 1 5074661B
+P 2200 6700
+F 0 "D3" H 2200 6800 40  0000 C CNN
+F 1 "DIODE" H 2200 6600 40  0000 C CNN
+	1    2200 6700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 6500 2200 6450
+Wire Wire Line
+	2200 6450 2450 6450
+Wire Wire Line
+	2200 6900 2200 6950
+Connection ~ 2200 6950
+Text Label 4600 7000 0    60   ~ 0
+GND
+$Comp
+L R R8
+U 1 1 50747BA5
+P 3050 7350
+F 0 "R8" V 3130 7350 50  0000 C CNN
+F 1 "1k" V 3050 7350 50  0000 C CNN
+	1    3050 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 50747C2C
+P 3050 7750
+F 0 "#PWR029" H 3050 7750 30  0001 C CNN
+F 1 "GND" H 3050 7680 30  0001 C CNN
+	1    3050 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7750 3050 7600
+Wire Wire Line
+	2950 6950 3100 6950
+Wire Wire Line
+	3050 7100 3050 6950
+Connection ~ 3050 6950
 $EndSCHEMATC
