@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 09 Oct 2012 03:58:59 PM EDT
+EESchema Schematic File Version 2  date Tue 23 Oct 2012 03:10:59 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Polar 9 IMU"
-Date "9 oct 2012"
+Date "23 oct 2012"
 Rev "02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -536,15 +536,6 @@ Text Label 8150 6800 3    60   ~ 0
 Text Label 9900 5550 0    60   ~ 0
 13
 $Comp
-L TRANSLATOR_6-CHANNEL U2
-U 1 1 500731BF
-P 2050 5450
-F 0 "U2" H 2050 5450 60  0000 C CNN
-F 1 "TRANSLATOR_6-CHANNEL" H 2050 6050 60  0000 C CNN
-	1    2050 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR022
 U 1 1 5007323D
 P 2600 6000
@@ -619,9 +610,9 @@ Text Label 1500 5350 2    60   ~ 0
 SPC3
 Text Label 7750 6300 3    60   ~ 0
 CS
-Text Label 7950 6550 3    60   ~ 0
-SDO
 Text Label 8150 6550 3    60   ~ 0
+SDO
+Text Label 7950 6550 3    60   ~ 0
 SDI
 Text Label 9600 5550 0    60   ~ 0
 SPC
@@ -1111,4 +1102,13 @@ Wire Wire Line
 Wire Wire Line
 	3050 7100 3050 6950
 Connection ~ 3050 6950
+$Comp
+L TRANSLATOR_6-CHANNEL U2
+U 1 1 5086E7D2
+P 2050 5450
+F 0 "U2" H 2050 5450 60  0000 C CNN
+F 1 "TRANSLATOR_6-CHANNEL" H 2050 6050 60  0000 C CNN
+	1    2050 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
