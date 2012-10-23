@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 24 Apr 2012 11:19:58 PM EDT
+EESchema Schematic File Version 2  date Thu 11 Oct 2012 02:30:27 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,17 +30,16 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
-LIBS:ADXRS6xx
 LIBS:PCB_Gyro-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Gyro Board"
 Date "25 apr 2012"
-Rev ""
-Comp ""
+Rev "01"
+Comp "I Heart Engineering"
 Comment1 ""
 Comment2 ""
 Comment3 ""

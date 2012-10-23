@@ -36,3 +36,14 @@ RES 10.00K OHM 1/8W 1% 0805 SMD		P10.0KCTR-ND		Panasonic - ECG		ERJ-6ENF1002V
 RES 330 OHM 1/8W 1% 0805 SMD		P330CTR-ND		Panasonic - ECG		ERJ-6ENF3300V
 
 LED_0805				754-1131-2-ND		Kingbright Corp		APT2012SGC	http://www.us.kingbright.com/images/catalog/SPEC/APT2012SGC.pdf
+
+Useful references:
+------------------
+
+Gyro using I2C protocol:
+https://github.com/pololu/L3G
+*In Polar 9 IMU the gyro uses SPI protocol: 
+dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Gyros/3-Axis/L3G4200D_Example.zip
+
+Accelerometer using I2c:
+https://github.com/pololu/LSM303
