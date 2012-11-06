@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Fri 26 Oct 2012 12:46:40 AM EDT
+PCBNEW-BOARD Version 1 date Tue 06 Nov 2012 03:51:05 PM EST
 
 # Created by Pcbnew(2011-nov-30)-testing
 
@@ -7,22 +7,21 @@ encoding utf-8
 Units deci-mils
 LayerCount 2
 EnabledLayers 1FFF8001
-VisibleLayers 1FFFFFFF
-Links 155
-NoConn 155
+Links 157
+NoConn 157
 Di 49924 7144 110076 50076
 Ndraw 5
 Ntrack 0
 Nzone 0
 BoardThickness 630
-Nmodule 40
+Nmodule 41
 Nnets 54
 $EndGENERAL
 
 $SHEETDESCR
 Sheet A3 16535 11693
 Title ""
-Date "26 oct 2012"
+Date "6 nov 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -60,7 +59,7 @@ PadSize 4000 1000
 PadDrill 0
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
-VisibleElements FFFFFFBF
+VisibleElements 7FFFFFFF
 PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
 $EndSETUP
 
@@ -261,19 +260,19 @@ Na 48 "GND"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 49 "N-000016"
+Na 49 "N-000014"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 50 "N-000019"
+Na 50 "N-000029"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 51 "N-000060"
+Na 51 "N-000057"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 52 "N-000062"
+Na 52 "N-000059"
 St ~
 $EndEQUIPOT
 $EQUIPOT
@@ -338,10 +337,10 @@ AddNet "/TOSC2"
 AddNet "/VLED"
 AddNet "/WHITE"
 AddNet "GND"
-AddNet "N-000016"
-AddNet "N-000019"
-AddNet "N-000060"
-AddNet "N-000062"
+AddNet "N-000014"
+AddNet "N-000029"
+AddNet "N-000057"
+AddNet "N-000059"
 AddNet "VCC"
 $EndNCLASS
 $MODULE SSOP28
@@ -549,7 +548,7 @@ $PAD
 Sh "27" R 160 500 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 49 "N-000016"
+Ne 50 "N-000029"
 Po -1400 -1400
 $EndPAD
 $PAD
@@ -1097,7 +1096,7 @@ $PAD
 Sh "4" R 200 300 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 50 "N-000019"
+Ne 49 "N-000014"
 Po 375 -500
 $EndPAD
 $SHAPE3D
@@ -1555,7 +1554,7 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 49 "N-000016"
+Ne 50 "N-000029"
 Po -375 0
 $EndPAD
 $PAD
@@ -1591,7 +1590,7 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 50 "N-000019"
+Ne 49 "N-000014"
 Po -375 0
 $EndPAD
 $PAD
@@ -1699,7 +1698,7 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "N-000062"
+Ne 52 "N-000059"
 Po -375 0
 $EndPAD
 $PAD
@@ -1843,7 +1842,7 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 51 "N-000060"
+Ne 51 "N-000057"
 Po -375 0
 $EndPAD
 $PAD
@@ -2735,7 +2734,7 @@ $PAD
 Sh "1" R 472 472 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 51 "N-000060"
+Ne 51 "N-000057"
 Po -413 0
 $EndPAD
 $PAD
@@ -2764,7 +2763,7 @@ $PAD
 Sh "1" R 472 472 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "N-000062"
+Ne 52 "N-000059"
 Po -413 0
 $EndPAD
 $PAD
@@ -2775,6 +2774,45 @@ Ne 48 "GND"
 Po 413 0
 $EndPAD
 $EndMODULE LED SMD 0805
+$MODULE R3
+Po 92500 31500 0 15 4E4C0E65 5099781B ~~
+Li R3
+Cd Resitance 3 pas
+Kw R
+Sc 5099781B
+AR /509976F1
+Op 0 A 0
+T0 0 50 550 500 0 80 N I 21 N "R8"
+T1 0 50 550 500 0 80 N V 21 N "R"
+DS -1500 0 -1300 0 80 21
+DS 1500 0 1300 0 80 21
+DS 1300 0 1300 -400 80 21
+DS 1300 -400 -1300 -400 80 21
+DS -1300 -400 -1300 400 80 21
+DS -1300 400 1300 400 80 21
+DS 1300 400 1300 0 80 21
+DS -1300 -200 -1100 -400 80 21
+$PAD
+Sh "1" C 550 550 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 50 "N-000029"
+Po -1500 0
+$EndPAD
+$PAD
+Sh "2" C 550 550 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 48 "GND"
+Po 1500 0
+$EndPAD
+$SHAPE3D
+Na "discret/resistor.wrl"
+Sc 0.3 0.3 0.3
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE R3
 $DRAWSEGMENT
 Po 0 50000 50000 51000 50000 150
 De 28 0 900 0 0

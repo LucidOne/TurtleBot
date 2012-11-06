@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 26 Oct 2012 12:43:39 AM EDT
+EESchema Schematic File Version 2  date Tue 06 Nov 2012 04:17:30 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Polar 9 IMU"
-Date "26 oct 2012"
+Date "6 nov 2012"
 Rev "02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -172,7 +172,7 @@ L XTAL_RESONATOR X1
 U 1 1 4F7A0480
 P 5250 1150
 F 0 "X1" H 5550 850 60  0000 C CNN
-F 1 "XTAL_RESONATOR" H 5250 1700 60  0000 C CNN
+F 1 "XTAL_RES" H 5250 1700 60  0000 C CNN
 	1    5250 1150
 	0    -1   -1   0   
 $EndComp
@@ -267,7 +267,7 @@ $EndComp
 NoConn ~ 10250 1850
 NoConn ~ 10250 1950
 Text Label 8250 6350 3    60   ~ 0
-10
+D10
 Text Label 8450 6850 3    60   ~ 0
 11
 Text Label 8650 6850 3    60   ~ 0
@@ -346,7 +346,7 @@ L USB_1 J1
 U 1 1 503401BE
 P 6800 1000
 F 0 "J1" H 6650 1400 60  0000 C CNN
-F 1 "USB_1" H 6775 400 60  0001 C CNN
+F 1 "USB" H 6775 400 60  0001 C CNN
 	1    6800 1000
 	1    0    0    -1  
 $EndComp
@@ -534,7 +534,7 @@ L DIODE D1
 U 1 1 5074661B
 P 4850 2300
 F 0 "D1" H 4850 2400 40  0000 C CNN
-F 1 "DIODE" H 4850 2200 40  0000 C CNN
+F 1 "D" H 4850 2200 40  0000 C CNN
 	1    4850 2300
 	0    -1   -1   0   
 $EndComp
@@ -729,7 +729,7 @@ L CONN_2 P1
 U 1 1 508A09D6
 P 700 1050
 F 0 "P1" V 650 1050 40  0000 C CNN
-F 1 "CONN_2" V 750 1050 40  0000 C CNN
+F 1 "PWR in" V 750 1050 40  0000 C CNN
 	1    700  1050
 	-1   0    0    1   
 $EndComp
@@ -974,7 +974,7 @@ F 1 "R" V 3050 2600 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3300 2750 3300 2600
+	3300 2300 3300 2750
 $Comp
 L R R1
 U 1 1 508A11E6
@@ -1156,7 +1156,25 @@ $EndComp
 Text Notes 4400 3450 2    60   ~ 0
 Breakout pins
 NoConn ~ 8400 2250
-NoConn ~ 6350 1250
 NoConn ~ -400 3200
 NoConn ~ 4250 -1650
+Text Notes 2850 2150 0    60   ~ 0
+Trimmer or through hole
+$Comp
+L R R8
+U 1 1 509976F1
+P 3050 2300
+F 0 "R8" V 3130 2300 50  0000 C CNN
+F 1 "R" V 3050 2300 50  0000 C CNN
+	1    3050 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 2600 2750 2300
+Wire Wire Line
+	2750 2300 2800 2300
+Connection ~ 2750 2600
+Connection ~ 3300 2600
+NoConn ~ 9800 5200
+NoConn ~ 9800 4600
 $EndSCHEMATC
