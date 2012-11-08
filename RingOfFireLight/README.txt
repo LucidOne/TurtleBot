@@ -21,7 +21,7 @@ TLC5940-IC LED DVR PWM CONTROL 28HTSSOP	296-25565-1-ND	Texas Instruments 		TLC59
 
 IC LDO REG 5.0V 150MA SOT23-5		296-20717-2-ND		Texas Instruments 	LP2985-50DBVR	http://www.ti.com/lit/ds/symlink/lp2985-18.pdf
 
-ATMega 328				ATMEGA328-AU-ND		Atmel			ATMEGA328-AU	www.atmel.com/Images/doc8271.pdf
+MCU AVR 32K FLASH 20MHZ 32TQFP		ATMega328P-AN-ND	ATMEL			ATMEGA328P-AN	www.atmel.com/Images/doc8271.pdf	
 
 CER RESONATOR 16.0MHZ SMD		490-1198-2-ND	Murata Electronics North America	CSTCE16M0V53-R0		http://www.murata.com/products/catalog/pdf/p17e.pdf#page=8
 

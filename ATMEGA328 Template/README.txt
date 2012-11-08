@@ -10,15 +10,14 @@ CONN RCPT REV MICRO USB TYPE B		609-4048-1-ND		FCI			10103592-0001LF	http://port
 ICs:
 FT232RL-IC USB FS SERIAL UART 28-SSOP	768-1007-2-ND	Future Technology Devices Int.	FT232RL-REEL	http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
 
-ATMega328P
+MCU AVR 32K FLASH 20MHZ 32TQFP		ATMega328P-AN-ND	ATMEL			ATMEGA328P-AN	www.atmel.com/Images/doc8271.pdf	
 
 CER RESONATOR 16.0MHZ SMD		490-1198-2-ND	Murata Electronics North America	CSTCE16M0V53-R0		http://www.murata.com/products/catalog/pdf/p17e.pdf#page=8
 
 Capacitors:
 CAP CER 10000PF 50V 20% X7R 0805	399-1160-2-ND		Kemet			C0805C103M5RACTU	http://www.kemet.com/datasheets&C0805C103M5RACTU
 CAP CER 0.1UF 50V 20% X7R 0805		399-1169-2-ND		Kemet			C0805C104M5RACTU 	http://www.kemet.com/datasheets&C0805C104M5RACTU
-
-CAP ALUM 10UF
+CAP CER 10UF 10V Y5V 0805		445-1371-2-ND		TDK corporation		C2012Y5V1A106Z
 
 Resistors:
 RES 1.00K OHM 1/8W 1% 0805 SMD		P1.00KCTR-ND		Panasonic - ECG		ERJ-6ENF1001V
