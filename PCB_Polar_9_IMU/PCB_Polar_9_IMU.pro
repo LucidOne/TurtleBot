@@ -1,11 +1,6 @@
-update=Tue 09 Oct 2012 03:44:46 PM EDT
+update=Tue 13 Nov 2012 02:38:31 PM EST
 version=1
-last_client=eeschema
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+last_client=cvpcb
 [general]
 version=1
 [pcbnew]
@@ -26,7 +21,6 @@ EdgeLar=150
 TxtLar=120
 MSegLar=150
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -39,9 +33,7 @@ LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
 LibName12=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
-LibName13=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb
-LibName14=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-2
-LibName15=/media/sf_Carlitos/Documents/GitHub/LEDs/FTDI/con-usb-3
+LibDir=
 [eeschema]
 version=1
 LibDir=
@@ -85,3 +77,8 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/media/sf_Carlitos/Documents/GitHub/iheart-kicad-lib/IHE
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

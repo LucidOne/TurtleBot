@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 25 Oct 2012 11:42:13 PM EDT
+EESchema Schematic File Version 2  date Tue 13 Nov 2012 02:36:33 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
+LIBS:ATMEGA328_template-cache
 EELAYER 25  0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Polar 9 IMU"
-Date "26 oct 2012"
+Date "13 nov 2012"
 Rev "02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -286,7 +287,7 @@ NoConn ~ 10250 1950
 Text Label 8350 2250 2    60   ~ 0
 3.3V
 Text Label 8250 6350 3    60   ~ 0
-10
+D10
 Text Label 8450 6850 3    60   ~ 0
 11
 Text Label 8650 6850 3    60   ~ 0

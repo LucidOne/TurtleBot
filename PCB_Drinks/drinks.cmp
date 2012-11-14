@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Tue 06 Nov 2012 03:49:34 PM EST
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Tue 13 Nov 2012 04:41:55 PM EST
 
 BeginCmp
 TimeStamp = /508A0752;
@@ -59,7 +59,7 @@ EndCmp
 BeginCmp
 TimeStamp = /5074661B;
 Reference = D1;
-ValeurCmp = DIODE;
+ValeurCmp = D;
 IdModule  = LED SMD 0805;
 EndCmp
 
@@ -94,28 +94,35 @@ EndCmp
 BeginCmp
 TimeStamp = /503401BE;
 Reference = J1;
-ValeurCmp = USB_1;
+ValeurCmp = USB;
 IdModule  = USB micro-female;
 EndCmp
 
 BeginCmp
 TimeStamp = /508A12C3;
 Reference = K1;
-ValeurCmp = CONN_3;
+ValeurCmp = V_LED_Sel;
 IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
 TimeStamp = /508A16CC;
 Reference = K2;
-ValeurCmp = CONN_3;
+ValeurCmp = 5V;
 IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
 TimeStamp = /508A16D9;
 Reference = K3;
-ValeurCmp = CONN_3;
+ValeurCmp = GND;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A2B58A;
+Reference = K4;
+ValeurCmp = 12V;
 IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
@@ -157,43 +164,57 @@ EndCmp
 BeginCmp
 TimeStamp = /508A09D6;
 Reference = P1;
-ValeurCmp = CONN_2;
+ValeurCmp = PWR_in;
 IdModule  = SMD Microfit 2pin;
 EndCmp
 
 BeginCmp
 TimeStamp = /508A13E0;
 Reference = P2;
-ValeurCmp = CONN_8;
+ValeurCmp = Output_BUS;
 IdModule  = pin_array_8x1;
 EndCmp
 
 BeginCmp
 TimeStamp = /508A13CD;
 Reference = P3;
-ValeurCmp = CONN_8;
+ValeurCmp = Input_BUS;
 IdModule  = pin_array_8x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /508A1B8B;
+TimeStamp = /50A2BF58;
 Reference = P4;
-ValeurCmp = CONN_8;
-IdModule  = pin_array_8x1;
+ValeurCmp = TX_RX_D2_D4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /508A1B7C;
+TimeStamp = /50A2BF83;
 Reference = P5;
-ValeurCmp = CONN_6;
-IdModule  = pin_array_6x1;
+ValeurCmp = D5-D8;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
 TimeStamp = /500DA63F;
 Reference = P6;
-ValeurCmp = CONN_3X2;
+ValeurCmp = ICSP;
 IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A2C152;
+Reference = P7;
+ValeurCmp = A0-A1;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A2C13E;
+Reference = P8;
+ValeurCmp = A2-A5;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
@@ -255,7 +276,7 @@ EndCmp
 BeginCmp
 TimeStamp = /4F6529EF;
 Reference = SW1;
-ValeurCmp = SW_PUSH;
+ValeurCmp = RST;
 IdModule  = SW_M6_SMD;
 EndCmp
 
@@ -269,7 +290,7 @@ EndCmp
 BeginCmp
 TimeStamp = /508A05D4;
 Reference = U1;
-ValeurCmp = LP2985LV;
+ValeurCmp = Vreg5V;
 IdModule  = SOT23-5;
 EndCmp
 
@@ -283,7 +304,7 @@ EndCmp
 BeginCmp
 TimeStamp = /4F7A0480;
 Reference = X1;
-ValeurCmp = XTAL_RESONATOR;
+ValeurCmp = XTAL_RES;
 IdModule  = XTAL_Resonator;
 EndCmp
 

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 06 Nov 2012 04:17:30 PM EST
+EESchema Schematic File Version 2  date Tue 13 Nov 2012 04:42:06 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,9 +36,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Polar 9 IMU"
-Date "6 nov 2012"
-Rev "02"
+Title "DRINKS/ROFL"
+Date "13 nov 2012"
+Rev "01/02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
 Comment2 ""
@@ -113,7 +113,7 @@ L SW_PUSH SW1
 U 1 1 4F6529EF
 P 5100 2950
 F 0 "SW1" H 5250 3060 50  0000 C CNN
-F 1 "SW_PUSH" H 5100 2870 50  0000 C CNN
+F 1 "RST" H 5100 2870 50  0000 C CNN
 	1    5100 2950
 	0    1    1    0   
 $EndComp
@@ -279,7 +279,7 @@ L CONN_3X2 P6
 U 1 1 500DA63F
 P 6850 2000
 F 0 "P6" H 6850 2250 50  0000 C CNN
-F 1 "CONN_3X2" V 6850 2050 40  0000 C CNN
+F 1 "ICSP" V 6850 2050 40  0000 C CNN
 	1    6850 2000
 	1    0    0    -1  
 $EndComp
@@ -635,7 +635,7 @@ L LP2985LV U1
 U 1 1 508A05D4
 P 2550 1250
 F 0 "U1" H 2750 800 60  0000 C CNN
-F 1 "LP2985LV" H 2550 1700 60  0000 C CNN
+F 1 "Vreg5V" H 2550 1700 60  0000 C CNN
 	1    2550 1250
 	1    0    0    -1  
 $EndComp
@@ -806,7 +806,7 @@ L CONN_3 K1
 U 1 1 508A12C3
 P 3050 5350
 F 0 "K1" V 3000 5350 50  0000 C CNN
-F 1 "CONN_3" V 3100 5350 40  0000 C CNN
+F 1 "V_LED Sel" V 3100 5350 40  0000 C CNN
 	1    3050 5350
 	1    0    0    -1  
 $EndComp
@@ -999,7 +999,7 @@ L CONN_8 P3
 U 1 1 508A13CD
 P 2100 4900
 F 0 "P3" V 2050 4900 60  0000 C CNN
-F 1 "CONN_8" V 2150 4900 60  0000 C CNN
+F 1 "Input BUS" V 2150 4900 60  0000 C CNN
 	1    2100 4900
 	1    0    0    -1  
 $EndComp
@@ -1010,7 +1010,7 @@ VCC
 Text Label 1750 5050 2    60   ~ 0
 VLED
 Text Label 1750 4950 2    60   ~ 0
-SCLK
+SCK
 Text Label 1750 4850 2    60   ~ 0
 GSCLK
 Text Label 1750 4750 2    60   ~ 0
@@ -1024,7 +1024,7 @@ L CONN_8 P2
 U 1 1 508A13E0
 P 1150 4900
 F 0 "P2" V 1100 4900 60  0000 C CNN
-F 1 "CONN_8" V 1200 4900 60  0000 C CNN
+F 1 "Output BUS" V 1200 4900 60  0000 C CNN
 	1    1150 4900
 	1    0    0    -1  
 $EndComp
@@ -1035,7 +1035,7 @@ VCC
 Text Label 800  5050 2    60   ~ 0
 VLED
 Text Label 800  4950 2    60   ~ 0
-SCLK
+SCK
 Text Label 800  4850 2    60   ~ 0
 GSCLK
 Text Label 800  4750 2    60   ~ 0
@@ -1077,7 +1077,7 @@ L CONN_3 K2
 U 1 1 508A16CC
 P 3850 4800
 F 0 "K2" V 3800 4800 50  0000 C CNN
-F 1 "CONN_3" V 3900 4800 40  0000 C CNN
+F 1 "5V" V 3900 4800 40  0000 C CNN
 	1    3850 4800
 	1    0    0    -1  
 $EndComp
@@ -1086,7 +1086,7 @@ L CONN_3 K3
 U 1 1 508A16D9
 P 4500 4800
 F 0 "K3" V 4450 4800 50  0000 C CNN
-F 1 "CONN_3" V 4550 4800 40  0000 C CNN
+F 1 "GND" V 4550 4800 40  0000 C CNN
 	1    4500 4800
 	1    0    0    -1  
 $EndComp
@@ -1123,7 +1123,7 @@ $EndComp
 NoConn ~ 2350 3000
 Text Label 3400 3900 2    60   ~ 0
 D2
-Text Label 4100 3750 2    60   ~ 0
+Text Label 4100 3650 2    60   ~ 0
 A0
 Text Label 4100 3850 2    60   ~ 0
 A1
@@ -1135,28 +1135,9 @@ Text Label 4100 4150 2    60   ~ 0
 A4
 Text Label 4100 4250 2    60   ~ 0
 A5
-$Comp
-L CONN_6 P5
-U 1 1 508A1B7C
-P 4450 4000
-F 0 "P5" V 4400 4000 60  0000 C CNN
-F 1 "CONN_6" V 4500 4000 60  0000 C CNN
-	1    4450 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_8 P4
-U 1 1 508A1B8B
-P 3750 4050
-F 0 "P4" V 3700 4050 60  0000 C CNN
-F 1 "CONN_8" V 3800 4050 60  0000 C CNN
-	1    3750 4050
-	1    0    0    -1  
-$EndComp
 Text Notes 4400 3450 2    60   ~ 0
 Breakout pins
 NoConn ~ 8400 2250
-NoConn ~ -400 3200
 NoConn ~ 4250 -1650
 Text Notes 2850 2150 0    60   ~ 0
 Trimmer or through hole
@@ -1177,4 +1158,60 @@ Connection ~ 2750 2600
 Connection ~ 3300 2600
 NoConn ~ 9800 5200
 NoConn ~ 9800 4600
+$Comp
+L CONN_3 K4
+U 1 1 50A2B58A
+P 3100 4800
+F 0 "K4" V 3050 4800 50  0000 C CNN
+F 1 "12V" V 3150 4800 40  0000 C CNN
+	1    3100 4800
+	1    0    0    -1  
+$EndComp
+Text Label 2650 4700 2    60   ~ 0
+12V
+Wire Wire Line
+	2750 4700 2650 4700
+Wire Wire Line
+	2750 4800 2650 4800
+Wire Wire Line
+	2650 4700 2650 4900
+Wire Wire Line
+	2650 4900 2750 4900
+Connection ~ 2650 4800
+$Comp
+L CONN_4 P4
+U 1 1 50A2BF58
+P 3750 3850
+F 0 "P4" V 3700 3850 50  0000 C CNN
+F 1 "TX RX D2 D4" V 3800 3850 50  0000 C CNN
+	1    3750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P5
+U 1 1 50A2BF83
+P 3750 4250
+F 0 "P5" V 3700 4250 50  0000 C CNN
+F 1 "D5-D8" V 3800 4250 50  0000 C CNN
+	1    3750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P8
+U 1 1 50A2C13E
+P 4450 4100
+F 0 "P8" V 4400 4100 50  0000 C CNN
+F 1 "A2-A5" V 4500 4100 50  0000 C CNN
+	1    4450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P7
+U 1 1 50A2C152
+P 4450 3750
+F 0 "P7" V 4400 3750 40  0000 C CNN
+F 1 "A0-A1" V 4500 3750 40  0000 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

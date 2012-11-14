@@ -1,11 +1,11 @@
-# EESchema Netlist Version 1.1 created  Tue 06 Nov 2012 03:46:45 PM EST
+# EESchema Netlist Version 1.1 created  Tue 13 Nov 2012 04:41:18 PM EST
 (
  ( /4F652571 $noname  R7 330 {Lib=R}
-  (    1 N-000059 )
+  (    1 N-000057 )
   (    2 /13 )
  )
  ( /4F6525DB $noname  D4 LED {Lib=LED}
-  (    1 N-000059 )
+  (    1 N-000057 )
   (    2 GND )
  )
  ( /4F652722 $noname  R4 10k {Lib=R}
@@ -16,11 +16,11 @@
   (    1 /RESET )
   (    2 /DTR )
  )
- ( /4F6529EF $noname  SW1 SW_PUSH {Lib=SW_PUSH}
+ ( /4F6529EF $noname  SW1 RST {Lib=SW_PUSH}
   (    1 /RESET )
   (    2 GND )
  )
- ( /4F7A0480 $noname  X1 XTAL_RESONATOR {Lib=XTAL_RESONATOR}
+ ( /4F7A0480 $noname  X1 XTAL_RES {Lib=XTAL_RESONATOR}
   (    1 /TOSC2 )
   (    2 /TOSC1 )
   (    3 GND )
@@ -65,7 +65,7 @@
   (    1 VCC )
   (    2 GND )
  )
- ( /500DA63F $noname  P6 CONN_3X2 {Lib=CONN_3X2}
+ ( /500DA63F $noname  P6 ICSP {Lib=CONN_3X2}
   (    1 /12 )
   (    2 VCC )
   (    3 /13 )
@@ -74,14 +74,14 @@
   (    6 GND )
  )
  ( /5016B41F $noname  R6 1k {Lib=R}
-  (    1 N-000057 )
+  (    1 N-000053 )
   (    2 VCC )
  )
  ( /5016B425 $noname  D3 LED {Lib=LED}
-  (    1 N-000057 )
+  (    1 N-000053 )
   (    2 GND )
  )
- ( /503401BE $noname  J1 USB_1 {Lib=USB_1}
+ ( /503401BE $noname  J1 USB {Lib=USB_1}
   (    1 VCC )
   (    2 /D- )
   (    3 /D+ )
@@ -103,7 +103,7 @@
   (   11 /D7 )
   (   12 /D8 )
   (   13 /D9 )
-  (   14 ? )
+  (   14 /D10 )
   (   15 /11 )
   (   16 /12 )
   (   17 /13 )
@@ -131,7 +131,7 @@
   (    1 /TOSC1 )
   (    2 /TOSC2 )
  )
- ( /5074661B $noname  D1 DIODE {Lib=DIODE}
+ ( /5074661B $noname  D1 D {Lib=DIODE}
   (    1 /RESET )
   (    2 VCC )
  )
@@ -171,15 +171,15 @@
   (    5 /G4 )
   (    6 /R4 )
  )
- ( /508A05D4 $noname  U1 LP2985LV {Lib=LP2985LV}
+ ( /508A05D4 $noname  U1 Vreg5V {Lib=LP2985LV}
   (    1 /12V )
   (    2 GND )
   (    3 /12V )
-  (    4 N-000014 )
+  (    4 N-000008 )
   (    5 VCC )
  )
  ( /508A073F $noname  C2 10nF {Lib=C}
-  (    1 N-000014 )
+  (    1 N-000008 )
   (    2 GND )
  )
  ( /508A074C $noname  C3 10uF {Lib=C}
@@ -190,7 +190,7 @@
   (    1 /12V )
   (    2 GND )
  )
- ( /508A09D6 $noname  P1 CONN_2 {Lib=CONN_2}
+ ( /508A09D6 $noname  P1 PWR_in {Lib=CONN_2}
   (    1 GND )
   (    2 /12V )
  )
@@ -202,7 +202,7 @@
   (    5 /G5 )
   (    6 /R5 )
  )
- ( /508A12C3 $noname  K1 CONN_3 {Lib=CONN_3}
+ ( /508A12C3 $noname  K1 V_LED_Sel {Lib=CONN_3}
   (    1 /12V )
   (    2 /VLED )
   (    3 VCC )
@@ -234,7 +234,7 @@
   (   24 /SOUT )
   (   25 /D3 )
   (   26 VCC )
-  (   27 N-000029 )
+  (   27 N-000032 )
   (   28 VCC )
  )
  ( /508A0C17 $noname  D2 LED {Lib=LED}
@@ -242,64 +242,73 @@
   (    2 /WHITE )
  )
  ( /508A0FF8 $noname  R2 R {Lib=R}
-  (    1 N-000029 )
+  (    1 N-000032 )
   (    2 GND )
  )
  ( /508A11E6 $noname  R1 2K {Lib=R}
   (    1 /D10 )
   (    2 VCC )
  )
- ( /508A13CD $noname  P3 CONN_8 {Lib=CONN_8}
+ ( /508A13CD $noname  P3 Input_BUS {Lib=CONN_8}
   (    1 /11 )
   (    2 /D9 )
   (    3 /D10 )
   (    4 /D3 )
-  (    5 /SCLK )
+  (    5 /13 )
   (    6 /VLED )
   (    7 VCC )
   (    8 GND )
  )
- ( /508A13E0 $noname  P2 CONN_8 {Lib=CONN_8}
+ ( /508A13E0 $noname  P2 Output_BUS {Lib=CONN_8}
   (    1 /SOUT )
   (    2 /D9 )
   (    3 /D10 )
   (    4 /D3 )
-  (    5 /SCLK )
+  (    5 /13 )
   (    6 /VLED )
   (    7 VCC )
   (    8 GND )
  )
- ( /508A16CC $noname  K2 CONN_3 {Lib=CONN_3}
+ ( /508A16CC $noname  K2 5V {Lib=CONN_3}
   (    1 VCC )
   (    2 VCC )
   (    3 VCC )
  )
- ( /508A16D9 $noname  K3 CONN_3 {Lib=CONN_3}
+ ( /508A16D9 $noname  K3 GND {Lib=CONN_3}
   (    1 GND )
   (    2 GND )
   (    3 GND )
  )
- ( /508A1B7C $noname  P5 CONN_6 {Lib=CONN_6}
-  (    1 /A0 )
-  (    2 /A1 )
-  (    3 /A2 )
-  (    4 /A3 )
-  (    5 /A4 )
-  (    6 /A5 )
+ ( /509976F1 $noname  R8 R {Lib=R}
+  (    1 N-000032 )
+  (    2 GND )
  )
- ( /508A1B8B $noname  P4 CONN_8 {Lib=CONN_8}
+ ( /50A2B58A $noname  K4 12V {Lib=CONN_3}
+  (    1 /12V )
+  (    2 /12V )
+  (    3 /12V )
+ )
+ ( /50A2BF58 $noname  P4 TX_RX_D2_D4 {Lib=CONN_4}
   (    1 /D1 )
   (    2 /D0 )
   (    3 /D2 )
   (    4 /D4 )
-  (    5 /D5 )
-  (    6 /D6 )
-  (    7 /D7 )
-  (    8 /D8 )
  )
- ( /509976F1 $noname  R8 R {Lib=R}
-  (    1 N-000029 )
-  (    2 GND )
+ ( /50A2BF83 $noname  P5 D5-D8 {Lib=CONN_4}
+  (    1 /D5 )
+  (    2 /D6 )
+  (    3 /D7 )
+  (    4 /D8 )
+ )
+ ( /50A2C13E $noname  P8 A2-A5 {Lib=CONN_4}
+  (    1 /A2 )
+  (    2 /A3 )
+  (    3 /A4 )
+  (    4 /A5 )
+ )
+ ( /50A2C152 $noname  P7 A0-A1 {Lib=CONN_2}
+  (    1 /A0 )
+  (    2 /A1 )
  )
 )
 *
@@ -435,260 +444,263 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "/D9" "D9"
- IC1 13
+Net 2 "/12V" "12V"
+ U1 3
+ K4 3
+ K4 2
+ K4 1
+ C1 1
+ K1 1
+ U1 1
+ P1 2
+Net 3 "VCC" "VCC"
+ U1 5
+ P3 7
+ P6 2
+ TLC1 28
+ P2 7
+ R1 2
+ C3 1
+ K2 3
+ K2 2
+ K2 1
+ TLC1 26
+ D1 2
+ IC1 18
+ IC1 4
+ IC1 6
+ C5 1
+ R6 2
+ C7 1
+ J1 1
+ U2 20
+ R4 1
+ C6 1
+ U2 4
+ K1 3
+Net 4 "/D9" "D9"
  TLC1 3
- P3 2
  P2 2
-Net 2 "/13" "13"
+ P3 2
+ IC1 13
+Net 5 "/13" "13"
  P6 3
- IC1 17
+ P2 5
+ P3 5
  R7 2
+ IC1 17
  TLC1 4
-Net 3 "/11" "11"
+Net 6 "/11" "11"
  IC1 15
  P3 1
  TLC1 5
  P6 4
-Net 4 "VCC" "VCC"
- R6 2
- P2 7
- J1 1
- TLC1 28
- TLC1 26
- C3 1
- C5 1
- K2 2
- IC1 18
- U2 4
- U1 5
- U2 20
- K2 3
- K2 1
- K1 3
- D1 2
- R4 1
- IC1 6
- C7 1
- C6 1
- P3 7
- IC1 4
- P6 2
- R1 2
-Net 5 "/G5" "G5"
- TLC1 20
- LED5 5
-Net 6 "/B5" "B5"
- LED5 4
- TLC1 21
-Net 7 "/12V" "12V"
- P1 2
- U1 1
- U1 3
- C1 1
- K1 1
-Net 8 "GND" "GND"
- C8 2
- IC1 21
+Net 7 "GND" "GND"
+ J1 4
+ D3 2
+ D4 2
+ X1 3
  P3 8
  R2 2
- IC1 5
- P6 6
+ P2 8
  C5 2
- U2 25
- SW1 2
- D4 2
- R5 2
- U2 26
- D3 2
- U2 18
- C6 2
- X1 3
- U2 7
- U2 11
- U2 21
+ P6 6
  C7 2
- J1 4
  J1 5
  J1 6
- R8 2
- P1 1
- U1 2
- P2 8
+ IC1 21
+ IC1 3
+ IC1 5
+ TLC1 6
+ U2 7
+ U2 25
+ U2 26
+ U2 18
+ C6 2
+ TLC1 1
+ SW1 2
+ U2 11
+ U2 21
+ R5 2
+ C8 2
  K3 3
  K3 2
  K3 1
- TLC1 1
- IC1 3
- TLC1 6
  C2 2
- C3 2
+ R8 2
+ U1 2
  C1 2
-Net 10 "/R4" "R4"
- TLC1 16
- LED4 6
-Net 11 "/G4" "G4"
- LED4 5
- TLC1 17
-Net 12 "/B4" "B4"
- LED4 4
- TLC1 18
-Net 13 "/R5" "R5"
- LED5 6
- TLC1 19
-Net 14 "" ""
+ P1 1
+ C3 2
+Net 8 "" ""
  C2 1
  U1 4
-Net 15 "/G2" "G2"
- TLC1 11
- LED2 5
-Net 16 "/R2" "R2"
- TLC1 10
- LED2 6
-Net 18 "/D0" "D0"
- U2 1
- IC1 30
- P4 2
-Net 19 "/D2" "D2"
- P4 3
- IC1 32
-Net 20 "/D4" "D4"
- IC1 2
- P4 4
-Net 21 "/D5" "D5"
- P4 5
- IC1 9
-Net 22 "/D6" "D6"
+Net 9 "/B4" "B4"
+ LED4 4
+ TLC1 18
+Net 10 "/G4" "G4"
+ LED4 5
+ TLC1 17
+Net 11 "/R4" "R4"
+ TLC1 16
+ LED4 6
+Net 12 "/B5" "B5"
+ TLC1 21
+ LED5 4
+Net 13 "/G5" "G5"
+ LED5 5
+ TLC1 20
+Net 14 "/R5" "R5"
+ LED5 6
+ TLC1 19
+Net 15 "/D6" "D6"
  IC1 10
- P4 6
-Net 23 "/D7" "D7"
- IC1 11
- P4 7
-Net 24 "/D8" "D8"
- IC1 12
- P4 8
-Net 26 "/D1" "D1"
+ P5 2
+Net 16 "/D1" "D1"
+ P4 1
  U2 5
  IC1 31
- P4 1
-Net 29 "" ""
+Net 17 "/D0" "D0"
+ P4 2
+ IC1 30
+ U2 1
+Net 18 "/D2" "D2"
+ P4 3
+ IC1 32
+Net 19 "/D4" "D4"
+ P4 4
+ IC1 2
+Net 20 "/D5" "D5"
+ P5 1
+ IC1 9
+Net 21 "/D7" "D7"
+ P5 3
+ IC1 11
+Net 22 "/D8" "D8"
+ IC1 12
+ P5 4
+Net 23 "/A2" "A2"
+ P8 1
+ IC1 25
+Net 24 "/A3" "A3"
+ IC1 26
+ P8 2
+Net 25 "/A4" "A4"
+ IC1 27
+ P8 3
+Net 26 "/A5" "A5"
+ IC1 28
+ P8 4
+Net 27 "/A0" "A0"
+ IC1 23
+ P7 1
+Net 28 "/A1" "A1"
+ P7 2
+ IC1 24
+Net 32 "" ""
+ TLC1 27
  R8 1
  R2 1
- TLC1 27
-Net 30 "/VLED" "VLED"
- LED2 3
- LED1 2
- LED1 1
- K1 2
+Net 35 "/D3" "D3"
+ IC1 1
+ TLC1 25
+ P3 4
+ P2 4
+Net 36 "/D10" "D10"
+ P2 3
+ R1 1
+ TLC1 2
+ IC1 14
+ P3 3
+Net 37 "/WHITE" "WHITE"
+ TLC1 22
+ D2 2
+Net 38 "/VLED" "VLED"
+ LED1 3
+ LED3 2
+ LED3 1
+ LED4 2
+ LED4 1
  LED2 2
  LED2 1
- LED1 3
- LED3 1
- LED3 2
  LED3 3
- P3 6
+ LED1 2
+ LED1 1
+ LED5 1
+ LED5 2
+ LED5 3
  D2 1
  P2 6
- LED5 3
- LED5 2
- LED4 1
- LED4 2
- LED5 1
  LED4 3
-Net 31 "/A0" "A0"
- IC1 23
- P5 1
-Net 32 "/A1" "A1"
- P5 2
- IC1 24
-Net 33 "/A2" "A2"
- P5 3
- IC1 25
-Net 34 "/A3" "A3"
- P5 4
- IC1 26
-Net 35 "/A4" "A4"
- P5 5
- IC1 27
-Net 36 "/A5" "A5"
- IC1 28
- P5 6
-Net 37 "/WHITE" "WHITE"
- D2 2
- TLC1 22
-Net 38 "/SOUT" "SOUT"
- TLC1 24
+ P3 6
+ LED2 3
+ K1 2
+Net 39 "/SOUT" "SOUT"
  P2 1
-Net 39 "/D3" "D3"
- TLC1 25
- IC1 1
- P2 4
- P3 4
-Net 40 "/SCLK" "SCLK"
- P3 5
- P2 5
-Net 41 "/D10" "D10"
- P3 3
- TLC1 2
- R1 1
- P2 3
-Net 42 "/B2" "B2"
- TLC1 12
- LED2 4
-Net 46 "/RESET" "RESET"
- R4 2
- C4 1
+ TLC1 24
+Net 42 "/RESET" "RESET"
  SW1 1
  P6 5
+ R4 2
  D1 1
+ C4 1
  IC1 29
-Net 56 "/D-" "D-"
- J1 2
- U2 16
-Net 57 "" ""
+Net 53 "" ""
  R6 1
  D3 1
-Net 58 "/TOSC2" "TOSC2"
+Net 54 "/D-" "D-"
+ U2 16
+ J1 2
+Net 55 "/D+" "D+"
+ J1 3
+ U2 15
+Net 56 "/TOSC2" "TOSC2"
  R3 2
  X1 1
  IC1 8
-Net 59 "" ""
- D4 1
+Net 57 "" ""
  R7 1
-Net 60 "/D+" "D+"
- U2 15
- J1 3
-Net 61 "/TOSC1" "TOSC1"
+ D4 1
+Net 58 "/TOSC1" "TOSC1"
  IC1 7
  R3 1
  X1 2
-Net 62 "/12" "12"
- IC1 16
- P6 1
-Net 64 "/B3" "B3"
- LED3 4
- TLC1 15
-Net 65 "/G3" "G3"
- LED3 5
- TLC1 14
-Net 66 "/R3" "R3"
- TLC1 13
- LED3 6
-Net 67 "/B1" "B1"
- TLC1 9
- LED1 4
-Net 68 "/G1" "G1"
- TLC1 8
- LED1 5
-Net 69 "/R1" "R1"
- TLC1 7
- LED1 6
-Net 70 "/DTR" "DTR"
- R5 1
+Net 59 "/DTR" "DTR"
  U2 2
  C4 2
-Net 72 "/AREF" "AREF"
- IC1 20
+ R5 1
+Net 60 "/R1" "R1"
+ TLC1 7
+ LED1 6
+Net 61 "/B3" "B3"
+ LED3 4
+ TLC1 15
+Net 62 "/G3" "G3"
+ LED3 5
+ TLC1 14
+Net 63 "/R3" "R3"
+ LED3 6
+ TLC1 13
+Net 64 "/B1" "B1"
+ LED1 4
+ TLC1 9
+Net 65 "/G1" "G1"
+ TLC1 8
+ LED1 5
+Net 66 "/B2" "B2"
+ TLC1 12
+ LED2 4
+Net 67 "/G2" "G2"
+ LED2 5
+ TLC1 11
+Net 68 "/R2" "R2"
+ LED2 6
+ TLC1 10
+Net 69 "/12" "12"
+ P6 1
+ IC1 16
+Net 70 "/AREF" "AREF"
  C8 1
+ IC1 20
 }
 #End
