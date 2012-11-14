@@ -1,0 +1,234 @@
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 13 Nov 2012 02:46:56 PM EST
+
+BeginCmp
+TimeStamp = /508A0752;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /508A073F;
+Reference = C2;
+ValeurCmp = 10nF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /508A074C;
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /50997259;
+Reference = C4;
+ValeurCmp = 47uF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /50997421;
+Reference = C5;
+ValeurCmp = 33nF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /50070AFC;
+Reference = C11;
+ValeurCmp = 10uF_25V;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A1270;
+Reference = C12;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A1289;
+Reference = C13;
+ValeurCmp = 10uF_25V;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A34CF;
+Reference = C14;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F652745;
+Reference = C15;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /5074615A;
+Reference = C16;
+ValeurCmp = 100nF;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6525DB;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5016B425;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5074661B;
+Reference = D3;
+ValeurCmp = DIODE;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50411936;
+Reference = IC1;
+ValeurCmp = ATMEGA328/P_32TQFP;
+IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /503401BE;
+Reference = J1;
+ValeurCmp = USB_1;
+IdModule  = USB micro-female;
+EndCmp
+
+BeginCmp
+TimeStamp = /500DA63F;
+Reference = P1;
+ValeurCmp = CONN_3X2;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /508A09D6;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50996D3F;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509C0A84;
+Reference = P4;
+ValeurCmp = CONN_6;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509C10F3;
+Reference = P5;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A29C96;
+Reference = P6;
+ValeurCmp = CONN_6;
+IdModule  = pin_array_6x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509C1477;
+Reference = R1;
+ValeurCmp = 1000;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F652571;
+Reference = R4;
+ValeurCmp = 330;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F652722;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /5016B41F;
+Reference = R6;
+ValeurCmp = 1k;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /507462C8;
+Reference = R7;
+ValeurCmp = 1M;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /50747BA5;
+Reference = R8;
+ValeurCmp = 1k;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6529EF;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = SW_M6_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = /508A05D4;
+Reference = U1;
+ValeurCmp = LP2985LV;
+IdModule  = SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /509961A9;
+Reference = U2;
+ValeurCmp = MC33886PVWR2CT;
+IdModule  = SSOP20;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A08F9;
+Reference = U4;
+ValeurCmp = FT232RL;
+IdModule  = SSOP28;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F7A0480;
+Reference = X1;
+ValeurCmp = XTAL_RESONATOR;
+IdModule  = XTAL_Resonator;
+EndCmp
+
+EndListe
