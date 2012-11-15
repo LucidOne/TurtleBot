@@ -1,10 +1,10 @@
-Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 13 Nov 2012 02:46:56 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Thu 15 Nov 2012 02:00:55 PM EST
 
 BeginCmp
 TimeStamp = /508A0752;
 Reference = C1;
 ValeurCmp = 10uF;
-IdModule  = SM0805_NonPol;
+IdModule  = SMD Microfit 2pin;
 EndCmp
 
 BeginCmp
@@ -113,17 +113,31 @@ IdModule  = USB micro-female;
 EndCmp
 
 BeginCmp
+TimeStamp = /50A53344;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A53351;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
 TimeStamp = /500DA63F;
 Reference = P1;
 ValeurCmp = CONN_3X2;
-IdModule  = PIN_ARRAY_3X1;
+IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
 TimeStamp = /508A09D6;
 Reference = P2;
 ValeurCmp = CONN_2;
-IdModule  = pin_array_3x2;
+IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
@@ -137,14 +151,14 @@ BeginCmp
 TimeStamp = /509C0A84;
 Reference = P4;
 ValeurCmp = CONN_6;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = PIN_ARRAY-6X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /509C10F3;
+TimeStamp = /50A544CD;
 Reference = P5;
 ValeurCmp = CONN_2;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = ;
 EndCmp
 
 BeginCmp

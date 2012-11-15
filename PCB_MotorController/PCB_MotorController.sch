@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 13 Nov 2012 04:14:42 PM EST
+EESchema Schematic File Version 2  date Thu 15 Nov 2012 02:36:49 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Motor Controller"
-Date "13 nov 2012"
+Date "15 nov 2012"
 Rev "01"
 Comp "I Heart Engineering"
 Comment1 "Made by Karim Abdelrazek"
@@ -584,18 +584,9 @@ F 1 "CONN_2" V 750 1050 40  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 1250 950  0    60   ~ 0
-12V
+V+
 Text Label 3450 950  0    60   ~ 0
 VCC
-$Comp
-L MC33886PVWR2CT U2
-U 1 1 509961A9
-P 10750 10100
-F 0 "U2" H 10750 10100 60  0000 C CNN
-F 1 "MC33886PVWR2CT" H 10750 10100 60  0000 C CNN
-	1    10750 10100
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR020
 U 1 1 509961B8
@@ -723,19 +714,6 @@ Text Label 4200 6700 0    52   ~ 0
 A4
 Text Label 4200 6800 0    52   ~ 0
 A5
-$Comp
-L CONN_2 P5
-U 1 1 509C10F3
-P 10100 3500
-F 0 "P5" V 10050 3500 40  0000 C CNN
-F 1 "CONN_2" V 10150 3500 40  0000 C CNN
-	1    10100 3500
-	1    0    0    -1  
-$EndComp
-Text Label 9450 3400 0    60   ~ 0
-VCC
-Text Label 9450 3600 0    60   ~ 0
-GND
 Text Label 750  4550 0    60   ~ 0
 D6
 Text Label 3150 4450 0    60   ~ 0
@@ -755,6 +733,55 @@ Text Label 650  4450 0    52   ~ 0
 D5
 Text Label 900  4300 0    52   ~ 0
 VCC
+Text Label 750  4450 0    60   ~ 0
+(in)
+NoConn ~ 2900 4950
+NoConn ~ 1600 4950
+$Comp
+L CONN_6 P6
+U 1 1 50A29C96
+P 6050 6550
+F 0 "P6" V 6000 6550 60  0000 C CNN
+F 1 "CONN_6" V 6100 6550 60  0000 C CNN
+	1    6050 6550
+	1    0    0    -1  
+$EndComp
+Text Label 5300 6300 0    60   ~ 0
+D0
+Text Label 5300 6400 0    60   ~ 0
+D1
+Text Label 5300 6500 0    60   ~ 0
+D2
+Text Label 5300 6600 0    60   ~ 0
+D3
+Text Label 5300 6700 0    60   ~ 0
+D4
+Text Label 5300 6800 0    60   ~ 0
+D10
+NoConn ~ 9800 4600
+NoConn ~ 9800 5200
+$Comp
+L CONN_3 K1
+U 1 1 50A53344
+P 9650 6500
+F 0 "K1" V 9600 6500 50  0000 C CNN
+F 1 "CONN_3" V 9700 6500 40  0000 C CNN
+	1    9650 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K2
+U 1 1 50A53351
+P 9700 6900
+F 0 "K2" V 9650 6900 50  0000 C CNN
+F 1 "CONN_3" V 9750 6900 40  0000 C CNN
+	1    9700 6900
+	1    0    0    -1  
+$EndComp
+Text Label 9100 6400 0    60   ~ 0
+VCC
+Text Label 9100 6800 0    60   ~ 0
+GND
 Wire Wire Line
 	5250 750  4850 750 
 Wire Wire Line
@@ -953,10 +980,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 6800 4450 6800
 Wire Wire Line
-	9450 3400 9750 3400
-Wire Wire Line
-	9450 3600 9750 3600
-Wire Wire Line
 	750  4550 1600 4550
 Wire Wire Line
 	2900 4450 3150 4450
@@ -971,32 +994,6 @@ Wire Wire Line
 	1950 4400 2050 4400
 Wire Wire Line
 	2450 5000 2550 5000
-Text Label 750  4450 0    60   ~ 0
-(in)
-NoConn ~ 2900 4950
-NoConn ~ 1600 4950
-NoConn ~ 6400 1350
-$Comp
-L CONN_6 P6
-U 1 1 50A29C96
-P 6050 6550
-F 0 "P6" V 6000 6550 60  0000 C CNN
-F 1 "CONN_6" V 6100 6550 60  0000 C CNN
-	1    6050 6550
-	1    0    0    -1  
-$EndComp
-Text Label 5300 6300 0    60   ~ 0
-D0
-Text Label 5300 6400 0    60   ~ 0
-D1
-Text Label 5300 6500 0    60   ~ 0
-D2
-Text Label 5300 6600 0    60   ~ 0
-D3
-Text Label 5300 6700 0    60   ~ 0
-D4
-Text Label 5300 6800 0    60   ~ 0
-D10
 Wire Wire Line
 	5300 6300 5700 6300
 Wire Wire Line
@@ -1009,8 +1006,50 @@ Wire Wire Line
 	5300 6700 5700 6700
 Wire Wire Line
 	5300 6800 5700 6800
-NoConn ~ 9800 4600
-NoConn ~ 9800 5200
-NoConn ~ 14050 1700
-NoConn ~ 8200 -1350
+Wire Wire Line
+	9100 6400 9300 6400
+Wire Wire Line
+	9100 6800 9350 6800
+Wire Wire Line
+	9350 6900 9300 6900
+Wire Wire Line
+	9300 6800 9300 7000
+Connection ~ 9300 6800
+Wire Wire Line
+	9300 7000 9350 7000
+Connection ~ 9300 6900
+$Comp
+L MC33886PVWR2CT U2
+U 1 1 509961A9
+P 10750 10100
+F 0 "U2" H 10800 10150 60  0000 C CNN
+F 1 "MC33886PVWR2CT" H 10750 10150 60  0000 C CNN
+	1    10750 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 6500 9200 6500
+Wire Wire Line
+	9200 6400 9200 6600
+Connection ~ 9200 6400
+Wire Wire Line
+	9200 6600 9300 6600
+Connection ~ 9200 6500
+$Comp
+L CONN_2 P5
+U 1 1 50A544CD
+P 750 2550
+F 0 "P5" V 700 2550 40  0000 C CNN
+F 1 "CONN_2" V 800 2550 40  0000 C CNN
+	1    750  2550
+	-1   0    0    1   
+$EndComp
+Text Label 1150 2650 0    60   ~ 0
+GND
+Text Label 1150 2450 0    60   ~ 0
+V+
+Wire Wire Line
+	1100 2650 1150 2650
+Wire Wire Line
+	1100 2450 1150 2450
 $EndSCHEMATC
