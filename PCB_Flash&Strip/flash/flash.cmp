@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 20 Nov 2012 06:01:27 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 27 Nov 2012 02:59:28 PM EST
 
 BeginCmp
 TimeStamp = /508A0752;
@@ -162,10 +162,10 @@ IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /507462C8;
-Reference = R1;
-ValeurCmp = 1M;
-IdModule  = SM0805_NonPol;
+TimeStamp = /50B5153F;
+Reference = P8;
+ValeurCmp = Sonar_Out;
+IdModule  = pin_array_7x1;
 EndCmp
 
 BeginCmp
@@ -207,7 +207,7 @@ BeginCmp
 TimeStamp = /4F6529EF;
 Reference = SW2;
 ValeurCmp = RST;
-IdModule  = SW_M6_SMD;
+IdModule  = SW_M6_COMBO;
 EndCmp
 
 BeginCmp

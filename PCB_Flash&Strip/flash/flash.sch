@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 20 Nov 2012 06:01:42 PM EST
+EESchema Schematic File Version 2  date Tue 27 Nov 2012 02:59:32 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Flash (Flash&Strip)"
-Date "20 nov 2012"
+Date "27 nov 2012"
 Rev "01"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -499,27 +499,6 @@ F 1 "GND" H 10250 4730 30  0001 C CNN
 $EndComp
 Wire Wire Line
 	10250 4800 10250 4700
-$Comp
-L R R1
-U 1 1 507462C8
-P 5000 5500
-F 0 "R1" V 5080 5500 50  0000 C CNN
-F 1 "1M" V 5000 5500 50  0000 C CNN
-	1    5000 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 5250 5200 5250
-Wire Wire Line
-	5200 5250 5200 5400
-Wire Wire Line
-	5200 5400 5800 5400
-Wire Wire Line
-	5000 5750 5200 5750
-Wire Wire Line
-	5200 5600 5800 5600
-Wire Wire Line
-	5200 5750 5200 5600
 Text Label 5700 1150 0    60   ~ 0
 GND
 $Comp
@@ -898,4 +877,27 @@ Text Label 900  2300 2    60   ~ 0
 GND
 Text Label 900  2100 2    60   ~ 0
 12V
+$Comp
+L CONN_7 P8
+U 1 1 50B5153F
+P 2850 7100
+F 0 "P8" V 2820 7100 60  0000 C CNN
+F 1 "Sonar Out" V 2920 7100 60  0000 C CNN
+	1    2850 7100
+	1    0    0    -1  
+$EndComp
+Text Label 2500 6800 2    60   ~ 0
+GND
+Text Label 2500 6900 2    60   ~ 0
+VCC
+Text Label 2500 7000 2    60   ~ 0
+S_TX
+Text Label 2500 7100 2    60   ~ 0
+S_RX
+Text Label 2500 7200 2    60   ~ 0
+AN
+Text Label 2500 7300 2    60   ~ 0
+PW
+Text Label 2500 7400 2    60   ~ 0
+BW
 $EndSCHEMATC

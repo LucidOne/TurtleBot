@@ -1,11 +1,11 @@
-# EESchema Netlist Version 1.1 created  Tue 20 Nov 2012 05:55:14 PM EST
+# EESchema Netlist Version 1.1 created  Tue 27 Nov 2012 02:59:11 PM EST
 (
  ( /4F652571 $noname  R5 330 {Lib=R}
-  (    1 N-000044 )
+  (    1 N-000049 )
   (    2 /13 )
  )
  ( /4F6525DB $noname  D2 LED {Lib=LED}
-  (    1 N-000044 )
+  (    1 N-000049 )
   (    2 GND )
  )
  ( /4F652722 $noname  R2 10k {Lib=R}
@@ -74,11 +74,11 @@
   (    6 GND )
  )
  ( /5016B41F $noname  R4 1k {Lib=R}
-  (    1 N-000048 )
+  (    1 N-000053 )
   (    2 VCC )
  )
  ( /5016B425 $noname  D1 LED {Lib=LED}
-  (    1 N-000048 )
+  (    1 N-000053 )
   (    2 GND )
  )
  ( /503401BE $noname  J1 USB {Lib=USB_1}
@@ -92,10 +92,6 @@
  ( /5074615A $noname  C8 100nF {Lib=C}
   (    1 /AREF )
   (    2 GND )
- )
- ( /507462C8 $noname  R1 1M {Lib=R}
-  (    1 /TOSC1 )
-  (    2 /TOSC2 )
  )
  ( /50747BA5 $noname  R3 1k {Lib=R}
   (    1 /DTR )
@@ -216,6 +212,15 @@
   (    2 /EN_reg )
   (    3 /12V )
  )
+ ( /50B5153F $noname  P8 Sonar_Out {Lib=CONN_7}
+  (    1 GND )
+  (    2 VCC )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+ )
 )
 *
 { Allowed footprints by component:
@@ -284,13 +289,6 @@ $component C8
  C?
  C1-1
 $endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
 $component R3
  R?
  SM0603
@@ -322,172 +320,172 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "VCC" "VCC"
- R2 1
- C3 1
- J1 1
- R4 2
- C5 1
- VR1 4
- IC1 6
- IC1 4
- U1 4
- U1 20
+ K3 1
  IC1 18
- P2 7
- C6 1
- C7 1
  K1 3
- P7 2
  K3 3
  K3 2
- K3 1
-Net 2 "/13" "13"
- P7 3
- R5 2
- P2 5
- IC1 17
-Net 3 "/D10" "D10"
- P2 3
- IC1 14
-Net 4 "/D9" "D9"
- IC1 13
- P2 2
-Net 5 "/11" "11"
- IC1 15
- P7 4
- P2 1
-Net 6 "/D3" "D3"
- IC1 1
- P2 4
-Net 7 "GND" "GND"
- VR1 3
- U1 7
- C6 2
+ C6 1
+ C3 1
+ P7 2
+ VR1 4
+ C5 1
+ U1 4
+ P2 7
+ IC1 6
+ U1 20
+ P8 2
+ IC1 4
+ J1 1
+ R4 2
+ C7 1
+ R2 1
+Net 2 "GND" "GND"
+ D2 2
+ SW2 2
+ P8 1
+ SW1 1
+ IC1 21
  IC1 5
- C5 2
- VR1 6
- X1 3
+ IC1 3
+ C7 2
+ C6 2
+ U1 18
  U1 26
  U1 25
- SW2 2
- IC1 3
- U1 18
- C7 2
- D2 2
- U1 21
- U1 11
- P7 6
- R3 2
+ C5 2
+ C8 2
  D1 2
  J1 4
- P2 8
- J1 5
+ P7 6
  J1 6
- P1 1
- K4 3
- K4 2
+ U1 21
+ U1 11
+ U1 7
+ X1 3
+ J1 5
+ VR1 3
  K4 1
- C8 2
- IC1 21
- SW1 1
+ K4 2
+ K4 3
+ VR1 6
+ P2 8
+ C2 2
+ P1 1
  C1 2
  C3 2
- C2 2
-Net 8 "/VLED" "VLED"
+ R3 2
+Net 3 "/VLED" "VLED"
  K1 2
  P2 6
+Net 4 "/13" "13"
+ P2 5
+ R5 2
+ P7 3
+ IC1 17
+Net 5 "/D3" "D3"
+ IC1 1
+ P2 4
+Net 6 "/D10" "D10"
+ IC1 14
+ P2 3
+Net 7 "/D9" "D9"
+ P2 2
+ IC1 13
+Net 8 "/11" "11"
+ IC1 15
+ P2 1
+ P7 4
 Net 9 "/12V" "12V"
  VR1 2
- K2 2
  P1 2
- K2 3
  SW1 3
+ K2 3
+ K2 2
  K2 1
- K1 1
  C1 1
-Net 11 "/A4" "A4"
+ K1 1
+Net 10 "/A5" "A5"
+ P6 4
+ IC1 28
+Net 13 "/A4" "A4"
  P6 3
  IC1 27
-Net 12 "/A5" "A5"
- IC1 28
- P6 4
-Net 14 "/EN_reg" "EN_reg"
+Net 19 "/EN_reg" "EN_reg"
  SW1 2
  VR1 1
  C2 1
-Net 17 "/D7" "D7"
- P4 3
+Net 20 "/D7" "D7"
  IC1 11
-Net 18 "/A1" "A1"
- P5 2
- IC1 24
-Net 19 "/A0" "A0"
- P5 1
- IC1 23
-Net 20 "/A3" "A3"
- IC1 26
- P6 2
-Net 21 "/A2" "A2"
- IC1 25
- P6 1
-Net 22 "/D8" "D8"
- P4 4
- IC1 12
-Net 23 "/D6" "D6"
+ P4 3
+Net 21 "/D6" "D6"
  IC1 10
  P4 2
-Net 24 "/D5" "D5"
- P4 1
+Net 22 "/D5" "D5"
  IC1 9
-Net 25 "/D4" "D4"
+ P4 1
+Net 23 "/D4" "D4"
  IC1 2
  P3 4
-Net 26 "/D2" "D2"
- P3 3
+Net 24 "/D2" "D2"
  IC1 32
-Net 27 "/D0" "D0"
+ P3 3
+Net 25 "/D0" "D0"
+ IC1 30
  P3 2
  U1 1
- IC1 30
-Net 28 "/D1" "D1"
- IC1 31
- U1 5
+Net 26 "/D1" "D1"
  P3 1
-Net 32 "/D-" "D-"
+ U1 5
+ IC1 31
+Net 27 "/D8" "D8"
+ P4 4
+ IC1 12
+Net 30 "/A1" "A1"
+ IC1 24
+ P5 2
+Net 31 "/A0" "A0"
+ P5 1
+ IC1 23
+Net 32 "/A3" "A3"
+ P6 2
+ IC1 26
+Net 33 "/A2" "A2"
+ IC1 25
+ P6 1
+Net 37 "/D-" "D-"
  J1 2
  U1 16
-Net 37 "/12" "12"
- P7 1
+Net 42 "/12" "12"
  IC1 16
-Net 43 "/RESET" "RESET"
+ P7 1
+Net 48 "/RESET" "RESET"
  P7 5
  SW2 1
+ IC1 29
  C4 1
  R2 2
- IC1 29
-Net 44 "" ""
- D2 1
+Net 49 "" ""
  R5 1
-Net 45 "/DTR" "DTR"
- R3 1
+ D2 1
+Net 50 "/DTR" "DTR"
  C4 2
  U1 2
-Net 46 "/TOSC1" "TOSC1"
- R1 1
+ R3 1
+Net 51 "/TOSC1" "TOSC1"
  X1 2
  IC1 7
-Net 47 "/TOSC2" "TOSC2"
- IC1 8
- R1 2
+Net 52 "/TOSC2" "TOSC2"
  X1 1
-Net 48 "" ""
- R4 1
+ IC1 8
+Net 53 "" ""
  D1 1
-Net 49 "/AREF" "AREF"
+ R4 1
+Net 54 "/AREF" "AREF"
  C8 1
  IC1 20
-Net 50 "/D+" "D+"
- U1 15
+Net 55 "/D+" "D+"
  J1 3
+ U1 15
 }
 #End
