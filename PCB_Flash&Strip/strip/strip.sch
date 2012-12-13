@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 27 Nov 2012 06:08:15 PM EST
+EESchema Schematic File Version 2  date Tue 04 Dec 2012 12:47:53 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "DRINKS/ROFL"
-Date "27 nov 2012"
+Date "4 dec 2012"
 Rev "01/02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -313,59 +313,41 @@ Text Label 2600 2250 0    60   ~ 0
 VCC
 Text Label 4900 4500 2    60   ~ 0
 VLED
-$Comp
-L CONN_8 P2
-U 1 1 508A13CD
-P 7900 3600
-F 0 "P2" V 7850 3600 60  0000 C CNN
-F 1 "Input BUS" V 7950 3600 60  0000 C CNN
-	1    7900 3600
-	1    0    0    -1  
-$EndComp
-Text Label 7550 3950 2    60   ~ 0
+Text Label 8500 2850 0    60   ~ 0
 GND
-Text Label 7550 3850 2    60   ~ 0
+Text Label 8500 2750 0    60   ~ 0
 VCC
-Text Label 7550 3750 2    60   ~ 0
+Text Label 8500 2650 0    60   ~ 0
 VLED
-Text Label 7550 3650 2    60   ~ 0
+Text Label 7700 2850 2    60   ~ 0
 SCK
-Text Label 7550 3550 2    60   ~ 0
+Text Label 7700 2750 2    60   ~ 0
 GSCLK
-Text Label 7550 3450 2    60   ~ 0
+Text Label 7700 2650 2    60   ~ 0
 D10
-Text Label 7550 3350 2    60   ~ 0
+Text Label 7700 2550 2    60   ~ 0
 D9
-Text Label 7550 3250 2    60   ~ 0
+Text Label 8500 2550 0    60   ~ 0
 SIN
-$Comp
-L CONN_8 P1
-U 1 1 508A13E0
-P 6950 3600
-F 0 "P1" V 6900 3600 60  0000 C CNN
-F 1 "Output BUS" V 7000 3600 60  0000 C CNN
-	1    6950 3600
-	1    0    0    -1  
-$EndComp
-Text Label 6600 3950 2    60   ~ 0
+Text Label 7100 2850 0    60   ~ 0
 GND
-Text Label 6600 3850 2    60   ~ 0
+Text Label 7100 2750 0    60   ~ 0
 VCC
-Text Label 6600 3750 2    60   ~ 0
+Text Label 7100 2650 0    60   ~ 0
 VLED
-Text Label 6600 3650 2    60   ~ 0
+Text Label 6300 2850 2    60   ~ 0
 SCK
-Text Label 6600 3550 2    60   ~ 0
+Text Label 6300 2750 2    60   ~ 0
 GSCLK
-Text Label 6600 3450 2    60   ~ 0
+Text Label 6300 2650 2    60   ~ 0
 D10
-Text Label 6600 3350 2    60   ~ 0
+Text Label 6300 2550 2    60   ~ 0
 D9
-Text Label 6600 3250 2    60   ~ 0
+Text Label 7100 2550 0    60   ~ 0
 SOUT
-Text Notes 8050 4150 2    60   ~ 0
+Text Notes 8450 2350 2    60   ~ 0
 Input Connector
-Text Notes 7100 4150 2    60   ~ 0
+Text Notes 7150 2350 2    60   ~ 0
 Output Connector
 Text Notes 7950 3100 2    60   ~ 0
 Board-to-board connectors
@@ -491,4 +473,22 @@ Text Label 5850 3250 2    60   ~ 0
 VLED
 Text Label 5300 3250 2    60   ~ 0
 VCC
+$Comp
+L CONN_4X2 P1
+U 1 1 50BE36B5
+P 6700 2700
+F 0 "P1" H 6700 2950 50  0000 C CNN
+F 1 "OUT_CONN" V 6700 2700 40  0000 C CNN
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4X2 P2
+U 1 1 50BE36C2
+P 8100 2700
+F 0 "P2" H 8100 2950 50  0000 C CNN
+F 1 "IN_CONN" V 8100 2700 40  0000 C CNN
+	1    8100 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 27 Nov 2012 02:59:32 PM EST
+EESchema Schematic File Version 2  date Thu 13 Dec 2012 02:46:58 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Flash (Flash&Strip)"
-Date "27 nov 2012"
+Date "13 dec 2012"
 Rev "01"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -662,32 +662,23 @@ Text Label 5550 4200 2    60   ~ 0
 GSCLK
 Text Label 1800 4050 2    60   ~ 0
 VLED
-$Comp
-L CONN_8 P2
-U 1 1 508A13E0
-P 1200 4000
-F 0 "P2" V 1150 4000 60  0000 C CNN
-F 1 "Output BUS" V 1250 4000 60  0000 C CNN
-	1    1200 4000
-	1    0    0    -1  
-$EndComp
-Text Label 850  4350 2    60   ~ 0
+Text Label 1900 5200 0    60   ~ 0
 GND
-Text Label 850  4250 2    60   ~ 0
+Text Label 1900 5100 0    60   ~ 0
 VCC
-Text Label 850  4150 2    60   ~ 0
+Text Label 1900 5000 0    60   ~ 0
 VLED
-Text Label 850  4050 2    60   ~ 0
+Text Label 1100 5200 2    60   ~ 0
 SCK
-Text Label 850  3950 2    60   ~ 0
+Text Label 1100 5100 2    60   ~ 0
 GSCLK
-Text Label 850  3850 2    60   ~ 0
+Text Label 1100 5000 2    60   ~ 0
 D10
-Text Label 850  3750 2    60   ~ 0
+Text Label 1100 4900 2    60   ~ 0
 D9
-Text Label 850  3650 2    60   ~ 0
+Text Label 1900 4900 0    60   ~ 0
 SIN
-Text Notes 1350 4550 2    60   ~ 0
+Text Notes 1900 5400 2    60   ~ 0
 Output Connector
 Text Notes 7950 6750 2    60   ~ 0
 ATMEGA328
@@ -900,4 +891,26 @@ Text Label 2500 7300 2    60   ~ 0
 PW
 Text Label 2500 7400 2    60   ~ 0
 BW
+$Comp
+L R R1
+U 1 1 50CA2BC3
+P 4850 1150
+F 0 "R1" V 4930 1150 50  0000 C CNN
+F 1 "1M" V 4850 1150 50  0000 C CNN
+	1    4850 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 750  4850 900 
+Wire Wire Line
+	4850 1550 4850 1400
+$Comp
+L CONN_4X2 P2
+U 1 1 50CA2FDE
+P 1500 5050
+F 0 "P2" H 1500 5300 50  0000 C CNN
+F 1 "OUT_BUS" V 1500 5050 40  0000 C CNN
+	1    1500 5050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

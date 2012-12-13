@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 27 Nov 2012 06:07:27 PM EST
+# EESchema Netlist Version 1.1 created  Tue 04 Dec 2012 12:48:01 PM EST
 (
  ( /508A038B $noname  LED3 PLCC6_RGB_LED {Lib=PLCC6_RGB_LED}
   (    1 /VLED )
@@ -82,26 +82,6 @@
   (    1 /D10 )
   (    2 /VCC )
  )
- ( /508A13CD $noname  P2 Input_BUS {Lib=CONN_8}
-  (    1 /MOSI )
-  (    2 /D9 )
-  (    3 /D10 )
-  (    4 /D3 )
-  (    5 /SCK )
-  (    6 /VLED )
-  (    7 /VCC )
-  (    8 GND )
- )
- ( /508A13E0 $noname  P1 Output_BUS {Lib=CONN_8}
-  (    1 /SOUT )
-  (    2 /D9 )
-  (    3 /D10 )
-  (    4 /D3 )
-  (    5 /SCK )
-  (    6 /VLED )
-  (    7 /VCC )
-  (    8 GND )
- )
  ( /509976F1 $noname  R2 R {Lib=R}
   (    1 N-000010 )
   (    2 GND )
@@ -121,6 +101,26 @@
  ( /50B5472A $noname  C1 C {Lib=C}
   (    1 /VCC )
   (    2 GND )
+ )
+ ( /50BE36B5 $noname  P1 OUT_CONN {Lib=CONN_4X2}
+  (    1 /D9 )
+  (    2 /SOUT )
+  (    3 /D10 )
+  (    4 /VLED )
+  (    5 /D3 )
+  (    6 /VCC )
+  (    7 /SCK )
+  (    8 GND )
+ )
+ ( /50BE36C2 $noname  P2 IN_CONN {Lib=CONN_4X2}
+  (    1 /D9 )
+  (    2 /MOSI )
+  (    3 /D10 )
+  (    4 /VLED )
+  (    5 /D3 )
+  (    6 /VCC )
+  (    7 /SCK )
+  (    8 GND )
  )
 )
 *
@@ -179,46 +179,46 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "GND" "GND"
- TLC1 6
- P2 8
- C4 2
- C2 2
  TLC1 1
- C1 2
  P1 8
- R3 2
- R2 2
+ P2 8
  C3 2
-Net 2 "/MOSI" "MOSI"
- TLC1 5
- P2 1
-Net 3 "/D9" "D9"
- TLC1 3
- P2 2
- P1 2
-Net 4 "/D10" "D10"
- P1 3
- TLC1 2
- R1 1
- P2 3
-Net 5 "/D3" "D3"
- P1 4
- P2 4
- TLC1 25
-Net 6 "/SCK" "SCK"
- P2 5
- TLC1 4
- P1 5
-Net 7 "/WHITE" "WHITE"
+ R2 2
+ C1 2
+ C2 2
+ C4 2
+ TLC1 6
+ R3 2
+Net 2 "/WHITE" "WHITE"
  TLC1 22
  D1 2
+Net 3 "/D9" "D9"
+ TLC1 3
+ P1 1
+ P2 1
+Net 4 "/MOSI" "MOSI"
+ TLC1 5
+ P2 2
+Net 5 "/D10" "D10"
+ R1 1
+ P2 3
+ P1 3
+ TLC1 2
+Net 6 "/D3" "D3"
+ P2 5
+ TLC1 25
+ P1 5
+Net 7 "/SCK" "SCK"
+ P2 7
+ TLC1 4
+ P1 7
 Net 10 "" ""
- TLC1 27
  R3 1
  R2 1
+ TLC1 27
 Net 11 "/R5" "R5"
- TLC1 19
  LED5 6
+ TLC1 19
 Net 12 "/VLED" "VLED"
  LED5 2
  LED5 3
@@ -234,15 +234,15 @@ Net 12 "/VLED" "VLED"
  LED3 3
  LED3 2
  LED2 3
+ C3 1
+ P1 4
+ P2 4
  D1 1
  LED5 1
- P1 6
- C3 1
  C4 1
- P2 6
 Net 13 "/G5" "G5"
- TLC1 20
  LED5 5
+ TLC1 20
 Net 14 "/B5" "B5"
  TLC1 21
  LED5 4
@@ -272,21 +272,21 @@ Net 22 "/G3" "G3"
  LED3 5
 Net 23 "/SOUT" "SOUT"
  TLC1 24
- P1 1
+ P1 2
 Net 24 "/B3" "B3"
  TLC1 15
  LED3 4
 Net 25 "/R4" "R4"
- LED4 6
  TLC1 16
+ LED4 6
 Net 26 "/VCC" "VCC"
- R1 2
  TLC1 26
- P2 7
+ R1 2
  C1 1
- C2 1
+ P1 6
+ P2 6
  TLC1 28
- P1 7
+ C2 1
 Net 27 "/G4" "G4"
  LED4 5
  TLC1 17

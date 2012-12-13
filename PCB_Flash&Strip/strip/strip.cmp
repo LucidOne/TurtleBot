@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 27 Nov 2012 06:08:02 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 04 Dec 2012 12:48:21 PM EST
 
 BeginCmp
 TimeStamp = /50B5472A;
@@ -71,17 +71,17 @@ IdModule  = PLCC6;
 EndCmp
 
 BeginCmp
-TimeStamp = /508A13E0;
+TimeStamp = /50BE36B5;
 Reference = P1;
-ValeurCmp = Output_BUS;
-IdModule  = pin_array_8x1;
+ValeurCmp = OUT_CONN;
+IdModule  = pin_array_4x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /508A13CD;
+TimeStamp = /50BE36C2;
 Reference = P2;
-ValeurCmp = Input_BUS;
-IdModule  = pin_array_8x1;
+ValeurCmp = IN_CONN;
+IdModule  = pin_array_4x2;
 EndCmp
 
 BeginCmp

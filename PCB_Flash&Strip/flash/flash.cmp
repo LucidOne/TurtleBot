@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 27 Nov 2012 02:59:28 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-nov-02)-testing date = Thu 13 Dec 2012 02:46:55 PM EST
 
 BeginCmp
 TimeStamp = /508A0752;
@@ -120,10 +120,10 @@ IdModule  = SMD Microfit 2pin;
 EndCmp
 
 BeginCmp
-TimeStamp = /508A13E0;
+TimeStamp = /50CA2FDE;
 Reference = P2;
-ValeurCmp = Output_BUS;
-IdModule  = pin_array_8x1;
+ValeurCmp = OUT_BUS;
+IdModule  = pin_array_4x2;
 EndCmp
 
 BeginCmp
@@ -166,6 +166,13 @@ TimeStamp = /50B5153F;
 Reference = P8;
 ValeurCmp = Sonar_Out;
 IdModule  = pin_array_7x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50CA2BC3;
+Reference = R1;
+ValeurCmp = 1M;
+IdModule  = SM0805_NonPol;
 EndCmp
 
 BeginCmp
