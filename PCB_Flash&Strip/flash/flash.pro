@@ -1,4 +1,4 @@
-update=Fri 26 Oct 2012 12:34:59 AM EDT
+update=Thu 27 Dec 2012 04:40:57 PM EST
 last_client=pcbnew
 [eeschema]
 version=1
@@ -50,21 +50,21 @@ NetIExt=net
 EquName1=devcms
 [pcbnew]
 version=1
-LastNetListRead=drinks.net
-PadDrlX=320
-PadDimH=600
-PadDimV=600
-BoardThickness=630
-TxtPcbV=800
-TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
-VEgarde=100
-DrawLar=150
-EdgeLar=150
-TxtLar=120
-MSegLar=150
+LastNetListRead=
+PadDrill=3.048
+PadSizeH=4.064
+PadSizeV=4.064
+PcbTextSizeV=2.032
+PcbTextSizeH=1.524
+PcbTextThickness=0.3048
+ModuleTextSizeV=1.524
+ModuleTextSizeH=1.524
+ModuleTextSizeThickness=0.3048
+SolderMaskClearance=0.254
+SolderMaskMinWidth=0
+DrawSegmentWidth=0.381
+BoardOutlineThickness=0.381
+ModuleOutlineThickness=0.381
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets

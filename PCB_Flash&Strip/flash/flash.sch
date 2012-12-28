@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 13 Dec 2012 02:46:58 PM EST
+EESchema Schematic File Version 2  date Thu 27 Dec 2012 04:49:18 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Flash (Flash&Strip)"
-Date "13 dec 2012"
+Date "27 dec 2012"
 Rev "01"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -913,4 +913,8 @@ F 1 "OUT_BUS" V 1500 5050 40  0000 C CNN
 	1    1500 5050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2500 7200 2300 7200
+Text Label 2300 7200 2    60   ~ 0
+A5
 $EndSCHEMATC
