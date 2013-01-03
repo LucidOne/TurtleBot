@@ -11,6 +11,8 @@ SWITCH TACTILE SPST-NO 0.05A 12V	450-1759-1-ND		TE Connectivity		FSM4JSMATR		htt
 Connectors:
 CONN RCPT REV MICRO USB TYPE B		609-4048-1-ND		FCI			10103592-0001LF	http://portal.fciconnect.com/Comergent//fci/drawing/10103592.pdf
 
+CONN_2POS_RA_SMD			WM1825-ND	Molex Connector Corporation	43045-0209	http://www.molex.com/pdm_docs/sd/430450209_sd.pdf
+
 ICs:
 FT232RL-IC USB FS SERIAL UART 28-SSOP	768-1007-2-ND	Future Technology Devices Int.	FT232RL-REEL	http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
 

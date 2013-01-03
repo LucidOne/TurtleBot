@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 04 Dec 2012 12:47:53 PM EST
+EESchema Schematic File Version 2  date Wed 02 Jan 2013 04:52:52 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "DRINKS/ROFL"
-Date "4 dec 2012"
+Date "2 jan 2013"
 Rev "01/02"
 Comp "I Heart Engineering"
 Comment1 "Made by Carlos Chinchilla"
@@ -491,4 +491,20 @@ F 1 "IN_CONN" V 8100 2700 40  0000 C CNN
 	1    8100 2700
 	1    0    0    -1  
 $EndComp
+$Comp
+L LED D0
+U 1 1 50E4AC79
+P 8700 5350
+F 0 "D0" H 8700 5450 50  0000 C CNN
+F 1 "LED" H 8700 5250 50  0000 C CNN
+	1    8700 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 5150 8700 5100
+Wire Wire Line
+	8700 5100 8350 5100
+Connection ~ 8350 5100
+Wire Wire Line
+	8700 5550 8350 5550
 $EndSCHEMATC

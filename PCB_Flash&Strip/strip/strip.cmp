@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Tue 04 Dec 2012 12:48:21 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-nov-02)-testing date = Wed 02 Jan 2013 04:53:25 PM EST
 
 BeginCmp
 TimeStamp = /50B5472A;
@@ -29,10 +29,17 @@ IdModule  = SM0805_NonPol;
 EndCmp
 
 BeginCmp
+TimeStamp = /50E4AC79;
+Reference = D0;
+ValeurCmp = LED;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /508A0C17;
 Reference = D1;
 ValeurCmp = LED;
-IdModule  = LED-5MM TH-SMD_v2;
+IdModule  = LED SMD 0805;
 EndCmp
 
 BeginCmp
