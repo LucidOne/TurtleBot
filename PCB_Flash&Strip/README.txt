@@ -1,6 +1,5 @@
 Flash & Strip
 
-BOM - coming soon
 Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	URL
 --------------------------------------------------------------------------------------------------------------------------------------------
 Switches:
@@ -12,6 +11,8 @@ Connectors:
 CONN RCPT REV MICRO USB TYPE B		609-4048-1-ND		FCI			10103592-0001LF	http://portal.fciconnect.com/Comergent//fci/drawing/10103592.pdf
 
 CONN_2POS_RA_SMD			WM1825-ND	Molex Connector Corporation	43045-0209	http://www.molex.com/pdm_docs/sd/430450209_sd.pdf
+
+CONN HEADER FEMALE 6POS .1" TIN		S7004-ND	Sullins Connector Solutions	PPTC061LFBN-RC	http://www.sullinscorp.com/drawings/101_xPxCxxxLFBN-RC,_10492-D.pdf
 
 ICs:
 FT232RL-IC USB FS SERIAL UART 28-SSOP	768-1007-2-ND	Future Technology Devices Int.	FT232RL-REEL	http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
@@ -34,5 +35,6 @@ RES 1.00K OHM 1/8W 1% 0805 SMD		P1.00KCTR-ND		Panasonic - ECG		ERJ-6ENF1001V
 RES 10.00K OHM 1/8W 1% 0805 SMD		P10.0KCTR-ND		Panasonic - ECG		ERJ-6ENF1002V
 RES 330 OHM 1/8W 1% 0805 SMD		P330CTR-ND		Panasonic - ECG		ERJ-6ENF3300V
 
+LEDs:
 LED_0805				754-1131-2-ND		Kingbright Corp		APT2012SGC	http://www.us.kingbright.com/images/catalog/SPEC/APT2012SGC.pdf
 LED RED/GREEN/BLUE PLCC6 SMD	   	CLP6C-FKB-CM1Q1H1BB7R3R3CT-ND	Cree		CLP6C-FKB-CM1Q1H1BB7R3R3	http://www.cree.com/~/media/Files/Cree/LED%20Components%20and%20Modules/HB/Data%20Sheets/CLP6CFKB(933).pdf
