@@ -1,0 +1,545 @@
+EESchema Schematic File Version 2  date Wed 30 Jan 2013 04:47:30 PM EST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:IHE
+LIBS:RPi_GPIO-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi GPIO Control"
+Date "30 jan 2013"
+Rev "01"
+Comp "I heart Engineering"
+Comment1 "Designed by Carlos Chinchilla"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_13X2 P2
+U 1 1 50F6FFFF
+P 1800 1600
+F 0 "P2" H 1800 2300 60  0000 C CNN
+F 1 "CONN_13X2" V 1800 1600 50  0000 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+Text Label 2350 1000 0    60   ~ 0
+5V-RPI
+$Comp
+L GND #PWR01
+U 1 1 50F704F6
+P 1250 1450
+F 0 "#PWR01" H 1250 1450 30  0001 C CNN
+F 1 "GND" H 1250 1380 30  0001 C CNN
+	1    1250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 50F70523
+P 2350 1250
+F 0 "#PWR02" H 2350 1250 30  0001 C CNN
+F 1 "GND" H 2350 1180 30  0001 C CNN
+	1    2350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1250 2350 1200
+Wire Wire Line
+	2350 1200 2200 1200
+Wire Wire Line
+	1250 1450 1250 1400
+Wire Wire Line
+	1250 1400 1400 1400
+Wire Wire Line
+	2200 1100 2350 1100
+Wire Wire Line
+	2350 1100 2350 1000
+Wire Wire Line
+	2350 1000 2200 1000
+$Comp
+L GND #PWR03
+U 1 1 50F705AF
+P 1250 2250
+F 0 "#PWR03" H 1250 2250 30  0001 C CNN
+F 1 "GND" H 1250 2180 30  0001 C CNN
+	1    1250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2250 1250 2200
+Wire Wire Line
+	1250 2200 1400 2200
+Text Label 2200 1500 0    60   ~ 0
+GPIO_18
+Text Label 2200 1700 0    60   ~ 0
+GPIO_23
+Text Label 2200 1800 0    60   ~ 0
+GPIO_24
+NoConn ~ 2200 2100
+NoConn ~ 2200 2200
+NoConn ~ 1400 2100
+NoConn ~ 1400 2000
+NoConn ~ 1400 1900
+NoConn ~ 1400 1800
+NoConn ~ 1400 1700
+NoConn ~ 1400 1600
+NoConn ~ 1400 1500
+NoConn ~ 1400 1300
+NoConn ~ 1400 1200
+NoConn ~ 1400 1100
+Wire Wire Line
+	2200 1900 2650 1900
+$Comp
+L GND #PWR04
+U 1 1 50F70514
+P 2650 1900
+F 0 "#PWR04" H 2650 1900 30  0001 C CNN
+F 1 "GND" H 2650 1830 30  0001 C CNN
+	1    2650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1600 2650 1600
+$Comp
+L GND #PWR05
+U 1 1 50F70505
+P 2650 1600
+F 0 "#PWR05" H 2650 1600 30  0001 C CNN
+F 1 "GND" H 2650 1530 30  0001 C CNN
+	1    2650 1600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2200 1400
+NoConn ~ 2200 1300
+$Comp
+L CONN_2 P3
+U 1 1 50F708DB
+P 1900 3100
+F 0 "P3" V 1850 3100 40  0000 C CNN
+F 1 "VIN" V 1950 3100 40  0000 C CNN
+	1    1900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 50F708E8
+P 1550 3300
+F 0 "#PWR06" H 1550 3300 30  0001 C CNN
+F 1 "GND" H 1550 3230 30  0001 C CNN
+	1    1550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3300 1550 3200
+Text Label 1550 3000 2    60   ~ 0
+V_IN
+$Comp
+L CONN_2 P1
+U 1 1 50F708FB
+P 1000 3100
+F 0 "P1" V 950 3100 40  0000 C CNN
+F 1 "VIN" V 1050 3100 40  0000 C CNN
+	1    1000 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3000 1550 3000
+Wire Wire Line
+	1550 3200 1350 3200
+Text Label 2200 2000 0    60   ~ 0
+GPIO_25
+$Comp
+L GND #PWR07
+U 1 1 50F71354
+P 4100 3450
+F 0 "#PWR07" H 4100 3450 30  0001 C CNN
+F 1 "GND" H 4100 3380 30  0001 C CNN
+	1    4100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SWITCH_INV SW1
+U 1 1 50F71423
+P 3050 3050
+F 0 "SW1" H 2850 3200 50  0000 C CNN
+F 1 "SWITCH_INV" H 2900 2900 50  0000 C CNN
+	1    3050 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 50F7154F
+P 2550 3350
+F 0 "#PWR08" H 2550 3350 30  0001 C CNN
+F 1 "GND" H 2550 3280 30  0001 C CNN
+	1    2550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3350 2550 3150
+Text Label 2550 2950 2    60   ~ 0
+V_IN
+Text Label 4500 3050 0    60   ~ 0
+5V-RPI
+Text Label 3550 3050 0    60   ~ 0
+12V
+$Comp
+L TLV71209DBV U1
+U 1 1 50F73BFD
+P 1650 4550
+F 0 "U1" H 1400 4750 40  0000 C CNN
+F 1 "LowCurVReg" H 1650 4750 40  0000 C CNN
+F 2 "SOT-23-5" H 1650 4650 35  0000 C CIN
+	1    1650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 50F73C03
+P 1650 4950
+F 0 "#PWR09" H 1650 4950 30  0001 C CNN
+F 1 "GND" H 1650 4880 30  0001 C CNN
+	1    1650 4950
+	1    0    0    -1  
+$EndComp
+Text Label 1200 4650 2    60   ~ 0
+GPIO_23
+Wire Wire Line
+	1650 4950 1650 4850
+Text Label 1200 4500 2    60   ~ 0
+12V
+Text Label 2100 4500 0    60   ~ 0
+5V-Relay1
+$Comp
+L RELAY rel1
+U 1 1 50F73F7C
+P 2900 4550
+F 0 "rel1" H 2900 4500 60  0000 C CNN
+F 1 "RELAY" H 2900 4700 60  0000 C CNN
+	1    2900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P4
+U 1 1 50F73F8B
+P 3800 4600
+F 0 "P4" V 3750 4600 40  0000 C CNN
+F 1 "REL1" V 3850 4600 40  0000 C CNN
+	1    3800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4500 3350 4500
+Wire Wire Line
+	3450 4700 3350 4700
+$Comp
+L GND #PWR010
+U 1 1 50F73FC3
+P 2450 4850
+F 0 "#PWR010" H 2450 4850 30  0001 C CNN
+F 1 "GND" H 2450 4780 30  0001 C CNN
+	1    2450 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4850 2450 4700
+$Comp
+L CONN_2 P7
+U 1 1 50F7406E
+P 5250 3150
+F 0 "P7" V 5200 3150 40  0000 C CNN
+F 1 "5V" V 5300 3150 40  0000 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 50F74074
+P 4900 3350
+F 0 "#PWR011" H 4900 3350 30  0001 C CNN
+F 1 "GND" H 4900 3280 30  0001 C CNN
+	1    4900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3350 4900 3250
+Text Notes 3550 3600 0    60   ~ 0
+296-20796-1-ND
+$Comp
+L 7805 U3
+U 1 1 51096800
+P 4100 3100
+F 0 "U3" H 4250 2904 60  0000 C CNN
+F 1 "7805" H 4100 3300 60  0000 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3050 3550 3050
+Wire Wire Line
+	4100 3450 4100 3350
+Wire Wire Line
+	2100 4500 2450 4500
+Wire Wire Line
+	4500 3050 4900 3050
+Text Notes 2000 4200 0    60   ~ 0
+Relay Output 1\n
+$Comp
+L TLV71209DBV U2
+U 1 1 51096935
+P 1650 5950
+F 0 "U2" H 1400 6150 40  0000 C CNN
+F 1 "LowCurVReg" H 1650 6150 40  0000 C CNN
+F 2 "SOT-23-5" H 1650 6050 35  0000 C CIN
+	1    1650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5109693B
+P 1650 6350
+F 0 "#PWR012" H 1650 6350 30  0001 C CNN
+F 1 "GND" H 1650 6280 30  0001 C CNN
+	1    1650 6350
+	1    0    0    -1  
+$EndComp
+Text Label 1200 6050 2    60   ~ 0
+GPIO_24
+Wire Wire Line
+	1650 6350 1650 6250
+Text Label 1200 5900 2    60   ~ 0
+12V
+Text Label 2100 5900 0    60   ~ 0
+5V-Relay1
+$Comp
+L RELAY rel2
+U 1 1 51096945
+P 2900 5950
+F 0 "rel2" H 2900 5900 60  0000 C CNN
+F 1 "RELAY" H 2900 6100 60  0000 C CNN
+	1    2900 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P5
+U 1 1 5109694B
+P 3800 6000
+F 0 "P5" V 3750 6000 40  0000 C CNN
+F 1 "REL2" V 3850 6000 40  0000 C CNN
+	1    3800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5900 3350 5900
+Wire Wire Line
+	3450 6100 3350 6100
+$Comp
+L GND #PWR013
+U 1 1 51096953
+P 2450 6250
+F 0 "#PWR013" H 2450 6250 30  0001 C CNN
+F 1 "GND" H 2450 6180 30  0001 C CNN
+	1    2450 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6250 2450 6100
+Wire Wire Line
+	2100 5900 2450 5900
+Text Notes 2000 5600 0    60   ~ 0
+Relay Output 2\n
+Text Label 1400 1000 2    60   ~ 0
+3V3
+Text Notes 1300 5150 0    60   ~ 0
+296-20717-1-ND\n
+Text Notes 2450 5150 0    60   ~ 0
+PCN-105D3MHZ 000-ND
+$Comp
+L TLP2531 U4
+U 1 1 510974CE
+P 6550 5100
+F 0 "U4" H 6550 5550 60  0000 C CNN
+F 1 "TLP2531" H 6550 4600 60  0000 C CNN
+	1    6550 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 510974DB
+P 5750 5700
+F 0 "#PWR014" H 5750 5700 30  0001 C CNN
+F 1 "GND" H 5750 5630 30  0001 C CNN
+	1    5750 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 510974E1
+P 5750 5150
+F 0 "#PWR015" H 5750 5150 30  0001 C CNN
+F 1 "GND" H 5750 5080 30  0001 C CNN
+	1    5750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 510974E7
+P 7250 5700
+F 0 "#PWR016" H 7250 5700 30  0001 C CNN
+F 1 "GND" H 7250 5630 30  0001 C CNN
+	1    7250 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5700 7250 5550
+Wire Wire Line
+	5750 5700 5750 5550
+Wire Wire Line
+	5750 5150 5750 5000
+Text Label 7300 4350 0    60   ~ 0
+3V3
+Text Label 9400 5000 0    60   ~ 0
+GPIO_18
+Text Label 9400 5400 0    60   ~ 0
+GPIO_25
+$Comp
+L R R4
+U 1 1 510975F8
+P 7800 4650
+F 0 "R4" V 7880 4650 50  0000 C CNN
+F 1 "R" V 7800 4650 50  0000 C CNN
+	1    7800 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 51097605
+P 7550 4650
+F 0 "R3" V 7630 4650 50  0000 C CNN
+F 1 "R" V 7550 4650 50  0000 C CNN
+	1    7550 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7250 4900 7550 4900
+Wire Wire Line
+	7250 4700 7250 4350
+Wire Wire Line
+	7250 4350 7800 4350
+Wire Wire Line
+	7550 4350 7550 4400
+Wire Wire Line
+	7800 4350 7800 4400
+Connection ~ 7550 4350
+Wire Wire Line
+	7250 5250 7800 5250
+Wire Wire Line
+	7800 4900 7800 5400
+$Comp
+L CONN_2 P6
+U 1 1 5109778F
+P 4800 5050
+F 0 "P6" V 4750 5050 40  0000 C CNN
+F 1 "INPUT" V 4850 5050 40  0000 C CNN
+	1    4800 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 4700 5200 4950
+Wire Wire Line
+	5200 4950 5150 4950
+Wire Wire Line
+	5150 5150 5200 5150
+Wire Wire Line
+	5200 5150 5200 5300
+Text Label 5200 5300 2    60   ~ 0
+IN_25
+Text Label 5200 4700 2    60   ~ 0
+IN_18
+Wire Wire Line
+	5750 4700 5700 4700
+Wire Wire Line
+	5750 5300 5700 5300
+$Comp
+L R R1
+U 1 1 51097A13
+P 5450 4700
+F 0 "R1" V 5530 4700 50  0000 C CNN
+F 1 "680" V 5450 4700 50  0000 C CNN
+	1    5450 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 51097A9C
+P 5450 5300
+F 0 "R2" V 5530 5300 50  0000 C CNN
+F 1 "680" V 5450 5300 50  0000 C CNN
+	1    5450 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INVERTER-2CH U5
+U 1 1 51097D4E
+P 8750 5200
+F 0 "U5" H 8750 5100 60  0000 C CNN
+F 1 "INVERTER-2CH" H 8750 5300 60  0000 C CNN
+	1    8750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 51097D5B
+P 8100 5300
+F 0 "#PWR017" H 8100 5300 30  0001 C CNN
+F 1 "GND" H 8100 5230 30  0001 C CNN
+	1    8100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5200 8100 5300
+Text Label 9400 5200 0    60   ~ 0
+3V3
+Wire Wire Line
+	7500 4900 7500 5000
+Connection ~ 7500 4900
+Wire Wire Line
+	7500 5000 8100 5000
+Wire Wire Line
+	7800 5400 8100 5400
+Connection ~ 7800 5250
+Text Notes 8350 5700 0    60   ~ 0
+568-9236-1-ND
+$EndSCHEMATC
