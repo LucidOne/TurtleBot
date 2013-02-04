@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 04 Feb 2013 03:53:11 PM EST
+EESchema Schematic File Version 2  date Mon 04 Feb 2013 05:58:08 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,13 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IHE
-LIBS:RPi_GPIO-cache
+LIBS:2x2RPi-cache
 EELAYER 27 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Raspberry Pi GPIO Control"
+Title "2x2RPi"
 Date "4 feb 2013"
 Rev "01"
 Comp "I heart Engineering"
