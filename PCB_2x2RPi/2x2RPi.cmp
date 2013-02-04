@@ -1,10 +1,10 @@
-Cmp-Mod V01 Created by CvPcb (2012-nov-02)-testing date = Wed 30 Jan 2013 04:47:11 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-nov-02)-testing date = Mon 04 Feb 2013 02:25:59 PM EST
 
 BeginCmp
 TimeStamp = /50F708FB;
 Reference = P1;
 ValeurCmp = VIN;
-IdModule  = SMD Microfit 2pin;
+IdModule  = PJ-102A;
 EndCmp
 
 BeginCmp
@@ -18,35 +18,35 @@ BeginCmp
 TimeStamp = /50F708DB;
 Reference = P3;
 ValeurCmp = VIN;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
 EndCmp
 
 BeginCmp
 TimeStamp = /50F73F8B;
 Reference = P4;
 ValeurCmp = REL1;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
 EndCmp
 
 BeginCmp
 TimeStamp = /5109694B;
 Reference = P5;
 ValeurCmp = REL2;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
 EndCmp
 
 BeginCmp
 TimeStamp = /5109778F;
 Reference = P6;
 ValeurCmp = INPUT;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
 EndCmp
 
 BeginCmp
 TimeStamp = /50F7406E;
 Reference = P7;
 ValeurCmp = 5V;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
 EndCmp
 
 BeginCmp
@@ -94,7 +94,7 @@ EndCmp
 BeginCmp
 TimeStamp = /50F71423;
 Reference = SW1;
-ValeurCmp = SWITCH_INV;
+ValeurCmp = PWR SW;
 IdModule  = SW_Slide_6x2mm;
 EndCmp
 
@@ -113,7 +113,7 @@ IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp
-TimeStamp = /51096800;
+TimeStamp = /51100DA3;
 Reference = U3;
 ValeurCmp = 7805;
 IdModule  = TO263;
@@ -127,10 +127,17 @@ IdModule  = DIP-8__300;
 EndCmp
 
 BeginCmp
-TimeStamp = /51097D4E;
+TimeStamp = /51100048;
 Reference = U5;
-ValeurCmp = INVERTER-2CH;
-IdModule  = SOT363;
+ValeurCmp = INVERTER-1CH;
+IdModule  = SOT353;
+EndCmp
+
+BeginCmp
+TimeStamp = /511000CE;
+Reference = U6;
+ValeurCmp = INVERTER-1CH;
+IdModule  = SOT353;
 EndCmp
 
 EndListe

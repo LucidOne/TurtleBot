@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 30 Jan 2013 04:47:30 PM EST
+EESchema Schematic File Version 2  date Mon 04 Feb 2013 03:53:11 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Raspberry Pi GPIO Control"
-Date "30 jan 2013"
+Date "4 feb 2013"
 Rev "01"
 Comp "I heart Engineering"
 Comment1 "Designed by Carlos Chinchilla"
@@ -194,7 +194,7 @@ L SWITCH_INV SW1
 U 1 1 50F71423
 P 3050 3050
 F 0 "SW1" H 2850 3200 50  0000 C CNN
-F 1 "SWITCH_INV" H 2900 2900 50  0000 C CNN
+F 1 "PWR SW" H 2900 2900 50  0000 C CNN
 	1    3050 3050
 	-1   0    0    1   
 $EndComp
@@ -297,15 +297,6 @@ Wire Wire Line
 	4900 3350 4900 3250
 Text Notes 3550 3600 0    60   ~ 0
 296-20796-1-ND
-$Comp
-L 7805 U3
-U 1 1 51096800
-P 4100 3100
-F 0 "U3" H 4250 2904 60  0000 C CNN
-F 1 "7805" H 4100 3300 60  0000 C CNN
-	1    4100 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 3050 3550 3050
 Wire Wire Line
@@ -342,7 +333,7 @@ Wire Wire Line
 Text Label 1200 5900 2    60   ~ 0
 12V
 Text Label 2100 5900 0    60   ~ 0
-5V-Relay1
+5V-Relay2
 $Comp
 L RELAY rel2
 U 1 1 51096945
@@ -430,9 +421,9 @@ Wire Wire Line
 	5750 5150 5750 5000
 Text Label 7300 4350 0    60   ~ 0
 3V3
-Text Label 9400 5000 0    60   ~ 0
+Text Label 9400 4700 0    60   ~ 0
 GPIO_18
-Text Label 9400 5400 0    60   ~ 0
+Text Label 9400 5600 0    60   ~ 0
 GPIO_25
 $Comp
 L R R4
@@ -511,35 +502,68 @@ F 1 "680" V 5450 5300 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L INVERTER-2CH U5
-U 1 1 51097D4E
-P 8750 5200
-F 0 "U5" H 8750 5100 60  0000 C CNN
-F 1 "INVERTER-2CH" H 8750 5300 60  0000 C CNN
-	1    8750 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR017
 U 1 1 51097D5B
-P 8100 5300
-F 0 "#PWR017" H 8100 5300 30  0001 C CNN
-F 1 "GND" H 8100 5230 30  0001 C CNN
-	1    8100 5300
+P 8100 4800
+F 0 "#PWR017" H 8100 4800 30  0001 C CNN
+F 1 "GND" H 8100 4730 30  0001 C CNN
+	1    8100 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 5200 8100 5300
-Text Label 9400 5200 0    60   ~ 0
+Text Label 9400 4300 0    60   ~ 0
 3V3
 Wire Wire Line
 	7500 4900 7500 5000
 Connection ~ 7500 4900
 Wire Wire Line
-	7500 5000 8100 5000
-Wire Wire Line
 	7800 5400 8100 5400
 Connection ~ 7800 5250
-Text Notes 8350 5700 0    60   ~ 0
-568-9236-1-ND
+$Comp
+L INVERTER-1CH U5
+U 1 1 51100048
+P 8750 4500
+F 0 "U5" H 8750 4250 60  0000 C CNN
+F 1 "INVERTER-1CH" H 8750 4600 60  0000 C CNN
+	1    8750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4800 8100 4700
+Wire Wire Line
+	7500 5000 7950 5000
+Wire Wire Line
+	7950 5000 7950 4500
+Wire Wire Line
+	7950 4500 8100 4500
+$Comp
+L INVERTER-1CH U6
+U 1 1 511000CE
+P 8750 5400
+F 0 "U6" H 8750 5150 60  0000 C CNN
+F 1 "INVERTER-1CH" H 8750 5500 60  0000 C CNN
+	1    8750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 511000D4
+P 8100 5700
+F 0 "#PWR018" H 8100 5700 30  0001 C CNN
+F 1 "GND" H 8100 5630 30  0001 C CNN
+	1    8100 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5700 8100 5600
+Text Label 9400 5200 0    60   ~ 0
+3V3
+$Comp
+L 7805-TO263 U3
+U 1 1 51100F71
+P 4100 3100
+F 0 "U3" H 4250 2904 60  0000 C CNN
+F 1 "7805-TO263" H 4100 3300 60  0000 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
