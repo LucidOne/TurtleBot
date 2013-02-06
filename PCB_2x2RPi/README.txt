@@ -24,3 +24,5 @@ Qty.	Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	url
 2	1K Resistor				P1.00KCTR-ND		Panasonic - ECG		ERJ-6ENF1001V	http://industrial.panasonic.com/www-data/pdf/AOA0000/AOA0000PE3.pdf
 
 2 	RES 680 OHM 1/8W 1% 0805 SMD		311-680CRTR-ND		Yageo			RC0805FR-07680RL	http://www.yageo.com/documents/recent/PYu-RC0805_51_RoHS_L_4.pdf	
+
+1	SWITCH SLIDE SPDT 30V.2A PC MNT		EG1903-ND			E-Switch			EG1218		http://spec.e-switch.com/P-J/P040040c.pdf
