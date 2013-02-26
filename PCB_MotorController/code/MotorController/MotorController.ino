@@ -6,6 +6,13 @@
  (# timer counts + 1) = 15625
  (# timer counts) = 15625 - 1 = 15624
  */
+ 
+ /*
+ http://arduinomega.blogspot.com/2011/05/timer2-and-overflow-interrupt-lets-get.html
+ Timer2 is 8-bits so the max number it can count to is 255,
+ preloading Timer2's counter with 130 leaves 125 cycles left to count.
+ The Arduino has a clock of 16MHz so: (1/16E6) * 125 * 128 = 1ms
+ */
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -15,19 +22,22 @@
 #define Out2 6
 #define en12 9
 #define PotPin 0
-#define ControlPin 3
 #define LEDpin 13
 
 // PWM Values
-#define minDC 20 // Minimum duty cycle (0-255) to get motor moving from rest
+#define CPS 500 // counts per interrupt (Hz^ -1 or ms)
+#define DCmin 20 // Minimum duty cycle (0-255) to get motor moving from rest
+#define DCmax 255 // Max duty cycle (0-255) to get motor moving from rest
 #define th 10 // position threshold (0-1023)
+int error, duty, current; // duty cycle
+int target = 100;
 
 boolean fp = false;
 
 /*-------------------- Setup --------------------------------*/
-void setup()
-{
+void setup(){
   Serial.begin(9600);
+  Serial.println("\nCurPos\tTarget\tError\tDuty C\tDir");
   pinMode(Out1,OUTPUT);
   pinMode(Out2,OUTPUT);
   pinMode(en12,OUTPUT);
@@ -75,28 +85,58 @@ void setup()
 /*-------------------- Loop ----------------------------------*/
 void loop()
 {
-  for (int i = 18; i < 25; i ++){
-    analogWrite(en12, i);
-    Serial.println(i);
-    delay(1000);
-    analogWrite(en12,0);
-    delay(1000);
-  }
+  analogWrite(en12, duty);
 } // end loop()
 
 /*-------------------- Interrupt ------------------------------*/
 int count = 0;
 ISR(TIMER2_OVF_vect)
 {
-  // DUTY CYCLE
-  // ERROR
-  // DIRECTION
-  //current angle
-  //desired angle
   count++;
-  if(count > 999){
+  if(count >= CPS){
     digitalWrite(LEDpin,!digitalRead(LEDpin));
     count = 0;
+    
+    // CURRENT
+    current = analogRead(PotPin);
+    Serial.print(current);
+    Serial.print("\t");
+    Serial.print(target);
+    Serial.print("\t");
+    
+    // ERROR
+    error = target - current;
+    Serial.print(error);
+    Serial.print("\t");
+    
+    // DUTY CYCLE
+    duty = abs(error / 4);
+    if (duty < DCmin){
+      duty = DCmin;
+    }
+    if (duty > DCmax){
+      duty = DCmax;
+    }
+    Serial.print(duty);
+    Serial.print("\t");
+  
+    // DIRECTION
+    if(error > th){
+      forward();
+      Serial.println("CCW");
+    }
+    else if (error < -th){
+      backward();
+      Serial.println("NA");
+    }
+    else{
+      halt();
+      Serial.println("Stoped");
+    }
+    
+    // Optional:
+      //current angle
+      //desired angle
   }
   TCNT2 = 130;           //Reset Timer to 130 out of 255
   TIFR2 = 0x00;          //Timer2 INT Flag Reg: Clear Timer Overflow Flag
@@ -117,38 +157,4 @@ void backward(){
 void halt(){
   digitalWrite(Out1,HIGH);
   digitalWrite(Out2,HIGH);
-}
-
-void moveTo(const int p){
-  while(p - th > analogRead(PotPin) || analogRead(PotPin) > p + th){
-    if(analogRead(PotPin) < p - th){
-      if(fp){
-        do{
-          forward();
-        }
-        while (analogRead(PotPin) < p - th);
-      }
-      else{
-        do{
-          backward();
-        }
-        while (analogRead(PotPin) < p - th);
-      }
-    }
-    else { // if (val < p)
-      if(fp){
-        do{
-          backward();
-        }
-        while (analogRead(PotPin) > p + th);
-      }
-      else{
-        do{
-          forward();
-        }
-        while (analogRead(PotPin) > p + th);
-      }
-    }
-  }
-  halt();
 }
