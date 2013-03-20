@@ -22,6 +22,7 @@
 #define Out2 6
 #define en12 9
 #define PotPin 0
+#define ControlPotPin 1
 #define LEDpin 13
 
 // PWM Values
@@ -126,14 +127,15 @@ ISR(TIMER2_OVF_vect)
     }
     else if (error < -th){
       backward();
-      Serial.println("NA");
+      Serial.println("CW");
     }
     else{
       halt();
       Serial.println("Stoped");
-      if(sCount++ >= 50){
+      if(sCount++ >= 25){
         Serial.print("New target = ");
-        Serial.println(target = random(0,255));
+        //Serial.println(target = random(0,1023));
+        Serial.println(target = analogRead(ControlPotPin));
         sCount = 0;
       }
     }
