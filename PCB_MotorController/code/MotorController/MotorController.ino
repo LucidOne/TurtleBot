@@ -25,12 +25,11 @@
 #define LEDpin 13
 
 // PWM Values
-#define CPS 500 // counts per interrupt (Hz^ -1 or ms)
+#define CPS 100 // counts per interrupt (Hz^ -1 or ms)
 #define DCmin 20 // Minimum duty cycle (0-255) to get motor moving from rest
 #define DCmax 255 // Max duty cycle (0-255) to get motor moving from rest
-#define th 10 // position threshold (0-1023)
-int error, duty, current; // duty cycle
-int target = 100;
+#define th 10 // position threshold (0-1023), safe th = 10
+int error, duty, current, target, sCount=0; // duty cycle
 
 boolean fp = false;
 
@@ -132,6 +131,11 @@ ISR(TIMER2_OVF_vect)
     else{
       halt();
       Serial.println("Stoped");
+      if(sCount++ >= 50){
+        Serial.print("New target = ");
+        Serial.println(target = random(0,255));
+        sCount = 0;
+      }
     }
     
     // Optional:
@@ -142,7 +146,7 @@ ISR(TIMER2_OVF_vect)
   TIFR2 = 0x00;          //Timer2 INT Flag Reg: Clear Timer Overflow Flag
 } //end ISR()
 
-/*-------------------- Helper Functions --_---------------------*/
+/*-------------------- Helper Functions ------------------------*/
 
 void forward(){
   digitalWrite(Out1,HIGH);
