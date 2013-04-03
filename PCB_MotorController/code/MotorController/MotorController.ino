@@ -110,6 +110,7 @@ ISR(TIMER2_OVF_vect)
     Serial.print("\t");
     
     // DUTY CYCLE
+    // pwm = P*err + I*ierr + D*dedt
     duty = abs(error / 4);
     if (duty < DCmin){
       duty = DCmin;
