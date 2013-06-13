@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-nov-02)-testing date = Mon 04 Feb 2013 02:25:59 PM EST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 12 Jun 2013 07:58:53 PM EDT
 
 BeginCmp
 TimeStamp = /50F708FB;
@@ -78,6 +78,20 @@ IdModule  = SM0805_NonPol;
 EndCmp
 
 BeginCmp
+TimeStamp = /51B90B25;
+Reference = R5;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B90B3B;
+Reference = R6;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
 TimeStamp = /50F73F7C;
 Reference = rel1;
 ValeurCmp = RELAY;
@@ -113,9 +127,9 @@ IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp
-TimeStamp = /51100DA3;
+TimeStamp = /51100F71;
 Reference = U3;
-ValeurCmp = 7805;
+ValeurCmp = 7805-TO263;
 IdModule  = TO263;
 EndCmp
 
