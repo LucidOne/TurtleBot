@@ -1,4 +1,39 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 12 Jun 2013 07:58:53 PM EDT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 19 Jun 2013 03:50:51 PM EDT
+
+BeginCmp
+TimeStamp = /51BA1BD1;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BA1BC4;
+Reference = D2;
+ValeurCmp = DIODE;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BA1E3E;
+Reference = D3;
+ValeurCmp = DIODE;
+IdModule  = LED SMD 0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BF89D8;
+Reference = F1;
+ValeurCmp = FUSE;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BF833A;
+Reference = J1;
+ValeurCmp = USB;
+IdModule  = USB micro-female;
+EndCmp
 
 BeginCmp
 TimeStamp = /50F708FB;
@@ -15,10 +50,10 @@ IdModule  = pin_array_13x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /50F708DB;
+TimeStamp = /51BF7F32;
 Reference = P3;
-ValeurCmp = VIN;
-IdModule  = PIN_ARRAY_2X1_Screw Terminal;
+ValeurCmp = CONN_13;
+IdModule  = pin_array_13x1;
 EndCmp
 
 BeginCmp
@@ -46,6 +81,20 @@ BeginCmp
 TimeStamp = /50F7406E;
 Reference = P7;
 ValeurCmp = 5V;
+IdModule  = PIN_ARRAY_2X1_Screw Terminal;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BF7F3F;
+Reference = P8;
+ValeurCmp = CONN_13;
+IdModule  = pin_array_13x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BA1CDD;
+Reference = P9;
+ValeurCmp = GND;
 IdModule  = PIN_ARRAY_2X1_Screw Terminal;
 EndCmp
 
@@ -92,6 +141,27 @@ IdModule  = SM0805_NonPol;
 EndCmp
 
 BeginCmp
+TimeStamp = /51BA1865;
+Reference = R7;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BA185F;
+Reference = R8;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BA1E44;
+Reference = R9;
+ValeurCmp = R;
+IdModule  = SM0805_NonPol;
+EndCmp
+
+BeginCmp
 TimeStamp = /50F73F7C;
 Reference = rel1;
 ValeurCmp = RELAY;
@@ -124,13 +194,6 @@ TimeStamp = /51096935;
 Reference = U2;
 ValeurCmp = LowCurVReg;
 IdModule  = SOT23-5;
-EndCmp
-
-BeginCmp
-TimeStamp = /51100F71;
-Reference = U3;
-ValeurCmp = 7805-TO263;
-IdModule  = TO263;
 EndCmp
 
 BeginCmp
