@@ -32,5 +32,8 @@ Qty.	Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	url
 3	LED_0805				754-1131-2-ND		Kingbright Corp		APT2012SGC	http://www.us.kingbright.com/images/catalog/SPEC/APT2012SGC.pdf
 
 Possible Thermsistors:
+FUSE PTC RESET 2.0A 6V 1206 SMD			F4155CT-ND		Littelfuse Inc		1206L200PR		http://www.littelfuse.com/~/media/Files/Littelfuse/Technical%20Resources/Documents/Data%20Sheets/Littelfuse_PTC_1206L.pdf
 
-POLYSWITCH RGE SERIES 3.0A HOLD			RGEF300-ND		TE Connectivity			http://documents.tycoelectronics.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Specification+Or+Standard%7FSCD25192%7FC%7Fpdf%7FEnglish%7FENG_SS_SCD25192_C.pdf
+Possible flyback diode:
+
+DIODE SCHOTTKY 40V 2A 1206			478-7806-1-ND		AVX Corporation		SD1206S040S2R0		http://www.avx.com/docs/Catalogs/schottky.pdf
