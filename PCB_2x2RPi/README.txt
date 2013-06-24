@@ -15,8 +15,6 @@ Qty.	Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	url
 
 2	RELAY GENERAL PURPOSE SPST 3A 5V	PCN-105D3MHZ 000-ND 	TE Connectivity		PCN-105D3MHZ,000	http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1461491&DocType=Customer+Drawing&DocLang=English
 
-1 	IC REG LDO 5V 1.5A D2PAK-3 		296-20796-1-ND		Texas Instruments	UA7805CKTTR		http://www.ti.com/lit/ds/symlink/ua7805.pdf
-
 1	PHOTOCOUPLER DUAL 6N136 8-DIP		TLP2531F-ND		Toshiba			TLP2531(F)		http://www.semicon.toshiba.co.jp/info/docget.jsp?type=datasheet&lang=en&pid=TLP2530
 
 2	IC SGL SCHMT-TRIG INVERT SC70-5		296-11608-1-ND		Texas Instruments	SN74LVC1G14DCKR		http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf
@@ -31,9 +29,6 @@ Qty.	Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	url
 
 3	LED_0805				754-1131-2-ND		Kingbright Corp		APT2012SGC	http://www.us.kingbright.com/images/catalog/SPEC/APT2012SGC.pdf
 
-Possible Thermsistors:
-FUSE PTC RESET 2.0A 6V 1206 SMD			F4155CT-ND		Littelfuse Inc		1206L200PR		http://www.littelfuse.com/~/media/Files/Littelfuse/Technical%20Resources/Documents/Data%20Sheets/Littelfuse_PTC_1206L.pdf
+1	FUSE PTC RESET 2.0A 6V 1206 SMD			F4155CT-ND		Littelfuse Inc		1206L200PR		http://www.littelfuse.com/~/media/Files/Littelfuse/Technical%20Resources/Documents/Data%20Sheets/Littelfuse_PTC_1206L.pdf
 
-Possible flyback diode:
-
-DIODE SCHOTTKY 40V 2A 1206			478-7806-1-ND		AVX Corporation		SD1206S040S2R0		http://www.avx.com/docs/Catalogs/schottky.pdf
+1	DIODE SCHOTTKY 40V 2A 1206			478-7806-1-ND		AVX Corporation		SD1206S040S2R0		http://www.avx.com/docs/Catalogs/schottky.pdf
