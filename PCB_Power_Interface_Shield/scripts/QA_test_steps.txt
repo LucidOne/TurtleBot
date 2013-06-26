@@ -1,0 +1,22 @@
+QA for Power Interface Shield
+-----------------------------
+
+turn off roomba
+test cable
+plug usb cable to computer
+open terminal
+use "dmesg" to find if roomba is on ttyUSB0 or ttyUSB1
+kermit
+set line /dev/ttyUSB1 (or ttyUSB0 if dmesg said so)
+set speed 115200
+set parity none
+set flow none
+set carrier-watch off
+connect
+turn on roomba and you should get a readable english text
+To exit from kermit press CONTROL and \ together, release and press c
+type exit on kermit, and then you are back to the terminal
+
+
+Then with a multimeter test the 5V and 12V terminals.
+Make sure to have the enables set to on and the external power selected using the jumpers

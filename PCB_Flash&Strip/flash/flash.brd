@@ -1,6 +1,6 @@
-PCBNEW-BOARD Version 2 date Tue 08 Jan 2013 12:56:53 PM EST
+PCBNEW-BOARD Version 2 date Mon 24 Jun 2013 03:26:20 PM EDT
 
-# Created by Pcbnew(2012-nov-02)-testing
+# Created by Pcbnew(2013-mar-13)-testing
 
 $GENERAL
 encoding utf-8
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A3 16535 11693
 Title ""
-Date "8 jan 2013"
+Date "24 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -61,7 +61,7 @@ Pad2MaskClearance 0.254
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 165.1 127
 VisibleElements 7FFFFFFF
-PcbPlotParams (pcbplotparams (layerselection 283672577) (usegerberextensions false) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin true) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerbers/))
+PcbPlotParams (pcbplotparams (layerselection 283672577) (usegerberextensions false) (excludeedgelayer true) (linewidth 20000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin true) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerbers/))
 $EndSETUP
 
 $EQUIPOT
@@ -2246,9 +2246,10 @@ De 15 1 0 Normal
 $EndTEXTPCB
 $TEXTPCB
 Te "Flash&Strip"
-nl "ilt3.com"
-Po 199.39 82.423 1.27 1.27 0.3048 0
-De 21 1 0 Normal
+nl "IHE  ilt3.com"
+nl "0200-0007-0001"
+Po 190.754 82.296 1.016 1.016 0.1905 0
+De 21 1 0 Normal L C
 $EndTEXTPCB
 $TEXTPCB
 Te "CC"

@@ -767,10 +767,10 @@
     )
   )
 
-  (module Relay (layer F.Cu) (tedit 51C890A6) (tstamp 510A696B)
+  (module Relay (layer F.Cu) (tedit 51C89DE1) (tstamp 510A696B)
     (at 94.869 72.136 90)
     (path /51096945)
-    (fp_text reference K1 (at 10.922 -0.127 180) (layer F.SilkS)
+    (fp_text reference K1 (at 10.922 2.667 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value RELAY (at -6.01 0.67 90) (layer F.SilkS) hide
@@ -798,10 +798,10 @@
     )
   )
 
-  (module Relay (layer F.Cu) (tedit 51C8909E) (tstamp 510A6977)
+  (module Relay (layer F.Cu) (tedit 51C89DE5) (tstamp 510A6977)
     (at 104.394 72.136 90)
     (path /50F73F7C)
-    (fp_text reference K2 (at 10.668 -1.016 180) (layer F.SilkS)
+    (fp_text reference K2 (at 10.922 3.302 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value RELAY (at -6.01 0.67 90) (layer F.SilkS) hide
