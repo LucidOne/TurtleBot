@@ -68,7 +68,7 @@
     (pcbplotparams
       (layerselection 283672577)
       (usegerberextensions false)
-      (excludeedgelayer false)
+      (excludeedgelayer true)
       (linewidth 152400)
       (plotframeref false)
       (viasonmask false)
@@ -220,7 +220,7 @@
     )
   )
 
-  (module "PIN_ARRAY_2X1_Screw Terminal" (layer F.Cu) (tedit 51C88071) (tstamp 51C40263)
+  (module "PIN_ARRAY_2X1_Screw Terminal" (layer F.Cu) (tedit 51CB0E08) (tstamp 51C40263)
     (at 110.998 52.832)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
@@ -231,7 +231,7 @@
     (fp_text value INPUT (at 0 -1.905) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
-    (fp_text user "#25  #18" (at -0.254 4.572) (layer F.SilkS)
+    (fp_text user "#25  #18" (at 0 4.572) (layer F.SilkS)
       (effects (font (size 0.762 0.762) (thickness 0.15)))
     )
     (fp_line (start -2.99974 -2.99974) (end -2.99974 3.50012) (layer F.SilkS) (width 0.381))
@@ -253,7 +253,7 @@
     )
   )
 
-  (module "USB micro-female" (layer F.Cu) (tedit 51C87A12) (tstamp 51C40A73)
+  (module "USB micro-female" (layer F.Cu) (tedit 51CB0DE9) (tstamp 51C40A73)
     (at 133.35 67.056 180)
     (descr "USB SERIES MINI-B SURFACE MOUNTED")
     (tags "USB SERIES MINI-B SURFACE MOUNTED")
@@ -798,10 +798,10 @@
     )
   )
 
-  (module Relay (layer F.Cu) (tedit 51C89DE5) (tstamp 510A6977)
+  (module Relay (layer F.Cu) (tedit 51CB0DDF) (tstamp 510A6977)
     (at 104.394 72.136 90)
     (path /50F73F7C)
-    (fp_text reference K2 (at 10.922 3.302 180) (layer F.SilkS)
+    (fp_text reference K2 (at 10.922 2.794 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value RELAY (at -6.01 0.67 90) (layer F.SilkS) hide
@@ -1436,8 +1436,8 @@
     (arrow2a (pts (xy 93.98 101.6) (xy 94.56642 100.473497)))
     (arrow2b (pts (xy 93.98 101.6) (xy 93.39358 100.473497)))
   )
-  (gr_text "2x2RPi IHE\nilt3.com\n0200-0008-0001" (at 109.474 68.326 90) (layer F.SilkS)
-    (effects (font (size 0.762 0.762) (thickness 0.1905)) (justify right))
+  (gr_text "2x2RPi\nilt3.com\n0200-0008-0001\nIHE" (at 108.966 68.58 90) (layer F.SilkS)
+    (effects (font (size 1.016 1.016) (thickness 0.1905)) (justify right))
   )
   (gr_line (start 95.377 59.436) (end 97.536 59.436) (angle 90) (layer F.SilkS) (width 0.2))
   (gr_line (start 93.599 59.436) (end 95.377 60.96) (angle 90) (layer F.SilkS) (width 0.2))
