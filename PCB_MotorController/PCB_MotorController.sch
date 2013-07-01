@@ -1,0 +1,298 @@
+EESchema Schematic File Version 2  date Wed 26 Jun 2013 05:32:16 PM EDT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:IHE
+EELAYER 24 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Motor Controller"
+Date "26 jun 2013"
+Rev "0001"
+Comp "I Heart Engineering"
+Comment1 "Designed by Carlos Chinchilla"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_2 P?
+U 1 1 51CB4EAB
+P 4350 3550
+F 0 "P?" V 4300 3550 40  0000 C CNN
+F 1 "Motor" V 4400 3550 40  0000 C CNN
+F 2 "~" H 4350 3550 60  0000 C CNN
+F 3 "~" H 4350 3550 60  0000 C CNN
+	1    4350 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 51CB4EBA
+P 8100 3600
+F 0 "R?" V 8180 3600 40  0000 C CNN
+F 1 "10k" V 8107 3601 40  0000 C CNN
+F 2 "~" V 8030 3600 30  0000 C CNN
+F 3 "~" H 8100 3600 30  0000 C CNN
+	1    8100 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LMD18201 IC?
+U 1 1 51CB546F
+P 6800 3650
+F 0 "IC?" H 6800 3550 60  0000 C CNN
+F 1 "LMD18201" H 6500 4000 60  0000 C CNN
+F 2 "" H 6800 3650 60  0000 C CNN
+F 3 "" H 6800 3650 60  0000 C CNN
+	1    6800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 51CB565C
+P 8150 3400
+F 0 "R?" V 8230 3400 40  0000 C CNN
+F 1 "0.1 Ohm" V 8157 3401 40  0000 C CNN
+F 2 "~" V 8080 3400 30  0000 C CNN
+F 3 "~" H 8150 3400 30  0000 C CNN
+	1    8150 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 51CB5670
+P 8550 3450
+F 0 "#PWR?" H 8550 3450 30  0001 C CNN
+F 1 "GND" H 8550 3380 30  0001 C CNN
+F 2 "" H 8550 3450 60  0000 C CNN
+F 3 "" H 8550 3450 60  0000 C CNN
+	1    8550 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 8050 3300 0    60   ~ 0
+0 to 0.3V for up to 3A of bridge current
+Text GLabel 7650 3000 0    60   Input ~ 0
+Vs
+Text Label 5950 3400 2    60   ~ 0
+PWM
+Text Label 5950 3600 2    60   ~ 0
+Direction
+Text Label 5950 3500 2    60   ~ 0
+Break
+Text Label 5950 3700 2    60   ~ 0
+Out1
+Text Label 7650 3700 0    60   ~ 0
+Out2
+Text GLabel 8650 3600 2    60   Input ~ 0
+5V
+Wire Wire Line
+	8550 3400 8550 3450
+Wire Wire Line
+	8400 3400 8550 3400
+Wire Wire Line
+	7900 3400 7650 3400
+Wire Wire Line
+	7650 3300 7650 3000
+Wire Wire Line
+	7650 3500 8450 3500
+Wire Wire Line
+	7850 3600 7650 3600
+Wire Wire Line
+	8350 3600 8650 3600
+Wire Wire Line
+	8450 3500 8450 3400
+Connection ~ 8450 3400
+$Comp
+L C C?
+U 1 1 51CB5A8F
+P 7900 3900
+F 0 "C?" H 7900 4000 40  0000 L CNN
+F 1 "10nF" H 7906 3815 40  0000 L CNN
+F 2 "~" H 7938 3750 30  0000 C CNN
+F 3 "~" H 7900 3900 60  0000 C CNN
+	1    7900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 51CB5AC4
+P 5700 3900
+F 0 "C?" H 5700 4000 40  0000 L CNN
+F 1 "10nF" H 5706 3815 40  0000 L CNN
+F 2 "~" H 5738 3750 30  0000 C CNN
+F 3 "~" H 5700 3900 60  0000 C CNN
+	1    5700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3700 5950 3700
+Wire Wire Line
+	5700 4100 5950 4100
+Wire Wire Line
+	5950 4100 5950 3800
+Wire Wire Line
+	7650 3700 7900 3700
+Wire Wire Line
+	7900 4100 7650 4100
+Wire Wire Line
+	7650 4100 7650 3800
+Text Label 4250 3900 2    60   ~ 0
+Out1
+Text Label 4450 3900 0    60   ~ 0
+Out2
+Text Label 5600 1200 0    60   ~ 0
+Vin
+Text GLabel 4900 1200 0    60   Input ~ 0
+Vs
+$Comp
+L FUSE F?
+U 1 1 51CB5BCC
+P 5250 1200
+F 0 "F?" H 5350 1250 40  0000 C CNN
+F 1 "FUSE" H 5150 1150 40  0000 C CNN
+F 2 "~" H 5250 1200 60  0000 C CNN
+F 3 "~" H 5250 1200 60  0000 C CNN
+	1    5250 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1200 5500 1200
+Wire Wire Line
+	5000 1200 4900 1200
+$Comp
+L CONN_2 P?
+U 1 1 51CB5CE1
+P 6300 1300
+F 0 "P?" V 6250 1300 40  0000 C CNN
+F 1 "CONN_2" V 6350 1300 40  0000 C CNN
+F 2 "~" H 6300 1300 60  0000 C CNN
+F 3 "~" H 6300 1300 60  0000 C CNN
+	1    6300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 51CB5CEF
+P 5850 1500
+F 0 "#PWR?" H 5850 1500 30  0001 C CNN
+F 1 "GND" H 5850 1430 30  0001 C CNN
+F 2 "" H 5850 1500 60  0000 C CNN
+F 3 "" H 5850 1500 60  0000 C CNN
+	1    5850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1500 5850 1400
+Wire Wire Line
+	5850 1400 5950 1400
+$Comp
+L 7805-TO263 U?
+U 1 1 51CB5D7A
+P 6150 2350
+F 0 "U?" H 6300 2154 60  0000 C CNN
+F 1 "7805-TO263" H 6150 2550 60  0000 C CNN
+F 2 "~" H 6150 2350 60  0000 C CNN
+F 3 "~" H 6150 2350 60  0000 C CNN
+	1    6150 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 2300 0    60   Input ~ 0
+Vs
+$Comp
+L GND #PWR?
+U 1 1 51CB5D91
+P 6150 2700
+F 0 "#PWR?" H 6150 2700 30  0001 C CNN
+F 1 "GND" H 6150 2630 30  0001 C CNN
+F 2 "" H 6150 2700 60  0000 C CNN
+F 3 "" H 6150 2700 60  0000 C CNN
+	1    6150 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 2300 2    60   Input ~ 0
+5V
+Wire Wire Line
+	6700 2300 6550 2300
+Wire Wire Line
+	6150 2600 6150 2700
+Wire Wire Line
+	5750 2300 5600 2300
+$Comp
+L USB J?
+U 1 1 51CB5E39
+P 7950 2050
+F 0 "J?" H 7900 2450 60  0000 C CNN
+F 1 "USB" V 7700 2200 60  0000 C CNN
+F 2 "~" H 7950 2050 60  0000 C CNN
+F 3 "~" H 7950 2050 60  0000 C CNN
+	1    7950 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 2250 0    60   Input ~ 0
+5V
+$Comp
+L GND #PWR?
+U 1 1 51CB5E47
+P 7400 2550
+F 0 "#PWR?" H 7400 2550 30  0001 C CNN
+F 1 "GND" H 7400 2480 30  0001 C CNN
+F 2 "" H 7400 2550 60  0000 C CNN
+F 3 "" H 7400 2550 60  0000 C CNN
+	1    7400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2550 7400 2400
+Wire Wire Line
+	7400 2400 7550 2400
+Wire Wire Line
+	7550 2500 7400 2500
+Connection ~ 7400 2500
+$Comp
+L GND #PWR?
+U 1 1 51CB5E7C
+P 8400 2550
+F 0 "#PWR?" H 8400 2550 30  0001 C CNN
+F 1 "GND" H 8400 2480 30  0001 C CNN
+F 2 "" H 8400 2550 60  0000 C CNN
+F 3 "" H 8400 2550 60  0000 C CNN
+	1    8400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2550 8400 2500
+Wire Wire Line
+	8400 2500 8300 2500
+Wire Wire Line
+	7550 2250 7350 2250
+$EndSCHEMATC
