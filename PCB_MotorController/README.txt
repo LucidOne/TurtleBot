@@ -1,40 +1,45 @@
-Motor Controller Specification Proposal 
+Motor Controller Specification: 
 
 * H-Brigde:
-	LMD 18201
-	55V max
-	3A DC max
-	Thermal flag and shutdown
-	Internal clamp diodes
+	Use the	LMD 18201
+		55V max
+		3A DC max
+		Thermal flag and shutdown
+		Internal clamp diodes
+		Requires external R_sense resistor to measure current
+	Or LMD 18200 which includes an internal R_sense
 
 * Microcontroller
-	ATMEGA32U4RC-AU http://www.digikey.com/product-detail/en/ATMEGA32U4RC-AU/ATMEGA32U4RC-AU-ND/2507982
-	32Kb memory
-	8-bit
-	16MHz
-	AVR
-	I²C, SPI, UART/USART, USB
-	Internal oscillator
+	Use the ATMEGA32U4RC-AU
+		http://www.digikey.com/product-detail/en/ATMEGA32U4RC-AU/ATMEGA32U4RC-AU-ND/2507982
+		32Kb memory
+		8-bit
+		16MHz
+		AVR
+		I²C, SPI, UART/USART, USB
+		Internal oscillator and USB
 
 * PWM
-	Use microcontroller interrupts to create it
+	Use micro-controller interrupts to create it
 
 * Bang Bang (limit switches)
+	Connected to microcontroller's interrupts
 
 * Current Sensor
 	low side sensing using R_sense on H-bridge
 
 * Voltage
-	Use 7805 to regulate 5V
-	Motor Voltage is Vin protected by a fuse
-	
+	Use 7805 to regulate 5V (Vss)
+	Motor Voltage (Vs) is Vin protected by a fuse
+	Share Grounds
+
 * Fuse
 	PTC fuse
-		if SMD then 2A max
+		if SMD then 2A max, else use radial
 
 * Power In
-	use USB micro connector for 5V input or Communication
-	Use external power IN screw terminals for Vs
+	Use USB micro connector for 5V input or Communication
+	Use external power  screw terminals for Vs
 
 * Encoder
 	PWR, GND, A, B, Index
@@ -46,7 +51,6 @@ Motor Controller Specification Proposal
 
 * Back EMF
 	Read using ADC in microcontroller
-	have two separate grounds: 1) motor 2) Logic
 	ADC reference connected to motor ground
 
 * Potentiometer
@@ -57,6 +61,8 @@ Motor Controller Specification Proposal
 	1.3A Stall Current
 	Voltage 3V - 22.2V (>10V decreases motor life)
 	http://www.fingertechrobotics.com/proddetail.php?prod=ft-spark16
+
+	Or
 
 	Pitta Motor gm9413f154
 	9V-25V, 6ADC, 9A peak
@@ -75,15 +81,7 @@ Motor Controller Notes
 	avoid MHz or GHz, stay between 40-100KHz
 	Duty Cycle is gas pedal
 
-* Bang Bang (limit switches)
-
-
 * Current Sensor
 	high side /low side
 		Look at Texas Instruments INA226
 	Try to use only one resistor
-
-* Motor
-	1.3A Stall Current
-	Voltage 3V - 22.2V (>10V decreases motor life)
-	http://www.fingertechrobotics.com/proddetail.php?prod=ft-spark16
