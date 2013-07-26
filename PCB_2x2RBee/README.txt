@@ -1,7 +1,5 @@
-2x2RPi
-GPIO Control for the Raspberry Pi
-
-DEPRECATED. Visit 2x2RBee
+2x2RBee
+GPIO Control for the Raspberry Pi with XBee Shield included
 
 BOM
 Qty.	Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	url
@@ -34,3 +32,5 @@ Qty.	Item					Digikey P. No.		Manufacturer		Manufacturer P. No.	url
 1	FUSE PTC RESET 2.0A 6V 1206 SMD			F4155CT-ND		Littelfuse Inc		1206L200PR		http://www.littelfuse.com/~/media/Files/Littelfuse/Technical%20Resources/Documents/Data%20Sheets/Littelfuse_PTC_1206L.pdf
 
 1	DIODE SCHOTTKY 40V 2A 1206			478-7806-1-ND		AVX Corporation		SD1206S040S2R0		http://www.avx.com/docs/Catalogs/schottky.pdf
+
+2 	CONN SOCKET 10POS 2MM VERT T/H		3M9405-ND		3M		950510-6102-AR		http://multimedia.3m.com/mws/mediawebserver?66666UuZjcFSLXTtmXMEm8TaEVuQEcuZgVs6EVs6E666666--
