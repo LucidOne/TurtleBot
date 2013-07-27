@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 26 Jul 2013 12:19:47 AM EDT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 26 Jul 2013 09:59:07 PM EDT
 
 BeginCmp
 TimeStamp = /51C33E2E;
@@ -375,14 +375,14 @@ BeginCmp
 TimeStamp = /51096935;
 Reference = U1;
 ValeurCmp = LowCurVReg;
-IdModule  = SOT-23-5;
+IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp
 TimeStamp = /50F73BFD;
 Reference = U2;
 ValeurCmp = LowCurVReg;
-IdModule  = SOT-23-5;
+IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 25 Jul 2013 10:49:57 PM EDT
+EESchema Schematic File Version 2  date Fri 26 Jul 2013 09:58:45 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "2x2RPi"
-Date "26 jul 2013"
+Date "27 jul 2013"
 Rev "01"
 Comp "I heart Engineering"
 Comment1 "Designed by Carlos Chinchilla"
@@ -175,7 +175,7 @@ U 1 1 50F73BFD
 P 1350 3800
 F 0 "U2" H 1100 4000 40  0000 C CNN
 F 1 "LowCurVReg" H 1350 4000 40  0000 C CNN
-F 2 "SOT-23-5" H 1350 3900 35  0000 C CIN
+F 2 "SOT23-5" H 1350 3900 35  0000 C CIN
 F 3 "" H 1350 3800 60  0001 C CNN
 	1    1350 3800
 	1    0    0    -1  
@@ -234,7 +234,7 @@ U 1 1 51096935
 P 1400 5000
 F 0 "U1" H 1150 5200 40  0000 C CNN
 F 1 "LowCurVReg" H 1400 5200 40  0000 C CNN
-F 2 "SOT-23-5" H 1400 5100 35  0000 C CIN
+F 2 "SOT23-5" H 1400 5100 35  0000 C CIN
 F 3 "" H 1400 5000 60  0001 C CNN
 	1    1400 5000
 	1    0    0    -1  
@@ -1138,7 +1138,7 @@ U 1 1 51EDC3AA
 P 1350 6000
 F 0 "U6" H 1100 6200 40  0000 C CNN
 F 1 "LowCurVReg" H 1350 6200 40  0000 C CNN
-F 2 "SOT-23-5" H 1350 6100 35  0000 C CIN
+F 2 "SOT23-5" H 1350 6100 35  0000 C CIN
 F 3 "" H 1350 6000 60  0001 C CNN
 	1    1350 6000
 	1    0    0    -1  
@@ -1195,7 +1195,7 @@ U 1 1 51EDC3CA
 P 1400 7100
 F 0 "U7" H 1150 7300 40  0000 C CNN
 F 1 "LowCurVReg" H 1400 7300 40  0000 C CNN
-F 2 "SOT-23-5" H 1400 7200 35  0000 C CIN
+F 2 "SOT23-5" H 1400 7200 35  0000 C CIN
 F 3 "" H 1400 7100 60  0001 C CNN
 	1    1400 7100
 	1    0    0    -1  
